@@ -1,0 +1,21 @@
+---
+import Logo from "./Logo.astro";
+import Navigation from "./Navigation.astro";
+const baseline = "La micro agence web";
+---
+
+<header class="flex w-full py-2">
+  <div class="max-w-7xl mx-auto w-full flex items-center px-6">
+    <a href="/" title="Accueil" class="flex flex-col justify-start w-64">
+      <Logo className="mx-auto" width={256} height={73} />
+      <p
+        class="text-primary font-semibold relative -top-5 px-1 before:bg-secondary before:h-1.5 before:w-full before:block before:absolute before:bottom-0.5 text-right"
+      >
+        <span class="relative z-1">
+          {baseline}
+        </span>
+      </p>
+    </a>
+    <Navigation />
+  </div>
+</header>
