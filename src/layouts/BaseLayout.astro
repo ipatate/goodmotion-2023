@@ -17,8 +17,8 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="bg-gray-300">
-    <div class="h-screen bg-white absolute top-0 right-0 left-0 z-[-1]"></div>
+  <body class="">
+    <div class="h-screen absolute top-0 right-0 left-0 z-[-1]"></div>
     <Header />
     <slot />
     <Footer />
@@ -28,7 +28,8 @@ const { title } = Astro.props;
         font-style: oblique 0deg 10deg;
         font-weight: 100 800;
         font-display: fallback;
-        src: url("/fonts/Sora-VariableFont_wght.woff2") format("woff2");
+        src: url("../../assets/fonts/Sora-VariableFont_wght.woff2")
+          format("woff2");
         font-stretch: 25% 151%;
         unicode-range: U+000-5FF;
       }

@@ -1,0 +1,44 @@
+---
+import speed from "../../../assets/images/speed.svg";
+import secure from "../../../assets/images/secure.svg";
+import green from "../../../assets/images/green.svg";
+---
+
+<div class="flex flex-col py-16">
+  <div class="max-w-5xl w-full mx-auto my-2 md:my-10 text-center px-3">
+    <h2 class="text-3xl md:text-5xl text-primary font-semibold">
+      La mission de Goodmotion
+    </h2>
+    <p
+      class="max-w-2xl text-center w-full mx-auto text-base text-gray-700 my-6 font-light"
+    >
+      Faire des sites web c'est bien mais faire des sites web rapides, sécurisés
+      et écologiques c'est mieux !
+    </p>
+  </div>
+  <div class="flex flex-col md:flex-row max-w-5xl my-6 w-full mx-auto px-6">
+    <div class="avantage">
+      <img src={speed} alt="" />
+      <h3>Des sites web rapides !</h3>
+    </div>
+    <div class="avantage">
+      <img src={secure} alt="" />
+      <h3>Des sites web sécurisés !</h3>
+    </div>
+    <div class="avantage">
+      <img src={green} alt="" />
+      <h3>Des sites web écologiques !</h3>
+    </div>
+  </div>
+</div>
+<style>
+  .avantage {
+    @apply flex flex-col my-5 md:my-4 flex-1 text-center;
+  }
+  .avantage h3 {
+    @apply text-lg md:text-xl text-primary font-light mt-3 md:mt-8;
+  }
+  .avantage img {
+    @apply w-28 h-28 mx-auto;
+  }
+</style>
