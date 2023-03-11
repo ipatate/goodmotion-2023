@@ -17,7 +17,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="">
+  <body class="bg-gray-100">
     <div class="h-screen absolute top-0 right-0 left-0 z-[-1]"></div>
     <Header />
     <slot />
@@ -32,6 +32,12 @@ const { title } = Astro.props;
           format("woff2");
         font-stretch: 25% 151%;
         unicode-range: U+000-5FF;
+      }
+      a {
+        @apply text-primary-900 hover:underline;
+      }
+      .yellow-title {
+        @apply inline-flex relative after:bg-secondary-500 after:h-2 after:left-0 after:right-0 after:absolute after:inline-flex after:z-[-1] after:bottom-1;
       }
     </style>
   </body>

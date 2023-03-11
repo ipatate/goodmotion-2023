@@ -5,7 +5,7 @@ import sleeps from "../../../assets/images/sleeps.png";
 import tissot from "../../../assets/images/tissot.svg";
 import strapi from "../../../assets/images/strapi.svg";
 import mercredi from "../../../assets/images/mercredi.png";
-import prism from "../../../assets/images/prism.jpg";
+import prism from "../../../assets/images/prism.webp";
 const tools = [
   {
     title: "Trio",
@@ -53,16 +53,17 @@ const tools = [
 ---
 
 <div class="flex flex-col py-10">
-  <div class="max-w-5xl w-full mx-auto my-3 md:my-10 text-center px-3">
-    <h2 class="text-3xl md:text-5xl text-primary font-semibold">
+  <div class="max-w-5xl w-full mx-auto my-3 md:my-5 text-center px-3">
+    <h2
+      class="text-3xl md:text-5xl text-primary-900 font-semibold yellow-title"
+    >
       Nos partenaires
     </h2>
     <p
       class="max-w-2xl text-center w-full mx-auto text-base text-gray-700 my-6 font-light"
     >
       Voici une liste que quelques entreprises avec lesquelles nous travaillons
-      régulierement. Oui chez Goodmotion, nous aimons travailler sur le long
-      terme.
+      régulierement. Merci à eux pour leur confiance.
     </p>
   </div>
   <div
@@ -75,7 +76,7 @@ const tools = [
             <img src={tool.image} alt={tool.title} class={tool.class} />
           </div>
           <p class="text-xs text-gray-400 font-extralight">{tool.place}</p>
-          <h3 class="text-xs text-primary font-light mt-3 max-w-[80%] text-center">
+          <h3 class="text-xs text-primary-900 font-light mt-3 max-w-[80%] text-center">
             {tool.txt}
           </h3>
         </div>

@@ -9,8 +9,30 @@ module.exports = {
         sans: ["Sora", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: "#08556C",
-        secondary: "#F9C907",
+        primary: {
+          50: "#e9fffe",
+          100: "#c7fffd",
+          200: "#96fffb",
+          300: "#4dfffa",
+          400: "#00f9ff",
+          500: "#00dbf9",
+          600: "#00acd0",
+          700: "#0088a7",
+          800: "#046d86",
+          900: "#08556c",
+        },
+        secondary: {
+          50: "#fefde8",
+          100: "#fffcc2",
+          200: "#fff689",
+          300: "#ffe945",
+          400: "#fcd713",
+          500: "#f9c907",
+          600: "#cc9402",
+          700: "#a36905",
+          800: "#86520d",
+          900: "#724311",
+        },
       },
       backgroundImage: {
         "hero-animated":
