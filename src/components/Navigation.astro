@@ -2,6 +2,7 @@
 import data from "../../data";
 import Burger from "./Burger.astro";
 import home from "../../assets/images/home.svg";
+import SocialIcon from "./SocialIcon.astro";
 ---
 
 <div id="navigation">
@@ -17,14 +18,16 @@ import home from "../../assets/images/home.svg";
         data.navigations.map((nav) => {
           if (nav.isHome) {
             return (
-              <li class="flex flex-col group relative mx-8">
+              <li class="flex flex-col group relative mx-4">
                 <a href="/" class="w-6 h-6 inline-flex object-cover">
                   <img
                     src={home.src}
                     width={home.width}
                     height={home.height}
                     alt="Accueil"
+                    class="hidden lg:inline"
                   />
+                  <span class="inline lg:hidden">Accueil</span>
                 </a>
               </li>
             );
@@ -72,6 +75,15 @@ import home from "../../assets/images/home.svg";
         })
       }
     </ul>
+    <div class="flex justify-center mt-20 lg:hidden">
+      {
+        data.socials.map((s) => (
+          <a href="{s.link}" title={s.label} target="_blank" class="mx-3">
+            <SocialIcon name={s.icon} />
+          </a>
+        ))
+      }
+    </div>
   </nav>
 </div>
 <style>

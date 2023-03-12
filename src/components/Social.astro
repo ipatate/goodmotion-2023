@@ -1,0 +1,14 @@
+---
+import data from "../../data";
+import SocialIcon from "./SocialIcon.astro";
+---
+
+<div class="ml-auto hidden lg:flex">
+  {
+    data.socials.map((s) => (
+      <a href="{s.link}" title={s.label} target="_blank" class="mx-2">
+        <SocialIcon name={s.icon} />
+      </a>
+    ))
+  }
+</div>

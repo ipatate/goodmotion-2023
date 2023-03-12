@@ -20,6 +20,23 @@ export default {
   baseline: "Des sites web rapides et éco-responsables !",
   heroText:
     "Développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
+  socials: [
+    {
+      label: "GitHub",
+      link: "https://github.com/ipatate",
+      icon: "github",
+    },
+    {
+      label: "Twitter",
+      link: "https://twitter.com/PatrickFaramaz",
+      icon: "twitter",
+    },
+    {
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/patrickfaramaz/",
+      icon: "linkedin",
+    },
+  ],
   navigations: [
     {
       label: "Accueil",
