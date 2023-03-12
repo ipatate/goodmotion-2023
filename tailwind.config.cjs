@@ -2,7 +2,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "data.ts",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -41,7 +44,6 @@ module.exports = {
           "linear-gradient(180deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);",
         "bloc-logo-inverse":
           "linear-gradient(0deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);",
-        home: "url('/assets/home.svg')",
         "bg-home": "url('/assets/bg-hero.svg')",
       },
     },

@@ -3,7 +3,7 @@ import zmf from "../../assets/images/zmf.svg";
 ---
 
 <footer class="bg-secondary-500 py-10">
-  <div class="max-w-7xl mx-auto w-full flex items-center px-6">
+  <div class="max-w-7xl mx-auto w-full flex items-center px-2 md:px-6">
     <div class="flex-1">
       <img
         src={zmf.src}
@@ -12,14 +12,23 @@ import zmf from "../../assets/images/zmf.svg";
         alt="ZMF"
         class="w-44"
       />
-      <p class="text-primary-900 text-xs mt-2">
-        2023 ZMF Resources Tous les droits sont réservés.
+      <p class="text-primary-900 reserved text-xs mt-2">
+        ZMF Resources Tous les droits sont réservés.
       </p>
+      <script>
+        const reserved = document.querySelector(".reserved");
+        if (reserved) {
+          reserved.innerHTML =
+            new Date().getFullYear() + " " + reserved.innerHTML;
+        }
+      </script>
     </div>
     <div class="flex-1">
-      <nav class="flex flex-col">
-        <a href="/politique-de-confidentialite">Politique de confidentialité</a>
-        <a href="/mentions-legales">Mentions légales</a>
+      <nav class="flex ml-2 md:ml-5 flex-col text-sm md:text-base">
+        <a class="my-1" href="/politique-de-confidentialite"
+          >Politique de confidentialité</a
+        >
+        <a class="my-1" href="/mentions-legales">Mentions légales</a>
       </nav>
     </div>
   </div>

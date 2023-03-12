@@ -27,7 +27,7 @@ export default {
       isHome: true,
     },
     {
-      label: "Services",
+      label: "Services développement",
       link: "#",
       subMenu: [
         {
@@ -38,7 +38,15 @@ export default {
           label: "Développement WordPress avancé",
           link: "/services/developpement-wordpress-avance",
         },
+        {
+          label: "Développement sous Craft CMS",
+          link: "/services/developpement-sous-craft-cms",
+        },
       ],
+    },
+    {
+      label: "A propos",
+      link: "/about",
     },
   ],
   tools: [
