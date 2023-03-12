@@ -1,11 +1,65 @@
-<nav class="ml-auto">
-  <ul>
-    <li>
-      <a
-        href="/"
-        class="bg-home bg-no-repeat bg-center bg-contain w-6 h-6 inline-flex"
-        ><span class="absolute top-[-2000px] left-[-1000px]">Accueil</span></a
-      >
-    </li>
+---
+import data from "../../data";
+---
+
+<nav class="mt-2">
+  <ul class="flex items-center">
+    {
+      data.navigations.map((nav) => {
+        if (nav.isHome) {
+          return (
+            <li>
+              <a
+                href="/"
+                class="bg-home bg-no-repeat bg-center bg-contain w-6 h-6 inline-flex"
+              >
+                <span class="absolute top-[-2000px] left-[-1000px]">
+                  Accueil
+                </span>
+              </a>
+            </li>
+          );
+        }
+        return (
+          <li class="flex flex-col group relative mx-4">
+            <a
+              href={nav.link}
+              title={nav.label}
+              class="flex items-center group-hover:text-primary-700"
+            >
+              {nav.subMenu && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                </svg>
+              )}
+              {nav.label}
+            </a>
+            {nav.subMenu && (
+              <ul class="group-hover:flex shadow-xl hidden bg-white flex-col absolute mt-6 ml-5 p-1">
+                {nav.subMenu.map((sub) => {
+                  return (
+                    <li class="px-3 py-1">
+                      <a
+                        href={sub.link}
+                        title={sub.label}
+                        class="whitespace-nowrap"
+                      >
+                        {sub.label}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </li>
+        );
+      })
+    }
   </ul>
 </nav>

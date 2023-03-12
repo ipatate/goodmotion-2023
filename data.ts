@@ -14,16 +14,38 @@ import tissot from "./assets/images/tissot.svg";
 import mercredi from "./assets/images/mercredi.png";
 import prism from "./assets/images/prism.webp";
 import ircam from "./assets/images/ircam.svg";
+import yourLogo from "./assets/images/your-logo.png";
 
 export default {
   baseline: "Des sites web rapides et éco-responsables !",
   heroText:
     "Développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
+  navigations: [
+    {
+      label: "Accueil",
+      link: "/",
+      isHome: true,
+    },
+    {
+      label: "Services",
+      link: "#",
+      subMenu: [
+        {
+          label: "Développement de sites web modernes",
+          link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+        },
+        {
+          label: "Développement WordPress avancé",
+          link: "/services/developpement-wordpress-avance",
+        },
+      ],
+    },
+  ],
   tools: [
     {
       title: "Next.js",
       image: next,
-      class: "w-36",
+      class: "w-32",
     },
     {
       title: "Astro.js",
@@ -33,7 +55,7 @@ export default {
     {
       title: "Nuxt",
       image: nuxt,
-      class: "w-44",
+      class: "w-32",
     },
     {
       title: "React.js",
@@ -66,7 +88,7 @@ export default {
       title: "Trio",
       image: trio,
       place: "Lausanne, Suisse",
-      details: "WordPress, Craft CMS, React.js",
+      details: "WordPress, Craft CMS, React.js, Nuxt.js",
       class: "w-28",
     },
     {
@@ -110,6 +132,13 @@ export default {
       place: "Paris, France",
       details: "Expertise Strapi et Nuxt.js",
       class: "w-32",
+    },
+    {
+      title: "Votre logo ici ?",
+      image: yourLogo,
+      place: "Votre ville, votre pays",
+      details: "Votre description",
+      class: "w-20",
     },
   ],
 };

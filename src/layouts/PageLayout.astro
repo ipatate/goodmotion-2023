@@ -4,8 +4,13 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <div class="prose md:prose-lg mx-auto py-10">
+  <div class="prose md:prose-lg mx-auto py-10 px-4">
     <h1 class="text-primary-900">{frontmatter.title}</h1>
     <slot />
   </div>
+  <style>
+    .prose h1 {
+      @apply text-4xl;
+    }
+  </style>
 </BaseLayout>
