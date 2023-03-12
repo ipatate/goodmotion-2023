@@ -1,16 +1,24 @@
 ---
-import Advantage from "../components/home/Advantage.astro";
-import HeroHome from "../components/home/HeroHome.astro";
-import Partners from "../components/home/Partners.astro";
-import Tools from "../components/home/Tools.astro";
+import data from "../../data";
 import Layout from "../layouts/BaseLayout.astro";
+import Advantages from "../components/home/Advantages.astro";
+import HeroHome from "../components/home/HeroHome.astro";
+import LogoBlock from "../components/home/LogoBlock.astro";
 ---
 
 <Layout title="Home page">
   <main>
     <HeroHome />
-    <Advantage />
-    <Tools />
-    <Partners />
+    <Advantages />
+    <LogoBlock
+      title="Notre boite à outils"
+      text="Après avoir analysé le besoin de votre projet, nous choisirons ensemble l'outil le plus adapté pour obtenir le meilleur résultat."
+      elements={data.tools}
+    />
+    <LogoBlock
+      title="Nos partenaires"
+      text="Voici une liste que quelques entreprises avec lesquelles nous travaillons régulierement. Merci à eux pour leur confiance."
+      elements={data.partners}
+    />
   </main>
 </Layout>

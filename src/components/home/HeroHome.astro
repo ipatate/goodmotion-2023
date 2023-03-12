@@ -1,6 +1,6 @@
 ---
 import coder from "../../assets/images/coder.svg";
-import config from "../../../config";
+import data from "../../../data";
 ---
 
 <div class="flex flex-col-reverse md:flex-row py-4 h-screen relative">
@@ -10,11 +10,11 @@ import config from "../../../config";
     class="flex-1 flex flex-col justify-center p-10 max-w-4xl mx-auto text-center"
   >
     <h1 class="text-primary-900 text-3xl md:text-4xl font-bold">
-      {config.baseline}
+      {data.baseline}
     </h1>
     <p
       class="mt-5 leading-7 text-lg text-gray-700 font-light"
-      set:html={config.heroText}
+      set:html={data.heroText}
     />
   </div>
 </div>

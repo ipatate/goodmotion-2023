@@ -37,6 +37,10 @@ module.exports = {
       backgroundImage: {
         "hero-animated":
           "linear-gradient(180deg, rgba(229,240,242,1) 0%, rgba(229,240,242,1) 51%, rgba(245,247,247,1) 100%);",
+        "bloc-logo":
+          "linear-gradient(180deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);",
+        "bloc-logo-inverse":
+          "linear-gradient(0deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);",
         home: "url('/assets/home.svg')",
         "bg-home": "url('/assets/bg-hero.svg')",
       },
