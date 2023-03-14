@@ -32,6 +32,16 @@ module.exports = {
     "bg-casper-900",
     "bg-secondary-900",
     "bg-alto-900",
+    "from-primary-900",
+    "from-summer-green-900",
+    "from-casper-900",
+    "from-secondary-900",
+    "from-alto-900",
+    "to-primary-700",
+    "to-summer-green-700",
+    "to-casper-700",
+    "to-secondary-700",
+    "to-alto-700",
   ],
   theme: {
     extend: {

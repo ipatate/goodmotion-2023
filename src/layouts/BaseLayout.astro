@@ -57,8 +57,8 @@ const { title, description, color = "primary" } = Astro.props;
         font-stretch: 25% 151%;
         unicode-range: U+000-5FF;
       }
-      .yellow-title {
-        @apply inline-flex relative after:bg-secondary-500 after:h-2 after:left-0 after:right-0 after:absolute after:inline-flex after:z-[-1] after:bottom-1;
+      ::selection {
+        @apply text-white bg-accent-600;
       }
     </style>
   </body>

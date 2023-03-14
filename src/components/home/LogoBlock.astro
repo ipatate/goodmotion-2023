@@ -44,7 +44,7 @@ const { title, text, elements } = Astro.props;
               width={element.image.width}
               height={element.image.height}
               alt={element.title}
-              class={`${element.class}`}
+              class={`${element.class} grayscale-[70%] hover:grayscale-0 transition-all duration-100 ease-in-out`}
               loading="lazy"
               decoding="async"
             />
