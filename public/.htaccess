@@ -1,6 +1,13 @@
 RewriteEngine On
 
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 Redirect 301 developpement-de-web-application /services/developpement-de-web-applications-et-sites-web-modernes
 Redirect 301 /developpeur-wordpress-geneve-lausanne-annecy-lyon /services/developpement-wordpress-avance
 Redirect 301 /developpement-sous-craft-cms /services/developpement-sous-craft-cms
 Redirect 301 /consultant-technique-web /services/consultant-technique-web
+Redirect 301 /coanimateur-podcast-double-slash /podcast

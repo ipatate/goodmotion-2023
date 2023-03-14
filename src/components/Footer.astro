@@ -1,5 +1,7 @@
 ---
 import zmf from "../../assets/images/zmf.svg";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname;
 ---
 
 <footer class="py-10 bg-slate-50">
@@ -25,10 +27,18 @@ import zmf from "../../assets/images/zmf.svg";
     </div>
     <div class="flex-1">
       <nav class="flex ml-2 md:ml-5 flex-col text-sm md:text-base">
-        <a class="my-1" href="/politique-de-confidentialite"
-          >Politique de confidentialité</a
+        <a
+          class={`my-1 ${
+            currentPath === "/politique-de-confidentialite" ? "underline" : ""
+          }`}
+          href="/politique-de-confidentialite">Politique de confidentialité</a
         >
-        <a class="my-1" href="/mentions-legales">Mentions légales</a>
+        <a
+          class={`my-1 ${
+            currentPath === "/mentions-legales" ? "underline" : ""
+          }`}
+          href="/mentions-legales">Mentions légales</a
+        >
       </nav>
     </div>
   </div>
