@@ -17,7 +17,7 @@ import ircam from "./assets/images/ircam.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
-  baseline: "Des sites web rapides et éco-responsables !",
+  baseline: "Sites web rapides et durables !",
   heroText:
     "Développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
   socials: [
@@ -65,47 +65,55 @@ export default {
       label: "A propos",
       link: "/about",
     },
+    {
+      label: "Podcast",
+      link: "/podcast",
+    },
+    {
+      label: "Contact",
+      link: "/contact",
+    },
   ],
   tools: [
     {
       title: "Next.js",
       image: next,
-      class: "w-32",
+      class: "w-40",
     },
     {
       title: "Astro.js",
       image: astro,
-      class: "w-16",
+      class: "w-24",
     },
     {
       title: "Nuxt",
       image: nuxt,
-      class: "w-32",
+      class: "w-40",
     },
     {
       title: "React.js",
       image: react,
-      class: "w-16",
+      class: "w-24",
     },
     {
       title: "Vue.js",
       image: vue,
-      class: "w-16",
+      class: "w-24",
     },
     {
       title: "WordPress",
       image: wordpress,
-      class: "w-16",
+      class: "w-24",
     },
     {
       title: "Craft CMS",
       image: craftcms,
-      class: "w-44",
+      class: "w-50",
     },
     {
       title: "Strapi",
       image: strapi,
-      class: "w-44",
+      class: "w-48",
     },
   ],
   partners: [

@@ -1,15 +1,26 @@
 ---
 import Logo from "./Logo.astro";
+import Socials from "./Socials.astro";
 import Navigation from "./Navigation.astro";
-import Social from "./Social.astro";
+
+export interface Props {
+  color: Color;
+}
+const { color = "primary" } = Astro.props;
 ---
 
-<header class="flex w-full py-4 bg-white">
-  <div class="max-w-7xl mx-auto w-full flex items-center lg:px-6">
-    <a href="/" title="Accueil" class="flex justify-start w-64">
+<header class="flex w-full py-4">
+  <div
+    class="max-w-7xl mx-auto w-full flex items-center lg:px-6 pb-4 border-b border-primary-900/20"
+  >
+    <a
+      href="/"
+      title="Accueil"
+      class={`flex justify-start w-64 text-${color}-900`}
+    >
       <Logo className="" width={200} height={50} />
     </a>
-    <Navigation />
-    <Social />
+    <Navigation color={color} />
+    <Socials color={color} />
   </div>
 </header>

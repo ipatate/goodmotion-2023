@@ -3,9 +3,9 @@ import speed from "../../../assets/images/speed.svg";
 import secure from "../../../assets/images/secure.svg";
 import green from "../../../assets/images/green.svg";
 
-const title = "Notre obsession";
+const title = "Notre engagement";
 const text =
-  "Faire des sites web c'est bien mais faire des sites web rapides, sécurisés et écologiques c'est mieux !";
+  "Faire des sites web c'est bien mais faire des sites web rapides, sécurisés et durables c'est mieux !";
 const avantages = [
   {
     title: "Des sites web rapides !",
@@ -16,31 +16,31 @@ const avantages = [
     image: secure,
   },
   {
-    title: "Des sites web écologiques !",
+    title: "Des sites web durables !",
     image: green,
   },
 ];
 ---
 
-<div class="flex flex-col py-16">
-  <div
-    class="max-w-[80%] md:max-w-5xl w-full mx-auto my-2 md:my-5 text-center px-3"
-  >
+<div class="flex flex-col pt-5 pb-20">
+  <div class="md:max-w-7xl w-full mx-auto my-2 md:my-5 text-left px-4 md:px-10">
     <h2
-      class="text-3xl w-auto md:text-5xl text-primary-900 font-semibold yellow-title"
+      class="text-5xl sm:text-6xl w-auto md:text-8xl text-primary-900 font-semibold"
     >
       {title}
     </h2>
     <p
-      class="max-w-2xl text-center w-full mx-auto text-base text-gray-700 my-6 font-light"
+      class="max-w-7xl text-left w-full text-base text-gray-700 my-6 font-light"
     >
       {text}
     </p>
   </div>
-  <div class="flex flex-col md:flex-row max-w-5xl my-6 w-full mx-auto px-6">
+  <div
+    class="logo-grid grid md:grid-cols-3 md:gap-4 max-w-7xl relative w-full mx-auto md:px-6 mt-5"
+  >
     {
-      avantages.map((avantage) => (
-        <div class="flex flex-col my-5 md:my-4 flex-1 text-center">
+      avantages.map((avantage, i) => (
+        <div class="flex flex-col flex-1 text-center p-4">
           <img
             src={avantage.image.src}
             width={avantage.image.width}
@@ -50,7 +50,7 @@ const avantages = [
             loading="lazy"
             decoding="async"
           />
-          <h3 class="text-lg text-primary-900 font-light mt-3 md:mt-8">
+          <h3 class="text-sm md:text-2xl text-primary-900 font-light mt-3 md:mt-8">
             {avantage.title}
           </h3>
         </div>

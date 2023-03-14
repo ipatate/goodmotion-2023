@@ -1,12 +1,19 @@
+---
+export interface Props {
+  color: Color;
+}
+const { color = "primary" } = Astro.props;
+---
+
 <button id="open-nav" class="w-12 h-8 absolute right-5 top-6 z-20 lg:hidden">
   <span
-    class="absolute h-1 bg-primary-800 w-full transition-all top-0 opacity-100 right-0 rotate-0"
+    class={`absolute h-1 bg-${color}-900 w-full transition-all top-0 opacity-100 right-0 rotate-0`}
   ></span>
   <span
-    class="absolute h-1 bg-primary-800 w-full transition-all top-[14px] opacity-100 right-0 rotate-0"
+    class={`absolute h-1 bg-${color}-900 w-full transition-all top-[14px] opacity-100 right-0 rotate-0`}
   ></span>
   <span
-    class="absolute h-1 bg-primary-800 w-full transition-all bottom-0 opacity-100 right-0 rotate-0"
+    class={`absolute h-1 bg-${color}-900 w-full transition-all bottom-0 opacity-100 right-0 rotate-0`}
   ></span>
 </button>
 <style>

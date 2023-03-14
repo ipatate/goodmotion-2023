@@ -1,9 +1,14 @@
 ---
 import data from "../../data";
 import SocialIcon from "./SocialIcon.astro";
+
+export interface Props {
+  color: Color;
+}
+const { color = "primary" } = Astro.props;
 ---
 
-<div class="ml-auto hidden lg:flex">
+<div class={`ml-auto hidden lg:flex text-${color}-900 hover:text-${color}-700`}>
   {
     data.socials.map((s) => (
       <a href="{s.link}" title={s.label} target="_blank" class="mx-2">

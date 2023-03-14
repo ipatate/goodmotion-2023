@@ -1,16 +1,31 @@
 ---
+import HeroPage from "../components/HeroPage.astro";
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
+const colors: Color[] = [
+  //   "primary",
+  "casper",
+  "secondary",
+  "summer-green",
+  "alto",
+];
+const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
 ---
 
-<BaseLayout title={frontmatter.title}>
-  <div class="prose md:prose-xl mx-auto pt-20 pb-10 px-4">
-    <h1 class="text-primary-900">{frontmatter.title}</h1>
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  color={randomColor}
+>
+  <HeroPage title={frontmatter.title} color={randomColor} />
+  <div
+    class="prose md:prose-xl mx-auto pt-20 pb-10 px-10 max-w-6xl page-content"
+  >
     <slot />
   </div>
-  <style>
-    .prose h1 {
-      @apply text-5xl mb-20;
-    }
-  </style>
 </BaseLayout>
+<style is:global>
+  .page-content a {
+    @apply text-accent-600 hover:text-accent-700;
+  }
+</style>

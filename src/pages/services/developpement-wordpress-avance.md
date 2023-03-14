@@ -4,7 +4,7 @@ title: Développement WordPress 100% sur mesure
 description:
 ---
 
-WordPress est un projet open-source avec une grosse communauté, un nombre de plugins impressionnant.
+[WordPress](https://wordpress.org) est un projet open-source avec une grosse communauté, un nombre de plugins impressionnant.
 Il est donc énormément utilisé pour tout type de projet mais pas toujours de la meilleure façon.
 
 Après analyse de votre besoin, WordPress peut être parfaitement adapté pour votre projet.
