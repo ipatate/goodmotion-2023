@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Intervenant technique pour vos projets web
-description:
+title: Consultant technique pour vos projets web
+description: Choix techniques, cahier des charges, gestion de prestataires. J'utilise mes 15 ans d'expérience au service de votre projet. J'interviens en assistance technique pour vous aider sur vos projets web.
 ---
 **Choix techniques, cahier des charges, gestion de prestataires. J'utilise mes 15 ans d'expérience au service de votre projet. J'interviens en assistance technique pour vous aider sur vos projets web.**
 
@@ -29,6 +29,10 @@ Je peux vous conseiller et m'occuper de faire le transfert de votre site ou tout
 
 ## Développement de nouveau projet web
 
-Évidemment, je peux me charger de développer votre projet avec les technologies que je maitrise. Soit avec un framework du type symfony, avec un CMS du type wordpress ou avec des technologies modernes du type node JS ou React JS. Et toujours avec une orientation écoconception et accessibilité.
+Évidemment, je peux me charger de développer votre projet avec les technologies que je maitrise.
 
-N’hésitez pas à me contacter pour en savoir plus. Nous nous ferons un plaisir de vous répondre.
+- [Développement de web applications et sites web modernes](/services/developpement-de-web-applications-et-sites-web-modernes)
+- [Développement WordPress 100% sur mesure](/services/developpement-wordpress-avance)
+- [Développement sous Craft CMS](/services/developpement-sous-craft-cms)
+
+N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)

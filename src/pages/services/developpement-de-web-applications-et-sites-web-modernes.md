@@ -1,22 +1,22 @@
 ---
 layout: ../../layouts/PageLayout.astro
 title: Développement de web applications et sites web modernes
-description:
+description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js.
 ---
 
 La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années. 
-L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que React.js ou Vue.js. Des meta-frameworks comme Nuxt.js ou Next.js.
+L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
 Sans parler de l'évolution des modes de rendu : SPA, SSR, Hybride, etc..
 Pas facile de s'y retrouver.
 
 Aujourd'hui la première étape dans un projet, c'est de trouver l’outil qui correspond le mieux à son projet.
 
-Souvent la première erreur, c'est de maîtriser un outil (WordPress ou autre) et de tout faire avec. Le projet se trouve contraint par les limites de l'outil et l'outil sort de l'usage pour lequel il est créé.
+Souvent la première erreur, c'est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l'outil et l'outil sort de l'usage pour lequel il est créé.
 Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
 
 Première règle :
 
-**On choisit la techno après avoir analysé le besoin et pas l'inverse.**
+> On choisit la techno après avoir analysé le besoin et pas l'inverse.
 
 ## Accompagnement sur les choix techniques pour votre projet web.
 
@@ -25,11 +25,13 @@ Pour faire le bon choix, il vous faut un accompagnement dès le début pour choi
 Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
 C'est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d'ajouter des fonctionnalités.
 
-Étant expert dans pas mal d'outils modernes, je peux vous conseiller pour les bons choix.
+Étant expert dans plusieurs outils de développements modernes, je peux vous conseiller pour les bons choix.
 
-Et si un site développé sur WordPress correspond au besoin du projet, très bien. Travaillons ensemble avec WordPress. [link]
+Si un développement sous WordPress correspond au besoin du projet. Travaillons ensemble avec WordPress: [Développement WordPress avancé](/services/developpement-wordpress-avance)
 
-## Frameworks Front
+Sinon, lisez la suite...
+
+## Les frameworks Front
 
 Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l'ambition en termes de trafic. Parfait ! Travaillons ensemble sur l'un de ces outils :
 
@@ -44,11 +46,12 @@ De plus, il offre plusieurs modes de rendus:
 
 Dans la plupart des cas, nous utiliserons le rendu statique hybride car c'est le mode le plus performant.
 Les pages HTML sont générées au moment du build de l'application ou à la demande.
-Si vous souhaitez plus d'infos, je vous conseille de lire les articles sur le site Double Slash [link], dans lesquels, je parle de la nouvelle version de Next.js (13).
+Si vous souhaitez plus d'infos, je vous conseille de lire les articles concernant [Next.js 13](https://double-slash.dev/articles/next-js-13-intro/) sur le site Double Slash, dans lesquels, je parle de la nouvelle version de **Next.js**.
 
 ### Nuxt.js
 
-Nuxt.js est aussi un meta-framework mais lui est construit au-dessus de Vue.js. La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
+**Nuxt.js** est aussi un meta-framework mais lui est construit au-dessus de Vue.js.
+La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
 Il offre également toutes les fonctionnalités nécessaires pour construire une application web moderne.
 Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
 
@@ -58,11 +61,21 @@ Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
 
 Nuxt.js est un framework vraiment agréable à utiliser pour le développement. Il permet d'avoir un code assez lisible et utilise toutes la puissance et la simplicité de Vue.js.
 
-### Les autres outils : Astro, Qwik, etc..
+### Astro
+
+**Astro 2.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
+Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
+
+Désormais, il permet d'avoir plusieurs mode de rendus:
+- 100% statique
+- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
+- Hybride, du statique et du rendu serveur pour les pages qui nécessitent d'analyser la visite.
+
+
+### Les autres outils : Qwik, Svelte, etc..
 
 D'autres frameworks sont à prendre en compte dans le choix :
 
-- Astro est très orienté statique et peut être un très bon choix pour un site de taille moyenne. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et donc parmi les meilleures performances de chargement dans le navigateur.
 - Qwik est encore assez nouveau mais il semble très prometteur. Il propose aussi une approche "zéro JavaScript par défaut" dans le navigateur et il est très performant par sa conception.
 - SvelteKit, lui est moins connu mais il est utilisé par de grand nom, tel que, Apple, le New York Times ou Spotify. Il propose un code très simple et concis afin d'avoir une application maintenable dans le temps.
 
@@ -83,14 +96,21 @@ Plusieurs paramètres à prendre en compte :
 Tout dépendra du besoin évidemment et de votre budget.
 Voici quelques CMS pour vous faire une idée :
 
-- Strapi (self-hosted)
+- Strapi (self-hosted ou cloud)
 - Directus (cloud ou self-hosted)
 - Prismic (cloud)
 - StoryBlock (cloud)
 - Craft CMS (self hosted)
+- WordPress en mode headless (self hosted)
 
 ## Notre prestation 
 
 Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
 Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l'expérience sur plusieurs projets.
-N'hésitez pas à nous contacter pour échanger.
+
+Nous pouvons vous proposer :
+- analyse technique de votre projet
+- accompagnements de le développement de votre projet
+- maintenance et évolution du projet
+
+N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)

@@ -59,6 +59,10 @@ export default {
           label: "Développement sous Craft CMS",
           link: "/services/developpement-sous-craft-cms",
         },
+        {
+          label: "Consultant technique pour vos projets web",
+          link: "/services/consultant-technique-web",
+        },
       ],
     },
     {

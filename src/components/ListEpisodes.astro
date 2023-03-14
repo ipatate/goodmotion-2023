@@ -1,0 +1,42 @@
+---
+import parser from "xml2js";
+const response = await fetch("https://double-slash.dev/podcast-rss-feed.xml");
+const content = await response.text();
+const data = await parser.parseStringPromise(content);
+// get last 5 from end of rss feed
+const lastFive: {
+  pubDate: string;
+  title: string[];
+  description: string;
+  link: string[];
+}[] = data.rss.channel[0].item.slice(-10);
+// order by pubDate
+lastFive.sort((a, b) => {
+  return new Date(a.pubDate[0]).getTime() - new Date(b.pubDate[0]).getTime();
+});
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+---
+
+<div>
+  <h2>Les 10 derniers épisodes du podcast Double Slash</h2>
+  <ul>
+    {
+      lastFive.map((item) => (
+        <li>
+          <h3 class="text-base">
+            <a href={item.link[0]}>{item.title[0]}</a>
+          </h3>
+          <p class="text-sm text-gray-500">
+            {new Date(item.pubDate[0]).toLocaleDateString("fr-FR", options)}
+          </p>
+          <p set:html={item.description} />
+        </li>
+      ))
+    }
+  </ul>
+</div>

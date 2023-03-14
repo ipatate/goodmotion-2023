@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PageLayout.astro
 title: Développement sous Craft CMS
-description:
+description: Craft CMS est un CMS qui permet de créer des sites professionnels. C'est un CMS qui utilise les meilleures technologies actuelles en termes de développement PHP.
 ---
 **Craft CMS est un CMS qui permet de créer des sites professionnels. C'est un CMS qui utilise les meilleures technologies actuelles en termes de développement PHP.**
 
@@ -55,3 +55,14 @@ Il existe 2 versions de licence pour utiliser Craft CMS :
 - GraphQL
 - Mode preview pour les sites statiques ou Web apps
 - Possibilité de customiser le branding de l'admin.
+
+
+## Besoin d'un développement avec Craft CMS ?
+
+Nous pouvons vous proposer :
+
+- analyse technique de votre projet
+- accompagnements de le développement de votre projet
+- maintenance et évolution du projet
+
+N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
