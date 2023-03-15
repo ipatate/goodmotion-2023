@@ -13,7 +13,7 @@ Redirect 301 /consultant-technique-web /services/consultant-technique-web
 Redirect 301 /coanimateur-podcast-double-slash /podcast
 Redirect 301 /blog/craft-cms-le-cms-qui-rend-les-gens-heureux /services/developpement-sous-craft-cms
 
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html
 
 <IfModule mod_deflate.c>
 # Insert filters / compress text, html, javascript, css, xml:

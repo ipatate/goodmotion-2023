@@ -71,7 +71,7 @@ const { color = "primary" } = Astro.props;
                 {nav.label}
               </a>
               {nav.subMenu && (
-                <ul class="group-hover:p-3 p-2 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3">
+                <ul class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3">
                   {nav.subMenu.map((sub) => {
                     return (
                       <li class="lg:px-3 py-1">

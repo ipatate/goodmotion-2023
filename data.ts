@@ -44,7 +44,7 @@ export default {
       isHome: true,
     },
     {
-      label: "Services développement",
+      label: "Services",
       link: "#",
       subMenu: [
         {
