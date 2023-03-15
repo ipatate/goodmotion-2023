@@ -9,6 +9,7 @@ specifiers:
   astro: ^2.1.3
   astro-seo: ^0.7.1
   tailwind-fluid-typography: ^1.3.0
+  tailwind-scrollbar: ^3.0.0
   tailwindcss: ^3.2.7
   xml2js: ^0.4.23
 
@@ -24,6 +25,7 @@ devDependencies:
   '@types/xml2js': 0.4.11
   astro-seo: 0.7.1
   tailwind-fluid-typography: 1.3.0_tailwindcss@3.2.7
+  tailwind-scrollbar: 3.0.0_tailwindcss@3.2.7
   xml2js: 0.4.23
 
 packages:
@@ -3344,6 +3346,15 @@ packages:
     resolution: {integrity: sha512-W6zqO8xD1FAtAOBiWArvpyI5CMzKek9tIjOmwwzDCsiEJaGvhv2WGlEaV0Sl1O5Bn5hMBHiNMdzhz/QIblvIyQ==}
     peerDependencies:
       tailwindcss: '>=1.2.0'
+    dependencies:
+      tailwindcss: 3.2.7
+    dev: true
+
+  /tailwind-scrollbar/3.0.0_tailwindcss@3.2.7:
+    resolution: {integrity: sha512-OkVRX9Q1T769vk979UZ519jhj/j/zNBHql7zPLI+tlhX+ahksYO4ZryWD29lOETDx9Wj1sw+K1OeW7W3+ECQOA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
     dependencies:
       tailwindcss: 3.2.7
     dev: true

@@ -133,9 +133,21 @@ module.exports = {
         "bg-home": "url('/assets/bg-hero.svg')",
       },
     },
+    keyframes: {
+      selected: {
+        "50%": { opacity: 0.8 },
+      },
+    },
+    animation: {
+      selected: "selected 1.8s ease-in-out infinite",
+    },
+  },
+  variants: {
+    scrollbar: ["rounded"],
   },
   plugins: [
     require("@tailwindcss/typography"),
     require("tailwind-fluid-typography"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
   ],
 };

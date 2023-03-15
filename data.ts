@@ -17,9 +17,13 @@ import ircam from "./assets/images/ircam.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
+  titleHome: "Sites web rapides et durables ! Annecy, Genève, Lausanne",
+  descriptionHome:
+    "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
   baseline: "Sites web rapides et durables !",
   heroText:
     "Développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
+  place: "Annecy, Genève, Lausanne",
   socials: [
     {
       label: "GitHub",
@@ -131,7 +135,7 @@ export default {
     {
       title: "Details SA",
       image: details,
-      place: "Geneve, Suisse",
+      place: "Genève, Suisse",
       details: "Expertise React.js",
       class: "w-16",
     },
@@ -176,6 +180,24 @@ export default {
       place: "Votre ville, votre pays",
       details: "Votre description",
       class: "w-20",
+    },
+  ],
+  services: [
+    {
+      title: "Développement web applications et sites web modernes",
+      link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+    },
+    {
+      title: "Développement WordPress avancé",
+      link: "/services/developpement-wordpress-avance",
+    },
+    {
+      title: "Développement sous Craft CMS",
+      link: "/services/developpement-sous-craft-cms",
+    },
+    {
+      title: "Consultant technique pour vos projets web",
+      link: "/services/consultant-technique-web",
     },
   ],
 };
