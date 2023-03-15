@@ -10,7 +10,6 @@ export interface Props {
 }
 
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname;
 
 const { title, description, color = "primary" } = Astro.props;
 ---
@@ -28,6 +27,7 @@ const { title, description, color = "primary" } = Astro.props;
       }}
       extend={{
         link: [
+          { rel: "canonical", href: `https://www.goodmotion.fr${pathname}` },
           { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
           {
             rel: "alternate",
