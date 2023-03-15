@@ -1,0 +1,19 @@
+---
+layout: ../layouts/PageLayout.astro
+title: Erreur 404
+description: Page introuvable
+---
+
+import { Image, Picture } from "@astrojs/image/components";
+
+## Page non trouvée !
+
+Désolé, la page que vous cherchez ne semble pas/plus exister.
+
+[Retour à l’accueil](/)
+
+<Image
+  src={import("../../assets/images/404.webp")}
+  alt="Lost in website"
+  class="max-w-full mx-auto"
+/>

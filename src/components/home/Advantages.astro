@@ -40,17 +40,17 @@ const avantages = [
   >
     {
       avantages.map((avantage, i) => (
-        <div class="flex flex-col flex-1 text-center p-4">
+        <div class="flex flex-col flex-1 text-center py-6 md:p-4">
           <img
             src={avantage.image.src}
             width={avantage.image.width}
             height={avantage.image.height}
             alt=""
-            class="w-28 h-28 mx-auto"
+            class="w-44 h-44 md:w-28 md:h-28 mx-auto"
             loading="lazy"
             decoding="async"
           />
-          <h3 class="text-sm md:text-2xl text-primary-900 font-light mt-3 md:mt-8">
+          <h3 class="text-lg md:text-2xl text-primary-900 font-light mt-3 md:mt-8">
             {avantage.title}
           </h3>
         </div>

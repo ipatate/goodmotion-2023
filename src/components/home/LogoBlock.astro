@@ -44,13 +44,13 @@ const { title, text, elements } = Astro.props;
               width={element.image.width}
               height={element.image.height}
               alt={element.title}
-              class={`${element.class} grayscale-[70%] hover:grayscale-0 transition-all duration-100 ease-in-out`}
+              class={`${element.class}`}
               loading="lazy"
               decoding="async"
             />
           </div>
           {element.place && (
-            <p class="text-xs text-gray-400 font-extralight mt-2">
+            <p class="text-xs text-gray-600 font-extralight mt-2">
               {element.place}
             </p>
           )}

@@ -109,8 +109,9 @@ Notre prestation ne commence pas lors du développement mais bien avant. Nous in
 Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l'expérience sur plusieurs projets.
 
 Nous pouvons vous proposer :
+
 - analyse technique de votre projet
-- accompagnements de le développement de votre projet
+- accompagnements pour le développement de votre projet
 - maintenance et évolution du projet
 
 N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)

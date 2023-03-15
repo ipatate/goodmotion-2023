@@ -15,11 +15,11 @@ const { color = "primary" } = Astro.props;
 <div id="navigation">
   <Burger color={color} />
   <nav
-    class="z-10 fixed lg:relative lg:bg-transparent h-0 lg:h-auto overflow-hidden lg:overflow-visible transition-all top-0 left-0 right-0 bottom-0 whitespace-nowrap"
+    class="z-10 fixed lg:relative lg:bg-transparent h-0 lg:h-auto overflow-hidden lg:overflow-visible transition-all top-0 left-0 right-0 bottom-0 whitespace-nowrap max-h-screen"
   >
     <ul
       id="navigation-menu"
-      class="flex p-3 mt-20 lg:p-0 lg:mt-0 lg:items-center flex-col lg:flex-row text-lg lg:text-base items-start"
+      class="flex p-2 mt-20 lg:p-0 lg:mt-0 lg:items-center flex-col lg:flex-row text-lg lg:text-base items-start"
     >
       {
         data.navigations.map((nav) => {
@@ -48,7 +48,7 @@ const { color = "primary" } = Astro.props;
             );
           }
           return (
-            <li class="flex flex-col group relative mx-3 my-2 lg:my-0 w-full">
+            <li class="flex flex-col group relative mx-3 my-1 lg:my-0 w-full">
               <a
                 href={nav.link}
                 title={nav.label}
@@ -71,10 +71,10 @@ const { color = "primary" } = Astro.props;
                 {nav.label}
               </a>
               {nav.subMenu && (
-                <ul class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3">
+                <ul class="group-hover:p-3 p-2 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3">
                   {nav.subMenu.map((sub) => {
                     return (
-                      <li class="lg:px-3 py-2 lg:py-1">
+                      <li class="lg:px-3 py-1">
                         <a
                           href={sub.link}
                           title={sub.label}
@@ -94,7 +94,7 @@ const { color = "primary" } = Astro.props;
         })
       }
     </ul>
-    <div class={`flex justify-center mt-20 lg:hidden text-${color}-900`}>
+    <div class={`flex justify-center mt-5 lg:hidden text-${color}-900`}>
       {
         data.socials.map((s) => (
           <a href="{s.link}" title={s.label} target="_blank" class="mx-3">
@@ -107,6 +107,6 @@ const { color = "primary" } = Astro.props;
 </div>
 <style>
   #navigation.is-open > nav {
-    @apply h-screen max-h-screen bg-slate-50;
+    @apply h-screen overflow-y-auto bg-slate-50;
   }
 </style>
