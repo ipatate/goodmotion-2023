@@ -4,12 +4,13 @@ title: A propos
 description: Développeur web depuis plus de 15 ans, j'ai accumulé une grande expérience dans la conception et le développement d’applications web et de sites web.
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import pic from "../../assets/images/pat_picture.jpg";
 
 ## Consultant, développeur, podcasteur
 
 <Image
-  src={import("../../assets/images/pat_picture.jpg")}
+  src={pic}
   alt="faramaz patrick"
   width={300}
   class="rounded-full grayscale mx-auto md:float-right md:ml-10"

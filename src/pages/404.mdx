@@ -4,7 +4,8 @@ title: Erreur 404
 description: Page introuvable
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+import pic from "../../assets/images/404.jpg";
 
 ## Page non trouvée !
 
@@ -12,8 +13,4 @@ Désolé, la page que vous cherchez ne semble pas/plus exister.
 
 [Retour à l’accueil](/)
 
-<Image
-  src={import("../../assets/images/404.webp")}
-  alt="Lost in website"
-  class="max-w-full mx-auto"
-/>
+<Image src={pic} alt="Lost in website" class="max-w-full mx-auto" />
