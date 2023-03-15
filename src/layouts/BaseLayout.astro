@@ -22,12 +22,12 @@ const { title, description, color = "primary" } = Astro.props;
     <SEO
       title={title}
       description={description}
+      canonical={`https://www.goodmotion.fr${pathname}`}
       twitter={{
         creator: "@PatrickFaramaz",
       }}
       extend={{
         link: [
-          { rel: "canonical", href: `https://www.goodmotion.fr${pathname}` },
           { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
           {
             rel: "alternate",
