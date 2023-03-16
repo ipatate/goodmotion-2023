@@ -99,10 +99,14 @@
       if (this.total) {
         this.total.href = `https://websitecarbon.com/website/${this.url}`;
       }
+      // update on load
       this.update({ co2: "-", percentage: "0" });
       this._callApi(this.dataset);
     }
 
+    /**
+     * update badge with data
+     */
     update(data: { co2?: string; percentage?: string }) {
       if (this.total) {
         this.total.innerHTML = `<strong>${
@@ -116,12 +120,37 @@
               ? this.locales.p3
               : this.locales.p4
             : ""
-        } ${data.percentage ? Math.abs(+data.percentage) : "-"}% ${
-          this.locales.p5
-        }`;
+        } <strong class="percentageNumber">${
+          data.percentage ? 0 : "-"
+        }</strong>% ${this.locales.p5}`;
+      }
+      if (data.percentage) {
+        const end = Math.abs(+data.percentage);
+        const numb = this.querySelector(".percentageNumber");
+        if (numb) {
+          numb.innerHTML = "0";
+          this.animateNumber(numb as HTMLElement, end);
+        }
       }
     }
 
+    /**
+     * animate number
+     */
+    animateNumber(target: HTMLElement, end: number, speed = 1000) {
+      const time = end / speed;
+      const current = +target.innerText;
+      if (current < end) {
+        target.innerText = Math.ceil(current + time).toString();
+        setTimeout(() => this.animateNumber(target, end, speed), 1);
+      } else {
+        target.innerText = end.toString();
+      }
+    }
+
+    /**
+     * call api and save data in localstorage
+     */
     async _callApi(dataset: WebsiteCarbonBadgeDataSet) {
       const { apiUrl, co2, percentage } = this.dataset;
       let data = localStorage.getItem(`wcb_${this.encodedUrl}`);
