@@ -78,19 +78,55 @@ const { title, text, elements } = Astro.props;
   let currentScroll: number = 0;
   const btns = document.querySelectorAll(".scrollToBtn");
 
+  // observe first and last element
+  let isStart = false;
+  let isMax = false;
+  let options = {
+    root: wrapper,
+    rootMargin: "0px",
+  };
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // is visible
+      const intersecting = entry.isIntersecting;
+      const index = (entry.target as HTMLDivElement).dataset.index;
+      // is the first
+      if (index === "0") {
+        isStart = intersecting;
+      }
+      // is the last
+      if (index === `${max - 1}`) {
+        isMax = intersecting;
+      }
+    });
+  }, options);
+
+  // observe first and last
+  if (wrapper?.children) {
+    // first and last children
+    observer.observe(wrapper?.children[0]);
+    observer.observe(wrapper?.children[wrapper?.children.length - 1]);
+  }
+
   btns.forEach((btn) => {
+    // btn previous and next
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       const btn = e.currentTarget as HTMLButtonElement;
       const move = btn?.dataset.move;
-      let nextMove =
-        move === "previous" ? currentScroll - 1 : currentScroll + 1;
-      // last children is visible
-      //   const first = wrapper?.children[0].getBoundingClientRect();
-      //   const last = wrapper?.children[max - 1].getBoundingClientRect();
-      nextMove = nextMove <= 0 ? 0 : nextMove;
-      nextMove = nextMove > max - 1 ? max : nextMove;
-      if (nextMove === currentScroll) return;
+      let nextMove = currentScroll;
+      // is not on the first element
+      if (move === "previous" && !isStart) {
+        nextMove = currentScroll - 1;
+        // back to first element
+      } else if (move === "previous" && isStart) {
+        nextMove = 0;
+      }
+      // is not on the last element
+      if (move === "next" && !isMax) {
+        nextMove = currentScroll + 1;
+      }
+      // save current scroll
       currentScroll = nextMove;
       const target: HTMLButtonElement | null = document.querySelector(
         `.scroll-element-${currentScroll}`
