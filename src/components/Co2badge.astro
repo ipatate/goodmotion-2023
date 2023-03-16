@@ -2,13 +2,13 @@
   data-api-url="https://api.websitecarbon.com/b?url="
   data-default-url="https://goodmotion.fr"
   data-lang="fr"
-  class="text-right md:max-w-7xl w-full mx-auto my-2 px-4 flex justify-end items-center space-x-1"
+  class="text-right md:max-w-7xl w-full mx-auto px-4 flex justify-end items-center space-x-2"
 >
   <div class="flex flex-col">
     <a target="_blank" rel="noopener noreferrer" href="" class="total text-sm">
-      <span>-</span>g CO<sub>2</sub>
+      <strong>-</strong>g CO<sub>2</sub>
     </a>
-    <p class="percentage text-xs"></p>
+    <p class="percentage text-xs text-green-800"></p>
   </div>
   <div class="text-green-500">
     <svg
@@ -89,10 +89,11 @@
         import.meta.env.MODE === "development"
           ? this.dataset.defaultUrl || ""
           : window.location.origin;
-
+      // remove www from url, url with www bug the api ???
+      this.url = this.url.replace(/\.www/, "");
       this.encodedUrl =
         import.meta.env.MODE === "development"
-          ? encodeURIComponent(this.dataset.defaultUrl || "")
+          ? encodeURIComponent(this.url)
           : encodeURIComponent(window.location.origin);
 
       // define total and percentage elements
@@ -101,14 +102,15 @@
       if (this.total) {
         this.total.href = `https://websitecarbon.com/website/${this.url}`;
       }
+      this.update({ co2: "-", percentage: "-" });
       this._callApi(this.dataset);
     }
 
     update(data: { co2?: string; percentage?: string }) {
       if (this.total) {
-        this.total.innerHTML = `<span>${data.co2 ? data.co2 : "-"}</span>g ${
-          this.locales.p1
-        } CO<Sub>2</Sub>/${this.locales.p2}`;
+        this.total.innerHTML = `<strong>${
+          data.co2 ? data.co2 : "-"
+        }</strong>g ${this.locales.p1} CO<Sub>2</Sub>/${this.locales.p2}`;
       }
       if (this.percentage) {
         this.percentage.innerHTML = `${
