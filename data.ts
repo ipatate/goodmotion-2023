@@ -22,7 +22,7 @@ export default {
     "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
   baseline: "Sites web rapides et durables !",
   heroText:
-    "Développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
+    "Micro agence spécialisée dans le développement de site web et d'applications web modernes.<br />Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.",
   place: "Annecy, Genève, Lausanne",
   socials: [
     {
