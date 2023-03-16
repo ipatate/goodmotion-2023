@@ -1,4 +1,7 @@
 ---
+import card from "../../assets/images/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg";
+import favicon from "../../assets/images/favicon.svg";
+
 type Props = {
   title: string;
   description: string;
@@ -14,14 +17,15 @@ const { title, description } = Astro.props;
 <meta name="description" content={description} />
 <meta content={title} name="twitter:title" />
 <meta content={description} name="twitter:description" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href={favicon.src} />
 <meta content="@PatrickFaramaz" name="twitter:site" />
 <meta content="@PatrickFaramaz" name="twitter:creator" />
+<meta name="twitter:image" content={card.src} />
 <meta content={title} name="og:title" />
 <meta content={description} name="og:description" />
 <meta content="website" name="og:type" />
-<meta content="https://goodmotion.fr/favicon.svg" name="og:image" />
-<meta content="https://goodmotion.fr" name="og:url" />
+<meta property="og:image" content={card.src} />
+<meta content={favicon.src} name="og:image" />
 <meta content="Goodmotion" name="og:site_name" />
 <meta content="fr" name="og:locale" />
 <link
