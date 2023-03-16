@@ -1,0 +1,120 @@
+<co2-badge
+  data-api-url="https://api.websitecarbon.com/b?url="
+  data-default-url="https://goodmotion.fr"
+  data-lang="fr"
+>
+  <a target="_blank" rel="noopener noreferrer" href="" class="total">
+    <span>-</span>g CO<sub>2</sub>
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://websitecarbon.com">
+    Website Carbon
+  </a>
+  <p class="percentage"></p>
+</co2-badge>
+
+<script>
+  // thanks to https://github.com/clement-joye/react-websitecarbon-badge
+  type WebsiteCarbonBadgeDataSet = {
+    dark?: boolean;
+    co2?: string;
+    percentage?: string;
+    lang?: keyof typeof dict;
+    pathname?: string;
+  };
+
+  const dict = {
+    en: {
+      p1: "of",
+      p2: "view",
+      p3: "Cleaner than",
+      p4: "Dirtier than",
+      p5: "of pages tested",
+    },
+    fr: {
+      p1: "de",
+      p2: "vue",
+      p3: "Page web plus légère que",
+      p4: "Page web plus lourde que",
+      p5: "des pages testées",
+    },
+  };
+
+  // Define the behaviour for our new type of HTML element.
+  class Co2badge extends HTMLElement {
+    url: string;
+    lang: keyof typeof dict;
+    locales: { p1: string; p2: string; p3: string; p4: string; p5: string };
+    total: HTMLAnchorElement | null;
+    percentage: HTMLParagraphElement | null;
+
+    constructor() {
+      super();
+
+      this.lang =
+        (this.dataset.lang as keyof typeof dict) || ("en" as keyof typeof dict);
+      this.locales = dict[this.lang];
+      this.url =
+        import.meta.env.MODE === "development"
+          ? encodeURIComponent(this.dataset.defaultUrl || "")
+          : encodeURIComponent(window.location.origin);
+
+      this.total = this.querySelector(".total");
+      this.percentage = this.querySelector(".percentage");
+      if (this.total) {
+        this.total.href = `https://websitecarbon.com/website/${this.url}`;
+      }
+      this._callApi(this.dataset);
+    }
+
+    update(data: { co2?: string; percentage?: string }) {
+      if (this.total) {
+        this.total.innerHTML = `<span>${data.co2 ? data.co2 : "-"}</span>g ${
+          this.locales.p1
+        } CO<Sub>2</Sub>/${this.locales.p2}`;
+      }
+      if (this.percentage) {
+        this.percentage.innerHTML = `${
+          data.percentage
+            ? +data.percentage > 0
+              ? this.locales.p3
+              : this.locales.p4
+            : ""
+        } ${data.percentage ? Math.abs(+data.percentage) : "-"}% ${
+          this.locales.p5
+        }`;
+      }
+    }
+
+    async _callApi(dataset: WebsiteCarbonBadgeDataSet) {
+      const { apiUrl, co2, percentage } = this.dataset;
+      let data = localStorage.getItem(`wcb_${this.url}`);
+      if (co2 && percentage) {
+        this.update({ co2: co2, percentage: percentage });
+      } else if (data) {
+        let parsed = JSON.parse(data);
+        this.update({ co2: parsed.c, percentage: parsed.p });
+      } else {
+        if (!this.url) {
+          throw Error("Website carbon: url is null");
+        }
+
+        try {
+          const res = await fetch(apiUrl + this.url);
+
+          if (!res.ok) throw Error(JSON.stringify(await res.json()));
+          const data = await res.json();
+
+          localStorage.setItem(`wcb_${this.url}`, JSON.stringify(data));
+
+          this.update({ co2: data.c, percentage: data.p });
+        } catch (e) {
+          console.error(e);
+          localStorage.removeItem(`wcb_${this.url}`);
+        }
+      }
+    }
+  }
+
+  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
+  customElements.define("co2-badge", Co2badge);
+</script>
