@@ -20,12 +20,12 @@ const { title, description } = Astro.props;
 <link rel="icon" type="image/svg+xml" href={favicon.src} />
 <meta content="@PatrickFaramaz" name="twitter:site" />
 <meta content="@PatrickFaramaz" name="twitter:creator" />
-<meta name="twitter:image" content={card.src} />
+<meta name="twitter:image" content={`https://www.goodmotion.fr${card.src}`} />
 <meta content={title} name="og:title" />
 <meta content={description} name="og:description" />
 <meta content="website" name="og:type" />
 <meta property="og:image" content={card.src} />
-<meta content={favicon.src} name="og:image" />
+<meta content={`https://www.goodmotion.fr${card.src}`} name="og:image" />
 <meta content="Goodmotion" name="og:site_name" />
 <meta content="fr" name="og:locale" />
 <link
