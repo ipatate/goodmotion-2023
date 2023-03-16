@@ -123,16 +123,17 @@
               : this.locales.p4
             : ""
         } <strong class="percentageNumber">${
-          data.percentage ? 0 : "-"
+          data.percentage ? Math.abs(+data.percentage) : "-"
         }</strong>% ${this.locales.p5}`;
       }
+      // disable because add CLS
       if (data.percentage) {
-        const end = Math.abs(+data.percentage);
-        const numb = this.querySelector(".percentageNumber");
-        if (numb) {
-          numb.innerHTML = "0";
-          this.animateNumber(numb as HTMLElement, end);
-        }
+        // const end = Math.abs(+data.percentage);
+        // const numb = this.querySelector(".percentageNumber");
+        // if (numb) {
+        //   numb.innerHTML = "0";
+        //   this.animateNumber(numb as HTMLElement, end);
+        // }
       }
     }
 
