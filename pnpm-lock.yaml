@@ -6,7 +6,6 @@ specifiers:
   '@tailwindcss/typography': ^0.5.9
   '@types/xml2js': ^0.4.11
   astro: ^2.1.3
-  astro-seo: ^0.7.1
   sharp: ^0.31.3
   tailwind-fluid-typography: ^1.3.0
   tailwind-scrollbar: ^3.0.0
@@ -23,7 +22,6 @@ dependencies:
 devDependencies:
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
   '@types/xml2js': 0.4.11
-  astro-seo: 0.7.1
   tailwind-fluid-typography: 1.3.0_tailwindcss@3.2.7
   tailwind-scrollbar: 3.0.0_tailwindcss@3.2.7
   xml2js: 0.4.23
@@ -964,10 +962,6 @@ packages:
     resolution: {integrity: sha512-97a+l2LBU3Op3bBQEff79i/E4jMD2ZLFD8rHx9B6mXyB2uQwhJQYfiDqUwtfjF4QA1F2qs//N6Cw8LetMbQjcw==}
     hasBin: true
     dev: false
-
-  /astro-seo/0.7.1:
-    resolution: {integrity: sha512-8Yo1nQrl2iB5zj+VUAHrvGIck8bZ4WAmXQgJOeF9FuAZGQD5qK6DtSZaRbpBXsFfZYHA6tE8pjs3btHhLbC1zQ==}
-    dev: true
 
   /astro/2.1.3_sharp@0.31.3:
     resolution: {integrity: sha512-5LFo/ixDXs84tgrSbzz0X5c7nzLfkag7w4tgOpBRL/DkveP83v+nSe3KjqwYLPL5vNY9UvryKHsfC0uu4TQz0g==}

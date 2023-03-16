@@ -1,0 +1,37 @@
+---
+type Props = {
+  title: string;
+  description: string;
+};
+
+const pathname = new URL(Astro.request.url).pathname;
+
+const { title, description } = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="robots" content="index, follow" />
+<meta name="description" content={description} />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta content="@PatrickFaramaz" name="twitter:site" />
+<meta content="@PatrickFaramaz" name="twitter:creator" />
+<meta content={title} name="og:title" />
+<meta content={description} name="og:description" />
+<meta content="website" name="og:type" />
+<meta content="https://goodmotion.fr/favicon.svg" name="og:image" />
+<meta content="https://goodmotion.fr" name="og:url" />
+<meta content="Goodmotion" name="og:site_name" />
+<meta content="fr" name="og:locale" />
+<link
+  rel="alternate"
+  hreflang="fr-FR"
+  href={`https://www.goodmotion.fr${pathname}`}
+/>
+<link
+  rel="alternate"
+  hreflang="fr-CH"
+  href=`https://www.goodmotion.ch${pathname}`
+/>
+<link rel="alternate" hreflang="x-default" href="https://www.goodmotion.fr" />
