@@ -17,8 +17,9 @@
       height="32"
       viewBox="0 0 48 48"
       ><g
+        class="stroke-primary-900"
         fill="none"
-        stroke="#000"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="4"
@@ -42,7 +43,6 @@
 <script>
   // thanks to https://github.com/clement-joye/react-websitecarbon-badge for exemple
   type WebsiteCarbonBadgeDataSet = {
-    dark?: boolean;
     co2?: string;
     percentage?: string;
     lang?: keyof typeof dict;
@@ -91,10 +91,7 @@
           : window.location.origin;
       // remove www from url, url with www bug the api ???
       this.url = this.url.replace(/\.www/, "");
-      this.encodedUrl =
-        import.meta.env.MODE === "development"
-          ? encodeURIComponent(this.url)
-          : encodeURIComponent(window.location.origin);
+      this.encodedUrl = encodeURIComponent(this.url);
 
       // define total and percentage elements
       this.total = this.querySelector(".total");
