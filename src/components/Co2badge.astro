@@ -2,18 +2,45 @@
   data-api-url="https://api.websitecarbon.com/b?url="
   data-default-url="https://goodmotion.fr"
   data-lang="fr"
+  class="text-right md:max-w-7xl w-full mx-auto my-2 px-4 flex justify-end items-center space-x-1"
 >
-  <a target="_blank" rel="noopener noreferrer" href="" class="total">
-    <span>-</span>g CO<sub>2</sub>
-  </a>
-  <a target="_blank" rel="noopener noreferrer" href="https://websitecarbon.com">
-    Website Carbon
-  </a>
-  <p class="percentage"></p>
+  <div class="flex flex-col">
+    <a target="_blank" rel="noopener noreferrer" href="" class="total text-sm">
+      <span>-</span>g CO<sub>2</sub>
+    </a>
+    <p class="percentage text-xs"></p>
+  </div>
+  <div class="text-green-500">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 48 48"
+      ><g
+        fill="none"
+        stroke="#000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="4"
+        ><path
+          d="M42.3357 16C39.2495 8.93638 32.2012 4 23.9999 4C15.7986 4 8.75029 8.93638 5.66406 16"
+        ></path><path
+          fill="currentColor"
+          d="M24 14C20.2973 17.6298 18 22.6881 18 28.2829C18 28.7833 18.0184 29.2795 18.0545 29.7708C21.7253 33.3967 24 38.4327 24 44C24 38.4327 26.2747 33.3967 29.9455 29.7708C29.9816 29.2795 30 28.7833 30 28.2829C30 22.6881 27.7027 17.6298 24 14Z"
+        ></path><path
+          fill="currentColor"
+          d="M4 24C4 35.0457 12.9543 44 24 44C24 38.4327 21.7253 33.3967 18.0545 29.7708C14.4424 26.2027 9.47841 24 4 24Z"
+        ></path><path
+          fill="currentColor"
+          d="M44 24C44 35.0457 35.0457 44 24 44C24 38.4327 26.2747 33.3967 29.9455 29.7708C33.5576 26.2027 38.5216 24 44 24Z"
+        ></path></g
+      ></svg
+    >
+  </div>
 </co2-badge>
 
 <script>
-  // thanks to https://github.com/clement-joye/react-websitecarbon-badge
+  // thanks to https://github.com/clement-joye/react-websitecarbon-badge for exemple
   type WebsiteCarbonBadgeDataSet = {
     dark?: boolean;
     co2?: string;
@@ -42,6 +69,7 @@
   // Define the behaviour for our new type of HTML element.
   class Co2badge extends HTMLElement {
     url: string;
+    encodedUrl: string;
     lang: keyof typeof dict;
     locales: { p1: string; p2: string; p3: string; p4: string; p5: string };
     total: HTMLAnchorElement | null;
@@ -49,15 +77,25 @@
 
     constructor() {
       super();
-
+      // define lang
       this.lang =
         (this.dataset.lang as keyof typeof dict) || ("en" as keyof typeof dict);
+
+      // define locales for lang
       this.locales = dict[this.lang];
+
+      // define url and use default if in dev mode
       this.url =
+        import.meta.env.MODE === "development"
+          ? this.dataset.defaultUrl || ""
+          : window.location.origin;
+
+      this.encodedUrl =
         import.meta.env.MODE === "development"
           ? encodeURIComponent(this.dataset.defaultUrl || "")
           : encodeURIComponent(window.location.origin);
 
+      // define total and percentage elements
       this.total = this.querySelector(".total");
       this.percentage = this.querySelector(".percentage");
       if (this.total) {
@@ -87,34 +125,36 @@
 
     async _callApi(dataset: WebsiteCarbonBadgeDataSet) {
       const { apiUrl, co2, percentage } = this.dataset;
-      let data = localStorage.getItem(`wcb_${this.url}`);
+      let data = localStorage.getItem(`wcb_${this.encodedUrl}`);
+      // dataset co2 and percentage are priority
       if (co2 && percentage) {
         this.update({ co2: co2, percentage: percentage });
+        // if data is in localstorage, use it
       } else if (data) {
         let parsed = JSON.parse(data);
         this.update({ co2: parsed.c, percentage: parsed.p });
+        // else call api
       } else {
-        if (!this.url) {
+        if (!this.encodedUrl) {
           throw Error("Website carbon: url is null");
         }
 
         try {
-          const res = await fetch(apiUrl + this.url);
+          const res = await fetch(apiUrl + this.encodedUrl);
 
           if (!res.ok) throw Error(JSON.stringify(await res.json()));
           const data = await res.json();
-
-          localStorage.setItem(`wcb_${this.url}`, JSON.stringify(data));
-
+          // save data in localstorage
+          localStorage.setItem(`wcb_${this.encodedUrl}`, JSON.stringify(data));
+          // update badge
           this.update({ co2: data.c, percentage: data.p });
         } catch (e) {
           console.error(e);
-          localStorage.removeItem(`wcb_${this.url}`);
+          localStorage.removeItem(`wcb_${this.encodedUrl}`);
         }
       }
     }
   }
 
-  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
   customElements.define("co2-badge", Co2badge);
 </script>
