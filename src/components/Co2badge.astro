@@ -90,7 +90,7 @@
           ? this.dataset.defaultUrl || ""
           : window.location.origin;
       // remove www from url, url with www bug the api ???
-      this.url = this.url.replace(/\.www/, "");
+      this.url = this.url.replace(/\www./, "");
       this.encodedUrl = encodeURIComponent(this.url);
 
       // define total and percentage elements
@@ -99,7 +99,7 @@
       if (this.total) {
         this.total.href = `https://websitecarbon.com/website/${this.url}`;
       }
-      this.update({ co2: "-", percentage: "-" });
+      this.update({ co2: "-", percentage: "0" });
       this._callApi(this.dataset);
     }
 
