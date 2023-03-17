@@ -1,0 +1,191 @@
+<co2-badge
+  data-api-url="https://api.websitecarbon.com/b?url="
+  data-default-url="https://goodmotion.fr"
+  data-lang="fr"
+  data-co2="0.04"
+  data-percentage="96"
+  class="text-right md:max-w-7xl w-full mx-auto px-4 flex justify-end items-center space-x-2"
+>
+  <div class="flex flex-col">
+    <a target="_blank" rel="noopener noreferrer" href="" class="total text-sm">
+      <strong>-</strong>g CO<sub>2</sub>
+    </a>
+    <p class="percentage text-xs text-green-800"></p>
+  </div>
+  <div class="text-green-500">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 48 48"
+      ><g
+        class="stroke-primary-900"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="4"
+        ><path
+          d="M42.3357 16C39.2495 8.93638 32.2012 4 23.9999 4C15.7986 4 8.75029 8.93638 5.66406 16"
+        ></path><path
+          fill="currentColor"
+          d="M24 14C20.2973 17.6298 18 22.6881 18 28.2829C18 28.7833 18.0184 29.2795 18.0545 29.7708C21.7253 33.3967 24 38.4327 24 44C24 38.4327 26.2747 33.3967 29.9455 29.7708C29.9816 29.2795 30 28.7833 30 28.2829C30 22.6881 27.7027 17.6298 24 14Z"
+        ></path><path
+          fill="currentColor"
+          d="M4 24C4 35.0457 12.9543 44 24 44C24 38.4327 21.7253 33.3967 18.0545 29.7708C14.4424 26.2027 9.47841 24 4 24Z"
+        ></path><path
+          fill="currentColor"
+          d="M44 24C44 35.0457 35.0457 44 24 44C24 38.4327 26.2747 33.3967 29.9455 29.7708C33.5576 26.2027 38.5216 24 44 24Z"
+        ></path></g
+      ></svg
+    >
+  </div>
+</co2-badge>
+
+<script>
+  // thanks to https://github.com/clement-joye/react-websitecarbon-badge for exemple
+  type WebsiteCarbonBadgeDataSet = {
+    co2?: string;
+    percentage?: string;
+    lang?: keyof typeof dict;
+    pathname?: string;
+  };
+
+  const dict = {
+    en: {
+      p1: "of",
+      p2: "view",
+      p3: "Cleaner than",
+      p4: "Dirtier than",
+      p5: "of pages tested",
+    },
+    fr: {
+      p1: "de",
+      p2: "vue",
+      p3: "Page web plus légère que",
+      p4: "Page web plus lourde que",
+      p5: "des pages testées",
+    },
+  };
+
+  // Define the behaviour for our new type of HTML element.
+  class Co2badge extends HTMLElement {
+    url: string;
+    encodedUrl: string;
+    lang: keyof typeof dict;
+    locales: { p1: string; p2: string; p3: string; p4: string; p5: string };
+    total: HTMLAnchorElement | null;
+    percentage: HTMLParagraphElement | null;
+
+    constructor() {
+      super();
+      // define lang
+      this.lang =
+        (this.dataset.lang as keyof typeof dict) || ("en" as keyof typeof dict);
+
+      // define locales for lang
+      this.locales = dict[this.lang];
+
+      // define url and use default if in dev mode
+      this.url =
+        import.meta.env.MODE === "development"
+          ? this.dataset.defaultUrl || ""
+          : window.location.origin;
+      // remove www from url, url with www bug the api ???
+      this.url = this.url.replace(/\www./, "");
+      this.encodedUrl = encodeURIComponent(this.url);
+
+      // define total and percentage elements
+      this.total = this.querySelector(".total");
+      this.percentage = this.querySelector(".percentage");
+      if (this.total) {
+        this.total.href = `https://websitecarbon.com/website/${this.url}`;
+      }
+      // update on load
+      this.update({ co2: "-", percentage: "0" });
+      this._callApi(this.dataset);
+    }
+
+    /**
+     * update badge with data
+     */
+    update(data: { co2?: string; percentage?: string }) {
+      if (this.total) {
+        this.total.innerHTML = `<strong>${
+          data.co2 ? data.co2 : "-"
+        }</strong>g ${this.locales.p1} CO<Sub>2</Sub>/${this.locales.p2}`;
+      }
+      if (this.percentage) {
+        this.percentage.innerHTML = `${
+          data.percentage
+            ? +data.percentage > 0
+              ? this.locales.p3
+              : this.locales.p4
+            : ""
+        } <strong class="percentageNumber">${
+          data.percentage ? Math.abs(+data.percentage) : "-"
+        }</strong>% ${this.locales.p5}`;
+      }
+      // disable because add CLS
+      if (data.percentage) {
+        // const end = Math.abs(+data.percentage);
+        // const numb = this.querySelector(".percentageNumber");
+        // if (numb) {
+        //   numb.innerHTML = "0";
+        //   this.animateNumber(numb as HTMLElement, end);
+        // }
+      }
+    }
+
+    /**
+     * animate number
+     */
+    animateNumber(target: HTMLElement, end: number, speed = 1000) {
+      const time = end / speed;
+      const current = +target.innerText;
+      if (current < end) {
+        target.innerText = Math.ceil(current + time).toString();
+        setTimeout(() => this.animateNumber(target, end, speed), 1);
+      } else {
+        target.innerText = end.toString();
+      }
+    }
+
+    /**
+     * call api and save data in localstorage
+     */
+    async _callApi(dataset: WebsiteCarbonBadgeDataSet) {
+      const { apiUrl, co2, percentage } = this.dataset;
+      let data = localStorage.getItem(`wcb_${this.encodedUrl}`);
+      // dataset co2 and percentage are priority
+      if (co2 && percentage) {
+        this.update({ co2: co2, percentage: percentage });
+        // if data is in localstorage, use it
+      } else if (data) {
+        let parsed = JSON.parse(data);
+        this.update({ co2: parsed.c, percentage: parsed.p });
+        // else call api
+      } else {
+        if (!this.encodedUrl) {
+          throw Error("Website carbon: url is null");
+        }
+
+        try {
+          const res = await fetch(apiUrl + this.encodedUrl);
+
+          if (!res.ok) throw Error(JSON.stringify(await res.json()));
+          const data = await res.json();
+          // save data in localstorage
+          localStorage.setItem(`wcb_${this.encodedUrl}`, JSON.stringify(data));
+          // update badge
+          this.update({ co2: data.c, percentage: data.p });
+        } catch (e) {
+          console.error(e);
+          localStorage.removeItem(`wcb_${this.encodedUrl}`);
+        }
+      }
+    }
+  }
+
+  customElements.define("co2-badge", Co2badge);
+</script>

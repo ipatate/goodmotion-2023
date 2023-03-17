@@ -5,13 +5,33 @@ import favicon from "../../assets/images/favicon.svg";
 type Props = {
   title: string;
   description: string;
+  color?: string;
 };
 
 const pathname = new URL(Astro.request.url).pathname;
 
 const SITE_URL = import.meta.env.SITE_URL;
 
-const { title, description } = Astro.props;
+const { title, description, color = "primary" } = Astro.props;
+
+let themeColor = "#08556C";
+switch (color) {
+  case "casper":
+    themeColor = "#424d66";
+    break;
+  case "summer-green":
+    themeColor = "#22322d";
+    break;
+  case "alto":
+    themeColor = "#4e4e4e";
+    break;
+  case "secondary":
+    themeColor = "#6b3d23";
+    break;
+  default:
+    themeColor = "#08556C";
+    break;
+}
 ---
 
 <title>{title}</title>
@@ -30,6 +50,7 @@ const { title, description } = Astro.props;
 <meta content={`${SITE_URL}${card.src}`} name="og:image" />
 <meta content="Goodmotion" name="og:site_name" />
 <meta content="fr" name="og:locale" />
+<meta name="theme-color" content={themeColor} />
 <link
   rel="alternate"
   hreflang="fr-FR"
