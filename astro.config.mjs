@@ -7,11 +7,11 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   experimental: {
-    assets: true
+    assets: true,
   },
   image: {
-    service: "astro/assets/services/sharp"
+    service: "astro/assets/services/sharp",
   },
-  site: 'https://www.goodmotion.fr',
-  integrations: [tailwind(), mdx(), sitemap()]
+  site: import.meta.env.SITE_URL || "https://www.goodmotion.fr",
+  integrations: [tailwind(), mdx(), sitemap()],
 });

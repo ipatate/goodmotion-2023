@@ -26,7 +26,7 @@ const { title, description } = Astro.props;
 <meta content={title} name="og:title" />
 <meta content={description} name="og:description" />
 <meta content="website" name="og:type" />
-<meta property="og:image" content={card.src} />
+<meta property="og:image" content={`${SITE_URL}${card.src}`} />
 <meta content={`${SITE_URL}${card.src}`} name="og:image" />
 <meta content="Goodmotion" name="og:site_name" />
 <meta content="fr" name="og:locale" />
@@ -41,3 +41,4 @@ const { title, description } = Astro.props;
   href=`https://www.goodmotion.ch${pathname}`
 />
 <link rel="alternate" hreflang="x-default" href="https://www.goodmotion.fr" />
+<link rel="sitemap" href="/sitemap-index.xml" />

@@ -5,9 +5,10 @@
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
-        "build": "astro build",
+        "build": "astro build && node robots.mjs",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "robots": "node robots.mjs"
     },
     "dependencies": {
         "@astrojs/mdx": "^0.18.1",
