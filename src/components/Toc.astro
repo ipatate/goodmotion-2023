@@ -1,31 +1,34 @@
 ---
 type Props = {
   headings: { depth: number; slug: string; text: string }[];
+  color?: Color;
 };
 
-const { headings } = Astro.props;
+const { color = "primary", headings } = Astro.props;
 ---
 
 <div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc">
   <button
-    class="text-primary-900 bg-slate-100 rounded-full shadow-md p-2"
+    class={`text-${color}-900 bg-alto-100 relative  rounded-full shadow-md p-2 w-11 h-11`}
     aria-label="ouvrir le menu de navigation"
-    ><svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      ><path
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h10M4 18h14"></path></svg
-    ></button
   >
+    <span
+      class="absolute block transition-colors duration-150 ease-in-out w-[23.5px] h-[19px] top-3.5 left-[9px]"
+    >
+      <span
+        class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all top-0 opacity-100 right-0 rotate-0 rounded-md`}
+      ></span>
+      <span
+        class={`absolute h-0.5 bg-${color}-900 w-10/12 transition-all top-[8.5px] opacity-100 right-0 rotate-0 rounded-md`}
+      ></span>
+      <span
+        class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all bottom-0 opacity-100 right-0 rotate-0 rounded-md`}
+      >
+      </span>
+    </span>
+  </button>
   <div
-    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
+    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md top-16 right-0 text-left toc-nav"
   >
     {
       headings.map((h) => (
@@ -40,41 +43,68 @@ const { headings } = Astro.props;
       ))
     }
   </div>
-</div>
-<style>
-  .open-toc.is-active > button {
-    @apply text-primary-700;
-  }
-  .open-toc.is-active > div {
-    @apply max-h-screen;
-  }
-</style>
-<script>
-  document.querySelector(".open-toc")?.addEventListener("click", (e) => {
-    const target = e.currentTarget as HTMLElement;
-    if (!target) return;
-    target.classList.toggle("is-active");
-  });
-  // click out .open-top
-  document.addEventListener("click", (e) => {
-    const target = e.target as HTMLElement;
-    if (!target) return;
-    if (target.closest(".open-toc")) return;
-    document.querySelector(".open-toc")?.classList.remove("is-active");
-  });
 
-  // smooth scroll to anchor
-  const anchors = document.querySelectorAll('a[href*="#"]');
-  anchors.forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = e.currentTarget as HTMLAnchorElement;
+  <style>
+    .open-toc.is-active > button {
+      @apply text-primary-700;
+    }
+    .open-toc.is-active div.toc-nav {
+      @apply max-h-screen;
+    }
+
+    .open-toc.is-active > button > span span:nth-child(1) {
+      @apply top-[8px] rotate-45;
+    }
+    .open-toc.is-active > button > span span:nth-child(2) {
+      @apply opacity-0 -right-16;
+    }
+    .open-toc.is-active > button > span span:nth-child(3) {
+      @apply top-[8px] -rotate-45;
+    }
+  </style>
+  <script>
+    // detect if .open-toc is at the bottom of viewport or not
+    const openToc = document.querySelector(".open-toc");
+
+    // const observer = new IntersectionObserver(
+    //   (entries) => {
+    //     entries.forEach((entry) => {
+    //       if (entry.isIntersecting) {
+    //         openToc?.classList.add("is-bottom");
+    //       } else {
+    //         openToc?.classList.remove("is-bottom");
+    //       }
+    //     });
+    //   }
+    //   //   { threshold: 1 }
+    // );
+    // if (openToc) observer.observe(openToc);
+    openToc?.addEventListener("click", (e) => {
+      const target = e.currentTarget as HTMLElement;
       if (!target) return;
-      const href = target.getAttribute("href");
-      if (!href) return;
-      document.querySelector(href)?.scrollIntoView({
-        behavior: "smooth",
+      target.classList.toggle("is-active");
+    });
+    // click out .open-top
+    document.addEventListener("click", (e) => {
+      const target = e.target as HTMLElement;
+      if (!target) return;
+      if (target.closest(".open-toc")) return;
+      document.querySelector(".open-toc")?.classList.remove("is-active");
+    });
+
+    // smooth scroll to anchor
+    const anchors = document.querySelectorAll('a[href*="#"]');
+    anchors.forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = e.currentTarget as HTMLAnchorElement;
+        if (!target) return;
+        const href = target.getAttribute("href");
+        if (!href) return;
+        document.querySelector(href)?.scrollIntoView({
+          behavior: "smooth",
+        });
       });
     });
-  });
-</script>
+  </script>
+</div>
