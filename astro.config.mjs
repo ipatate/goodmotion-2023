@@ -6,6 +6,8 @@ import mdx from "@astrojs/mdx";
 
 import sitemap from "@astrojs/sitemap";
 
+console.log(SITE_URL);
+
 // https://astro.build/config
 export default defineConfig({
   experimental: {
