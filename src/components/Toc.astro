@@ -6,8 +6,11 @@ type Props = {
 const { headings } = Astro.props;
 ---
 
-<div class="sticky top-5 right-0 group -mt-14 ml-auto h-8 w-20">
-  <button class="text-primary-900 bg-slate-100 rounded-full shadow-md p-2"
+<div class="sticky top-5 right-0 group -mt-14 ml-auto h-10 w-12">
+  <button
+    class="text-primary-900 bg-slate-100 rounded-full shadow-md pb-20"
+    aria-label="ouvrir le menu de navigation"
+    type="button"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
       width="32"
@@ -23,7 +26,7 @@ const { headings } = Astro.props;
     ></button
   >
   <div
-    class="max-w-full w-auto min-w-[26rem] md:max-w-md group-hover:max-h-screen flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
+    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md group-hover:max-h-screen flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
   >
     {
       headings.map((h) => (
