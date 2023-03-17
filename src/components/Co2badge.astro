@@ -9,7 +9,7 @@ const SITE_URL = import.meta.env.SITE_URL;
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href={`https://websitecarbon.com/website/${SITE_URL}`}
+      href={`https://websitecarbon.com/website/${SITE_URL.replace("www.", "")}`}
       class="total text-sm"
     >
       <strong>0.04</strong>g de CO<sub>2</sub>/vue
