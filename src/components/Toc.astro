@@ -7,9 +7,11 @@ type Props = {
 const { color = "primary", headings } = Astro.props;
 ---
 
-<div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc">
+<div
+  class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc is-bottom"
+>
   <button
-    class={`text-${color}-900 bg-casper-100 relative  rounded-full shadow-md p-2 w-12 h-12`}
+    class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12`}
     aria-label="ouvrir le menu de navigation"
   >
     <span
@@ -28,7 +30,7 @@ const { color = "primary", headings } = Astro.props;
     </span>
   </button>
   <div
-    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md top-16 right-0 text-left toc-nav"
+    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left toc-nav"
   >
     {
       headings.map((h) => (
@@ -51,6 +53,12 @@ const { color = "primary", headings } = Astro.props;
     .open-toc.is-active div.toc-nav {
       @apply max-h-screen;
     }
+    .open-toc div.toc-nav {
+      @apply top-14;
+    }
+    .open-toc.is-bottom div.toc-nav {
+      @apply -translate-y-full -top-1;
+    }
 
     .open-toc.is-active > button > span span:nth-child(1) {
       @apply top-[9px] rotate-45;
@@ -66,19 +74,31 @@ const { color = "primary", headings } = Astro.props;
     // detect if .open-toc is at the bottom of viewport or not
     const openToc = document.querySelector(".open-toc");
 
-    // const observer = new IntersectionObserver(
-    //   (entries) => {
-    //     entries.forEach((entry) => {
-    //       if (entry.isIntersecting) {
-    //         openToc?.classList.add("is-bottom");
-    //       } else {
-    //         openToc?.classList.remove("is-bottom");
-    //       }
-    //     });
-    //   }
-    //   //   { threshold: 1 }
-    // );
-    // if (openToc) observer.observe(openToc);
+    const debounce = (callback: Function, wait: number) => {
+      let timeoutId: number | undefined;
+      return (...args: any) => {
+        window.clearTimeout(timeoutId);
+        timeoutId = window.setTimeout(() => {
+          callback.apply(null, args);
+        }, wait);
+      };
+    };
+
+    window.addEventListener(
+      "scroll",
+      debounce(() => {
+        // get position top .openToc
+        const openTocTop = openToc?.getBoundingClientRect().top;
+        // get viewport height
+        const vh = window.innerHeight;
+        if (openTocTop && openTocTop > vh / 2) {
+          openToc?.classList.add("is-bottom");
+        } else {
+          openToc?.classList.remove("is-bottom");
+        }
+      }, 200)
+    );
+
     openToc?.addEventListener("click", (e) => {
       const target = e.currentTarget as HTMLElement;
       if (!target) return;
