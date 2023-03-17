@@ -50,16 +50,19 @@ const { headings } = Astro.props;
   }
 </style>
 <script>
-  document.querySelector(".open-toc")?.addEventListener("mouseover", (e) => {
+  document.querySelector(".open-toc")?.addEventListener("click", (e) => {
     const target = e.currentTarget as HTMLElement;
     if (!target) return;
-    target.classList.add("is-active");
+    target.classList.toggle("is-active");
   });
-  document.querySelector(".open-toc")?.addEventListener("mouseout", (e) => {
-    const target = e.currentTarget as HTMLElement;
+  // click out .open-top
+  document.addEventListener("click", (e) => {
+    const target = e.target as HTMLElement;
     if (!target) return;
-    target.classList.remove("is-active");
+    if (target.closest(".open-toc")) return;
+    document.querySelector(".open-toc")?.classList.remove("is-active");
   });
+
   // smooth scroll to anchor
   const anchors = document.querySelectorAll('a[href*="#"]');
   anchors.forEach((anchor) => {
