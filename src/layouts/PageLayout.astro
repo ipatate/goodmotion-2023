@@ -22,7 +22,7 @@ const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
   <div
     class="prose prose-lg md:prose-xl mx-auto pt-5 pb-20 px-4 md:px-10 max-w-6xl page-content relative"
   >
-    {frontmatter.showToc && <Toc headings={headings} />}
+    {frontmatter.showToc && <Toc headings={headings} color={randomColor} />}
     <slot />
   </div>
 </BaseLayout>

@@ -9,17 +9,17 @@ const { color = "primary", headings } = Astro.props;
 
 <div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc">
   <button
-    class={`text-${color}-900 bg-alto-100 relative  rounded-full shadow-md p-2 w-11 h-11`}
+    class={`text-${color}-900 bg-casper-100 relative  rounded-full shadow-md p-2 w-12 h-12`}
     aria-label="ouvrir le menu de navigation"
   >
     <span
-      class="absolute block transition-colors duration-150 ease-in-out w-[23.5px] h-[19px] top-3.5 left-[9px]"
+      class="absolute block transition-colors duration-150 ease-in-out w-[24.5px] h-[20px] top-[15px] left-[11px]"
     >
       <span
         class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all top-0 opacity-100 right-0 rotate-0 rounded-md`}
       ></span>
       <span
-        class={`absolute h-0.5 bg-${color}-900 w-10/12 transition-all top-[8.5px] opacity-100 right-0 rotate-0 rounded-md`}
+        class={`absolute h-0.5 bg-${color}-900 w-9/12 transition-all top-[8.8px] opacity-100 right-0 rotate-0 rounded-md`}
       ></span>
       <span
         class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all bottom-0 opacity-100 right-0 rotate-0 rounded-md`}
@@ -53,13 +53,13 @@ const { color = "primary", headings } = Astro.props;
     }
 
     .open-toc.is-active > button > span span:nth-child(1) {
-      @apply top-[8px] rotate-45;
+      @apply top-[9px] rotate-45;
     }
     .open-toc.is-active > button > span span:nth-child(2) {
       @apply opacity-0 -right-16;
     }
     .open-toc.is-active > button > span span:nth-child(3) {
-      @apply top-[8px] -rotate-45;
+      @apply top-[9px] -rotate-45;
     }
   </style>
   <script>
