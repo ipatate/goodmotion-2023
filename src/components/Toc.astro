@@ -25,7 +25,7 @@ const { headings } = Astro.props;
     ></button
   >
   <div
-    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md group-hover:max-h-screen flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
+    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md group-hover:max-h-screen group-active:max-h-screen flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
   >
     {
       headings.map((h) => (
