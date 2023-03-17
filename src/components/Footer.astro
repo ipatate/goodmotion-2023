@@ -1,15 +1,9 @@
 ---
 import zmf from "../../assets/images/zmf.svg";
 const pathname = new URL(Astro.request.url).pathname;
-
-export interface Props {
-  color: Color;
-}
-
-const { color = "primary" } = Astro.props;
 ---
 
-<footer class={`py-10 bg-gradient-to-t from-${color}-200 to-${color}-200/20`}>
+<footer class={`py-10 bg-gradient-to-t from-alto-200 to-alto-200/20`}>
   <div class="max-w-7xl mx-auto w-full flex items-stretch pl-5 pr-2 md:px-6">
     <div class="flex-1">
       <img
