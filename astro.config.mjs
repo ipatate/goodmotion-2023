@@ -1,3 +1,5 @@
+import { loadEnv } from "vite";
+const { SITE_URL } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
@@ -12,6 +14,6 @@ export default defineConfig({
   image: {
     service: "astro/assets/services/sharp",
   },
-  site: import.meta.env.SITE_URL || "https://www.goodmotion.fr",
+  site: SITE_URL || "https://www.goodmotion.fr",
   integrations: [tailwind(), mdx(), sitemap()],
 });
