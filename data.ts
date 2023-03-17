@@ -24,6 +24,7 @@ export default {
   heroText:
     "Micro agence spécialisée dans le développement de site web et d'applications web modernes.<br /><span class=\"text-primary-700\">Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>",
   place: "Annecy, Genève, Lausanne",
+  place_ch: "Genève, Lausanne",
   socials: [
     {
       label: "GitHub",
