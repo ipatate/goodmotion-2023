@@ -1,7 +1,8 @@
 ---
 import HeroPage from "../components/HeroPage.astro";
+import Toc from "../components/Toc.astro";
 import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
+const { headings, frontmatter } = Astro.props;
 const colors: Color[] = [
   //   "primary",
   "casper",
@@ -19,8 +20,9 @@ const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
 >
   <HeroPage title={frontmatter.title} color={randomColor} />
   <div
-    class="prose prose-lg md:prose-xl mx-auto pt-5 pb-20 px-4 md:px-10 max-w-6xl page-content"
+    class="prose prose-lg md:prose-xl mx-auto pt-5 pb-20 px-4 md:px-10 max-w-6xl page-content relative"
   >
+    {frontmatter.showToc && <Toc headings={headings} />}
     <slot />
   </div>
 </BaseLayout>

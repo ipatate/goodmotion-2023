@@ -7,6 +7,10 @@ module.exports = {
     "data.ts",
   ],
   safelist: [
+    "ml-3",
+    "ml-6",
+    "ml-9",
+    "ml-12",
     "from-primary-200",
     "from-summer-green-200",
     "from-casper-200",

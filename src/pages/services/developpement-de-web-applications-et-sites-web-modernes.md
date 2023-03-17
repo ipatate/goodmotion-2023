@@ -2,6 +2,7 @@
 layout: ../../layouts/PageLayout.astro
 title: Développement de web applications et sites web modernes
 description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js.
+showToc: true
 ---
 
 La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années. 

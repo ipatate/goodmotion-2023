@@ -2,7 +2,11 @@
 layout: ../../layouts/PageLayout.astro
 title: Développement WordPress 100% sur mesure
 description: Développement professionnel de site WordPress, création de thèmes complets, création de blocs Gutenberg spécifique à votre besoin, maintenance et mise à jour de votre site.
+showToc: true
 ---
+
+import Video from "../../components/Video.astro";
+import cover from "../../../assets/images/cover-admin-wp.jpg";
 
 [WordPress](https://wordpress.org) est un projet open-source avec une grosse communauté, un nombre de plugins impressionnant.
 Il est donc énormément utilisé pour tout type de projet mais pas toujours de la meilleure façon.
@@ -25,9 +29,7 @@ Nous développons pour votre site un thème WordPress 100% sur mesure. C'est-à-
 Comme nous sommes adeptes du système de "Full Site Editing" (FSE), tous nos derniers développements utilisent ce concept. Ce n'est pas obligatoire mais nous le conseillons fortement. Évidemment, le client (vous) choisit comme il veut.
 Grâce à Gutenberg, nous pouvons vous offrir une expérience d'édition du contenu la plus agréable possible. Vous allez voir en live le rendu de vos pages. Vous ajoutez, vous supprimez des blocs, vous réglez les marges, etc... avec un rendu instantané sur votre écran.
 
-<video controls width="100%" poster="/assets/cover-admin-wp.jpg" preload="auto">
-  <source src="/assets/admin-wordpress.mp4" type="video/mp4" />
-</video>
+<Video src="/assets/admin-wordpress.mp4" poster={cover.src} />
 
 ## Développement de bloc Gutenberg
 

@@ -1,0 +1,57 @@
+---
+type Props = {
+  poster: { src: string };
+  src: string;
+  format?: string;
+};
+
+const { poster, src, format = "video/mp4" } = Astro.props;
+---
+
+<video
+  controls
+  width="1072"
+  height="603"
+  poster={poster.src}
+  preload="metadata"
+  class="w-full aspect-video lazyload"
+>
+  <source data-src={src} type={format} />
+</video>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazyload"));
+
+    if ("IntersectionObserver" in window) {
+      var lazyVideoObserver = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach(function (video) {
+          if (video.isIntersecting) {
+            for (let source in video.target.children) {
+              const videoSource = video.target.children[
+                source
+              ] as HTMLVideoElement;
+              if (
+                typeof videoSource.tagName === "string" &&
+                videoSource.tagName === "SOURCE"
+              ) {
+                videoSource.src = videoSource.dataset.src as string;
+              }
+            }
+
+            (video.target as HTMLVideoElement).load();
+            video.target.classList.remove("lazyload");
+            lazyVideoObserver.unobserve(video.target);
+          }
+        });
+      });
+
+      lazyVideos.forEach(function (lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+  });
+</script>
