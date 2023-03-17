@@ -1,10 +1,15 @@
 ---
 import zmf from "../../assets/images/zmf.svg";
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname;
+
+export interface Props {
+  color: Color;
+}
+
+const { color = "primary" } = Astro.props;
 ---
 
-<footer class="py-10 bg-slate-50">
+<footer class={`py-10 bg-gradient-to-t from-${color}-200 to-${color}-200/20`}>
   <div class="max-w-7xl mx-auto w-full flex items-stretch pl-5 pr-2 md:px-6">
     <div class="flex-1">
       <img
@@ -29,14 +34,12 @@ const currentPath = pathname;
       <nav class="flex ml-2 md:ml-5 flex-col text-sm">
         <a
           class={`my-2 ${
-            currentPath === "/politique-de-confidentialite" ? "underline" : ""
+            pathname === "/politique-de-confidentialite" ? "underline" : ""
           }`}
           href="/politique-de-confidentialite">Politique de confidentialité</a
         >
         <a
-          class={`my-2 ${
-            currentPath === "/mentions-legales" ? "underline" : ""
-          }`}
+          class={`my-2 ${pathname === "/mentions-legales" ? "underline" : ""}`}
           href="/mentions-legales">Mentions légales</a
         >
         <a

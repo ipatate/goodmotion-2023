@@ -25,7 +25,7 @@ const { title, description, color = "primary" } = Astro.props;
     <Header color={color} />
     <Co2badge />
     <slot />
-    <Footer />
+    <Footer color={color} />
     <style is:global>
       @font-face {
         font-family: Sora;
