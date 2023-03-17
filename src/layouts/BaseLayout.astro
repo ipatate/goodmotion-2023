@@ -18,7 +18,7 @@ const { title, description, color = "primary" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <Seo title={title} description={description} />
+    <Seo title={title} description={description} color={color} />
   </head>
   <body class="bg-gray-100">
     <div class="h-screen absolute top-0 right-0 left-0 z-[-1]"></div>
