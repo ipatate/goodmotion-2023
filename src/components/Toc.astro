@@ -6,7 +6,7 @@ type Props = {
 const { headings } = Astro.props;
 ---
 
-<div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12">
+<div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc">
   <button
     class="text-primary-900 bg-slate-100 rounded-full shadow-md p-2"
     aria-label="ouvrir le menu de navigation"
@@ -25,7 +25,7 @@ const { headings } = Astro.props;
     ></button
   >
   <div
-    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md group-hover:max-h-screen group-active:max-h-screen flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
+    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left"
   >
     {
       headings.map((h) => (
@@ -41,7 +41,25 @@ const { headings } = Astro.props;
     }
   </div>
 </div>
+<style>
+  .open-toc.is-active > button {
+    @apply text-primary-700;
+  }
+  .open-toc.is-active > div {
+    @apply max-h-screen;
+  }
+</style>
 <script>
+  document.querySelector(".open-toc")?.addEventListener("mouseover", (e) => {
+    const target = e.currentTarget as HTMLElement;
+    if (!target) return;
+    target.classList.add("is-active");
+  });
+  document.querySelector(".open-toc")?.addEventListener("mouseout", (e) => {
+    const target = e.currentTarget as HTMLElement;
+    if (!target) return;
+    target.classList.remove("is-active");
+  });
   // smooth scroll to anchor
   const anchors = document.querySelectorAll('a[href*="#"]');
   anchors.forEach((anchor) => {
