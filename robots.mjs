@@ -1,3 +1,6 @@
+/**
+ * This script creates a robots.txt file in the dist folder
+ */
 import fs from "fs";
 
 const SITE_URL = process.env.SITE_URL;
