@@ -186,19 +186,19 @@ export default {
   services: [
     {
       title: "Développement web applications et sites web modernes",
-      link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+      link: "/services/developpement-de-web-applications-et-sites-web-modernes/",
     },
     {
       title: "Développement WordPress avancé",
-      link: "/services/developpement-wordpress-avance",
+      link: "/services/developpement-wordpress-avance/",
     },
     {
       title: "Développement sous Craft CMS",
-      link: "/services/developpement-sous-craft-cms",
+      link: "/services/developpement-sous-craft-cms/",
     },
     {
       title: "Consultant technique pour vos projets web",
-      link: "/services/consultant-technique-web",
+      link: "/services/consultant-technique-web/",
     },
   ],
 };
