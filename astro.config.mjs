@@ -8,6 +8,9 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    format: "file",
+  },
   experimental: {
     assets: true,
   },

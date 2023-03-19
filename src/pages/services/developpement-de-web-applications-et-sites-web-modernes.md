@@ -115,4 +115,4 @@ Nous pouvons vous proposer :
 - accompagnements pour le développement de votre projet
 - maintenance et évolution du projet
 
-N'hésitez pas à nous contacter pour échanger via la page [contact](/contact/)
+N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)

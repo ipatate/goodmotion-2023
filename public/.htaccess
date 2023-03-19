@@ -6,12 +6,17 @@ RewriteRule ^(.*)$ https://www\.%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-Redirect 301 /developpement-de-web-application /services/developpement-de-web-applications-et-sites-web-modernes/
-Redirect 301 /developpeur-wordpress-geneve-lausanne-annecy-lyon /services/developpement-wordpress-avance/
-Redirect 301 /developpement-sous-craft-cms /services/developpement-sous-craft-cms/
+# trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
+
+Redirect 301 /developpement-de-web-application /services/developpement-de-web-applications-et-sites-web-modernes
+Redirect 301 /developpeur-wordpress-geneve-lausanne-annecy-lyon /services/developpement-wordpress-avance
+Redirect 301 /developpement-sous-craft-cms /services/developpement-sous-craft-cms
 Redirect 301 /consultant-technique-web /services/consultant-technique-web
-Redirect 301 /coanimateur-podcast-double-slash /podcast/
-Redirect 301 /blog/craft-cms-le-cms-qui-rend-les-gens-heureux /services/developpement-sous-craft-cms/
+Redirect 301 /coanimateur-podcast-double-slash /podcast
+Redirect 301 /blog/craft-cms-le-cms-qui-rend-les-gens-heureux /services/developpement-sous-craft-cms
 
 ErrorDocument 404 /404.html
 
