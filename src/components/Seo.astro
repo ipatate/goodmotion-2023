@@ -8,7 +8,8 @@ type Props = {
   color?: string;
 };
 
-const pathname = new URL(Astro.request.url).pathname;
+// remove .html from pathname because build use file instead folder
+const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 const SITE_URL = import.meta.env.SITE_URL;
 
