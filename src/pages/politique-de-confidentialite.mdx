@@ -2,21 +2,26 @@
 layout: ../layouts/PageLayout.astro
 title: Politique de confidentialité
 ---
-ZMF Resources s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site www.goodmotion.fr, soient conformes au règlement général sur la protection des données (RGPD) et à la loi informatique et Liberté.
+
+export const SITE_URL = import.meta.env.SITE_URL || "https://www.goodmotion.fr";
+
+ZMF Resources s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site {SITE_URL}, soient conformes au règlement général sur la protection des données (RGPD) et à la loi informatique et Liberté.
 
 ## Traitements de données à caractère personnel
-La collecte de données par le formulaire de contact présent sur le site www.goodmotion.fr<br />
+
+La collecte de données par le formulaire de contact présent sur le site {SITE_URL}<br />
 Nous collectons des données que vous nous fournissez par la soumission d’un message par notre formulaire de contact pour :
 
 ### L’actualisation de fichiers de prospection
-Conserver un historique des contacts effectués via le site www.goodmotion.fr<br />
+
+Conserver un historique des contacts effectués via le site {SITE_URL}<br />
 Pour la soumission du formulaire de contact sur le présent site, nous vous demandons de renseigner obligatoirement :
 
 - Votre adresse de courrier électronique
 - Votre prénom
 - Votre email
 
-Les données personnelles recueillies par le formulaire de contact présent sur www.goodmotion.fr sont traitées selon des protocoles sécurisés et permettent à la ZMF Resources de gérer les demandes reçues dans ses applications informatiques.
+Les données personnelles recueillies par le formulaire de contact présent sur {SITE_URL} sont traitées selon des protocoles sécurisés et permettent à la ZMF Resources de gérer les demandes reçues dans ses applications informatiques.
 
 ZMF Resources s’engage à ne pas révéler à des tiers les informations personnelles que vous pourrez lui communiquer en utilisant le formulaire de contact. <br />Celles-ci ne serviront que dans l’objectif d’apporter une réponse à vos demandes aussi efficacement que possible. <br />Pour toute information ou exercice de vos droits informatique et Libertés sur les traitements de données personnelles gérés par la ZMF Resources, vous pouvez nous contacter :
 
@@ -24,6 +29,7 @@ ZMF Resources s’engage à ne pas révéler à des tiers les informations perso
 - ou par courrier signé accompagné de la copie d’un titre d’identité à l'adresse suivante : ZMF Resources Parc d'Activités Annecy La Ravoire 74370 Metz-Tessy France
 
 ## À propos des cookies
+
 Nous utilisons différents cookies sur le site pour améliorer l’interactivité du site et nos services.
 
 ### Qu'est-ce qu'un "cookie" ?
@@ -33,9 +39,9 @@ Un "cookie" est un fichier de taille limitée, généralement constitué de lett
 **Cookies internes nécessaires au site pour fonctionner**<br />
 Ces cookies permettent au site de fonctionner de manière optimale. Vous pouvez vous y opposer et les supprimer en utilisant les paramètres de votre navigateur, cependant votre expérience utilisateur risque d’être dégradée.
 
-
 ### Cookies tiers destinés à améliorer l’interactivité du site.
-Le site www.goodmotion.fr s’appuie sur certains services proposés par des sites tiers. <br />Il s’agit notamment :
+
+Le site {SITE_URL} s’appuie sur certains services proposés par des sites tiers. <br />Il s’agit notamment :
 
 - Des vidéos diffusées sur le site (YouTube)
 - Le formulaire de contact Tally
