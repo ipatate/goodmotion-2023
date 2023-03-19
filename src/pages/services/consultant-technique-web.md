@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Consultant technique pour vos projets web | Genève, Lausanne, Annecy
+title: Consultant technique pour vos projets web
+metaTitle: Consultant technique pour vos projets web | Genève, Lausanne, Annecy
 description: Choix techniques, cahier des charges, gestion de prestataires. J'utilise mes 15 ans d'expérience au service de votre projet. J'interviens en assistance technique pour vous aider sur vos projets web.
 showToc: true
 ---

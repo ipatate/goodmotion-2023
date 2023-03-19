@@ -4,6 +4,7 @@ import favicon from "../../assets/images/favicon.svg";
 
 type Props = {
   title: string;
+  metaTitle?: string;
   description: string;
   color?: string;
 };
@@ -13,7 +14,7 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 const SITE_URL = import.meta.env.SITE_URL;
 
-const { title, description, color = "primary" } = Astro.props;
+const { title, description, metaTitle, color = "primary" } = Astro.props;
 
 let themeColor = "#08556C";
 switch (color) {
@@ -35,17 +36,17 @@ switch (color) {
 }
 ---
 
-<title>{title}</title>
+<title>{metaTitle || title}</title>
 <meta name="robots" content="index, follow" />
 <meta name="description" content={description} />
-<meta content={title} name="twitter:title" />
+<meta content={metaTitle || title} name="twitter:title" />
 <meta content={description} name="twitter:description" />
 <link rel="icon" type="image/svg+xml" href={favicon.src} />
 <meta content="@PatrickFaramaz" name="twitter:site" />
 <meta content="@PatrickFaramaz" name="twitter:creator" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content={`${SITE_URL}${card.src}`} />
-<meta content={title} name="og:title" />
+<meta content={metaTitle || title} name="og:title" />
 <meta content={description} name="og:description" />
 <meta content="website" name="og:type" />
 <meta property="og:image" content={`${SITE_URL}${card.src}`} />

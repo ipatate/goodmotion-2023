@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/PageLayout.astro
-title: Nous contactez
+title: Contactez-nous
 description: Pour nous contacter, vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur Twitter et Linkedin.
 ---
 

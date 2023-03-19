@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement de web applications et sites web modernes sur mesure | Genève, Lausanne, Annecy
+title: Développement de web applications et sites web modernes
+metaTitle: Développement de web applications et sites web modernes sur mesure | Genève, Lausanne, Annecy
 description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js, Strapi, WordPress.
 showToc: true
 ---

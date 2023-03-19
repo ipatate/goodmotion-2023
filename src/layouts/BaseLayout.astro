@@ -6,11 +6,12 @@ import Co2badge from "../components/Co2badge.astro";
 
 export interface Props {
   title: string;
+  metaTitle?: string;
   description: string;
   color?: Color;
 }
 
-const { title, description, color = "primary" } = Astro.props;
+const { title, description, metaTitle, color = "primary" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -18,7 +19,12 @@ const { title, description, color = "primary" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <Seo title={title} description={description} color={color} />
+    <Seo
+      title={title}
+      metaTitle={metaTitle}
+      description={description}
+      color={color}
+    />
   </head>
   <body class="bg-gray-100">
     <div class="h-screen absolute top-0 right-0 left-0 z-[-1]"></div>

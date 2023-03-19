@@ -17,14 +17,16 @@ import ircam from "./assets/images/ircam.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
-  titleHome: "Sites web rapides et durables ! Annecy, Genève, Lausanne",
+  titleHome: "Sites web rapides et durables ! Genève, Lausanne, Annecy",
+  metaTitleHome:
+    "Développement de sites web rapides et durables ! Genève, Lausanne, Annecy",
   descriptionHome:
-    "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web, pour offrir une expérience utilisateur rapide et écologique.",
+    "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web.",
   baseline: "Sites web rapides et durables !",
   heroText:
     "Micro agence spécialisée dans le développement de site web et d'applications web modernes.<br /><span class=\"text-primary-700\">Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>",
-  place: "Annecy, Genève, Lausanne",
-  place_ch: "Genève, Lausanne",
+  place: "Annecy, Genève, Lausanne et partout ailleurs !",
+  place_ch: "Genève, Lausanne, Annecy et partout ailleurs !",
   socials: [
     {
       label: "GitHub",

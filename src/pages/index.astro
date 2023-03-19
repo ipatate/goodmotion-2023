@@ -7,7 +7,11 @@ import LogoBlock from "../components/home/LogoBlock.astro";
 import Services from "../components/home/Services.astro";
 ---
 
-<Layout title={data.titleHome} description={data.descriptionHome}>
+<Layout
+  title={data.titleHome}
+  metaTitle={data.metaTitleHome}
+  description={data.descriptionHome}
+>
   <main>
     <HeroHome />
     <Services title="Nos services" text="" elements={data.services} />
