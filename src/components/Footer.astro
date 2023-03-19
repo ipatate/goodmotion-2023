@@ -1,6 +1,6 @@
 ---
 import zmf from "../../assets/images/zmf.svg";
-const pathname = new URL(Astro.request.url).pathname;
+const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 ---
 
 <footer class={`py-10 bg-gradient-to-t from-alto-200 to-alto-200/20`}>

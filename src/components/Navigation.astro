@@ -3,8 +3,7 @@ import data from "../../data";
 import Burger from "./Burger.astro";
 import SocialIcon from "./SocialIcon.astro";
 
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname;
+const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 export interface Props {
   color: Color;
@@ -53,7 +52,7 @@ const { color = "primary" } = Astro.props;
                 href={nav.link}
                 title={nav.label}
                 class={`flex items-center text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700 py-2 lg:py-1 ${
-                  currentPath === nav.link ? "underline" : ""
+                  pathname === nav.link ? "underline" : ""
                 }`}
               >
                 {nav.subMenu && (
@@ -79,7 +78,7 @@ const { color = "primary" } = Astro.props;
                           href={sub.link}
                           title={sub.label}
                           class={`lg:whitespace-nowrap whitespace-normal text-${color}-900 hover:text-${color}-700 ${
-                            currentPath === sub.link ? "underline" : ""
+                            pathname === sub.link ? "underline" : ""
                           }`}
                         >
                           {sub.label}
