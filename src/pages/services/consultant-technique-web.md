@@ -36,4 +36,4 @@ Je peux vous conseiller et m'occuper de faire le transfert de votre site ou tout
 - [Développement WordPress 100% sur mesure](/services/developpement-wordpress-avance)
 - [Développement sous Craft CMS](/services/developpement-sous-craft-cms)
 
-N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
+N'hésitez pas à nous contacter pour échanger via la page [contact](/contact/)

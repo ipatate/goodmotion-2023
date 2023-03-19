@@ -54,33 +54,33 @@ export default {
       subMenu: [
         {
           label: "Développement de sites web modernes",
-          link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+          link: "/services/developpement-de-web-applications-et-sites-web-modernes/",
         },
         {
           label: "Développement WordPress avancé",
-          link: "/services/developpement-wordpress-avance",
+          link: "/services/developpement-wordpress-avance/",
         },
         {
           label: "Développement sous Craft CMS",
-          link: "/services/developpement-sous-craft-cms",
+          link: "/services/developpement-sous-craft-cms/",
         },
         {
           label: "Consultant technique pour vos projets web",
-          link: "/services/consultant-technique-web",
+          link: "/services/consultant-technique-web/",
         },
       ],
     },
     {
       label: "A propos",
-      link: "/about",
+      link: "/about/",
     },
     {
       label: "Podcast",
-      link: "/podcast",
+      link: "/podcast/",
     },
     {
       label: "Contact",
-      link: "/contact",
+      link: "/contact/",
     },
   ],
   tools: [
