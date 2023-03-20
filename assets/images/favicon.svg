@@ -1,11 +1,10 @@
-<svg width="311" height="310" viewBox="0 0 311 310" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="105" width="101" height="101" fill="#A4BEB2"/>
-<rect x="105" y="104" width="101" height="101" fill="#CE365C"/>
-<rect y="104" width="101" height="101" fill="#A8BED2"/>
-<rect width="101" height="101" fill="#A8BED2"/>
-<rect y="209" width="101" height="101" fill="#A8BED2"/>
-<rect x="105" y="209" width="101" height="101" fill="#A8BED2"/>
-<rect x="210" width="101" height="101" fill="#A4BEB2"/>
-<rect x="210" y="104" width="101" height="101" fill="#EACA96"/>
-<rect x="210" y="209" width="101" height="101" fill="#EACA96"/>
+<svg width="431" height="431" viewBox="0 0 431 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="288" y="143.418" width="101" height="101" transform="rotate(-45 288 143.418)" fill="#A4BEB2"/>
+<rect y="143.418" width="101" height="101" transform="rotate(-45 0 143.418)" fill="#CE365C"/>
+<rect x="72" y="359.418" width="101" height="101" transform="rotate(-45 72 359.418)" fill="#A8BED2"/>
+<rect y="287.418" width="101" height="101" transform="rotate(-45 0 287.418)" fill="#A8BED2"/>
+<rect x="144" y="287.418" width="101" height="101" transform="rotate(-45 144 287.418)" fill="#A8BED2"/>
+<rect x="216" y="71.418" width="101" height="101" transform="rotate(-45 216 71.418)" fill="#A4BEB2"/>
+<rect x="144" y="143.418" width="101" height="101" transform="rotate(-45 144 143.418)" fill="#A4BEB2"/>
+<rect x="288" y="287.418" width="101" height="101" transform="rotate(-45 288 287.418)" fill="#EACA96"/>
 </svg>

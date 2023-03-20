@@ -1,6 +1,7 @@
 ---
 import card from "../../assets/images/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg";
-import favicon from "../../assets/images/favicon.svg";
+import faviconImage from "../../assets/images/favicon.svg";
+import Favicon from "./Favicon.astro";
 
 type Props = {
   title: string;
@@ -41,7 +42,7 @@ switch (color) {
 <meta name="description" content={description} />
 <meta content={metaTitle || title} name="twitter:title" />
 <meta content={description} name="twitter:description" />
-<link rel="icon" type="image/svg+xml" href={favicon.src} />
+<link rel="icon" type="image/svg+xml" href={faviconImage.src} />
 <meta content="@PatrickFaramaz" name="twitter:site" />
 <meta content="@PatrickFaramaz" name="twitter:creator" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -68,3 +69,4 @@ switch (color) {
 <link rel="canonical" href={`${SITE_URL}${pathname}`} />
 <link rel="home" href={`${SITE_URL}`} />
 <link rel="sitemap" href="/sitemap-index.xml" />
+<Favicon />
