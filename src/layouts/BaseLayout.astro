@@ -10,12 +10,12 @@ export interface Props {
   description: string;
   color?: Color;
 }
-
+const SITE_URL = import.meta.env.SITE_URL;
 const { title, description, metaTitle, color = "primary" } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang={SITE_URL.includes(".ch") ? "fr-CH" : "fr-FR"}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
