@@ -70,6 +70,10 @@ export default {
           label: "Consultant technique pour vos projets web",
           link: "/services/consultant-technique-web",
         },
+        {
+          label: "Maintenance WordPress",
+          link: "/maintenance-wordpress",
+        },
       ],
     },
     {
