@@ -23,9 +23,9 @@ export default defineConfig({
     appShortName: "Goodmotion",
     appDescription:
       "Développement de sites web rapides et durables ! Genève, Lausanne, Annecy",
-    background: "transparent",
+    background: "#f8f8f8",
     theme_color: "#08556c",
-    lang: "fr-FR",
+    lang: "fr",
     preferRelatedApplications: false,
     pixel_art: false,
     loadManifestWithCredentials: false,

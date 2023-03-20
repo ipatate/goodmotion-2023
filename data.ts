@@ -72,7 +72,7 @@ export default {
         },
         {
           label: "Maintenance WordPress",
-          link: "/maintenance-wordpress",
+          link: "/services/maintenance-wordpress",
         },
       ],
     },
@@ -206,5 +206,6 @@ export default {
       title: "Consultant technique pour vos projets web",
       link: "/services/consultant-technique-web",
     },
+    { label: "Maintenance WordPress", link: "/services/maintenance-wordpress" },
   ],
 };
