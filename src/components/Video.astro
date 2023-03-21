@@ -20,6 +20,7 @@ const { poster, src, format = "video/mp4" } = Astro.props;
 </video>
 
 <script>
+  // Lazy load videos only when they are in the viewport
   document.addEventListener("DOMContentLoaded", () => {
     var lazyVideos = [].slice.call(document.querySelectorAll("video.lazyload"));
 
