@@ -1,89 +1,182 @@
 ---
+import { Icon } from "astro-icon";
+import ProgressCircle from "./ProgressCircle.astro";
+
 type Props = {
+  showToc?: boolean;
+  showProgress?: boolean;
   headings: { depth: number; slug: string; text: string }[];
   color?: Color;
 };
 
-const { color = "primary", headings } = Astro.props;
+const {
+  showProgress = true,
+  showToc = false,
+  color = "primary",
+  headings,
+} = Astro.props;
 ---
 
-<div
-  class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc is-bottom"
->
-  <button
-    class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12`}
-    aria-label="ouvrir le menu de navigation"
-  >
-    <span
-      class="absolute block transition-colors duration-150 ease-in-out w-[24.5px] h-[20px] top-[15px] left-[11px]"
-    >
-      <span
-        class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all top-0 opacity-100 right-0 rotate-0 rounded-md`}
-      ></span>
-      <span
-        class={`absolute h-0.5 bg-${color}-900 w-9/12 transition-all top-[8.8px] opacity-100 right-0 rotate-0 rounded-md`}
-      ></span>
-      <span
-        class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all bottom-0 opacity-100 right-0 rotate-0 rounded-md`}
+{
+  showToc && (
+    <div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc is-bottom">
+      <button
+        class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12`}
+        aria-label="ouvrir le menu de navigation"
       >
-      </span>
-    </span>
-  </button>
-  <div
-    class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left toc-nav"
-  >
-    {
-      headings.map((h) => (
-        <a
-          class={`ml-${
-            3 * h.depth
-          } no-underline text-base py-1 pr-3 first:mt-3 last:mb-3 toc-link`}
-          href={`#${h.slug}`}
+        <span class="absolute block transition-colors duration-150 ease-in-out w-[24.5px] h-[20px] top-[15px] left-[11px]">
+          <span
+            class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all top-0 opacity-100 right-0 rotate-0 rounded-md`}
+          />
+          <span
+            class={`absolute h-0.5 bg-${color}-900 w-9/12 transition-all top-[8.8px] opacity-100 right-0 rotate-0 rounded-md`}
+          />
+          <span
+            class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all bottom-0 opacity-100 right-0 rotate-0 rounded-md`}
+          />
+        </span>
+      </button>
+      <div class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left toc-nav">
+        {headings.map((h) => (
+          <a
+            class={`ml-${
+              3 * h.depth
+            } no-underline text-base py-1 pr-3 first:mt-3 last:mb-3 toc-link`}
+            href={`#${h.slug}`}
+          >
+            {h.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  )
+}
+{
+  showProgress && (
+    <div class="sticky group h-12 w-12 progressWrapper transition-all">
+      <ProgressCircle width={58} height={58} size={3}>
+        <button
+          class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12 up-button`}
+          aria-label="remonter en haut de la page"
         >
-          {h.text}
-        </a>
-      ))
-    }
-  </div>
+          <Icon name="ic:outline-arrow-upward" />
+        </button>
+      </ProgressCircle>
+    </div>
+  )
+}
 
-  <style>
-    .open-toc.is-active > button {
-      @apply text-primary-700;
-    }
-    .open-toc.is-active div.toc-nav {
-      @apply max-h-screen;
-    }
-    .open-toc div.toc-nav {
-      @apply top-14;
-    }
-    .open-toc.is-bottom div.toc-nav {
-      @apply -translate-y-full -top-1;
-    }
+<style>
+  .progressWrapper {
+    top: 90vh;
+    top: 90dvh;
+  }
+  .open-toc.is-active > button {
+    @apply text-primary-700;
+  }
+  .open-toc.is-active div.toc-nav {
+    @apply max-h-screen;
+  }
+  .open-toc div.toc-nav {
+    @apply top-14;
+  }
+  .open-toc.is-bottom div.toc-nav {
+    @apply -translate-y-full -top-1;
+  }
 
-    .open-toc.is-active > button > span span:nth-child(1) {
-      @apply top-[9px] rotate-45;
-    }
-    .open-toc.is-active > button > span span:nth-child(2) {
-      @apply opacity-0 -right-16;
-    }
-    .open-toc.is-active > button > span span:nth-child(3) {
-      @apply top-[9px] -rotate-45;
-    }
-  </style>
-  <script>
-    // detect if .open-toc is at the bottom of viewport or not
-    const openToc = document.querySelector(".open-toc");
+  .open-toc.is-active > button > span span:nth-child(1) {
+    @apply top-[9px] rotate-45;
+  }
+  .open-toc.is-active > button > span span:nth-child(2) {
+    @apply opacity-0 -right-16;
+  }
+  .open-toc.is-active > button > span span:nth-child(3) {
+    @apply top-[9px] -rotate-45;
+  }
+</style>
+<script>
+  /**
+   * check if touch is on right side of the screen
+   * @param e
+   * @returns boolean
+   */
+  const isTouchOnRight = (e: TouchEvent) => {
+    const touch = e.touches[0];
+    const width = window.innerWidth;
+    return touch.clientX > width / 2;
+  };
 
-    const debounce = (callback: Function, wait: number) => {
-      let timeoutId: number | undefined;
-      return (...args: any) => {
-        window.clearTimeout(timeoutId);
-        timeoutId = window.setTimeout(() => {
-          callback.apply(null, args);
-        }, wait);
-      };
+  /**
+   * debounce function
+   * @param callback
+   * @param wait
+   * @returns  debounced function
+   */
+  const debounce = (callback: Function, wait: number) => {
+    let timeoutId: number | undefined;
+    return (...args: any) => {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => {
+        callback.apply(null, args);
+      }, wait);
     };
+  };
 
+  /**
+   * button up position
+   */
+  let isRight = false;
+  const progressWrapper: HTMLDivElement | null =
+    document.querySelector(".progressWrapper");
+  const parentProgressWrapper = progressWrapper?.parentElement;
+
+  let progressWrapperWidth = progressWrapper?.offsetWidth || 0;
+  let progressWrapperParentWidth = 0;
+  let parentProgressWrapperPaddingRight = 0;
+  let transRight = 0;
+  // define right position for progressWrapper
+  const setPosition = () => {
+    progressWrapperParentWidth = parentProgressWrapper?.clientWidth || 0;
+    parentProgressWrapperPaddingRight =
+      parseInt(
+        window.getComputedStyle(parentProgressWrapper as Element).paddingRight
+      ) || 0;
+    transRight = progressWrapperParentWidth
+      ? progressWrapperParentWidth -
+        parentProgressWrapperPaddingRight -
+        (progressWrapperWidth + parentProgressWrapperPaddingRight + 4)
+      : 0;
+    if (progressWrapper) {
+      progressWrapper.style.transform = `translateX(${
+        !isRight ? transRight : 0
+      }px)`;
+    }
+  };
+
+  // on resize window
+  window.addEventListener("resize", debounce(setPosition, 500));
+
+  // define position on load
+  if (progressWrapper) {
+    setPosition();
+    progressWrapper.style.transform = `translateX(${transRight}px)`;
+  }
+
+  // add event on touchstart
+  document.addEventListener(
+    "touchstart",
+    debounce((event: TouchEvent) => {
+      if (!progressWrapper) return;
+      isRight = !isTouchOnRight(event);
+      setPosition();
+    }, 200)
+  );
+
+  /**
+   * open toc
+   */
+  const openToc = document.querySelector(".open-toc");
+  if (openToc) {
     window.addEventListener(
       "scroll",
       debounce(() => {
@@ -126,5 +219,13 @@ const { color = "primary", headings } = Astro.props;
         });
       });
     });
-  </script>
-</div>
+  }
+
+  // scroll to top for button up
+  document.querySelector(".up-button")?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
