@@ -12,7 +12,7 @@ const lastFive: {
 }[] = data.rss.channel[0].item.slice(-10);
 // order by pubDate
 lastFive.sort((a, b) => {
-  return new Date(a.pubDate[0]).getTime() - new Date(b.pubDate[0]).getTime();
+  return new Date(b.pubDate[0]).getTime() - new Date(a.pubDate[0]).getTime();
 });
 const options = {
   weekday: "long",
@@ -20,6 +20,23 @@ const options = {
   month: "long",
   day: "numeric",
 };
+
+// find https string in description and replace them with <a> tags
+lastFive.forEach((item) => {
+  const regex = /https?:\/\/[^\s]+/g;
+  const description = Array.isArray(item.description)
+    ? item.description[0]
+    : item.description;
+  const matches = description.match(regex);
+  if (matches) {
+    matches.forEach((match: string) => {
+      item.description = description.replace(
+        match,
+        `<a href="${match}" target="_blank" rel="noopener noreferrer">${match}</a>`
+      );
+    });
+  }
+});
 ---
 
 <div>
