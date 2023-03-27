@@ -1,10 +1,18 @@
 ---
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+
 import zmf from "../../assets/images/zmf.svg";
+import WebsiteCarbon from "../../assets/images/WebsiteCarbon.png";
+
+const SITE_URL = import.meta.env.SITE_URL;
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 ---
 
 <footer class={`py-10 bg-gradient-to-t from-alto-200 to-alto-200/20`}>
-  <div class="max-w-7xl mx-auto w-full flex items-stretch pl-5 pr-2 md:px-6">
+  <div
+    class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-stretch pl-5 pr-2 md:px-6"
+  >
     <div class="flex-1">
       <img
         src={zmf.src}
@@ -16,16 +24,7 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
       <p class="text-primary-900 reserved text-xs mt-2">
         ZMF Resources Tous les droits sont réservés.
       </p>
-      <script>
-        const reserved = document.querySelector(".reserved");
-        if (reserved) {
-          reserved.innerHTML =
-            new Date().getFullYear() + " " + reserved.innerHTML;
-        }
-      </script>
-    </div>
-    <div class="flex-1">
-      <nav class="flex ml-2 md:ml-5 flex-col text-sm">
+      <nav class="flex flex-col text-sm mt-5">
         <a
           class={`my-2 ${
             pathname === "/politique-de-confidentialite" ? "underline" : ""
@@ -36,11 +35,61 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
           class={`my-2 ${pathname === "/mentions-legales" ? "underline" : ""}`}
           href="/mentions-legales">Mentions légales</a
         >
+      </nav>
+      <script>
+        const reserved = document.querySelector(".reserved");
+        if (reserved) {
+          reserved.innerHTML =
+            new Date().getFullYear() + " " + reserved.innerHTML;
+        }
+      </script>
+    </div>
+    <div class="flex-1">
+      <nav class="flex mt-5 md:mt-0 md:ml-5 flex-col text-sm">
         <a
-          class={`my-2`}
+          class={`my-3 flex items-center`}
           target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/ipatate/goodmotion-2023"
-          >Code source du site</a
+          ><Icon name="mdi:github" class="w-8 h-8 mr-2 text-gray-600" />Code
+          source du site</a
+        >
+        <a
+          class={`my-3 flex items-center`}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.ecoindex.fr/resultat/?id=eb6e4dd8-beee-44dc-a665-8ed622fd5686"
+          ><span
+            class="w-8 h-8 rounded-full text-white flex items-center justify-center mr-2 text-xs bg-green-700"
+            >A</span
+          >Eco Index</a
+        >
+        <a
+          class={`my-3 flex items-center`}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://websitecarbon.com/website/${SITE_URL.replace(
+            "www.",
+            ""
+          )}`}
+          ><Image
+            src={WebsiteCarbon}
+            alt="WebsiteCarbon"
+            class="w-8 h-8 mr-2"
+          /> Website Carbon <span
+            class="bg-green-400 text-primary-900 py-0.5 px-1 flex ml-2 rounded-lg"
+            >0.04g of CO2</span
+          ></a
+        >
+        <a
+          class={`my-3 flex items-center`}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://pagespeed.web.dev/analysis/https-www-goodmotion-fr/n8b5m02znm?hl=fr&form_factor=mobile"
+          ><span
+            class="w-8 h-8 rounded-full border-green-500 border-2 text-green-500 flex items-center justify-center mr-2 text-xs bg-green-50"
+            >100</span
+          >PageSpeed Insights</a
         >
       </nav>
     </div>
