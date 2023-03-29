@@ -1,0 +1,162 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="flex flex-col lg:flex-row items-stretch not-prose gap-6">
+  <div class="rounded-lg bg-summer-green-100 wp-price flex-1 flex flex-col">
+    <header
+      class="p-6 uppercase text-center text-summer-green-600 leading-7 font-semibold"
+    >
+      Maintenance Préventive
+    </header>
+    <div class="p-6 flex-1">
+      <ul>
+        <li>
+          <Icon name="mdi:check-circle-outline" /> Mise à jour des plugins*
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Mise à jour du coeur de
+          WordPress*
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Sauvegarde régulière du site
+          et de la base de données*
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Configuration d'un plugin de
+          sécurité
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Surveillance de disponibilités
+          du site
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Un rapport sur l'état de santé
+          du site**
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Support email
+        </li>
+      </ul>
+    </div>
+    <footer
+      class="rounded-lg text-center text-base bg-gray-100 m-6 p-6 text-primary-900"
+    >
+      <p>
+        Abonnement mensuel à partir de <strong>139 euros HT/mois</strong><sup
+          >(1)</sup
+        >
+      </p>
+    </footer>
+  </div>
+  <div class="rounded-lg flex flex-col bg-casper-200 wp-price flex-1">
+    <header
+      class="p-6 uppercase text-center text-summer-green-600 leading-7 font-semibold"
+    >
+      Maintenance corrective et évolutive
+    </header>
+    <div class="p-6 flex-1">
+      <ul>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Correction de bugs
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Ajout des nouvelles
+          fonctionnalités
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" />Conseils et recommandations
+          sur l'évolution du site
+        </li>
+      </ul>
+    </div>
+    <footer class="rounded-lg text-center bg-gray-100 m-6 p-6 text-primary-900">
+      <ul class="w-full text-center">
+        <li>Pack 10h: <strong>1200€ euros HT</strong> <sup>(2)</sup></li>
+        <li>Pack 20h: <strong>2200€ euros HT</strong> <sup>(2)</sup></li>
+        <li>Pack 50h: <strong>5000€ euros HT</strong><sup>(2)</sup></li>
+      </ul>
+    </footer>
+  </div>
+  <div class="rounded-lg flex flex-col bg-secondary-100 wp-price flex-1">
+    <header
+      class="p-6 uppercase text-center text-summer-green-600 leading-7 font-semibold"
+    >
+      Optimisation des performances
+    </header>
+    <div class="p-6 flex-1">
+      <ul>
+        <li>
+          <Icon name="mdi:check-circle-outline" /><div>
+            <strong>Audit du site</strong>:<br />
+            <span class="text-sm text-gray-500">
+              Point sur l'état de votre site et compte rendu sur les points à
+              optimiser
+            </span>
+          </div>
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" /><div>
+            <strong>Réalisation des optimisations:</strong>
+            <ul class="text-sm text-gray-500">
+              <li>- Application des points d'optimisations.</li>
+              <li>- Installation de plugin(s) d’optimisation de performance</li>
+              <li>
+                - Les optimisations sont réalisées une par une avec comparaison
+                de l'amélioration des performances
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <Icon name="mdi:check-circle-outline" /><div>
+            <strong>Rapport</strong>:<br /><span class="text-sm text-gray-500">
+              Présentation des optimisations et gains de performances détaillés
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <footer
+      class="rounded-lg text-base text-center bg-gray-100 m-6 p-6 text-primary-900"
+    >
+      <p class="text-center w-full font-bold">990 euros HT</p>
+    </footer>
+  </div>
+</div>
+<div class="not-prose text-sm my-6 italic">
+  <ul>
+    <li>* minimum 1 fois par semaine</li>
+    <li>** 1 fois par mois</li>
+    <li>&#160;</li>
+    <li>
+      (1) - Pour toute prestation de maintenance préventive seule, des frais de
+      mise en place de <strong>399 euros HT</strong> sont à prévoir. <br />Cela
+      comprend : <ul>
+        <li>- Un audit du site</li><li>- Sécurisation du site</li><li>
+          - Petite optimisation du site
+        </li>
+        <li>- Mise en place de la sauvegarde et la surveillance</li>
+      </ul>
+    </li>
+    <li>&#160;</li>
+    <li>(2) Pack d'heures valable 1 an</li>
+  </ul>
+</div>
+
+<style>
+  .wp-price > ul li,
+  .wp-price footer ul li {
+    @apply text-base;
+  }
+
+  .wp-price > div > ul > li {
+    @apply text-base my-2 flex;
+  }
+  .wp-price ul li svg {
+    @apply mr-1 w-6 h-6 text-primary-800 flex-shrink-0 inline-flex;
+  }
+  .wp-price footer {
+    @apply min-h-[8rem] text-center flex items-center;
+  }
+</style>
