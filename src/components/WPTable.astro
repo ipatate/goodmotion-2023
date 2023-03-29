@@ -70,12 +70,14 @@ import { Icon } from "astro-icon";
         </li>
       </ul>
     </div>
-    <footer class="rounded-lg text-center bg-gray-100 m-6 p-6 text-primary-900">
-      <ul class="w-full text-center">
-        <li>Pack 10h: <strong>1200€ euros HT</strong> <sup>(2)</sup></li>
-        <li>Pack 20h: <strong>2200€ euros HT</strong> <sup>(2)</sup></li>
-        <li>Pack 50h: <strong>5000€ euros HT</strong><sup>(2)</sup></li>
-      </ul>
+    <footer
+      class="rounded-lg text-center text-base bg-gray-100 m-6 p-6 text-primary-900"
+    >
+      <p class="w-full text-center">
+        Abonnement mensuel <br />
+        Ex: 5h/mois <strong>600€ euros HT</strong>
+        <sup>(2)</sup>
+      </p>
     </footer>
   </div>
   <div class="rounded-lg flex flex-col bg-secondary-100 wp-price flex-1">
@@ -140,7 +142,10 @@ import { Icon } from "astro-icon";
       </ul>
     </li>
     <li>&#160;</li>
-    <li>(2) Pack d'heures valable 1 an</li>
+    <li>
+      (2) Nombre d'heures à déterminer. Les heures non utilisées sont reportées
+      le mois. Remise à zéro des heures au bout de 12 mois.
+    </li>
   </ul>
 </div>
 
