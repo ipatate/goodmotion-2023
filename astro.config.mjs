@@ -1,9 +1,15 @@
 import { loadEnv } from "vite";
-const { SITE_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
+const { SITE_URL, CONTACT_URL } = loadEnv(
+  import.meta?.env?.MODE || "",
+  process.cwd(),
+  ""
+);
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +23,8 @@ export default defineConfig({
     service: "astro/assets/services/sharp",
   },
   site: SITE_URL || "https://www.goodmotion.fr",
-  integrations: [tailwind(), mdx(), sitemap()],
+  CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
+  integrations: [tailwind(), mdx(), sitemap(), vue()],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",

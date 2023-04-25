@@ -153,6 +153,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
+    require("@tailwindcss/forms")({ strategy: "base" }),
     require("tailwind-scrollbar")({ nocompatible: true }),
   ],
 };
