@@ -14,6 +14,7 @@ import tissot from "./assets/images/tissot.svg";
 import mercredi from "./assets/images/mercredi.png";
 import prism from "./assets/images/prism.webp";
 import ircam from "./assets/images/ircam.svg";
+import cvsevrier from "./assets/images/cvsevrier.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
@@ -180,6 +181,13 @@ export default {
       place: "Paris, France",
       details: "Expertise Strapi et Nuxt.js",
       class: "w-32",
+    },
+    {
+      title: "CV Sevrier",
+      image: cvsevrier,
+      place: "Sevrier, France",
+      details: "Maintenance & développement WordPress",
+      class: "w-24",
     },
     {
       title: "Votre logo ici ?",

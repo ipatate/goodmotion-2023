@@ -18,13 +18,14 @@ export default defineConfig({
   },
   experimental: {
     assets: true,
+    viewTransitions: true,
   },
   image: {
-    service: "astro/assets/services/sharp",
+    service: {entrypoint:"astro/assets/services/sharp"},
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  integrations: [tailwind(), mdx(), sitemap(), vue()],
+  integrations: [tailwind(), mdx(), sitemap()],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",
