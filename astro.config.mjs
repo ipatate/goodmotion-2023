@@ -8,6 +8,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import icon from "astro-icon";
 
 import vue from "@astrojs/vue";
 
@@ -16,16 +17,12 @@ export default defineConfig({
   build: {
     format: "file",
   },
-  experimental: {
-    assets: true,
-    viewTransitions: true,
-  },
   image: {
     service: {entrypoint:"astro/assets/services/sharp"},
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  integrations: [tailwind(), mdx(), sitemap()],
+  integrations: [tailwind(), mdx(), sitemap(), icon()],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",
