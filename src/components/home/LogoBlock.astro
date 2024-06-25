@@ -51,8 +51,13 @@ const { title, text, elements } = Astro.props;
               decoding="async"
             />
           </div>
+          {element.title && (
+            <p class="text-xs text-gray-600 mt-2">
+              {element.title}
+            </p>
+          )}
           {element.place && (
-            <p class="text-xs text-gray-600 font-extralight mt-2">
+            <p class="text-xs text-gray-600 font-extralight">
               {element.place}
             </p>
           )}
