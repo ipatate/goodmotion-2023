@@ -7,38 +7,22 @@ const { title } = Astro.props as Props;
 ---
 
 <div class="faq not-prose mt-3">
-  <dt>
-    <button
-      class="flex items-start z-0 relative bg-casper-200 w-full px-2 pb-1 pt-2 rounded-lg text-casper-900"
+  <details>
+    <summary
+      class="flex items-start z-0 relative bg-casper-200 w-full px-2 pb-1 pt-2 rounded-lg text-casper-900 cursor-pointer"
       aria-label="ouvrir la réponse"
     >
       <span class="text-4xl -mt-0.5 mr-2 transition-all">+</span>{title}
-    </button>
-  </dt>
-  <dd
-    class="max-h-0 px-6 -mt-2 text-gray-600 bg-casper-100 rounded-lg"
-    aria-expanded="false"
-  >
-    <slot />
-  </dd>
+    </summary>
+    <div class="py-3 px-2">
+        <slot />
+    </div>
+    </details>
 </div>
-<style>
-  .faq dd {
-    @apply overflow-hidden transition-all duration-300;
-  }
-</style>
 <script>
-  document.querySelectorAll(".faq dt button").forEach((bt) => {
-    const dt = bt.parentElement;
-    const dd = dt.nextElementSibling;
+  document.querySelectorAll(".faq details summary").forEach((dt) => {
     dt.addEventListener("click", () => {
-      dd.setAttribute("aria-expanded", dd.classList.contains("max-h-0"));
-      dd.classList.toggle("max-h-0");
-      dd.classList.toggle("py-5");
-      dt.querySelector("span").classList.toggle("rotate-45");
-      bt.ariaLabel = dd.classList.contains("max-h-0")
-        ? "ouvrir la réponse"
-        : "fermer la réponse";
+      dt.querySelector("span")?.classList.toggle("rotate-45");
     });
   });
 </script>

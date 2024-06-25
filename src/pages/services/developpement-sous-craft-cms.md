@@ -49,15 +49,14 @@ Il possède dans sa version Pro :
 Il existe 2 versions de licence pour utiliser Craft CMS :
 
 - La version Solo gratuite
-- La version Pro 299$
+- La version Pro 399$
 
-### La version pro permet :
+### La version pro permet
 
 - Le gestion des utilisateurs admin et public
 - GraphQL
 - Mode preview pour les sites statiques ou Web apps
 - Possibilité de customiser le branding de l'admin.
-
 
 ## Besoin d'un développement avec Craft CMS ?
 
