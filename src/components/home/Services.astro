@@ -19,7 +19,7 @@ const { title, text, elements } = Astro.props;
     {
       elements.map((element, index) => (
         <div
-          class={`p-6 rounded-md bg-primary-800 h-96 flex gap-5 flex-col justify-center relative ${element.class}`}
+          class={`p-10 rounded-md bg-primary-800 lg:h-96 flex gap-5 flex-col justify-center relative ${element.class}`}
         >
           <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold text-white/80 lg:leading-[2.7rem] text-balance">
             <a href={element.link} class="after:absolute after:inset-0">{element.title}</a>
