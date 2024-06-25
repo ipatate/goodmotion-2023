@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/PageLayout.astro
 title: Développement de web applications et sites web modernes
+subtitle: Genève, Lausanne, Annecy, Suisse, France
 metaTitle: Développement de web applications et sites web modernes sur mesure | Genève, Lausanne, Annecy
 description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js, Strapi, WordPress.
 showToc: true
 ---
 
-La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années. 
+La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années.
 L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
 Sans parler de l'évolution des modes de rendu : SPA, SSR, Hybride, etc..
 Pas facile de s'y retrouver.
@@ -20,7 +21,7 @@ Première règle :
 
 > On choisit la techno après avoir analysé le besoin et pas l'inverse.
 
-## Accompagnement sur les choix techniques pour votre projet web.
+## Accompagnement sur les choix techniques pour votre projet web
 
 Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
 
@@ -69,12 +70,12 @@ Nuxt.js est un framework vraiment agréable à utiliser pour le développement. 
 Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
 
 Désormais, il permet d'avoir plusieurs mode de rendus:
+
 - 100% statique
 - Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
 - Hybride, du statique et du rendu serveur pour les pages qui nécessitent d'analyser la visite.
 
-
-### Les autres outils : Qwik, Svelte, etc..
+### Les autres outils : Qwik, Svelte, etc
 
 D'autres frameworks sont à prendre en compte dans le choix :
 
@@ -84,7 +85,7 @@ D'autres frameworks sont à prendre en compte dans le choix :
 ## CMS headless pour gérer les data
 
 Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d'où les data ?
-Actuellement, une multitude d'outils s'offrent à nous. 
+Actuellement, une multitude d'outils s'offrent à nous.
 Plusieurs paramètres à prendre en compte :
 
 - self-hosted (auto-hébergé) ou pas ?
@@ -105,7 +106,7 @@ Voici quelques CMS pour vous faire une idée :
 - Craft CMS (self hosted)
 - WordPress en mode headless (self hosted)
 
-## Notre prestation 
+## Notre prestation
 
 Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
 Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l'expérience sur plusieurs projets.

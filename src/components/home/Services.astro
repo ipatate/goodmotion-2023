@@ -5,138 +5,28 @@ export interface Props {
   elements: {
     title: string;
     link: string;
+    intro: string;
+    class: string;
   }[];
 }
 const { title, text, elements } = Astro.props;
 ---
 
-<div class="flex flex-col py-6 lg:pb-20">
-  <div class="md:max-w-7xl w-full mx-auto my-2 md:my-5 text-left px-4 md:px-10">
-    <h2
-      class="text-5xl sm:text-6xl w-auto md:text-8xl text-primary-900 font-semibold"
-    >
-      {title}
-    </h2>
-    <p
-      class="max-w-7xl text-left w-full text-base text-gray-700 my-6 font-light"
-    >
-      {text}
-    </p>
-  </div>
+<div class="py-6 lg:pb-20">
   <div
-    class="scroll-wrapper max-w-full md:max-w-7xl mx-auto relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-4 px-4 md:px-10 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-transparent scrollbar-track-transparent"
+    class="max-w-full md:max-w-7xl mx-auto relative w-full grid grid-cols-1 lg:grid-cols-3 gap-3 pb-4 px-4 md:px-10"
   >
     {
       elements.map((element, index) => (
         <div
-          class={`snap-center flex-shrink-0 p-6 rounded-md bg-primary-800  w-11/12 md:w-[48%] h-96 flex items-center relative scroll-element-${index}`}
-          data-index={index}
+          class={`p-6 rounded-md bg-primary-800 h-96 flex gap-5 flex-col justify-center relative ${element.class}`}
         >
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white/80 lg:leading-[3.7rem]">
-            <a href={element.link}>{element.title}</a>
+          <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold text-white/80 lg:leading-[2.7rem] text-balance">
+            <a href={element.link} class="after:absolute after:inset-0">{element.title}</a>
           </h2>
+          <p class="text-white text-lg">{element.intro}</p>
         </div>
       ))
     }
   </div>
-  <div
-    class="justify-end items-center w-full gap-1 mt-1 max-w-full md:max-w-7xl mx-auto hidden md:flex"
-  >
-    <button
-      class={`w-10 h-10 object-contain flex justify-center items-center scrollToBtn scroll-previous text-primary-900`}
-      data-move="previous"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 20 20"
-        ><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"
-        ></path></svg
-      >
-    </button>
-    <button
-      class={`w-10 h-10 object-contain flex justify-center items-center scrollToBtn scroll-next text-primary-900`}
-      data-move="next"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 20 20"
-        ><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"
-        ></path></svg
-      ></button
-    >
-  </div>
 </div>
-<script>
-  // WIP - this is a quick and dirty solution to get the scroll working
-  const wrapper = document.querySelector(".scroll-wrapper");
-  //   const wrapperPosition = wrapper?.getBoundingClientRect();
-  const max = wrapper?.children.length || 0;
-  let currentScroll: number = 0;
-  const btns = document.querySelectorAll(".scrollToBtn");
-
-  // observe first and last element
-  let isStart = false;
-  let isMax = false;
-  let options = {
-    root: wrapper,
-    rootMargin: "0px",
-  };
-  let observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      // is visible
-      const intersecting = entry.isIntersecting;
-      const index = (entry.target as HTMLDivElement).dataset.index;
-      // is the first
-      if (index === "0") {
-        isStart = intersecting;
-      }
-      // is the last
-      if (index === `${max - 1}`) {
-        isMax = intersecting;
-      }
-    });
-  }, options);
-
-  // observe first and last
-  if (wrapper?.children) {
-    // first and last children
-    observer.observe(wrapper?.children[0]);
-    observer.observe(wrapper?.children[wrapper?.children.length - 1]);
-  }
-
-  btns.forEach((btn) => {
-    // btn previous and next
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const btn = e.currentTarget as HTMLButtonElement;
-      const move = btn?.dataset.move;
-      let nextMove = currentScroll;
-      // is not on the first element
-      if (move === "previous" && !isStart) {
-        nextMove = currentScroll - 1;
-        // back to first element
-      } else if (move === "previous" && isStart) {
-        nextMove = 0;
-      }
-      // is not on the last element
-      if (move === "next" && !isMax) {
-        nextMove = currentScroll + 1;
-      }
-      // save current scroll
-      currentScroll = nextMove;
-      const target: HTMLButtonElement | null = document.querySelector(
-        `.scroll-element-${currentScroll}`
-      );
-      if (target) {
-        wrapper?.scrollTo({
-          left: target.offsetLeft - 100,
-          behavior: "smooth",
-        });
-      }
-    });
-  });
-</script>

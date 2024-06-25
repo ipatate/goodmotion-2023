@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/PageLayout.astro
 title: Développement de site web avec Craft CMS
+subtitle: Genève, Lausanne, Annecy, Suisse, France
 metaTitle: Développement de site web Craft CMS| Genève, Lausanne, Annecy
 description: Craft CMS est un CMS qui permet de créer des sites professionnels. C'est un CMS qui utilise les meilleures technologies actuelles en termes de développement PHP.
 showToc: true

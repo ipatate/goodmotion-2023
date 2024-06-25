@@ -21,14 +21,14 @@ import ideative from "./assets/images/ideative.png";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
-	titleHome: "Sites web rapides et durables ! Genève, Lausanne, Annecy",
+	titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
 	metaTitleHome:
-		"Développement de sites web rapides et durables ! Genève, Lausanne, Annecy",
+		"Développement de sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
 	descriptionHome:
 		"Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web.",
-	baseline: "Sites web rapides et durables !",
+	baseline: "Sites web éco-responsables et performants",
 	heroText:
-		"Micro agence spécialisée dans le développement de site web et d'applications web modernes.<br /><span class=\"text-primary-700\">Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>",
+		'Micro agence spécialisée dans le développement de sites web modernes, performants et éco-conçus.<br /><span class="text-primary-700">Optimisation de la vitesse et réduction de l\'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>',
 	place: "Annecy, Genève, Lausanne",
 	place_ch: "Genève, Lausanne, Annecy",
 	socials: [
@@ -219,21 +219,39 @@ export default {
 	],
 	services: [
 		{
-			title: "Développement web applications et sites web modernes",
-			link: "/services/developpement-de-web-applications-et-sites-web-modernes",
-		},
-		{
 			title: "Développement WordPress avancé",
 			link: "/services/developpement-wordpress-avance",
+			intro:
+				"Développement de sites WordPress optimisés pour la performance et éco-conçus.",
+			class: "lg:col-span-2 bg-casper-800",
+		},
+		{
+			title: "Maintenance WordPress",
+			link: "/services/maintenance-wordpress",
+			intro:
+				"Maintenance et évolution de votre site WordPress pour dormir sur vos deux oreilles.",
+			class: "bg-summer-green-800",
 		},
 		{
 			title: "Développement sous Craft CMS",
 			link: "/services/developpement-sous-craft-cms",
+			intro:
+				"Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
+			class: "bg-secondary-800",
+		},
+		{
+			title: "Développement web applications et sites web modernes",
+			link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+			intro:
+				"Développement d'applications web avec NuxtJS ou NextJS, ainsi que de sites web statiques avec Astro.",
+			class: "lg:col-span-2 bg-alto-800",
 		},
 		{
 			title: "Consultant technique pour vos projets web",
 			link: "/services/consultant-technique-web",
+			intro:
+				"Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.",
+			class: "lg:col-span-3",
 		},
-		{ title: "Maintenance WordPress", link: "/services/maintenance-wordpress" },
 	],
 };
