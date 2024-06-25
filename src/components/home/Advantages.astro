@@ -2,6 +2,7 @@
 import speed from "../../../assets/images/speed.svg";
 import secure from "../../../assets/images/secure.svg";
 import green from "../../../assets/images/green.svg";
+import { Image } from "astro:assets";
 
 const title = "Notre engagement";
 const text =
@@ -41,14 +42,12 @@ const avantages = [
     {
       avantages.map((avantage, i) => (
         <div class="flex flex-col flex-1 text-center py-6 md:p-4">
-          <img
-            src={avantage.image.src}
+          <Image
+            src={avantage.image}
             width={avantage.image.width}
             height={avantage.image.height}
             alt=""
             class="w-44 h-44 md:w-28 md:h-28 mx-auto"
-            loading="lazy"
-            decoding="async"
           />
           <h3 class="text-lg md:text-2xl text-primary-900 font-light mt-3 md:mt-8">
             {avantage.title}

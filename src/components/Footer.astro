@@ -14,8 +14,8 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
     class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-stretch pl-5 pr-2 md:px-6"
   >
     <div class="flex-1">
-      <img
-        src={zmf.src}
+      <Image
+        src={zmf}
         width={zmf.width}
         height={zmf.height}
         alt="ZMF"

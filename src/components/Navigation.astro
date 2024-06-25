@@ -36,6 +36,7 @@ const { color = "primary" } = Astro.props;
                     viewBox="0 0 24 24"
                     class="hidden lg:inline relative -top-1"
                   >
+                    <title>Accueil</title>
                     <path
                       fill="currentColor"
                       d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"
@@ -46,9 +47,10 @@ const { color = "primary" } = Astro.props;
               </li>
             );
           }
+          const Tag = nav.subMenu ? 'button' : 'a';
           return (
             <li class="flex flex-col group relative mx-3 my-1 lg:my-0 w-full">
-              <a
+              <Tag
                 href={nav.link}
                 title={nav.label}
                 class={`flex items-center text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700 py-2 lg:py-1 ${
@@ -68,7 +70,7 @@ const { color = "primary" } = Astro.props;
                   </svg>
                 )}
                 {nav.label}
-              </a>
+              </Tag>
               {nav.subMenu && (
                 <ul class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3">
                   {nav.subMenu.map((sub) => {
