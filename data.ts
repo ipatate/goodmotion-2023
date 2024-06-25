@@ -6,6 +6,8 @@ import react from "./assets/images/react.svg";
 import vue from "./assets/images/vue.svg";
 import strapi from "./assets/images/strapi.svg";
 import wordpress from "./assets/images/wordpress.svg";
+import livewire from "./assets/images/livewire.svg";
+import laravel from "./assets/images/laravel.svg";
 // partners
 import trio from "./assets/images/trio.svg";
 import details from "./assets/images/details-sa.jpg";
@@ -130,6 +132,16 @@ export default {
 		{
 			title: "Strapi",
 			image: strapi,
+			class: "w-48",
+		},
+		{
+			title: "Laravel",
+			image: laravel,
+			class: "w-48",
+		},
+		{
+			title: "Livewire",
+			image: livewire,
 			class: "w-48",
 		},
 	],
