@@ -1,15 +1,11 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, type LocalImageProps } from 'astro:assets';
 
 export interface Props {
   title: string;
   text: string;
   elements: {
-    image: {
-      src: string;
-      width: number;
-      height: number;
-    };
+    image: LocalImageProps;
     title: string;
     class: string;
     place?: string;
@@ -36,13 +32,13 @@ const { title, text, elements } = Astro.props;
     class="md:max-w-7xl mt-10 mb-20 w-full mx-auto px-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2"
   >
     {
-      elements.map((element) => (
+      elements.map((element) =>  (
         <div
           class={`flex flex-col items-center justify-start w-full py-5 md:py-8 px-2 bg-alto-50`}
         >
           <div class="mb-2 flex items-center justify-center object-contain h-20">
             <Image
-              src={import(element.image.src)}
+              src={element.image as any}
               width={element.image.width}
               height={element.image.height}
               alt={element.title}
