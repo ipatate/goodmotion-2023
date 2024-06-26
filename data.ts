@@ -251,7 +251,7 @@ export default {
 			link: "/services/consultant-technique-web",
 			intro:
 				"Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.",
-			class: "lg:col-span-3",
+			class: "lg:col-span-3 bg-primary-800",
 		},
 	],
 };
