@@ -22,7 +22,7 @@ export default defineConfig({
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  integrations: [tailwind(), mdx(), sitemap(), icon()],
+  integrations: [tailwind(), mdx(), sitemap(), icon(), vue()],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",

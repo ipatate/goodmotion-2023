@@ -3,12 +3,19 @@ layout: ../layouts/PageLayout.astro
 title: Contactez-nous
 description: Pour nous contacter, vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur Twitter et Linkedin.
 ---
+import ContactForm from "../components/ContactForm.vue";
 
 Vous avez un projet à nous soumettre, une question à nous poser ou tout simplement nous passer le bonjour.
 
 Vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur <s>[Twitter](https://twitter.com/PatrickFaramaz)</s> [X](https://twitter.com/PatrickFaramaz) et [Linkedin](https://www.linkedin.com/in/patrickfaramaz/).
 
-Vous pouvez également me contacter par email à l'adresse suivante :
+
+Vous pouvez m'envoyer un message par le formulaire ci-dessous :
+
+<ContactForm client:visible/>
+
+
+Et vous pouvez également me contacter par email à l'adresse suivante :
 infos@goodmotion.fr
 
 À bientôt !
