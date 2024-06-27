@@ -1,13 +1,13 @@
 ---
 export interface Props {
-  title: string;
-  text: string;
-  elements: {
-    title: string;
-    link: string;
-    intro: string;
-    class: string;
-  }[];
+	title: string;
+	text: string;
+	elements: {
+		title: string;
+		link: string;
+		intro: string;
+		class: string;
+	}[];
 }
 const { title, text, elements } = Astro.props;
 ---
@@ -19,9 +19,9 @@ const { title, text, elements } = Astro.props;
     {
       elements.map((element, index) => (
         <div
-          class={`p-10 rounded-md lg:h-96 flex gap-5 flex-col justify-center relative ${element.class}`}
+          class={`p-10 rounded-md lg:h-96 flex gap-5 flex-col justify-center relative ${element.class} group`}
         >
-          <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold text-white/80 lg:leading-[2.7rem] text-balance">
+          <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold text-white/80 lg:leading-[2.7rem] text-balance group-hover:text-white">
             <a href={element.link} class="after:absolute after:inset-0">{element.title}</a>
           </h2>
           <p class="text-white text-lg">{element.intro}</p>

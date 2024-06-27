@@ -6,7 +6,7 @@ import SocialIcon from "./SocialIcon.astro";
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 export interface Props {
-  color: Color;
+	color: Color;
 }
 const { color = "primary" } = Astro.props;
 ---
@@ -27,7 +27,7 @@ const { color = "primary" } = Astro.props;
               <li class="flex flex-col group relative mx-3">
                 <a
                   href="/"
-                  class={`item-navigation w-6 h-6 inline-flex object-cover text-${color}-900 lg:mr-5`}
+                  class={`item-navigation w-6 h-6 inline-flex object-cover text-${color}-900 lg:mr-10 hover:text-${color}-600`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +49,13 @@ const { color = "primary" } = Astro.props;
           }
           const Tag = nav.subMenu ? 'button' : 'a';
           return (
-            <li class="flex flex-col group relative mx-3 my-1 lg:my-0 w-full">
+            <li class="flex flex-col w-11/12 group relative mx-3 my-1 lg:my-0">
               <Tag
                 href={nav.link}
                 title={nav.label}
-                class={`item-navigation flex items-center text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700 py-2 lg:py-1 ${
-                  pathname === nav.link ? "underline" : ""
-                } ${nav.subMenu ? "has-submenu" : ""}`}
+                class={`item-navigation flex items-center py-4 lg:py-2 ${
+                  pathname === nav.link && nav.label !== 'Contact' ? "underline" : ""
+                } ${nav.subMenu ? "has-submenu" : ""} ${nav.label === 'Contact' ? `bg-${color}-900 hover:bg-${color}-700 text-white justify-center rounded-md`: `text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700` }`}
                  aria-haspopup={nav.subMenu ? "true" : "false"}
               >
                 {nav.label}
@@ -97,7 +97,7 @@ const { color = "primary" } = Astro.props;
         })
       }
     </ul>
-    <div class={`flex justify-center mt-5 lg:hidden text-${color}-900`}>
+    <div class={`flex justify-center mt-10 lg:mt-5 lg:hidden text-${color}-900`}>
       {
         data.socials.map((s) => (
           <a href={s.link} title={s.label} target="_blank" class="mx-3">

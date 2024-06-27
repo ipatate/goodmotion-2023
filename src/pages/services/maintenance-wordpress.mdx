@@ -13,7 +13,7 @@ import Faq from "../../components/Faq.astro";
 import Alert from "../../components/Alert.astro";
 import Cards from "../../components/Cards.astro";
 import Card from "../../components/Card.astro";
-
+import ContactForm from "../../components/ContactForm.vue";
 
 Comme tout projet informatique, il est nécessaire de maintenir votre site WordPress pour le garder en bonne santé.
 Mise à jour des plugins, du coeur de WordPress, sauvegarde régulière, surveillance de la sécurité, surveillance des anomalies, etc.
@@ -97,21 +97,24 @@ Pour vous aider à préserver votre site web et votre réputation, nous vous pro
 
 ## Questions fréquentes
 <dl>
-<Faq title="Pourquoi le prix de la maintenance préventive est à partir de 139 euros HT/mois ?">
+<Faq title="Pourquoi le prix de la maintenance préventive est à partir de 139 euros HT/mois ?" name="mtn-wp">
 En fonction de la complexité d'un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d'extension est un site plus complexe par exemple.
 </Faq>
-<Faq title="Est-ce que tout les sites WordPress sont acceptés ?">
+<Faq title="Est-ce que tout les sites WordPress sont acceptés ?" name="mtn-wp">
 Après un premier audit rapide, nous nous réservons le droit de ne pas fournir la prestation de maintenance préventive.
 En effet, si le site ne correspond pas au standard de qualité de développement, le maintenir s'avère très dangereux. Il arrive que certains sites WordPress sont tellement mal conçus, qu'ils sont impossibles à maintenir.
 </Faq>
-<Faq title="Mon WordPress utilise Elementor et un thème acheté. La maintenance est possible ?">
+<Faq title="Mon WordPress utilise Elementor et un thème acheté. La maintenance est possible ?" name="mtn-wp">
 À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d'un site qui utilise Elementor et un thème acheté sur Themes Forest ou autre.
 </Faq>
-<Faq title="Si je n'ai pas les licences de mes plugins et thèmes. Ils seront quand même mis à jour">
+<Faq title="Si je n'ai pas les licences de mes plugins et thèmes. Ils seront quand même mis à jour" name="mtn-wp">
 Non. Nous ne pouvons mettre à jour uniquement les plugins et thèmes avec les clés de licences.
 </Faq>
+<Faq title="Dois-je donner les accès au serveur et à l'admin du site pour la maintenance" name="mtn-wp">
+Oui. Nous ne pouvons pas intervenir correctement sans le full accès au site et au serveur.
+</Faq>
 <Faq title="Y a-t-il des frais de mise en place pour la maintenance préventive
-">
+" name="mtn-wp">
 Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de **399 euros HT** sont à prévoir.<br />
 Cela comprend :
 - [x] Un audit du site
@@ -122,3 +125,13 @@ Cela comprend :
 _Si vous prenez une prestation "OPTIMISATION DES PERFORMANCES" en même temps que l'abonnement maintenance préventive, les frais de mise en place sont offerts._
 </Faq>
 </dl>
+
+## Contactez-nous pour la maintenance de votre site WordPress
+
+Premier petit audit gratuit de 30mn pour faire le point sur votre site WordPress.
+
+<ContactForm client:visible/>
+
+<br />
+<br />
+<br />
