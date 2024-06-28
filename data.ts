@@ -81,6 +81,10 @@ export default {
 			],
 		},
 		{
+			label: "WordPress",
+			link: "/agence-wordpress",
+		},
+		{
 			label: "A propos",
 			link: "/about",
 		},
