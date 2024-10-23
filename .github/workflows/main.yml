@@ -8,6 +8,8 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: echo
+        run: echo $SITE_URL
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
