@@ -2,6 +2,9 @@ on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
+    env:
+      SITE_URL: ${{ env.SITE_URL }}
+      PUBLIC_CONTACT_URL: ${{ env.PUBLIC_CONTACT_URL }}
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
