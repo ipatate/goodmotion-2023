@@ -3,8 +3,8 @@ name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     env:
-      SITE_URL: ${{ env.SITE_URL }}
-      PUBLIC_CONTACT_URL: ${{ env.PUBLIC_CONTACT_URL }}
+      SITE_URL: ${{ secrets.SITE_URL }}
+      PUBLIC_CONTACT_URL: ${{ secrets.PUBLIC_CONTACT_URL }}
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
