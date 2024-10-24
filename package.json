@@ -5,25 +5,22 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && node robots.mjs",
+    "build": "astro build && bun robots.js",
     "preview": "astro preview",
     "astro": "astro",
-    "robots": "node robots.mjs",
-    "favicon": "node favicon.mjs"
+    "robots": "bun robots.js",
+    "favicon": "bun favicon.js"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.8",
+    "@astrojs/mdx": "^4.0.0-beta.2",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.2",
-    "@astrojs/vue": "^4.5.2",
-    "astro": "^4.16.7",
+    "@astrojs/vue": "^5.0.0-beta.0",
+    "astro": "^5.0.0-beta.5",
     "gsap": "^3.12.5",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.14",
     "vue": "^3.5.12"
-  },
-  "volta": {
-    "node": "18.15.0"
   },
   "devDependencies": {
     "@iconify-json/ic": "^1.2.1",
