@@ -11,6 +11,10 @@ const filePath = "./dist/robots.txt";
 const content = `
 User-agent: *
 Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: ${SITE_URL}/sitemap-index.xml`;
 
 // Write the content to the file
