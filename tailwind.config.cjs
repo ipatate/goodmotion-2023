@@ -183,5 +183,5 @@ module.exports = {
       selected: "selected 1.8s ease-in-out infinite",
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  // plugins: [require("@tailwindcss/typography")],
 };
