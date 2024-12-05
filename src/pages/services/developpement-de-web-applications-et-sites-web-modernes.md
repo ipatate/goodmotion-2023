@@ -66,7 +66,7 @@ Nuxt.js est un framework vraiment agréable à utiliser pour le développement. 
 
 ### Astro
 
-**Astro 2.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
+**Astro 5.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
 Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
 
 Désormais, il permet d'avoir plusieurs mode de rendus:

@@ -3,7 +3,6 @@ import Seo from "../components/Seo.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Co2badge from "../components/Co2badge.astro";
-import "../../assets/style.css";
 
 export interface Props {
     title: string;
@@ -46,6 +45,41 @@ const { title, description, metaTitle, color = "primary" } = Astro.props;
             }
             ::selection {
                 @apply text-white bg-accent-600;
+            }
+        </style>
+        <script>
+            window.difyChatbotConfig = {
+                token: "BZdnfrxooLiRocna",
+                baseUrl: "https://kamal.senciel.org",
+                containerProps: {
+                    // style: {
+                    //     backgroundColor: "#ABCDEF",
+                    //     width: "60px",
+                    //     height: "60px",
+                    //     borderRadius: "30px",
+                    // },
+                    // For minor style overrides, you can also use a string value for the `style` attribute:
+                    // style: 'background-color: #ABCDEF; width: 60px;',
+                },
+            };
+        </script>
+        <script
+            src="https://kamal.senciel.org/embed.min.js"
+            id="BZdnfrxooLiRocna"
+            defer></script>
+        <style is:global>
+            :root {
+                --dify-chatbot-bubble-button-bg-color: rgb(
+                    8 85 108 / var(--tw-bg-opacity, 1)
+                );
+            }
+            #dify-chatbot-bubble-button {
+                /* background-color: #1c64f2 !important; */
+                @apply bg-primary-900 text-white;
+            }
+            #dify-chatbot-bubble-window {
+                width: 24rem !important;
+                height: 40rem !important;
             }
         </style>
     </body>

@@ -183,12 +183,5 @@ module.exports = {
       selected: "selected 1.8s ease-in-out infinite",
     },
   },
-  variants: {
-    scrollbar: ["rounded"],
-  },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms")({ strategy: "base" }),
-    require("tailwind-scrollbar")({ nocompatible: true }),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

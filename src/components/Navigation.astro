@@ -6,160 +6,184 @@ import SocialIcon from "./SocialIcon.astro";
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 export interface Props {
-	color: Color;
+    color: Color;
 }
 const { color = "primary" } = Astro.props;
 ---
 
 <div id="navigation" class="flex-1">
-  <Burger color={color} />
-  <nav
-    class="z-30 fixed lg:relative lg:bg-transparent h-0 lg:h-auto overflow-hidden lg:overflow-visible transition-all top-0 left-0 right-0 bottom-0 whitespace-nowrap max-h-screen lg:w-9/12"
-  >
-    <ul
-      id="navigation-menu"
-      class="flex p-2 mt-20 lg:p-0 lg:mt-0 lg:items-center lg:justify-between flex-col lg:flex-row text-lg lg:text-base items-start"
+    <Burger color={color} />
+    <nav
+        class="z-30 fixed lg:relative lg:bg-transparent h-0 lg:h-auto overflow-hidden lg:overflow-visible transition-all top-0 left-0 right-0 bottom-0 whitespace-nowrap max-h-screen lg:w-9/12"
     >
-      {
-        data.navigations.map((nav) => {
-          if (nav.isHome) {
-            return (
-              <li class="flex flex-col group relative mx-3">
-                <a
-                  href="/"
-                  class={`item-navigation w-6 h-6 inline-flex object-cover text-${color}-900 lg:mr-10 hover:text-${color}-600`}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
-                    viewBox="0 0 24 24"
-                    class="hidden lg:inline relative -top-1"
-                  >
-                    <title>Accueil</title>
-                    <path
-                      fill="currentColor"
-                      d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"
-                    />
-                  </svg>
-                  <span class="inline lg:hidden">Accueil</span>
-                </a>
-              </li>
-            );
-          }
-          const Tag = nav.subMenu ? 'button' : 'a';
-          return (
-            <li class="flex flex-col w-11/12 group relative mx-3 my-1 lg:my-0">
-              <Tag
-                href={nav.link}
-                title={nav.label}
-                class={`item-navigation flex items-center py-4 lg:py-2 ${
-                  pathname === nav.link && nav.label !== 'Contact' ? "underline" : ""
-                } ${nav.subMenu ? "has-submenu" : ""} ${nav.label === 'Contact' ? `bg-${color}-900 hover:bg-${color}-700 text-white justify-center rounded-md`: `text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700` }`}
-                 aria-haspopup={nav.subMenu ? "true" : "false"}
-              >
-                {nav.label}
-                {nav.subMenu && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class={`hidden lg:block relative top-[1px] text-${color}-600`}
-                  >
-                    <path d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
-                  </svg>
-                )}
-              </Tag>
-              {nav.subMenu && (
-                <ul class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3"
-                aria-hidden="true" aria-expanded="false" aria-label={`${nav.label} submenu`}>
-                  {nav.subMenu.map((sub) => {
+        <ul
+            id="navigation-menu"
+            class="flex p-2 mt-20 lg:p-0 lg:mt-0 lg:items-center lg:justify-between flex-col lg:flex-row text-lg lg:text-base items-start"
+        >
+            {
+                data.navigations.map((nav) => {
+                    if (nav.isHome) {
+                        return (
+                            <li class="flex flex-col group relative mx-3">
+                                <a
+                                    href="/"
+                                    class={`item-navigation w-6 h-6 inline-flex object-cover text-${color}-900 lg:mr-10 hover:text-${color}-600`}
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="28"
+                                        height="28"
+                                        viewBox="0 0 24 24"
+                                        class="hidden lg:inline relative -top-1"
+                                    >
+                                        <title>Accueil</title>
+                                        <path
+                                            fill="currentColor"
+                                            d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"
+                                        />
+                                    </svg>
+                                    <span class="inline lg:hidden">
+                                        Accueil
+                                    </span>
+                                </a>
+                            </li>
+                        );
+                    }
+                    const Tag = nav.subMenu ? "button" : "a";
                     return (
-                      <li class="lg:px-3 py-1">
-                        <a
-                          href={sub.link}
-                          title={sub.label}
-                          class={`lg:whitespace-nowrap whitespace-normal text-${color}-900 hover:text-${color}-700 ${
-                            pathname === sub.link ? "underline" : ""
-                          }`}
-                        >
-                          {sub.label}
-                        </a>
-                      </li>
+                        <li class="flex flex-col w-11/12 group relative mx-3 my-1 lg:my-0">
+                            <Tag
+                                href={nav.link}
+                                title={nav.label}
+                                class={`item-navigation flex items-center py-4 lg:py-2 ${
+                                    pathname === nav.link &&
+                                    nav.label !== "Contact"
+                                        ? "underline"
+                                        : ""
+                                } ${nav.subMenu ? "has-submenu" : ""} ${nav.label === "Contact" ? `bg-${color}-900 hover:bg-${color}-700 text-white justify-center rounded-md px-2` : `text-${color}-900 hover:text-${color}-700 group-hover:text-${color}-700`}`}
+                                aria-haspopup={nav.subMenu ? "true" : "false"}
+                            >
+                                {nav.label}
+                                {nav.subMenu && (
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class={`hidden lg:block relative top-[1px] text-${color}-600`}
+                                    >
+                                        <path d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                                    </svg>
+                                )}
+                            </Tag>
+                            {nav.subMenu && (
+                                <ul
+                                    class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3"
+                                    aria-hidden="true"
+                                    aria-expanded="false"
+                                    aria-label={`${nav.label} submenu`}
+                                >
+                                    {nav.subMenu.map((sub) => {
+                                        return (
+                                            <li class="lg:px-3 py-1">
+                                                <a
+                                                    href={sub.link}
+                                                    title={sub.label}
+                                                    class={`lg:whitespace-nowrap whitespace-normal text-${color}-900 hover:text-${color}-700 ${
+                                                        pathname === sub.link
+                                                            ? "underline"
+                                                            : ""
+                                                    }`}
+                                                >
+                                                    {sub.label}
+                                                </a>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            )}
+                        </li>
                     );
-                  })}
-                </ul>
-              )}
-            </li>
-          );
-        })
-      }
-    </ul>
-    <div class={`flex justify-center mt-10 lg:mt-5 lg:hidden text-${color}-900`}>
-      {
-        data.socials.map((s) => (
-          <a href={s.link} title={s.label} target="_blank" class="mx-3">
-            <SocialIcon name={s.icon} title={s.label} />
-          </a>
-        ))
-      }
-    </div>
-  </nav>
+                })
+            }
+        </ul>
+        <div
+            class={`flex justify-center mt-10 lg:mt-5 lg:hidden text-${color}-900`}
+        >
+            {
+                data.socials.map((s) => (
+                    <a
+                        href={s.link}
+                        title={s.label}
+                        target="_blank"
+                        class="mx-3"
+                    >
+                        <SocialIcon name={s.icon} title={s.label} />
+                    </a>
+                ))
+            }
+        </div>
+    </nav>
 </div>
 <style>
-  #navigation.is-open > nav {
-    @apply h-screen overflow-y-auto bg-slate-50;
-  }
+    #navigation.is-open > nav {
+        @apply h-screen overflow-y-auto bg-slate-50;
+    }
 </style>
 <script>
-    let itemOpened: HTMLButtonElement| HTMLAnchorElement;
+    let itemOpened: HTMLButtonElement | HTMLAnchorElement;
 
     function reset() {
         if (itemOpened) {
             const subnav = itemOpened.nextElementSibling as HTMLUListElement;
-            subnav.style.maxHeight = '';
-            subnav.setAttribute('aria-hidden', 'true');
-            subnav.setAttribute('aria-expanded', 'false');
-            subnav.querySelectorAll('a')?.forEach(a => a.setAttribute('tabindex', '-1'));
+            subnav.style.maxHeight = "";
+            subnav.setAttribute("aria-hidden", "true");
+            subnav.setAttribute("aria-expanded", "false");
+            subnav
+                .querySelectorAll("a")
+                ?.forEach((a) => a.setAttribute("tabindex", "-1"));
         }
     }
 
     function open(el: HTMLUListElement) {
-        el.style.maxHeight = 'none';
-        el.setAttribute('aria-hidden', 'false');
-        el.setAttribute('aria-expanded', 'true');
-        el.querySelectorAll('a')?.forEach(a => a.removeAttribute('tabindex'));
+        el.style.maxHeight = "none";
+        el.setAttribute("aria-hidden", "false");
+        el.setAttribute("aria-expanded", "true");
+        el.querySelectorAll("a")?.forEach((a) => a.removeAttribute("tabindex"));
     }
 
-    function clickOutside(e: Event, bt : HTMLButtonElement) {
+    function clickOutside(e: Event, bt: HTMLButtonElement) {
         if (!bt.contains(e.target as Node)) {
-            reset()
+            reset();
         }
     }
 
     // just button
-    const navButton: NodeListOf<HTMLButtonElement> = document.querySelectorAll('button.has-submenu');
+    const navButton: NodeListOf<HTMLButtonElement> =
+        document.querySelectorAll("button.has-submenu");
     // all items navigation
-    const itemNav: NodeListOf<HTMLButtonElement| HTMLAnchorElement> = document.querySelectorAll('.item-navigation');
+    const itemNav: NodeListOf<HTMLButtonElement | HTMLAnchorElement> =
+        document.querySelectorAll(".item-navigation");
 
-    for(const bt of navButton) {
-        bt.addEventListener('focusin', () => {
-            itemOpened = bt
-            open(bt.nextElementSibling as HTMLUListElement)
-            document.addEventListener('click', (event) => clickOutside(event, bt), { once: true })
-
-
-        })
+    for (const bt of navButton) {
+        bt.addEventListener("focusin", () => {
+            itemOpened = bt;
+            open(bt.nextElementSibling as HTMLUListElement);
+            document.addEventListener(
+                "click",
+                (event) => clickOutside(event, bt),
+                { once: true },
+            );
+        });
     }
 
     // reset on focusin another item navigation
-    for(const item of itemNav) {
-        item.addEventListener('focusin', () => {
-            if(itemOpened !== item) {
-                reset()
+    for (const item of itemNav) {
+        item.addEventListener("focusin", () => {
+            if (itemOpened !== item) {
+                reset();
             }
-        })
+        });
     }
 </script>
