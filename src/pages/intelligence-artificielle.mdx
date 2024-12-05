@@ -1,0 +1,61 @@
+---
+layout: ../layouts/PageLayout.astro
+title: "Chatbots IA et Workflows IA"
+subtitle: Genève, Lausanne, Annecy, Suisse, France
+metaTitle: "Conception et Implémentation de Solutions IA : Chatbots et Workflows | Genève, Lausanne, Annecy"
+description:
+showToc: true
+---
+
+import { Image } from "astro:assets";
+import pic from "../../assets/images/RAG.png";
+import ContactForm from "../components/ContactForm.vue";
+// import Faq from "../components/Faq.astro";
+
+
+Nous proposons la conception et l’implémentation de solutions basées sur l’intelligence artificielle (IA).
+Les sociétés telles qu’OpenAI et Anthropic ont démocratisé l’accès aux modèles LLM (Large Language Models) et aux APIs de génération de texte.
+Grâce à ces APIs, nous pouvons construire des solutions IA capables de répondre à des besoins spécifiques.
+Nous vous accompagnons dans la création d’outils intelligents qui transforment la manière dont vous interagissez avec vos utilisateurs et optimisez vos processus métiers.
+
+## Chatbots IA
+
+Des chatbots en mode RAG (Retrieval-Augmented Generation).
+En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte (GPT) à l'aide d'un modèle, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
+
+### Fonctionnement
+
+- Une source de données (base de connaissances, API, documents) est constituée avec des informations pertinentes sur un domaine spécifique.
+- La source de données est découpée en morceaux de texte. Cette partie est cruciale pour retrouver les informations pertinentes à donner au modèle.
+- Le contexte (les données retrouvées par rapport à la requête utilisateur) est fourni avec le prompt envoyé au modèle.
+- Le modèle génère une réponse basée sur le contexte et les informations de la source de données.
+
+
+<Image
+  src={pic}
+  alt="RAG"
+  width={875}
+  class="mx-auto w-full rounded-lg my-16 inline-block"
+/>
+
+
+Bien cadrées, les réponses sont très pertinentes. Vous pouvez tester le fonctionnement directement dans le chatbot disponible sur le site en bas à droite de cette page.
+
+## Workflows
+
+Il est possible de créer des workflows pour automatiser les tâches courantes. Cela reste assez libre et nous nous adaptons à la situation.
+
+## Outils principaux
+
+- Du code (python, JS) et les API des différentes plateformes IA (OpenAI, Anthropic, etc.)
+- Dify : un outil open source avec une version cloud ou une version auto-hébergée, permettant de générer des chatbots en mode RAG assez rapidement.
+
+
+
+## Contactez-nous pour discuter de votre besoin
+
+<ContactForm client:visible/>
+
+<br />
+<br />
+<br />

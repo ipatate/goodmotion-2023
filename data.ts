@@ -87,6 +87,10 @@ export default {
       ],
     },
     {
+      label: "IA",
+      link: "/intelligence-artificielle",
+    },
+    {
       label: "WordPress",
       link: "/agence-wordpress",
     },
