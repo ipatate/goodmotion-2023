@@ -223,13 +223,13 @@ export default {
       details: "Maintenance & développement WordPress",
       class: "w-20",
     },
-    {
-      title: "La Fondation St-Barthélemy",
-      image: bart,
-      place: "Lausanne, Suisse",
-      details: "Maintenance & développement WordPress",
-      class: "w-48",
-    },
+    // {
+    //   title: "La Fondation St-Barthélemy",
+    //   image: bart,
+    //   place: "Lausanne, Suisse",
+    //   details: "Maintenance & développement WordPress",
+    //   class: "w-48",
+    // },
     {
       title: "Votre logo ici ?",
       image: yourLogo,

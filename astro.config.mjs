@@ -5,8 +5,7 @@ const { SITE_URL, CONTACT_URL } = loadEnv(
   "",
 );
 import { defineConfig } from "astro/config";
-// import tailwind from "@astrojs/tailwind";
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
@@ -18,15 +17,12 @@ export default defineConfig({
   build: {
     format: "file",
   },
-  vite: {
-    plugins: [tailwindcss()],
-  },
   image: {
     service: { entrypoint: "astro/assets/services/sharp" },
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  integrations: [mdx(), sitemap(), icon(), vue()],
+  integrations: [tailwind(), mdx(), sitemap(), icon(), vue()],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",
