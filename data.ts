@@ -18,6 +18,7 @@ import ircam from "./assets/images/ircam.svg";
 import cvsevrier from "./assets/images/cvsevrier.svg";
 import mouss from "./assets/images/mouss.svg";
 import ideative from "./assets/images/ideative.png";
+import coteDecouvertes from "./assets/images/cote-decouvertes.png";
 import bart from "./assets/images/bart.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
@@ -186,7 +187,7 @@ export default {
       image: tissot,
       place: "Annecy, France",
       details: "Expertise Next.js et Craft CMS",
-      class: "w-16",
+      class: "w-28",
     },
     {
       title: "Sleeps",
@@ -223,13 +224,20 @@ export default {
       details: "Maintenance & développement WordPress",
       class: "w-20",
     },
-    // {
-    //   title: "La Fondation St-Barthélemy",
-    //   image: bart,
-    //   place: "Lausanne, Suisse",
-    //   details: "Maintenance & développement WordPress",
-    //   class: "w-48",
-    // },
+    {
+      title: "La Fondation St-Barthélemy",
+      image: bart,
+      place: "Lausanne, Suisse",
+      details: "Maintenance & développement WordPress",
+      class: "w-48",
+    },
+    {
+      title: "Côté et Découvertes",
+      image: coteDecouvertes,
+      place: "Thônes, France",
+      details: "Maintenance & développement WordPress",
+      class: "w-36 mb-2",
+    },
     {
       title: "Votre logo ici ?",
       image: yourLogo,
