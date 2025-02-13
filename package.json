@@ -15,7 +15,7 @@
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/vue": "^5.0.6",
-    "astro": "^5.2.3",
+    "astro": "^5.2.6",
     "gsap": "^3.12.7",
     "sharp": "^0.33.5",
     "vue": "^3.5.13"
@@ -25,7 +25,7 @@
     "@iconify-json/ic": "^1.2.2",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.0.3",
+    "@tailwindcss/vite": "^4.0.6",
     "@types/xml2js": "^0.4.14",
     "astro-icon": "^1.1.5",
     "favicons": "^7.2.0",

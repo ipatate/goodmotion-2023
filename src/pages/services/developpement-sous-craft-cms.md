@@ -38,7 +38,7 @@ De base, il est possible de gérer du multilangue et de gérer plusieurs sites s
 L'équipe de développement étant très à l'écoute. Ils sont déjà ajoutés des fonctionnalités compatibles avec les sites statiques.
 C'est un des CMS, les mieux adaptés à une utilisation headless.
 
-Il possède dans sa version Pro :
+Il possède dès sa version free (solo) :
 
 - GraphQL
 - La preview avec un site statique
@@ -47,17 +47,27 @@ Il possède dans sa version Pro :
 
 ## Le prix de Craft CMS
 
-Il existe 2 versions de licence pour utiliser Craft CMS :
+Il existe 3 versions de licence pour utiliser Craft CMS :
 
-- La version Solo gratuite
+- La version Solo Free
+- La version Team 279$
 - La version Pro 399$
+
+### La version solo permet
+
+- Mode Headless
+- GraphQL
+- Mode preview pour les sites statiques ou Web apps
+- Multisite et multilingue
+
+### La version team permet (en plus des features solo)
+
+- Le gestion de 5 comptes utilisateurs admin
 
 ### La version pro permet
 
-- Le gestion des utilisateurs admin et public
-- GraphQL
-- Mode preview pour les sites statiques ou Web apps
-- Possibilité de customiser le branding de l'admin.
+- Le gestion sans limite des utilisateurs et des groupes admin et public
+- La possibilité de mettre le branding de la société dans l'admin et les emails
 
 ## Besoin d'un développement avec Craft CMS ?
 
