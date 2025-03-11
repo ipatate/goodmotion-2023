@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 
 import zmf from "../../assets/images/zmf.svg";
@@ -35,6 +35,13 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
           class={`my-2 ${pathname === "/mentions-legales" ? "underline" : ""}`}
           href="/mentions-legales">Mentions légales</a
         >
+        <a
+          href="https://clin-ops.com/clinops-solutions/"
+          title="Clinical Trial Consulting"
+          target="_blank"
+        >
+          Clinical Trial Consulting
+        </a>
       </nav>
       <script>
         const reserved = document.querySelector(".reserved");
