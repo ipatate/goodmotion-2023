@@ -13,19 +13,19 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
-    "@astrojs/sitemap": "^3.4.0",
+    "@astrojs/sitemap": "^3.4.1",
     "@astrojs/vue": "^5.1.0",
-    "astro": "^5.8.0",
+    "astro": "^5.10.0",
     "gsap": "^3.13.0",
     "sharp": "^0.34.2",
-    "vue": "^3.5.15"
+    "vue": "^3.5.17"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
     "@iconify-json/ic": "^1.2.2",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.7",
+    "@tailwindcss/vite": "^4.1.10",
     "@types/xml2js": "^0.4.14",
     "astro-icon": "^1.1.5",
     "favicons": "^7.2.0",

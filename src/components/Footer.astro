@@ -35,7 +35,10 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
           class={`my-2 ${pathname === "/mentions-legales" ? "underline" : ""}`}
           href="/mentions-legales">Mentions légales</a
         >
+        <a href="/llms.txt" class="my-2">llms.txt</a>
+        <a href="/llms-full.txt" class="my-2">llms-full.txt</a>
         <a
+          class="my-2"
           href="https://clin-ops.com/clinops-solutions/"
           title="Clinical Trial Consulting"
           target="_blank"

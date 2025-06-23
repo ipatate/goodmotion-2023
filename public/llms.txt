@@ -1,0 +1,12 @@
+# https://www.goodmotion.fr llms.txt
+
+- [Éco-conception de sites web](https://www.goodmotion.fr): Développement de sites web rapides, sécurisés et durables.
+- [About Faramaz Patrick](https://www.goodmotion.fr/about): Experienced web developer and consultant sharing knowledge online.
+- [Expert WordPress Agency](https://www.goodmotion.fr/agence-wordpress): Custom WordPress design, maintenance, and sustainable development services.
+- [Contact GoodMotion](https://www.goodmotion.fr/contact): Reach out for inquiries, projects, or just to say hello.
+- [Intelligence Artificielle Solutions](https://www.goodmotion.fr/intelligence-artificielle): Explore AI chatbots and workflows for business optimization.
+- [Legal Mentions Information](https://www.goodmotion.fr/mentions-legales): Details about site publisher, editor, and hosting provider.
+- [Podcast Double Slash](https://www.goodmotion.fr/podcast): Explore web development insights and tools through engaging discussions.
+- [Privacy Policy Overview](https://www.goodmotion.fr/politique-de-confidentialite): Learn about data collection and privacy practices here.
+- [Web Technical Consulting](https://www.goodmotion.fr/services/consultant-technique-web): Expert support for your web project technical needs.
+- [Web Development Services](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes): Expert guidance for modern web applications and site development.

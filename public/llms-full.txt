@@ -1,0 +1,737 @@
+# https://www.goodmotion.fr llms-full.txt
+
+<|firecrawl-page-1-lllmstxt|>
+
+# Sites web éco-responsables et performants
+
+Micro agence spécialisée dans le développement de sites web modernes, performants et éco-conçus.
+
+Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.
+
+**Annecy, Genève, Lausanne**
+
+## [Développement WordPress avancé](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+
+Développement de sites WordPress optimisés pour la performance et éco-conçus.
+
+## [Maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+Maintenance et évolution de votre site WordPress pour dormir sur vos deux oreilles.
+
+## [Développement sous Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
+
+Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.
+
+## [Développement web applications et sites web modernes](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes)
+
+Développement d'applications web avec NuxtJS ou NextJS, ainsi que de sites web statiques avec Astro.
+
+## [Consultant technique pour vos projets web](https://www.goodmotion.fr/services/consultant-technique-web)
+
+Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.
+
+## Nos engagements
+
+Faire des sites web c'est bien mais faire des sites web rapides, sécurisés et durables c'est mieux !
+
+![](https://www.goodmotion.fr/_astro/speed.DGNbIPAl_Fp4ES.svg)
+
+### Des sites web rapides !
+
+![](https://www.goodmotion.fr/_astro/secure.DbotsD2P_Fp4ES.svg)
+
+### Des sites web sécurisés !
+
+![](https://www.goodmotion.fr/_astro/green.DmRdRwt6_15RXgW.svg)
+
+### Des sites web durables !
+
+## Les outils maîtrisés
+
+Après avoir analysé le besoin de votre projet, nous choisirons ensemble l'outil le plus adapté pour obtenir le meilleur résultat.
+
+![Next.js](https://www.goodmotion.fr/_astro/nextjs.wVu15q8z_Z2qFSpf.svg)
+
+Next.js
+
+![Astro.js](https://www.goodmotion.fr/_astro/astro.U89LCi3l_Z1PAMTQ.svg)
+
+Astro.js
+
+![Nuxt](https://www.goodmotion.fr/_astro/nuxt.BV0Q9f9A_Z1dO5NC.svg)
+
+Nuxt
+
+![React.js](https://www.goodmotion.fr/_astro/react.gh1rPbzA_1XjO3M.svg)
+
+React.js
+
+![Vue.js](https://www.goodmotion.fr/_astro/vue.DJULhd0a_Fp4ES.svg)
+
+Vue.js
+
+![WordPress](https://www.goodmotion.fr/_astro/wordpress.D8USWVJ8_Z1HpGHg.svg)
+
+WordPress
+
+![Craft CMS](https://www.goodmotion.fr/_astro/craft-cms.CZLtjdge_Z21s1Tj.svg)
+
+Craft CMS
+
+![Strapi](https://www.goodmotion.fr/_astro/strapi.C_z1LZQD_Z1xAVhu.svg)
+
+Strapi
+
+![Laravel](https://www.goodmotion.fr/_astro/laravel.8J8smiYz_2oyGV3.svg)
+
+Laravel
+
+![Livewire](https://www.goodmotion.fr/_astro/livewire.UoMiuzHJ_Z1RUH7Q.svg)
+
+Livewire
+
+## Nos partenaires
+
+Voici une liste de quelques entreprises avec lesquelles nous travaillons régulièrement. Merci à elles pour leur confiance.
+
+![Agence Trio](https://www.goodmotion.fr/_astro/trio.Bfd-uids_kEwYG.svg)
+
+Agence Trio
+
+Lausanne, Suisse
+
+### WordPress, Craft CMS, React.js, Nuxt.js
+
+![Agence Details SA](https://www.goodmotion.fr/_astro/details-sa.BxYAakud_Z1szHJG.webp)
+
+Agence Details SA
+
+Genève, Suisse
+
+### Expertise React.js
+
+![Agence Idéative](https://www.goodmotion.fr/_astro/ideative.D2SjrgP__2vjk8Q.webp)
+
+Agence Idéative
+
+Genève, Suisse
+
+### Expertise Frontend
+
+![Éditions Tissot](https://www.goodmotion.fr/_astro/tissot.DrEIz_Lo_2rdORm.svg)
+
+Éditions Tissot
+
+Annecy, France
+
+### Expertise Next.js et Craft CMS
+
+![Sleeps](https://www.goodmotion.fr/_astro/sleeps.Cb0hwpsr_Z1XENA6.webp)
+
+Sleeps
+
+Paris, France
+
+### Maintenance & développement WordPress
+
+![Mercredi Biscuiterie](https://www.goodmotion.fr/_astro/mercredi.Ev8X2Lkt_ZJMyqA.webp)
+
+Mercredi Biscuiterie
+
+Lyon, France
+
+### Maintenance & développement WordPress
+
+![Ircam](https://www.goodmotion.fr/_astro/ircam.CmMmEEyR_25X1QN.svg)
+
+Ircam
+
+Paris, France
+
+### Expertise Strapi et Nuxt.js
+
+![CV Sevrier](https://www.goodmotion.fr/_astro/cvsevrier.CcmwDoR9_1HL1eG.svg)
+
+CV Sevrier
+
+Sevrier, France
+
+### Maintenance & développement WordPress
+
+![Mouss Films](https://www.goodmotion.fr/_astro/mouss.BTzZ74U7_1027Eg.svg)
+
+Mouss Films
+
+Annecy, France
+
+### Maintenance & développement WordPress
+
+![La Fondation St-Barthélemy](https://www.goodmotion.fr/_astro/bart.CiTXNfNT_Z2aoufI.svg)
+
+La Fondation St-Barthélemy
+
+Lausanne, Suisse
+
+### Maintenance & développement WordPress
+
+![Côté et Découvertes](https://www.goodmotion.fr/_astro/cote-decouvertes.Dv5qd_VW_Z8NaHj.webp)
+
+Côté et Découvertes
+
+Thônes, France
+
+### Maintenance & développement WordPress
+
+![Votre logo ici ?](https://www.goodmotion.fr/_astro/your-logo.B8321B7q_EAKdS.webp)
+
+Votre logo ici ?
+
+Votre ville, votre pays
+
+### Votre description
+
+<|firecrawl-page-2-lllmstxt|>
+## About Faramaz Patrick
+
+# A propos
+
+## Consultant technique, développeur web, podcasteur
+
+![faramaz patrick](https://www.goodmotion.fr/_astro/pat_picture.CO_1dMZs_2df1P4.webp)
+
+### Faramaz Patrick, consultant technique et développeur expérimenté
+
+Développeur web depuis plus de 15 ans, j’ai accumulé une grande expérience dans la conception et le développement d’applications web et de sites web.
+
+J’ai fait mes premières armes avec PHP, from scratch au départ puis avec Symfony dès la version 1.4, en passant par du Prestashop.
+
+En 2015, je me suis spécialisé dans les applications Web JavaScript et j’ai rapidement adopté React.js dès le début pour construire mes premières applications web.
+
+À partir de 2018, j’ai été séduit par les générateurs de sites statiques. J’ai rapidement pris plaisir à utiliser Gatsby JS, Next.js et Nuxt.js.
+
+Désormais, je dispose d’une multitude d’outils pour développer. J’ai la possibilité de choisir l’outil de plus adapté.
+
+Cela peut être un site sous WordPress ou avec Craft CMS pour certains clients. Ou bien une web application hybride avec Next.js.
+
+Les clients peuvent se reposer entièrement sur mon expérience et j’aime avoir une relation de confiance sur le long terme.
+
+J’aime aussi partager, j’ai donc aussi plusieurs activités :
+
+- Développement open-source
+  - [Github](https://github.com/ipatate)
+  - [Github WP Performance](https://github.com/WP-Performance)
+- Le site [wp-performance.com](https://wp-performance.com/) pour partager les bonnes pratiques de développement sur WordPress
+- Le podcast [Double Slash](https://double-slash.dev/) en co-animation.
+- Des vidéos tutorielles pour partager des astuces et des tests :
+  - [YouTube Double Slash](https://www.youtube.com/channel/UCp5DGBAX2XNJXeOVAo7bICQ)
+  - [YouTube WP Performance](https://www.youtube.com/channel/UCp5DGBAX2XNJXeOVAo7bICQ)
+
+
+
+<|firecrawl-page-3-lllmstxt|>
+## Expert WordPress Agency
+
+# Agence WordPress
+
+## Genève, Lausanne, Annecy, Suisse, France
+
+[Conception, refonte ou maintenance des sites WordPress.](https://www.goodmotion.fr/agence-wordpress#conception-refonte-ou-maintenance-des-sites-wordpress) [Pourquoi choisir Goodmotion pour votre projet WordPress](https://www.goodmotion.fr/agence-wordpress#pourquoi-choisir-goodmotion-pour-votre-projet-wordpress) [Une parfaite connaissance du CMS WordPress](https://www.goodmotion.fr/agence-wordpress#une-parfaite-connaissance-du-cms-wordpress) [Des sites WordPress maintenables et durables](https://www.goodmotion.fr/agence-wordpress#des-sites-wordpress-maintenables-et-durables) [Le déroulement pour faire un site WordPress](https://www.goodmotion.fr/agence-wordpress#le-d%C3%A9roulement-pour-faire-un-site-wordpress) [Faq](https://www.goodmotion.fr/agence-wordpress#faq) [Maintenance](https://www.goodmotion.fr/agence-wordpress#maintenance) [Contactez-nous pour discuter de votre projet WordPress](https://www.goodmotion.fr/agence-wordpress#contactez-nous-pour-discuter-de-votre-projet-wordpress)
+
+## Conception, refonte ou maintenance des sites WordPress.
+
+Nous proposons la conception de sites **WordPress**, la refonte de sites existants, ou simplement la maintenance de votre site actuel.
+
+## Pourquoi choisir Goodmotion pour votre projet WordPress
+
+Chez Goodmotion, nous mettons l’accent sur la qualité de réalisation, tout est 100% sur-mesure. Nous nous engageons à fournir un code maintenable, un site léger qui a moins d’impact sur l’environnement et une expérience de chargement rapide pour une expérience optimale.
+
+Grâce à l’utilisation complète de Gutenberg, l’administration du contenu est facilitée. Vous avez un contrôle total sur l’assemblage des pages.
+
+### Une parfaite connaissance du CMS WordPress
+
+Nous maîtrisons parfaitement le CMS ainsi que l’API (hook, filtre) pour implémenter les fonctionnalités de la manière la plus propre possible.
+
+De plus :
+
+- Nous partageons notre expérience en proposant du code open-source (plugins, thèmes). [Github WP-Performance](https://github.com/WP-Performance)
+- Nous donnons des conférences lors des WordCamps. [Conférence Biarritz 2023](https://videopress.com/v/7nvpcWAB)
+- Nous créons des vidéos pour partager nos connaissances. [Chaîne YouTube](https://www.youtube.com/channel/UCx8Sx_WiRkT5e14CTAhr5cA)
+
+## Des sites WordPress maintenables et durables
+
+Nous développons les sites WordPress en suivant les meilleures pratiques du CMS.
+
+- Premièrement, nous utilisons Gutenberg, l’éditeur natif de WordPress. Ainsi, le site suit les mises à jour et les évolutions sans problème.
+- Deuxièmement, nous adoptons la méthode “Full Site Editing” de WordPress. Cela nous permet de gérer les modèles de thème avec les dernières évolutions de WordPress.
+- Troisièmement, nous désactivons les fonctionnalités inutiles de WordPress. Cela simplifie le site et le rend souvent plus rapide. Par exemple, si le site n’a pas besoin de commentaires, nous désactivons complètement le système.
+- Quatrièmement, nous utilisons le moins de plugins possible. Beaucoup de tâches peuvent être exécutées en quelques lignes de code, réduisant ainsi le nombre de plugins à mettre à jour.
+
+Grâce à ces quatre méthodes de développement, les sites WordPress que nous créons restent maintenables à long terme.
+
+## Le déroulement pour faire un site WordPress
+
+1 - Analyse des besoins
+
+Nous allons ensemble analyser les besoins de votre projet pour définir les priorités. L’objectif est de vous accompagner et clarifier votre vision pour comprendre clairement l’ampleur du projet.
+
+2 - Wireframe
+
+Il s’agit d’une maquette simplifiée des pages principales. Avec une première vision d’ensemble, il est plus facile d’éliminer ou d’ajouter des éléments.
+
+3 - Conception des éléments (par bloc)
+
+La conception se fait par bloc (ou composant) grâce à l’utilisation de Gutenberg, qui permet de penser les pages comme un assemblage de type Lego. Bien entendu, nous assemblons quelques pages pour faciliter la compréhension.
+
+4 - Développement
+
+C’est l’étape où nous développons le thème entièrement sur-mesure. Tout est conçu pour faciliter les mises à jour du contenu, garantir la sécurité et optimiser les performances.
+
+## Faq
+
+### A qui s'adresse l'offre de site WordPress Goodmotion
+
+L’offre de site WordPress Goodmotion s’adresse aux entreprises qui souhaitent un site de qualité, performant et maintenable dans le temps. Nous ne proposons pas de site WordPress à bas coût. Nous ne proposons pas de site WordPress avec un thème acheté sur ThemeForest. Nous ne proposons pas de site WordPress avec un builder (Elementor, Divi, etc…).
+
+### Je n'ai pas de cahier des charges
+
+Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des charges. Nous vous posons les bonnes questions pour définir vos besoins.
+
+### Quel est le prix pour un site WordPress chez Goodmotion ?
+
+Le prix d’un site WordPress chez Goodmotion dépend de la complexité du site. Nous ne proposons pas de prix fixe. Nous vous proposons un devis personnalisé en fonction de vos besoins. Mais pour vous donner une idée, un site WordPress chez Goodmotion commence au environ de 4500 HT.
+
+### Comment se passe le SEO du site ?
+
+Nous intégrons les meilleures pratiques techniques du SEO dans le développement de votre site, ce qui constitue le premier pilier du SEO. Le deuxième pilier concerne le contenu du site. De votre côté, il vous faudra travailler pour créer ou améliorer le contenu à intégrer sur votre site.
+
+## Maintenance
+
+Pour finir, nous proposons également la maintenance des sites développés sous WordPress.
+
+Dans le cas, où nous avons développé le site, nous proposons de gérer la maintenance automatiquement car nous connaissons le code et la méthode.
+
+Dans le cas où le site a été conçu par un autre prestataire, nous faisons un premier état des lieux afin de valider que nous pouvons gérer la maintenance.
+Pour être totalement transparent, certains prestataires vendent des sites sans avoir les compétences en développement. Et les sites sont donc souvent un enchevêtrement de plugin et de mauvaise pratique.
+
+[Plus d’infos sur la maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+## Contactez-nous pour discuter de votre projet WordPress
+
+Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+
+
+
+<|firecrawl-page-4-lllmstxt|>
+
+
+# Contactez-nous
+
+Vous avez un projet à nous soumettre, une question à nous poser ou tout simplement nous passer le bonjour.
+
+Vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur [Blue Sky](https://bsky.app/profile/patrickfaramaz.bsky.social), ~~[Twitter](https://twitter.com/PatrickFaramaz)~~ [X](https://twitter.com/PatrickFaramaz) et [Linkedin](https://www.linkedin.com/in/patrickfaramaz/).
+
+Vous pouvez m’envoyer un message par le formulaire ci-dessous :
+
+Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+
+Et vous pouvez également me contacter par email à l’adresse suivante :
+[infos@goodmotion.fr](mailto:infos@goodmotion.fr)
+
+À bientôt !
+
+
+
+<|firecrawl-page-5-lllmstxt|>
+## Intelligence Artificielle Solutions
+
+# Chatbots IA et Workflows IA
+
+## Genève, Lausanne, Annecy, Suisse, France
+
+[Chatbots IA](https://www.goodmotion.fr/intelligence-artificielle#chatbots-ia) [Fonctionnement](https://www.goodmotion.fr/intelligence-artificielle#fonctionnement) [Workflows](https://www.goodmotion.fr/intelligence-artificielle#workflows) [Outils principaux](https://www.goodmotion.fr/intelligence-artificielle#outils-principaux) [Contactez-nous pour discuter de votre besoin](https://www.goodmotion.fr/intelligence-artificielle#contactez-nous-pour-discuter-de-votre-besoin)
+
+Nous proposons la conception et l’implémentation de solutions basées sur l’intelligence artificielle (IA).
+Les sociétés telles qu’OpenAI et Anthropic ont démocratisé l’accès aux modèles LLM (Large Language Models) et aux APIs de génération de texte.
+Grâce à ces APIs, nous pouvons construire des solutions IA capables de répondre à des besoins spécifiques.
+Nous vous accompagnons dans la création d’outils intelligents qui transforment la manière dont vous interagissez avec vos utilisateurs et optimisez vos processus métiers.
+
+## Chatbots IA
+
+Des chatbots en mode RAG (Retrieval-Augmented Generation).
+En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte (GPT) à l’aide d’un modèle, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
+
+### Fonctionnement
+
+- Une source de données (base de connaissances, API, documents) est constituée avec des informations pertinentes sur un domaine spécifique.
+- La source de données est découpée en morceaux de texte. Cette partie est cruciale pour retrouver les informations pertinentes à donner au modèle.
+- Le contexte (les données retrouvées par rapport à la requête utilisateur) est fourni avec le prompt envoyé au modèle.
+- Le modèle génère une réponse basée sur le contexte et les informations de la source de données.
+
+![RAG](https://www.goodmotion.fr/_astro/RAG.CX_gdK6e_taf1Q.webp)
+
+Bien cadrées, les réponses sont très pertinentes. Vous pouvez tester le fonctionnement directement dans le chatbot disponible sur le site en bas à droite de cette page.
+
+## Workflows
+
+Il est possible de créer des workflows pour automatiser les tâches courantes. Cela reste assez libre et nous nous adaptons à la situation.
+
+## Outils principaux
+
+- Du code (python, JS) et les API des différentes plateformes IA (OpenAI, Anthropic, etc.)
+- Dify : un outil open source avec une version cloud ou une version auto-hébergée, permettant de générer des chatbots en mode RAG assez rapidement.
+
+## Contactez-nous pour discuter de votre besoin
+
+Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+
+
+
+<|firecrawl-page-6-lllmstxt|>
+## Legal Mentions Information
+
+# Mentions légales
+
+## ÉDITEUR DU SITE
+
+### ZMF Resources
+
+Parc d’Activités Annecy La Ravoire
+
+74370 Metz-Tessy France
+
+[http://www.zmf-resources.com](http://www.zmf-resources.com/)
+
+[info@zmf-resources.com](mailto:info@zmf-resources.com)
+
+SASU au capital de 1000 euros
+
+No. Siret : 75302437100027
+
+No. TVA intra. : FR 64 753024371
+
+### RESPONSABLE ÉDITORIAL
+
+Patrick Faramaz
+
+ZMF Resources
+
+Parc d’Activités Annecy La Ravoire
+
+74370 Metz-Tessy France
+
+### HÉBERGEUR
+
+o2switch
+
+Chemin des Pardiaux
+
+63000 Clermont-Ferrand
+
+SAS au capital de 100 000 euros
+
+SIRET 510 909 80700024
+
+RCS Clermont-Ferrand
+
+
+
+<|firecrawl-page-7-lllmstxt|>
+## Podcast Double Slash
+
+# Coanimateur Podcast Double Slash
+
+Je coanime avec Alex Duval, le podcast Double Slash. C’est un podcast dédié au développement Web, aux outils et aux bonnes pratiques. Nous recevons des invités régulièrement pour partager des connaissances et expériences.
+
+Les épisodes du podcast double slash sortent environ tous les 15 jours.
+
+Nous recevons régulièrement des invités pour échanger sur des techniques, des expériences ou des témoignages.
+
+Nous avons lancé le podcast en mars 2020 durant le premier confinement. Nous avons décidé de faire un podcast en français qui parle de développement web (plutôt front).
+
+Nous traitons des sujets comme l’écoconception, le e-commerce, la JAMStack, les outils de développement modernes et les bonnes pratiques.
+
+## Les 10 derniers épisodes du podcast Double Slash
+
+- ### [Les news web dev et IA pour juin 2025 RC1](https://double-slash.dev/podcasts/news-juin25/)
+
+
+mercredi 18 juin 2025
+
+Nous évoquons Cursor qui passe en V1, NightWatch pour surveiller vos applications Laravel, PHP qui tourne dans Node.js, Prestashop 9 avec une nouvelle Admin API, un nouveau navigateur qui intègre l'IA et évidemment les nouvelles dans le monde de l'IA. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-juin25/](https://double-slash.dev/podcasts/news-juin25/)
+
+- ### [La fabuleuse histoire de Next.js](https://double-slash.dev/podcasts/nextjs/)
+
+
+mercredi 11 juin 2025
+
+Dans cet épisode spécial, nous allons revenir sur l'histoire du framework Next.js. Quelle solution il a apportée, les évolutions du framework et ses points forts. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/nextjs/](https://double-slash.dev/podcasts/nextjs/)
+
+- ### [Les news web dev et IA pour mai 2025 RC2](https://double-slash.dev/podcasts/news-mai-rc2/)
+
+
+lundi 26 mai 2025
+
+Nous évoquons Devoxx FR 2025, les nouveautés de Strapi V5, la fin de Stack Overflow, des outils pour partager des données sensibles et, évidemment, l'IA avec OpenAI, Copilot et la Google I/O. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mai-rc2/](https://double-slash.dev/podcasts/news-mai-rc2/)
+
+- ### [Les news web dev et IA pour mai 2025](https://double-slash.dev/podcasts/news_mai-25/)
+
+
+mercredi 14 mai 2025
+
+Dans cet épisode de news pour mai 2025, nous évoquons Redis qui revient à une licence open-source, GSAP qui devient totalement gratuit, Figma Site, le nouveau visual editor de Directus, quelques bibliothèques de composants et des livres blancs sur l'IA. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news\_mai-25/](https://double-slash.dev/podcasts/news_mai-25/)
+
+- ### [Les news web dev pour avril 2025](https://double-slash.dev/podcasts/news-avril-25/)
+
+
+jeudi 24 avril 2025
+
+Dans cet épisode de news pour avril 2025, nous évoquons PIE, le futur des extensions PHP, Chrome qui va peut-être bientôt passer chez OpenAI, Zod 4 en bêta, RedwoodSDK, AnimeJS V4, une nouvelle runtime JS. Puis, dans la rubrique IA, nous parlons de Firebase Studio, State of Dev IA, Firecrawl et une petite vidéo avec Linkup. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-avril-25/](https://double-slash.dev/podcasts/news-avril-25/)
+
+- ### [Développer des projets IA - Comprendre les RAG](https://double-slash.dev/podcasts/ia-rag/)
+
+
+lundi 7 avril 2025
+
+Dans ce deuxième épisode de notre série IA, nous allons parler des RAG (Retrieval Augmented Generation). En effet, avec la puissance des LLM combinée aux bases vectorielles, nous pouvons contrôler le contexte du LLM et ainsi avoir un meilleur contrôle des réponses. Pas d'obligation de fine-tuning et nous pouvons spécialiser un modèle dans un domaine ultra-spécifique. C'est le retour des chatbots, mais des chatbots qui fournissent des réponses pertinentes. Mais attention, si cela semble simple sur le papier, l'exécution est parfois compliquée pour obtenir des résultats acceptables. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/ia-rag/](https://double-slash.dev/podcasts/ia-rag/)
+
+- ### [Les news web dev pour mars 2025 RC2](https://double-slash.dev/podcasts/news-mars-rc2/)
+
+
+mercredi 26 mars 2025
+
+Dans ce deuxième épisode de news pour mars 2025, nous évoquons la réécriture de TypeScript en Go, Electric SQL dans sa version 1, l'arrivée de Lynx JS pour le développement cross-platform, Nuxt v3.16 avec l'hydratation différée, et PGLite qui vous permet d'utiliser Postgres dans le navigateur. Nous aborderons aussi un outil pour créer des Grids avec Tailwind, ainsi qu'un article comparatif entre Next.js et TanStack. Enfin, dans la rubrique IA, nous vous présentons la montée en puissance du MCP, Cline Bot AI, Triplex (2D/3D), la Meilisearch Launch Week, le Vercel AI SDK v4.2, et les toutes nouvelles réponses des APIs d'OpenAI. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mars-rc2/](https://double-slash.dev/podcasts/news-mars-rc2/)
+
+- ### [Les news web dev pour mars 2025](https://double-slash.dev/podcasts/news-mar-25/)
+
+
+mardi 11 mars 2025
+
+Dans cet épisode news, nous abordons les nouveautés de Laravel 12, Flux 2.0, Daisy UI 5 et TanStack Form 1.0 tout en revenant sur le State of PHP et l'arrivée de Native PHP pour les applications mobiles. Nous passons en revue Fusion, explorons diverses bibliothèques ainsi que Fetch avancé TS et HMPL, le moteur de templates, tout en présentant un outil dédié à la révision de Flexbox via Flexboxlabs. Nous traitons également d'articles sur React, une librairie pour 2025, le placement de texte en CSS et la configuration de GIT par les développeurs du core Git, sans oublier les actualités en intelligence artificielle avec Meilisearch 1.13, Mastra, le Framework TS IA conçu par l’équipe de Gatsby ainsi que les agents IA intégrés aux navigateurs d'Opera et de Perplexity. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mar-25/](https://double-slash.dev/podcasts/news-mar-25/)
+
+- ### [Les news web dev pour février 2025](https://double-slash.dev/podcasts/news-feb25/)
+
+
+jeudi 13 février 2025
+
+Un épisode news dans lequel nous évoquons ExpressJS 5, un documentaire sur Angular, de nouvelles versions d'Astro, PrestaShop et Pinia. Également le states of React en 2024, du PHP dans des fichiers VueJS ! Quelques outils et évidemment nous parlons de quelques nouvelles IA.. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-feb25/](https://double-slash.dev/podcasts/news-feb25/)
+
+- ### [Les news web dev pour janvier 2025](https://double-slash.dev/podcasts/news-janv25/)
+
+
+mercredi 29 janvier 2025
+
+Dans cet épisode de news pour cette nouvelle année 2025, nous allons évoquer Vercel qui achète Tremor et qui parle de la structure de ses projets. Des nouvelles concernant JavaScript Temporal, TailwindCSS 4.0, MedusaJS, quelques articles sur des retours d'expérience, et de l'IA avec 2 outils et un modèle chinois qui vient chambouler le jeu. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-janv25/](https://double-slash.dev/podcasts/news-janv25/)
+
+
+
+
+<|firecrawl-page-8-lllmstxt|>
+## Privacy Policy Overview
+
+# Politique de confidentialité
+
+ZMF Resources s’engage à ce que la collecte et le traitement de vos données, effectués à partir du site https://www.goodmotion.fr, soient conformes au règlement général sur la protection des données (RGPD) et à la loi informatique et Liberté.
+
+## Traitements de données à caractère personnel
+
+La collecte de données par le formulaire de contact présent sur le site https://www.goodmotion.fr
+
+Nous collectons des données que vous nous fournissez par la soumission d’un message par notre formulaire de contact pour :
+
+### L’actualisation de fichiers de prospection
+
+Conserver un historique des contacts effectués via le site https://www.goodmotion.fr
+
+Pour la soumission du formulaire de contact sur le présent site, nous vous demandons de renseigner obligatoirement :
+
+- Votre adresse de courrier électronique
+
+Les données personnelles recueillies par le formulaire de contact présent sur https://www.goodmotion.fr sont traitées selon des protocoles sécurisés et permettent à la ZMF Resources de gérer les demandes reçues dans ses applications informatiques.
+
+ZMF Resources s’engage à ne pas révéler à des tiers les informations personnelles que vous pourrez lui communiquer en utilisant le formulaire de contact.
+
+Celles-ci ne serviront que dans l’objectif d’apporter une réponse à vos demandes aussi efficacement que possible.
+
+Pour toute information ou exercice de vos droits informatique et Libertés sur les traitements de données personnelles gérés par la ZMF Resources, vous pouvez nous contacter :
+
+- par le formulaire de contact
+- ou par courrier signé accompagné de la copie d’un titre d’identité à l’adresse suivante : ZMF Resources Parc d’Activités Annecy La Ravoire 74370 Metz-Tessy France
+
+## À propos des cookies
+
+**Actuellement, le site ne dépose aucun cookie.**
+
+### Services destinés à améliorer l’interactivité du site.
+
+**Aucun !**
+
+
+
+<|firecrawl-page-9-lllmstxt|>
+## Web Technical Consulting
+
+# Consultant technique pour vos projets web
+
+## Genève, Lausanne, Annecy, Suisse, France
+
+[Analyse fonctionnelle et technique sur la faisabilité et anticipation des points bloquants de votre projet](https://www.goodmotion.fr/services/consultant-technique-web#analyse-fonctionnelle-et-technique-sur-la-faisabilit%C3%A9-et-anticipation-des-points-bloquants-de-votre-projet) [Choix de technologie adaptée](https://www.goodmotion.fr/services/consultant-technique-web#choix-de-technologie-adapt%C3%A9e) [Maintenance de site web et évolutions](https://www.goodmotion.fr/services/consultant-technique-web#maintenance-de-site-web-et-%C3%A9volutions) [Gestion de l’hébergement](https://www.goodmotion.fr/services/consultant-technique-web#gestion-de-lh%C3%A9bergement) [Développement de nouveau projet web](https://www.goodmotion.fr/services/consultant-technique-web#d%C3%A9veloppement-de-nouveau-projet-web)
+
+**Choix techniques, cahier des charges, gestion de prestataires. J’utilise mes 15 ans d’expérience au service de votre projet. J’interviens en assistance technique pour vous aider sur vos projets web.**
+
+Vous avez un projet web et vous avez besoin d’un support pour gérer la partie technique : choix de serveur, choix de technologie (langage, base…), analyse fonctionnelle, vérification des livrables.
+
+**Agence de communication, entreprise, start-up, nous pouvons vous aider !**
+
+## Analyse fonctionnelle et technique sur la faisabilité et anticipation des points bloquants de votre projet
+
+Analyser les besoins du projet. Détecter les éléments complexes sur les maquettes. Définir les priorités du projet. Mes années d’expérience au service de votre projet.
+Il est important de bien déterminer les livrables d’un projet et les détails de chaque fonctionnalité pour éviter les incompréhensions afin d’éviter les dépassements de budget et de temps.
+
+## Choix de technologie adaptée
+
+Le choix de la technologie utilisée est effectué une fois les besoins du projet déterminés. Dans un écosystème qui évolue sans cesse, il est impératif d’utiliser les bonnes solutions pour développer votre projet web. Tout doit être pris en compte : maintenabilité du projet, évolutivité du projet, mise à jour du contenu. Le choix de la technologie doit s’adapter au projet et non l’inverse.
+
+## Maintenance de site web et évolutions
+
+Vous avez des sites déjà en ligne et vous souhaitez le mettre à jour. Effectuer des évolutions de fonctionnalité. Dans un premier temps, nous effectuerons un état des lieux pour voir ce qu’il est possible de faire. Ensuite, nous déterminerons ensemble la meilleure solution pour vous.
+
+## Gestion de l’hébergement
+
+Point souvent négligé dans un projet web, il reste un élément important et peut faire varier l’expérience de vos visiteurs. Il est important de faire le bon choix pour héberger votre projet.
+Je peux vous conseiller et m’occuper de faire le transfert de votre site ou toute autre opération.
+
+## Développement de nouveau projet web
+
+Évidemment, je peux me charger de développer votre projet avec les technologies que je maitrise.
+
+- [Développement de web applications et sites web modernes](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes)
+- [Développement WordPress 100% sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+- [Développement sous Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
+
+N’hésitez pas à nous contacter pour échanger via la page [contact](https://www.goodmotion.fr/contact)
+
+
+
+<|firecrawl-page-10-lllmstxt|>
+## Web Development Services
+
+# Développement de web applications et sites web modernes
+
+## Genève, Lausanne, Annecy, Suisse, France
+
+[Accompagnement sur les choix techniques pour votre projet web](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#accompagnement-sur-les-choix-techniques-pour-votre-projet-web) [Les frameworks Front](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#les-frameworks-front) [Next.js](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#nextjs) [Nuxt.js](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#nuxtjs) [Astro](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#astro) [Les autres outils : Qwik, Svelte, etc](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#les-autres-outils--qwik-svelte-etc) [CMS headless pour gérer les data](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#cms-headless-pour-g%C3%A9rer-les-data) [Notre prestation](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#notre-prestation)
+
+La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d’années.
+L’avènement des outils basés sur JavaScript, l’arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
+Sans parler de l’évolution des modes de rendu : SPA, SSR, Hybride, etc..
+Pas facile de s’y retrouver.
+
+Aujourd’hui la première étape dans un projet, c’est de trouver l’outil qui correspond le mieux à son projet.
+
+Souvent la première erreur, c’est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l’outil et l’outil sort de l’usage pour lequel il est créé.
+Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
+
+Première règle :
+
+> On choisit la techno après avoir analysé le besoin et pas l’inverse.
+
+## Accompagnement sur les choix techniques pour votre projet web
+
+Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
+
+Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
+C’est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d’ajouter des fonctionnalités.
+
+Étant expert dans plusieurs outils de développements modernes, je peux vous conseiller pour les bons choix.
+
+Si un développement sous WordPress correspond au besoin du projet. Travaillons ensemble avec WordPress: [Développement WordPress avancé](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+
+Sinon, lisez la suite…
+
+## Les frameworks Front
+
+Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l’ambition en termes de trafic. Parfait ! Travaillons ensemble sur l’un de ces outils :
+
+### Next.js
+
+Next.js est un meta-framework construit au-dessus de React.JS. Il offre toutes les fonctionnalités nécessaires pour construire une application web moderne.
+De plus, il offre plusieurs modes de rendus:
+
+- Single Page Application (SPA), rendu uniquement dans le navigateur
+- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
+- Statique hybride, rendu HTML généré par le serveur à la génération du site ou à la demande.
+
+Dans la plupart des cas, nous utiliserons le rendu statique hybride car c’est le mode le plus performant.
+Les pages HTML sont générées au moment du build de l’application ou à la demande.
+Si vous souhaitez plus d’infos, je vous conseille de lire les articles concernant [Next.js 13](https://double-slash.dev/articles/next-js-13-intro/) sur le site Double Slash, dans lesquels, je parle de la nouvelle version de **Next.js**.
+
+### Nuxt.js
+
+**Nuxt.js** est aussi un meta-framework mais lui est construit au-dessus de Vue.js.
+La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
+Il offre également toutes les fonctionnalités nécessaires pour construire une application web moderne.
+Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
+
+- Single Page Application (SPA), rendu uniquement dans le navigateur
+- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
+- Statique, rendu HTML généré par le serveur à la génération du site.
+
+Nuxt.js est un framework vraiment agréable à utiliser pour le développement. Il permet d’avoir un code assez lisible et utilise toutes la puissance et la simplicité de Vue.js.
+
+### Astro
+
+**Astro 5.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche “zéro JavaScript par défaut” dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
+Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
+
+Désormais, il permet d’avoir plusieurs mode de rendus:
+
+- 100% statique
+- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
+- Hybride, du statique et du rendu serveur pour les pages qui nécessitent d’analyser la visite.
+
+### Les autres outils : Qwik, Svelte, etc
+
+D’autres frameworks sont à prendre en compte dans le choix :
+
+- Qwik est encore assez nouveau mais il semble très prometteur. Il propose aussi une approche “zéro JavaScript par défaut” dans le navigateur et il est très performant par sa conception.
+- SvelteKit, lui est moins connu mais il est utilisé par de grand nom, tel que, Apple, le New York Times ou Spotify. Il propose un code très simple et concis afin d’avoir une application maintenable dans le temps.
+
+## CMS headless pour gérer les data
+
+Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d’où les data ?
+Actuellement, une multitude d’outils s’offrent à nous.
+Plusieurs paramètres à prendre en compte :
+
+- self-hosted (auto-hébergé) ou pas ?
+- des data uniquement en lecture ou faut-il avoir la possibilité de mettre à jour les données par le front ?
+- Multilingue ?
+- Plusieurs utilisateurs ?
+- Ergonomies pour les éditeurs de contenu ?
+- Tarifs ?
+- …
+
+Tout dépendra du besoin évidemment et de votre budget.
+Voici quelques CMS pour vous faire une idée :
+
+- Strapi (self-hosted ou cloud)
+- Directus (cloud ou self-hosted)
+- Prismic (cloud)
+- StoryBlock (cloud)
+- Craft CMS (self hosted)
+- WordPress en mode headless (self hosted)
+
+## Notre prestation
+
+Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
+Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l’expérience sur plusieurs projets.
+
+Nous pouvons vous proposer :
+
+- analyse technique de votre projet
+- accompagnements pour le développement de votre projet
+- maintenance et évolution du projet
+
+N’hésitez pas à nous contacter pour échanger via la page [contact](https://www.goodmotion.fr/contact)
+
+
+
