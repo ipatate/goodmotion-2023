@@ -3,28 +3,41 @@
 ---
 
 <script is:inline>
-    // @ts-ignore
-    window.difyChatbotConfig = {
-        token: "Qr513aT4Bmn1tiXj",
-        baseUrl: "https://kamal.senciel.org",
-    };
+  // @ts-ignore
+  window.difyChatbotConfig = {
+    token: "Qr513aT4Bmn1tiXj",
+    baseUrl: "https://kamal.senciel.org",
+  };
+  let difyIsLoaded = false;
+  document.addEventListener("scroll", function () {
+    if (window.scrollY > 100 && !difyIsLoaded) {
+      difyIsLoaded = true;
+      document.removeEventListener("scroll", arguments.callee);
+
+      // Vérifier si le script existe déjà
+      if (!document.getElementById("Qr513aT4Bmn1tiXj")) {
+        const script = document.createElement("script");
+        script.src = "https://kamal.senciel.org/embed.min.js";
+        script.id = "Qr513aT4Bmn1tiXj";
+        script.defer = true;
+        document.head.appendChild(script);
+      }
+    }
+  });
 </script>
-<script
-    is:inline
-    src="https://kamal.senciel.org/embed.min.js"
-    id="Qr513aT4Bmn1tiXj"></script>
 <style is:global>
-    :root {
-        --dify-chatbot-bubble-button-bg-color: rgb(
-            8 85 108 / var(--tw-bg-opacity, 1)
-        );
-    }
-    #dify-chatbot-bubble-button {
-        /* background-color: #1c64f2 !important; */
-        @apply bg-primary-900 text-white;
-    }
-    #dify-chatbot-bubble-window {
-        width: 24rem !important;
-        height: 40rem !important;
-    }
+  :root {
+    --dify-chatbot-bubble-button-bg-color: rgb(
+      8 85 108 / var(--tw-bg-opacity, 1)
+    );
+  }
+  #dify-chatbot-bubble-button {
+    /* background-color: #1c64f2 !important; */
+    @apply bg-primary-900 text-white;
+  }
+  #dify-chatbot-bubble-window {
+    position: fixed !important;
+    width: 24rem !important;
+    height: 40rem !important;
+  }
 </style>
