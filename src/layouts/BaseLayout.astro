@@ -1,9 +1,10 @@
 ---
+import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Co2badge from "../components/Co2badge.astro";
-import Chatbot from "../components/Chatbot.astro";
+// import Chatbot from "../components/Chatbot.astro";
 
 export interface Props {
   title: string;
@@ -44,21 +45,6 @@ const { title, description, metaTitle, color = "primary" } = Astro.props;
     <Co2badge />
     <slot />
     <Footer />
-    <style is:global>
-      @font-face {
-        font-family: Sora;
-        font-style: oblique 0deg 10deg;
-        font-weight: 100 800;
-        font-display: fallback;
-        src: url("../../assets/fonts/Sora-VariableFont_wght.woff2")
-          format("woff2");
-        font-stretch: 25% 151%;
-        unicode-range: U+000-5FF;
-      }
-      ::selection {
-        @apply text-white bg-accent-600;
-      }
-    </style>
     <!-- <Chatbot /> -->
   </body>
 </html>

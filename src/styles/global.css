@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Safelist utilities - utiliser @utility pour les classes dynamiques */
+@source "../../data.ts";
+
+@theme {
+  /* Font family */
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Colors - Primary */
+  --color-primary-50: #e9fffe;
+  --color-primary-100: #c7fffd;
+  --color-primary-200: #96fffb;
+  --color-primary-300: #4dfffa;
+  --color-primary-400: #00f9ff;
+  --color-primary-500: #00dbf9;
+  --color-primary-600: #00acd0;
+  --color-primary-700: #0088a7;
+  --color-primary-800: #046d86;
+  --color-primary-900: #08556c;
+
+  /* Colors - Casper */
+  --color-casper-50: #f4f7fa;
+  --color-casper-100: #e7edf2;
+  --color-casper-200: #d4dee9;
+  --color-casper-300: #a8bed2;
+  --color-casper-400: #94adc6;
+  --color-casper-500: #7a94b7;
+  --color-casper-600: #677fa9;
+  --color-casper-700: #5c6f99;
+  --color-casper-800: #4f5c7e;
+  --color-casper-900: #424d66;
+
+  /* Colors - Secondary */
+  --color-secondary-50: #fcf8f0;
+  --color-secondary-100: #f8efdc;
+  --color-secondary-200: #f1dcb7;
+  --color-secondary-300: #eaca96;
+  --color-secondary-400: #dda35a;
+  --color-secondary-500: #d58a3a;
+  --color-secondary-600: #c7732f;
+  --color-secondary-700: #a55a29;
+  --color-secondary-800: #854927;
+  --color-secondary-900: #6b3d23;
+
+  /* Colors - Summer Green */
+  --color-summer-green-50: #f3f6f5;
+  --color-summer-green-100: #e1eae4;
+  --color-summer-green-200: #c4d6cd;
+  --color-summer-green-300: #a4beb2;
+  --color-summer-green-400: #719687;
+  --color-summer-green-500: #517868;
+  --color-summer-green-600: #3d5e52;
+  --color-summer-green-700: #304c42;
+  --color-summer-green-800: #283d36;
+  --color-summer-green-900: #22322d;
+
+  /* Colors - Accent */
+  --color-accent-50: #fef2f3;
+  --color-accent-100: #fce7e9;
+  --color-accent-200: #f9d2d8;
+  --color-accent-300: #f4adb8;
+  --color-accent-400: #ec8092;
+  --color-accent-500: #e1526f;
+  --color-accent-600: #ce365c;
+  --color-accent-700: #ac2449;
+  --color-accent-800: #902143;
+  --color-accent-900: #7c1f3f;
+
+  /* Colors - Alto */
+  --color-alto-50: #f8f8f8;
+  --color-alto-100: #f0f0f0;
+  --color-alto-200: #e4e4e4;
+  --color-alto-300: #d9d9d9;
+  --color-alto-400: #b4b4b4;
+  --color-alto-500: #9a9a9a;
+  --color-alto-600: #818181;
+  --color-alto-700: #6a6a6a;
+  --color-alto-800: #5a5a5a;
+  --color-alto-900: #4e4e4e;
+
+  /* Background Images */
+  --background-image-hero-animated: linear-gradient(180deg, #e9fffe 0%, #e9fffe 51%, rgba(245,247,247,1) 100%);
+  --background-image-bloc-logo: linear-gradient(180deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);
+  --background-image-bloc-logo-inverse: linear-gradient(0deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);
+  --background-image-bg-home: url('/assets/bg-hero.svg');
+
+  /* Keyframes */
+  --animate-selected: selected 1.8s ease-in-out infinite;
+}
+
+@keyframes selected {
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Font face */
+@font-face {
+  font-family: Sora;
+  font-style: oblique 0deg 10deg;
+  font-weight: 100 800;
+  font-display: fallback;
+  src: url("../../assets/fonts/Sora-VariableFont_wght.woff2") format("woff2");
+  font-stretch: 25% 151%;
+  unicode-range: U+000-5FF;
+}
+
+/* Selection style */
+::selection {
+  @apply text-white bg-accent-600;
+}

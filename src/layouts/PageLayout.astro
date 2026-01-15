@@ -19,7 +19,11 @@ const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
   metaTitle={frontmatter.metaTitle}
   color={randomColor}
 >
-  <HeroPage title={frontmatter.title} subtitle={frontmatter.subtitle} color={randomColor} />
+  <HeroPage
+    title={frontmatter.title}
+    subtitle={frontmatter.subtitle}
+    color={randomColor}
+  />
   <div
     class="prose prose-lg md:prose-xl mx-auto pt-5 pb-20 px-4 md:px-10 max-w-6xl page-content relative"
   >
@@ -32,6 +36,7 @@ const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
   </div>
 </BaseLayout>
 <style is:global>
+  @reference '../styles/global.css';
   .page-content a {
     @apply text-accent-800 hover:text-accent-600;
   }
