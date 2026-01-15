@@ -1,3 +1,4 @@
+@import './fonts.css';
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
@@ -9,7 +10,7 @@
 
 @theme {
   /* Font family */
-  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: var(--font-sora), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   /* Colors - Primary */
   --color-primary-50: #e9fffe;
@@ -99,16 +100,6 @@
   }
 }
 
-/* Font face */
-@font-face {
-  font-family: Sora;
-  font-style: oblique 0deg 10deg;
-  font-weight: 100 800;
-  font-display: fallback;
-  src: url("../../assets/fonts/Sora-VariableFont_wght.woff2") format("woff2");
-  font-stretch: 25% 151%;
-  unicode-range: U+000-5FF;
-}
 
 /* Selection style */
 ::selection {
