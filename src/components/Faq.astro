@@ -1,7 +1,7 @@
 ---
 type Props = {
-	title: string;
-	name: string;
+  title: string;
+  name: string;
 };
 
 const { title, name } = Astro.props as Props;
@@ -13,34 +13,36 @@ const { title, name } = Astro.props as Props;
       class="flex items-center z-0 relative bg-casper-200 w-full py-2 px-4 rounded-lg text-casper-900 cursor-pointer"
     >
       <h3 class="flex-1">
-          {title}
+        {title}
       </h3>
     </summary>
     <div class="py-3 px-2">
-        <slot />
+      <slot />
     </div>
-    </details>
+  </details>
 </div>
 <style>
+  @reference '../styles/global.css';
+
   .faq summary::marker,
   .faq summary::-webkit-details-marker {
-  content: none;
-  display: none;
-}
+    content: none;
+    display: none;
+  }
 
-.faq summary::before,
-.faq summary::after {
-  content: '';
-}
-.faq summary::after {
-  @apply content-['+'] transition-transform rotate-180 p-0 text-4xl origin-center;
-}
-.faq details[open] summary::after {
-  @apply rotate-0 text-accent-600;
-}
-.faq details[open] summary h3 {
-  @apply text-primary-900;
-}
+  .faq summary::before,
+  .faq summary::after {
+    content: "";
+  }
+  .faq summary::after {
+    @apply content-['+'] transition-transform rotate-180 p-0 text-4xl origin-center;
+  }
+  .faq details[open] summary::after {
+    @apply rotate-0 text-accent-600;
+  }
+  .faq details[open] summary h3 {
+    @apply text-primary-900;
+  }
 </style>
 <script>
   document.querySelectorAll(".faq details summary").forEach((dt) => {
