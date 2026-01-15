@@ -44,7 +44,7 @@
             </label>
             <label
                 for="check"
-                class="flex items-center absolute left-[-2000px] top-[-10000px]"
+class="flex items-center absolute -left-500 -top-2500"
             >
                 <input
                     type="checkbox"

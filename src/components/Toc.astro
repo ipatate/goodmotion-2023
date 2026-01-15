@@ -24,7 +24,7 @@ const {
         class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12 overflow-hidden`}
         aria-label="ouvrir le menu de navigation"
       >
-        <span class="absolute block transition-colors duration-150 ease-in-out w-[24.5px] h-[20px] top-[15px] left-[11px]">
+        <span class="absolute block transition-colors duration-150 ease-in-out w-[24.5px] h-5 top-3.75 left-2.75">
           <span
             class={`absolute h-0.5 bg-${color}-900 w-11/12 transition-all top-0 opacity-100 right-0 rotate-0 rounded-md`}
           />
@@ -36,7 +36,7 @@ const {
           />
         </span>
       </button>
-      <div class="max-w-full min-w-[92vw] w-auto md:min-w-[26rem] md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left toc-nav overflow-y-auto">
+      <div class="max-w-full min-w-[92vw] w-auto md:min-w-104 md:max-w-md flex flex-col absolute max-h-0 overflow-hidden transition-height duration-150 ease-in-out bg-slate-100 rounded-md shadow-md right-0 text-left toc-nav overflow-y-auto">
         {headings.map((h) => (
           <a
             class={`ml-${
@@ -93,13 +93,13 @@ const {
     @apply max-h-[75vh];
   }
   .open-toc.is-active > button > span span:nth-child(1) {
-    @apply top-[9px] rotate-45;
+    @apply top-2.25 rotate-45;
   }
   .open-toc.is-active > button > span span:nth-child(2) {
     @apply opacity-0 -right-16;
   }
   .open-toc.is-active > button > span span:nth-child(3) {
-    @apply top-[9px] -rotate-45;
+    @apply top-2.25 -rotate-45;
   }
 </style>
 <script>

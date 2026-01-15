@@ -8,13 +8,13 @@ const { color = "primary" } = Astro.props;
 <button
   id="open-nav"
   aria-label="ouvrir le menu"
-  class="w-10 h-6 absolute right-5 top-7 z-[40] lg:hidden"
+  class="w-10 h-6 absolute right-5 top-7 z-40 lg:hidden"
 >
   <span
     class={`absolute h-0.5 bg-${color}-900 w-full transition-all top-0 opacity-100 right-0 rotate-0`}
   ></span>
   <span
-    class={`absolute h-0.5 bg-${color}-900 w-full transition-all top-[11px] opacity-100 right-0 rotate-0`}
+    class={`absolute h-0.5 bg-${color}-900 w-full transition-all top-2.75 opacity-100 right-0 rotate-0`}
   ></span>
   <span
     class={`absolute h-0.5 bg-${color}-900 w-full transition-all bottom-0 opacity-100 right-0 rotate-0`}
@@ -26,13 +26,13 @@ const { color = "primary" } = Astro.props;
     @apply fixed;
   }
   button.is-open span:nth-child(1) {
-    @apply top-[14px] rotate-45;
+    @apply top-3.5 rotate-45;
   }
   button.is-open span:nth-child(2) {
     @apply opacity-0 -right-16;
   }
   button.is-open span:nth-child(3) {
-    @apply top-[14px] -rotate-45;
+    @apply top-3.5 -rotate-45;
   }
 </style>
 <script>
