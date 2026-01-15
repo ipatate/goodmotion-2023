@@ -5,7 +5,6 @@ import Seo from "../components/Seo.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Co2badge from "../components/Co2badge.astro";
-import soraFont from "../../assets/fonts/Sora-VariableFont_wght.woff2?url";
 
 export interface Props {
   title: string;
@@ -18,13 +17,6 @@ const { title, description, metaTitle, color = "primary" } = Astro.props;
 
 <!doctype html>
 <html lang="fr-FR">
-  <link
-    rel="preload"
-    href={soraFont}
-    as="font"
-    type="font/woff2"
-    crossorigin="anonymous"
-  />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <Seo

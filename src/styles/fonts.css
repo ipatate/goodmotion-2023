@@ -3,7 +3,7 @@
   font-family: Sora;
   font-style: oblique 0deg 10deg;
   font-weight: 100 800;
-  font-display: fallback;
+  font-display: swap;
   src: url("../../assets/fonts/Sora-VariableFont_wght.woff2") format("woff2");
   font-stretch: 25% 151%;
   unicode-range: U+000-5FF;
