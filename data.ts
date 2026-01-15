@@ -4,7 +4,7 @@ import craftcms from "./assets/images/craft-cms.svg";
 import astro from "./assets/images/astro.svg";
 import react from "./assets/images/react.svg";
 import vue from "./assets/images/vue.svg";
-import strapi from "./assets/images/strapi.svg";
+import inertia from "./assets/images/inertia.svg";
 import wordpress from "./assets/images/wordpress.svg";
 import livewire from "./assets/images/livewire.svg";
 import laravel from "./assets/images/laravel.svg";
@@ -145,14 +145,14 @@ export default {
       class: "w-50",
     },
     {
-      title: "Strapi",
-      image: strapi,
-      class: "w-48",
-    },
-    {
       title: "Laravel",
       image: laravel,
       class: "w-48",
+    },
+    {
+      title: "Inertia",
+      image: inertia,
+      class: "w-44",
     },
     {
       title: "Livewire",
@@ -236,7 +236,7 @@ export default {
       image: coteDecouvertes,
       place: "Thônes, France",
       details: "Maintenance & développement WordPress",
-      class: "w-36 mb-2",
+      class: "w-32 mb-2",
     },
     {
       title: "Votre logo ici ?",
