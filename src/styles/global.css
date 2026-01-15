@@ -114,3 +114,8 @@
 ::selection {
   @apply text-white bg-accent-600;
 }
+
+
+.page-content a {
+    @apply text-accent-800 hover:text-accent-600;
+  }
