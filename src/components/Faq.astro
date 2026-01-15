@@ -43,6 +43,57 @@ const { title, name } = Astro.props as Props;
   .faq details[open] summary h3 {
     @apply text-primary-900;
   }
+
+  /* Fallback pour anciens navigateurs (grid hack) */
+  .faq details > div {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+      grid-template-rows 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .faq details > div > * {
+    overflow: hidden;
+  }
+
+  .faq details[open] > div {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  /* Animation moderne avec ::details-content (écrase le fallback si supporté) */
+  @supports selector(::details-content) {
+    .faq details > div {
+      display: block;
+      grid-template-rows: unset;
+      opacity: 1;
+      transition: none;
+    }
+
+    .faq details::details-content {
+      opacity: 0;
+      block-size: 0;
+      overflow: hidden;
+      transition:
+        opacity 0.3s ease,
+        block-size 0.3s ease,
+        content-visibility 0.3s allow-discrete;
+    }
+
+    .faq details[open]::details-content {
+      opacity: 1;
+      block-size: auto;
+    }
+  }
+
+  /* Active l'interpolation vers "auto" */
+  @supports (interpolate-size: allow-keywords) {
+    .faq details {
+      interpolate-size: allow-keywords;
+    }
+  }
 </style>
 <script>
   document.querySelectorAll(".faq details summary").forEach((dt) => {
