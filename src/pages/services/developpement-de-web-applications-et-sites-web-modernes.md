@@ -75,13 +75,6 @@ Désormais, il permet d'avoir plusieurs mode de rendus:
 - Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
 - Hybride, du statique et du rendu serveur pour les pages qui nécessitent d'analyser la visite.
 
-### Les autres outils : Qwik, Svelte, etc
-
-D'autres frameworks sont à prendre en compte dans le choix :
-
-- Qwik est encore assez nouveau mais il semble très prometteur. Il propose aussi une approche "zéro JavaScript par défaut" dans le navigateur et il est très performant par sa conception.
-- SvelteKit, lui est moins connu mais il est utilisé par de grand nom, tel que, Apple, le New York Times ou Spotify. Il propose un code très simple et concis afin d'avoir une application maintenable dans le temps.
-
 ## CMS headless pour gérer les data
 
 Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d'où les data ?
@@ -105,6 +98,15 @@ Voici quelques CMS pour vous faire une idée :
 - StoryBlock (cloud)
 - Craft CMS (self hosted)
 - WordPress en mode headless (self hosted)
+
+
+## Inertia JS, le meilleur des deux mondes
+
+Inertia JS est une librairie qui permet d'utiliser Laravel (PHP) pour la gestion du backend et une librairie front telle que Vue.js ou React.js pour la partie front.
+Cela permet d'avoir un site web avec une architecture classique (client-serveur) tout en ayant une expérience utilisateur de type SPA (Single Page Application).
+C'est un très bon compromis pour les projets qui nécessitent un backend robuste et une interface utilisateur moderne.
+Nous avons déjà réalisé plusieurs projets avec cette approche et les résultats sont très satisfaisants.
+
 
 ## Notre prestation
 
