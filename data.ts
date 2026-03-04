@@ -20,17 +20,17 @@ import mouss from "./assets/images/mouss.svg";
 import ideative from "./assets/images/ideative.png";
 import coteDecouvertes from "./assets/images/cote-decouvertes.png";
 import bart from "./assets/images/bart.svg";
+import vernay from "./assets/images/vernay.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
 export default {
   titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
-  metaTitleHome:
-    "Développement de sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
+  metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
   descriptionHome:
     "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web.",
-  baseline: "Sites web éco-responsables et performants",
+  baseline: "Des sites web modernes, durables et performants",
   heroText:
-    'Micro agence spécialisée dans le développement de sites web modernes, performants et éco-conçus.<br /><span class="text-primary-700">Optimisation de la vitesse et réduction de l\'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>',
+    'Micro agence spécialisée dans le développement de sites web modernes, ultra-rapides et maintenable sur le long terme.<br /><span class="text-primary-700">Optimisation de la vitesse et réduction de l\'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>',
   place: "Annecy, Genève, Lausanne",
   place_ch: "Genève, Lausanne, Annecy",
   socials: [
@@ -39,11 +39,11 @@ export default {
       link: "https://github.com/ipatate",
       icon: "github",
     },
-    {
-      label: "Blue Sky",
-      link: "https://bsky.app/profile/patrickfaramaz.bsky.social",
-      icon: "bluesky",
-    },
+    // {
+    //   label: "Blue Sky",
+    //   link: "https://bsky.app/profile/patrickfaramaz.bsky.social",
+    //   icon: "bluesky",
+    // },
     {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/patrickfaramaz/",
@@ -239,6 +239,13 @@ export default {
       class: "w-32 mb-2",
     },
     {
+      title: "Le Vernay en Savoie",
+      image: vernay,
+      place: "Savoie, France",
+      details: "Maintenance & développement WordPress",
+      class: "w-38 mb-2",
+    },
+    {
       title: "Votre logo ici ?",
       image: yourLogo,
       place: "Votre ville, votre pays",
@@ -248,32 +255,29 @@ export default {
   ],
   services: [
     {
-      title: "Développement WordPress avancé",
-      link: "/services/developpement-wordpress-avance",
+      title: "Développement d'applications web",
+      link: "/services/developpement-de-web-applications-et-sites-web-modernes",
       intro:
-        "Développement de sites WordPress optimisés pour la performance et éco-conçus.",
-      class: "lg:col-span-2 bg-casper-800",
-    },
-    {
-      title: "Maintenance WordPress",
-      link: "/services/maintenance-wordpress",
-      intro:
-        "Maintenance et évolution de votre site WordPress pour dormir sur vos deux oreilles.",
-      class: "bg-summer-green-800",
+        "Développement d'applications web spécifiques telles que des intranets, des jeux interactifs ou des landing pages.",
+      class: "lg:col-span-2 bg-alto-800",
     },
     {
       title: "Développement sous Craft CMS",
       link: "/services/developpement-sous-craft-cms",
-      intro:
-        "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
+      intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
       class: "bg-secondary-800",
     },
     {
-      title: "Développement web applications et sites web modernes",
-      link: "/services/developpement-de-web-applications-et-sites-web-modernes",
-      intro:
-        "Développement d'applications web avec NuxtJS ou NextJS, ainsi que de sites web statiques avec Astro.",
-      class: "lg:col-span-2 bg-alto-800",
+      title: "Maintenance WordPress",
+      link: "/services/maintenance-wordpress",
+      intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
+      class: "bg-summer-green-800",
+    },
+    {
+      title: "Développement WordPress avancé",
+      link: "/services/developpement-wordpress-avance",
+      intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
+      class: "lg:col-span-2 bg-casper-800",
     },
     {
       title: "Consultant technique pour vos projets web",

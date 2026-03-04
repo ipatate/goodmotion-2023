@@ -1,4 +1,4 @@
-@import './fonts.css';
+@import "./fonts.css";
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
@@ -10,7 +10,9 @@
 
 @theme {
   /* Font family */
-  --font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Sora", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 
   /* Colors - Primary */
   --color-primary-50: #e9fffe;
@@ -85,10 +87,23 @@
   --color-alto-900: #4e4e4e;
 
   /* Background Images */
-  --background-image-hero-animated: linear-gradient(180deg, #e9fffe 0%, #e9fffe 51%, rgba(245,247,247,1) 100%);
-  --background-image-bloc-logo: linear-gradient(180deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);
-  --background-image-bloc-logo-inverse: linear-gradient(0deg, rgba(219,221,222,1) 0%, rgba(245,247,247,1) 100%);
-  --background-image-bg-home: url('/assets/bg-hero.svg');
+  --background-image-hero-animated: linear-gradient(
+    180deg,
+    #e9fffe 0%,
+    #e9fffe 51%,
+    rgba(245, 247, 247, 1) 100%
+  );
+  --background-image-bloc-logo: linear-gradient(
+    180deg,
+    rgba(219, 221, 222, 1) 0%,
+    rgba(245, 247, 247, 1) 100%
+  );
+  --background-image-bloc-logo-inverse: linear-gradient(
+    0deg,
+    rgba(219, 221, 222, 1) 0%,
+    rgba(245, 247, 247, 1) 100%
+  );
+  --background-image-bg-home: url("/assets/bg-hero.svg");
 
   /* Keyframes */
   --animate-selected: selected 1.8s ease-in-out infinite;
@@ -100,13 +115,11 @@
   }
 }
 
-
 /* Selection style */
 ::selection {
   @apply text-white bg-accent-600;
 }
 
-
 .page-content a {
-    @apply text-accent-800 hover:text-accent-600;
-  }
+  @apply text-accent-800 hover:text-accent-600;
+}

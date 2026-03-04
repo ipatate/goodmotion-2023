@@ -3,7 +3,6 @@
  */
 import fs from "fs";
 import { favicons } from "favicons";
-import { dirname } from "path";
 
 import config from "./astro.config.mjs";
 

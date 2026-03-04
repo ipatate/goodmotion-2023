@@ -1,7 +1,7 @@
 import { defineCollection, z } from "astro:content";
 import { parseStringPromise } from "xml2js";
 
-const locale = 'fr-FR'
+const locale = "fr-FR";
 
 const dateOptions = {
   weekday: "long" as const,
@@ -10,12 +10,9 @@ const dateOptions = {
   day: "numeric" as const,
 };
 
-
 const findLinks = (description: string): string => {
   const regex = /https?:\/\/[^\s]+/g;
-  const _description = Array.isArray(description)
-    ? description[0]
-    : description;
+  const _description = Array.isArray(description) ? description[0] : description;
 
   const matches = _description.match(regex);
   let descriptionUpdated = _description;
@@ -23,14 +20,12 @@ const findLinks = (description: string): string => {
     for (const match of matches) {
       descriptionUpdated = _description.replace(
         match,
-        `<a href="${match}" target="_blank">${match}</a>`
+        `<a href="${match}" target="_blank">${match}</a>`,
       );
     }
   }
   return descriptionUpdated;
-}
-
-
+};
 
 const podcasts = defineCollection({
   loader: async () => {
@@ -53,13 +48,13 @@ const podcasts = defineCollection({
     });
 
     return itemsFormated.map((item) => {
-      return ({
-        id: item['itunes:episode'][0],
-        pubDate: (new Date(item.pubDate[0])).toLocaleDateString(locale, dateOptions),
+      return {
+        id: item["itunes:episode"][0],
+        pubDate: new Date(item.pubDate[0]).toLocaleDateString(locale, dateOptions),
         title: item.title[0],
         description: findLinks(item.description[0]),
         link: item.link[0],
-      })
+      };
     });
   },
   schema: z.object({
@@ -73,4 +68,4 @@ const podcasts = defineCollection({
 
 export const collections = {
   podcasts,
-}
+};

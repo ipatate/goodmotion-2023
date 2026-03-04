@@ -1,9 +1,5 @@
 import { loadEnv } from "vite";
-const { SITE_URL, CONTACT_URL } = loadEnv(
-  import.meta?.env?.MODE || "",
-  process.cwd(),
-  "",
-);
+const { SITE_URL, CONTACT_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
@@ -14,8 +10,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-  },
+  experimental: {},
   build: {
     format: "file",
   },
@@ -31,8 +26,7 @@ export default defineConfig({
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",
-    appDescription:
-      "Développement de sites web rapides et durables ! Genève, Lausanne, Annecy",
+    appDescription: "Développement de sites web rapides et durables ! Genève, Lausanne, Annecy",
     background: "#f8f8f8",
     theme_color: "#08556c",
     lang: "fr",

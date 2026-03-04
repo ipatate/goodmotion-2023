@@ -1,7 +1,7 @@
 {
   "name": "goodmotion-astro",
-  "type": "module",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,7 +9,11 @@
     "preview": "astro preview",
     "astro": "astro",
     "robots": "node robots.js",
-    "favicon": "node favicon.js"
+    "favicon": "node favicon.js",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -28,6 +32,8 @@
     "@types/xml2js": "^0.4.14",
     "astro-icon": "^1.1.5",
     "favicons": "^7.2.0",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "tailwindcss": "^4.2.1",
     "xml2js": "^0.6.2"
   }
