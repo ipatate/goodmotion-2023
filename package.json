@@ -8,8 +8,8 @@
     "build": "astro build && bun robots.js",
     "preview": "astro preview",
     "astro": "astro",
-    "robots": "bun robots.js",
-    "favicon": "bun favicon.js"
+    "robots": "node robots.js",
+    "favicon": "node favicon.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
