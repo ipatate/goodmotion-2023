@@ -1,3 +1,8 @@
 # Goodmotion.fr Website
 
-Build with Astro 2.0
+## Technologies
+
+- Astro
+- Tailwind CSS
+- VueJS
+

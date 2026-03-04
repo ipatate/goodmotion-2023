@@ -13,22 +13,22 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
-    "@astrojs/sitemap": "^3.6.1",
+    "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vue": "^5.1.4",
-    "astro": "^5.16.9",
+    "astro": "^5.18.0",
     "gsap": "^3.14.2",
     "sharp": "^0.34.5",
-    "vue": "^3.5.26"
+    "vue": "^3.5.29"
   },
   "devDependencies": {
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.1",
     "@types/xml2js": "^0.4.14",
     "astro-icon": "^1.1.5",
     "favicons": "^7.2.0",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.1",
     "xml2js": "^0.6.2"
   }
 }
