@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && bun robots.js",
+    "build": "astro build && node robots.js",
     "preview": "astro preview",
     "astro": "astro",
     "robots": "node robots.js",
