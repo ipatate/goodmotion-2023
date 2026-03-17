@@ -1,60 +1,71 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement web - Application, Intranet, Landing page - Annecy & Suisse Romande
-subtitle: Développement web sur mesure - Basé à Annecy, proche Genève et Lausanne
-metaTitle: Développement web Annecy | Application, Intranet, Landing | Goodmotion
-description: Développement web sur mesure par expert basé à Annecy. Next.js, Nuxt.js, Laravel, Inertia, Livewire. Clients fidèles en Suisse romande. Analyse technique et maintenance.
+title: Développement de web applications, Intranet, Landing page, POC
+subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
+metaTitle: Développement de web applications, Intranet, Landing page, POC
+description: Développement de web applications, Intranet, Landing page, POC. Annecy, Genève, Lausanne, Suisse romande..
 showToc: true
 ---
 
-Vous avez besoin d'un site web, d'une application ou d'un intranet ? Je développe des solutions sur mesure adaptées à vos besoins réels.
+Vous avez besoin d'un **site web**, d'une **application web** ou d'un **intranet** ? Vous avez une idée et souhaitez la tester avec un **POC*** ou un **MVP*** ? Nous développons des solutions sur mesure adaptées à vos besoins réels..
 
-Basé à Annecy, je travaille régulièrement avec des clients en Suisse romande (Genève, Lausanne, Neuchâtel). Cette proximité géographique permet des échanges facilités et une meilleure compréhension de vos attentes.
+Basé à Annecy, au-delà des collaborations avec les clients français (Paris, Lyon, Annecy), nous collaborons régulièrement avec des agences web et des fondations en Suisse romande (Genève, Lausanne). Cette proximité géographique facilite les échanges et permet une meilleure compréhension de vos attentes.
 
-## Ce que je développe
+## Développement sur mesure
 
 ### Sites web et landing pages
 
-Pour les sites vitrines, les pages de présentation ou les landing pages, j'utilise **Astro** quand c'est pertinent. C'est un framework moderne qui génère des sites extrêmement légers et rapides. Le site sur lequel vous naviguer est lui-même développé avec Astro.
+Nous proposons le développement de sites web et de landing pages sur mesure. Vous avez une maquette et souhaitez avoir un site conforme à votre image. Nous sommes là pour vous aider.
 
-Quand un site plus dynamique est nécessaire, **Nuxt.js** ou **Next.js** sont de excelentes options selon vos préférences techniques.
+Vous souhaitez une landing page pour promouvoir un produit ou un service ? Nous pouvons vous aider à créer une page d'atterrissage qui convertit.
+
+Après avoir échangé avec vous sur le projet, le besoin et le budget, nous pouvons vous proposer une solution adaptée à vos besoins. Nous maîtrisons plusieurs outils : **Craft CMS**, **WordPress**, **Astro JS**, **Next.js**, **Nuxt.js**.
+
+Exemple d'une mini application web développée récemment : [https://calculateur.sleeps.fr](https://calculateur.sleeps.fr)
 
 ### Applications web complexes
 
-Pour les applications qui nécessitent des fonctionnalités avancées, de l'authentification, des espaces membres ou des dashboards, nous avons plusieurs options :
+Vous souhaitez développer une application web complexe ? Nous pouvons vous aider à créer une application web sur mesure. Forts de plus de 15 ans d'expérience en développement web, nous pouvons vous accompagner dans la création d'une application web personnalisée.
 
-- **Next.js** - basé sur React, idéal pour les gros projets
-- **Nuxt.js** - basé sur Vue.js, excellent pour les équipes familières avec cet écosystème
+Applications web à fort trafic, jeux interactifs, mini-apps événementielles. Nous avons de l'expérience pour vous aider à développer une application web sur mesure.
 
-### Intranet et outils internes
+**Next.js**, **Nuxt.js**, **Laravel Inertia** font partie de nos outils pour vous aider à concrétiser votre projet.
 
-J'ai développé plusieurs intranets avec **Laravel Inertia**. C'est une solution solide qui combine la puissance de Laravel (PHP) avec la réactivité d'une application monopage. Vos équipes travaillent avec une interface moderne tout en gardant une architecture backend robuste.
+### Intranet et outils internes pour les entreprises
 
-### Développement rapide avec Laravel Livewire
+Pour les besoins très spécifiques des entreprises en interne, nous pouvons vous aider à créer un intranet ou des outils internes sur mesure.
 
-Pour les projets où la rapidité prime (POC, MVP, fonctionnalités contained), **Livewire** permet de créer des interfaces réactives sans écrire de JavaScript. C'est surprenant de voir ce qu'on peut faire avec, et ça simplifie beaucoup la maintenance.
+Intranet avec connexion sécurisée, espace membre, transmission de documents, informations internes. Tout est possible.
 
-## Comment je travaille
+**Laravel** avec **Inertia js** est un de nos outils favoris pour ce type de projet. Un backend robuste et un frontend moderne.
 
-**On ne choisit pas la technologie avant d'avoir compris le besoin.**
+Nous avons récemment développé un intranet pour une fondation en Suisse romande. Il s'agit d'un outil interne pour la gestion des repas d'une entreprise. Multi-utilisateurs, multi-maison, gestion des menus, statistiques, etc.
 
-C'est ma première règle. Un projet WordPress peut être parfait pour un client et catastrophique pour un autre. Tout dépend de ce que vous voulez accomplir, de vos contraintes et de vos objectifs.
+### Développement rapide pour Poc ou MVP
 
-### Mon rôle
+Pour les projets où la rapidité prime (POC, MVP), tout en gardant une qualité technique élevée et la possibilité de faire évoluer le projet plus tard, **Laravel Livewire** est un outil formidable.
+
+De la qualité développée plus rapidement.
+
+## Notre proposition de collaboration
 
 - **Analyse technique** : Je vous aide à clarifier vos besoins et à trouver la meilleure approche
 - **Développement** : Je développe votre projet de A à Z
 - **Maintenance** : Je reste disponible pour les évolutions et les corrections
 
+Développement de qualité et maintenable. Nous souhaitons toujours travailler dans la durée avec nos clients.
+
 ### Pourquoi travailler ensemble ?
 
 - +15 ans d'expérience en développement web
-- Basé à Annecy, proche de la Suisse romande
-- Expertise Multi-stack : pas d'attachement particulier à une techno, je recommande ce qui vous convient
+- Basé à Annecy (74 France), proche de la Suisse.
+- Expertise multi-stack : pas d'attachement particulier à une technologie, je recommande ce qui vous convient.
 - Clients fidèles depuis plusieurs années
 
-## Contact
+## Nous contacter
 
-Vous avez un projet ? Parlons-en.
+Vous avez un projet ? N'hésitez pas à nous contacter pour en discuter via la page [contact](/contact)
 
-Contactez-moi via la page [contact](/contact)
+<p class="text-sm pt-10">
+* POC : Proof of Concept (preuve de concept), MVP : Minimum Viable Product (produit minimum viable)
+</p>
