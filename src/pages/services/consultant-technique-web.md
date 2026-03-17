@@ -35,7 +35,7 @@ Je peux vous conseiller et m'occuper de faire le transfert de votre site ou tout
 Évidemment, je peux me charger de développer votre projet avec les technologies que je maitrise.
 
 - [Développement de web applications et sites web modernes](/services/developpement-de-web-applications-et-sites-web-modernes)
-- [Développement WordPress 100% sur mesure](/services/developpement-wordpress-avance)
+- [Développement WordPress sur mesure](/services/developpement-wordpress-avance)
 - [Développement sous Craft CMS](/services/developpement-sous-craft-cms)
 
 N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
