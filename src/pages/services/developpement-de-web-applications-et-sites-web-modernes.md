@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement de web applications, Intranet, Landing page, POC
+title: Développement web sur mesure, web applications, Intranet, Landing page, POC
 subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
 metaTitle: Développement de web applications, Intranet, Landing page, POC
 description: Développement de web applications, Intranet, Landing page, POC. Annecy, Genève, Lausanne, Suisse romande..
@@ -49,9 +49,9 @@ De la qualité développée plus rapidement.
 
 ## Notre proposition de collaboration
 
-- **Analyse technique** : Je vous aide à clarifier vos besoins et à trouver la meilleure approche
-- **Développement** : Je développe votre projet de A à Z
-- **Maintenance** : Je reste disponible pour les évolutions et les corrections
+- **Analyse technique** : Nous vous aidons à clarifier vos besoins et à trouver la meilleure approche
+- **Développement** : Nous développons votre projet de A à Z
+- **Maintenance** : Nous restons disponibles pour les évolutions et les corrections.
 
 Développement de qualité et maintenable. Nous souhaitons toujours travailler dans la durée avec nos clients.
 
@@ -59,7 +59,7 @@ Développement de qualité et maintenable. Nous souhaitons toujours travailler d
 
 - +15 ans d'expérience en développement web
 - Basé à Annecy (74 France), proche de la Suisse.
-- Expertise multi-stack : pas d'attachement particulier à une technologie, je recommande ce qui vous convient.
+- Expertise multi-stack : pas d'attachement particulier à une technologie, nous recommandons ce qui vous convient.
 - Clients fidèles depuis plusieurs années
 
 ## Nous contacter
