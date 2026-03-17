@@ -66,7 +66,7 @@ export default {
       link: "#",
       subMenu: [
         {
-          label: "Développement de sites web modernes",
+          label: "Développement web sur mesure",
           link: "/services/developpement-de-web-applications-et-sites-web-modernes",
         },
         {
@@ -255,10 +255,10 @@ export default {
   ],
   services: [
     {
-      title: "Développement d'applications web",
+      title: "Développement web sur mesure",
       link: "/services/developpement-de-web-applications-et-sites-web-modernes",
       intro:
-        "Développement d'applications web spécifiques telles que des intranets, des jeux interactifs ou des landing pages.",
+        "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
       class: "lg:col-span-2 bg-alto-800",
     },
     {

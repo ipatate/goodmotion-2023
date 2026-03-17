@@ -1,122 +1,71 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement de web applications et sites web modernes
-subtitle: Genève, Lausanne, Annecy, Suisse, France
-metaTitle: Développement de web applications et sites web modernes sur mesure | Genève, Lausanne, Annecy
-description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js, Strapi, WordPress.
+title: Développement web sur mesure, web applications, Intranet, Landing page, POC
+subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
+metaTitle: Développement de web applications, Intranet, Landing page, POC
+description: Développement de web applications, Intranet, Landing page, POC. Annecy, Genève, Lausanne, Suisse romande..
 showToc: true
 ---
 
-La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années.
-L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
-Sans parler de l'évolution des modes de rendu : SPA, SSR, Hybride, etc..
-Pas facile de s'y retrouver.
+Vous avez besoin d'un **site web**, d'une **application web** ou d'un **intranet** ? Vous avez une idée et souhaitez la tester avec un **POC*** ou un **MVP*** ? Nous développons des solutions sur mesure adaptées à vos besoins réels..
 
-Aujourd'hui la première étape dans un projet, c'est de trouver l’outil qui correspond le mieux à son projet.
+Basé à Annecy, au-delà des collaborations avec les clients français (Paris, Lyon, Annecy), nous collaborons régulièrement avec des agences web et des fondations en Suisse romande (Genève, Lausanne). Cette proximité géographique facilite les échanges et permet une meilleure compréhension de vos attentes.
 
-Souvent la première erreur, c'est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l'outil et l'outil sort de l'usage pour lequel il est créé.
-Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
+## Développement sur mesure
 
-Première règle :
+### Sites web et landing pages
 
-> On choisit la techno après avoir analysé le besoin et pas l'inverse.
+Nous proposons le développement de sites web et de landing pages sur mesure. Vous avez une maquette et souhaitez avoir un site conforme à votre image. Nous sommes là pour vous aider.
 
-## Accompagnement sur les choix techniques pour votre projet web
+Vous souhaitez une landing page pour promouvoir un produit ou un service ? Nous pouvons vous aider à créer une page d'atterrissage qui convertit.
 
-Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
+Après avoir échangé avec vous sur le projet, le besoin et le budget, nous pouvons vous proposer une solution adaptée à vos besoins. Nous maîtrisons plusieurs outils : **Craft CMS**, **WordPress**, **Astro JS**, **Next.js**, **Nuxt.js**.
 
-Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
-C'est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d'ajouter des fonctionnalités.
+Exemple d'une mini application web développée récemment : [https://calculateur.sleeps.fr](https://calculateur.sleeps.fr)
 
-Étant expert dans plusieurs outils de développements modernes, je peux vous conseiller pour les bons choix.
+### Applications web complexes
 
-Si un développement sous WordPress correspond au besoin du projet. Travaillons ensemble avec WordPress: [Développement WordPress avancé](/services/developpement-wordpress-avance)
+Vous souhaitez développer une application web complexe ? Nous pouvons vous aider à créer une application web sur mesure. Forts de plus de 15 ans d'expérience en développement web, nous pouvons vous accompagner dans la création d'une application web personnalisée.
 
-Sinon, lisez la suite...
+Applications web à fort trafic, jeux interactifs, mini-apps événementielles. Nous avons de l'expérience pour vous aider à développer une application web sur mesure.
 
-## Les frameworks Front
+**Next.js**, **Nuxt.js**, **Laravel Inertia** font partie de nos outils pour vous aider à concrétiser votre projet.
 
-Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l'ambition en termes de trafic. Parfait ! Travaillons ensemble sur l'un de ces outils :
+### Intranet et outils internes pour les entreprises
 
-### Next.js
+Pour les besoins très spécifiques des entreprises en interne, nous pouvons vous aider à créer un intranet ou des outils internes sur mesure.
 
-Next.js est un meta-framework construit au-dessus de React.JS. Il offre toutes les fonctionnalités nécessaires pour construire une application web moderne.
-De plus, il offre plusieurs modes de rendus:
+Intranet avec connexion sécurisée, espace membre, transmission de documents, informations internes. Tout est possible.
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique hybride, rendu HTML généré par le serveur à la génération du site ou à la demande.
+**Laravel** avec **Inertia js** est un de nos outils favoris pour ce type de projet. Un backend robuste et un frontend moderne.
 
-Dans la plupart des cas, nous utiliserons le rendu statique hybride car c'est le mode le plus performant.
-Les pages HTML sont générées au moment du build de l'application ou à la demande.
-Si vous souhaitez plus d'infos, je vous conseille de lire les articles concernant [Next.js 13](https://double-slash.dev/articles/next-js-13-intro/) sur le site Double Slash, dans lesquels, je parle de la nouvelle version de **Next.js**.
+Nous avons récemment développé un intranet pour une fondation en Suisse romande. Il s'agit d'un outil interne pour la gestion des repas d'une entreprise. Multi-utilisateurs, multi-maison, gestion des menus, statistiques, etc.
 
-### Nuxt.js
+### Développement rapide pour Poc ou MVP
 
-**Nuxt.js** est aussi un meta-framework mais lui est construit au-dessus de Vue.js.
-La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
-Il offre également toutes les fonctionnalités nécessaires pour construire une application web moderne.
-Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
+Pour les projets où la rapidité prime (POC, MVP), tout en gardant une qualité technique élevée et la possibilité de faire évoluer le projet plus tard, **Laravel Livewire** est un outil formidable.
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique, rendu HTML généré par le serveur à la génération du site.
+De la qualité développée plus rapidement.
 
-Nuxt.js est un framework vraiment agréable à utiliser pour le développement. Il permet d'avoir un code assez lisible et utilise toutes la puissance et la simplicité de Vue.js.
+## Notre proposition de collaboration
 
-### Astro
+- **Analyse technique** : Nous vous aidons à clarifier vos besoins et à trouver la meilleure approche
+- **Développement** : Nous développons votre projet de A à Z
+- **Maintenance** : Nous restons disponibles pour les évolutions et les corrections.
 
-**Astro 5.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
-Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
+Développement de qualité et maintenable. Nous souhaitons toujours travailler dans la durée avec nos clients.
 
-Désormais, il permet d'avoir plusieurs mode de rendus:
+### Pourquoi travailler ensemble ?
 
-- 100% statique
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Hybride, du statique et du rendu serveur pour les pages qui nécessitent d'analyser la visite.
+- +15 ans d'expérience en développement web
+- Basé à Annecy (74 France), proche de la Suisse.
+- Expertise multi-stack : pas d'attachement particulier à une technologie, nous recommandons ce qui vous convient.
+- Clients fidèles depuis plusieurs années
 
-## CMS headless pour gérer les data
+## Nous contacter
 
-Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d'où les data ?
-Actuellement, une multitude d'outils s'offrent à nous.
-Plusieurs paramètres à prendre en compte :
+Vous avez un projet ? N'hésitez pas à nous contacter pour en discuter via la page [contact](/contact)
 
-- self-hosted (auto-hébergé) ou pas ?
-- des data uniquement en lecture ou faut-il avoir la possibilité de mettre à jour les données par le front ?
-- Multilingue ?
-- Plusieurs utilisateurs ?
-- Ergonomies pour les éditeurs de contenu ?
-- Tarifs ?
-- ...
-
-Tout dépendra du besoin évidemment et de votre budget.
-Voici quelques CMS pour vous faire une idée :
-
-- Strapi (self-hosted ou cloud)
-- Directus (cloud ou self-hosted)
-- Prismic (cloud)
-- StoryBlock (cloud)
-- Craft CMS (self hosted)
-- WordPress en mode headless (self hosted)
-
-
-## Inertia JS, le meilleur des deux mondes
-
-Inertia JS est une librairie qui permet d'utiliser Laravel (PHP) pour la gestion du backend et une librairie front telle que Vue.js ou React.js pour la partie front.
-Cela permet d'avoir un site web avec une architecture classique (client-serveur) tout en ayant une expérience utilisateur de type SPA (Single Page Application).
-C'est un très bon compromis pour les projets qui nécessitent un backend robuste et une interface utilisateur moderne.
-Nous avons déjà réalisé plusieurs projets avec cette approche et les résultats sont très satisfaisants.
-
-
-## Notre prestation
-
-Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
-Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l'expérience sur plusieurs projets.
-
-Nous pouvons vous proposer :
-
-- analyse technique de votre projet
-- accompagnements pour le développement de votre projet
-- maintenance et évolution du projet
-
-N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
+<p class="text-sm pt-10">
+* POC : Proof of Concept (preuve de concept), MVP : Minimum Viable Product (produit minimum viable)
+</p>
