@@ -274,7 +274,7 @@ export default {
       class: "bg-summer-green-800",
     },
     {
-      title: "Développement WordPress avancé",
+      title: "Développement WordPress sur mesure",
       link: "/services/developpement-wordpress-avance",
       intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
       class: "lg:col-span-2 bg-casper-800",
