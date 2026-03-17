@@ -1,17 +1,22 @@
 ---
 import { getCollection } from "astro:content";
 
-const podcasts = await getCollection("podcasts");
+const podcasts = (await getCollection("podcasts")).sort(
+    (a, b) => {
+      return b.data.date.valueOf() - a.data.date.valueOf();
+    },
+).slice(0, 10);
+// console.log(podcasts)
 ---
 
 <div>
   <h2>Les 10 derniers épisodes du podcast Double Slash</h2>
   <ul class="not-prose flex flex-col gap-7">
     {
-      podcasts.splice(0, 10).map((item) => (
+      podcasts.map((item) => (
         <li class="list-none pl-0 flex flex-col gap-2">
           <h3 class="text-2xl">
-            <a href={item.data.link}>{item.data.title}</a>
+            <a href={item.data.link}>{item.data.id} - {item.data.title}</a>
           </h3>
           <p class="text-sm text-gray-500">{item.data.pubDate}</p>
           <p

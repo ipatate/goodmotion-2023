@@ -1,4 +1,5 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from 'astro/zod';
 import { parseStringPromise } from "xml2js";
 
 const locale = "fr-FR";
@@ -42,15 +43,12 @@ const podcasts = defineCollection({
       link: string[];
     }[] = data.rss.channel[0].item;
 
-    // order by pubDate
-    itemsFormated.sort((a, b) => {
-      return new Date(b.pubDate[0]).getTime() - new Date(a.pubDate[0]).getTime();
-    });
-
     return itemsFormated.map((item) => {
       return {
+      // @ts-ignore
         id: item["itunes:episode"][0],
         pubDate: new Date(item.pubDate[0]).toLocaleDateString(locale, dateOptions),
+        date: new Date(item.pubDate[0]),
         title: item.title[0],
         description: findLinks(item.description[0]),
         link: item.link[0],
@@ -60,6 +58,7 @@ const podcasts = defineCollection({
   schema: z.object({
     id: z.string(),
     pubDate: z.string(),
+    date: z.date(),
     title: z.string(),
     description: z.string(),
     link: z.string(),
