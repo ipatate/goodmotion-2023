@@ -1,16 +1,13 @@
 ---
 layout: ../layouts/PageLayout.astro
-title: "Chatbots IA et Workflows IA"
+title: "Chatbots IA, agents IA et workflows IA"
 subtitle: Genève, Lausanne, Annecy, Suisse, France
-metaTitle: "Conception et Implémentation de Solutions IA : Chatbots et Workflows | Genève, Lausanne, Annecy"
+metaTitle: "Développement d'agents IA : Chatbots IA, agents IA et Workflows | Genève, Lausanne, Annecy"
 description:
 showToc: true
 ---
 
-import { Image } from "astro:assets";
-import pic from "../../assets/images/RAG.png";
 import ContactForm from "../components/ContactForm.vue";
-// import Faq from "../components/Faq.astro";
 
 
 Nous proposons la conception et l’implémentation de solutions basées sur l’intelligence artificielle (IA).
@@ -21,33 +18,30 @@ Nous vous accompagnons dans la création d’outils intelligents qui transformen
 ## Chatbots IA
 
 Des chatbots en mode RAG (Retrieval-Augmented Generation).
-En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte (GPT) à l'aide d'un modèle, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
+En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte à l'aide d'un modèle LLM, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
 
-### Fonctionnement
+Nous contrôlons le contexte que nous allons donner au modèle LLM, ce qui permet de garantir la qualité des réponses et de les adapter à vos besoins spécifiques. Les modèles sont excellents pour formuler des réponses complètes, mais peuvent parfois halluciner des informations. Grâce au contexte et aux instructions que nous lui donnons, nous pouvons limiter fortement les hallucinations, et le modèle peut répondre avec une grande précision sur des questions spécifiques à votre activité.
 
-- Une source de données (base de connaissances, API, documents) est constituée avec des informations pertinentes sur un domaine spécifique.
-- La source de données est découpée en morceaux de texte. Cette partie est cruciale pour retrouver les informations pertinentes à donner au modèle.
-- Le contexte (les données retrouvées par rapport à la requête utilisateur) est fourni avec le prompt envoyé au modèle.
-- Le modèle génère une réponse basée sur le contexte et les informations de la source de données.
+## Agents IA
 
+Un agent IA est une sorte d'assitant capable d'effectuer des tâches spécifiques. Il peut être utilisé pour automatiser des tâches répétitives, ou pour fournir des informations précises et fiables.
 
-<Image
-  src={pic}
-  alt="RAG"
-  width={875}
-  class="mx-auto w-full rounded-lg my-16 inline-block"
-/>
+Les LLM se sont démocratisés depuis un petit moment maintenant et nous disposons de différentes solutions pour développer des agents IA. Notamment avec le SDK Laravel AI, qui permet de créer des agents IA spécifiques à vos besoins et de les intégrer dans l'application que vous développez.
 
+N8N est également un outil intéressant pour créer des agents IA et des workflows personnalisés.
 
-Bien cadrées, les réponses sont très pertinentes. Vous pouvez tester le fonctionnement directement dans le chatbot disponible sur le site en bas à droite de cette page.
+Exemple dans une web application : analyser des données et générer des recommandations pour les utilisateurs.
 
 ## Workflows
 
+Parfois, on peut perdre du temps à faire des tâches répétitives. Nous pouvons automatiser ces tâches pour gagner du temps et de l’argent.
 Il est possible de créer des workflows pour automatiser les tâches courantes. Cela reste assez libre et nous nous adaptons à la situation.
+
 
 ## Outils principaux
 
-- Du code (python, JS) et les API des différentes plateformes IA (OpenAI, Anthropic, etc.)
+- Laravel AI SDK pour créer des agents IA spécifiques.
+- N8n pour créer des workflows personnalisés.
 - Dify : un outil open source avec une version cloud ou une version auto-hébergée, permettant de générer des chatbots en mode RAG assez rapidement.
 
 

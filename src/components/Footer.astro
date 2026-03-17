@@ -25,6 +25,7 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
         ZMF Resources Tous les droits sont réservés.
       </p>
       <nav class="flex flex-col text-sm mt-5">
+        <a class="my-2" href="/agence-wordpress" >Agence WordPress</a>
         <a
           class={`my-2 ${
             pathname === "/politique-de-confidentialite" ? "underline" : ""

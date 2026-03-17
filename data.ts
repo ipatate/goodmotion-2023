@@ -88,12 +88,8 @@ export default {
       ],
     },
     {
-      label: "IA",
+      label: "Agents IA",
       link: "/intelligence-artificielle",
-    },
-    {
-      label: "WordPress",
-      link: "/agence-wordpress",
     },
     {
       label: "A propos",
@@ -262,16 +258,16 @@ export default {
       class: "lg:col-span-2 bg-alto-800",
     },
     {
+      title: "Développement d'agents IA",
+      link: "/intelligence-artificielle",
+      intro: "Chatbots IA, agents IA et workflows IA",
+      class: "lg:col-span-2 bg-primary-800",
+    },
+    {
       title: "Développement sous Craft CMS",
       link: "/services/developpement-sous-craft-cms",
       intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
-      class: "bg-secondary-800",
-    },
-    {
-      title: "Maintenance WordPress",
-      link: "/services/maintenance-wordpress",
-      intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
-      class: "bg-summer-green-800",
+      class: "lg:col-span-2 bg-secondary-800",
     },
     {
       title: "Développement WordPress sur mesure",
@@ -280,11 +276,17 @@ export default {
       class: "lg:col-span-2 bg-casper-800",
     },
     {
+      title: "Maintenance WordPress",
+      link: "/services/maintenance-wordpress",
+      intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
+      class: "lg:col-span-2 bg-summer-green-800",
+    },
+    {
       title: "Consultant technique pour vos projets web",
       link: "/services/consultant-technique-web",
       intro:
         "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.",
-      class: "lg:col-span-3 bg-primary-800",
+      class: "lg:col-span-2 bg-primary-800",
     },
   ],
 };
