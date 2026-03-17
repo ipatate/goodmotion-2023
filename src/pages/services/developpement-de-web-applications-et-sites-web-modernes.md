@@ -1,110 +1,60 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement de web applications et sites web modernes sur mesure
-subtitle: Genève, Lausanne, Annecy, Suisse, France
-metaTitle: Développement web sur mesure | Next.js, Nuxt.js, Laravel, Livewire | Goodmotion
-description: Développement d'applications web et sites sur mesure avec Next.js, Nuxt.js, Astro, Laravel, Inertia.js et WordPress. Expertise technique et conseil sur les choix technologiques.
+title: Développement web - Application, Intranet, Landing page - Annecy & Suisse Romande
+subtitle: Développement web sur mesure - Basé à Annecy, proche Genève et Lausanne
+metaTitle: Développement web Annecy | Application, Intranet, Landing | Goodmotion
+description: Développement web sur mesure par expert basé à Annecy. Next.js, Nuxt.js, Laravel, Inertia, Livewire. Clients fidèles en Suisse romande. Analyse technique et maintenance.
 showToc: true
 ---
 
-La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années.
-L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
-Sans parler de l'évolution des modes de rendu : SPA, SSR, Hybride, etc..
-Pas facile de s'y retrouver.
+Vous avez besoin d'un site web, d'une application ou d'un intranet ? Je développe des solutions sur mesure adaptées à vos besoins réels.
 
-Aujourd'hui la première étape dans un projet, c'est de trouver l'outil qui correspond le mieux à son projet.
+Basé à Annecy, je travaille régulièrement avec des clients en Suisse romande (Genève, Lausanne, Neuchâtel). Cette proximité géographique permet des échanges facilités et une meilleure compréhension de vos attentes.
 
-Souvent la première erreur, c'est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l'outil et l'outil sort de l'usage pour lequel il est créé.
-Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
+## Ce que je développe
 
-**On choisit la techno après avoir analysé le besoin et pas l'inverse.**
+### Sites web et landing pages
 
-## Accompagnement sur les choix techniques
+Pour les sites vitrines, les pages de présentation ou les landing pages, j'utilise **Astro** quand c'est pertinent. C'est un framework moderne qui génère des sites extrêmement légers et rapides. Le site sur lequel vous naviguer est lui-même développé avec Astro.
 
-Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
+Quand un site plus dynamique est nécessaire, **Nuxt.js** ou **Next.js** sont de excelentes options selon vos préférences techniques.
 
-Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
-C'est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d'ajouter des fonctionnalités.
+### Applications web complexes
 
-Si un développement sous WordPress correspond au besoin du projet : [Développement WordPress avancé](/services/developpement-wordpress-avance)
+Pour les applications qui nécessitent des fonctionnalités avancées, de l'authentification, des espaces membres ou des dashboards, nous avons plusieurs options :
 
-## Les frameworks Front
+- **Next.js** - basé sur React, idéal pour les gros projets
+- **Nuxt.js** - basé sur Vue.js, excellent pour les équipes familières avec cet écosystème
 
-Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l'ambition en termes de trafic :
+### Intranet et outils internes
 
-### Next.js
+J'ai développé plusieurs intranets avec **Laravel Inertia**. C'est une solution solide qui combine la puissance de Laravel (PHP) avec la réactivité d'une application monopage. Vos équipes travaillent avec une interface moderne tout en gardant une architecture backend robuste.
 
-Next.js est un meta-framework construit au-dessus de React.js. Il offre toutes les fonctionnalités nécessaires pour construire une application web moderne.
-Il offre plusieurs modes de rendu :
+### Développement rapide avec Laravel Livewire
 
-- **SPA** : Single Page Application, rendu uniquement dans le navigateur
-- **SSR** : Server Side Rendering, rendu HTML généré par le serveur à chaque appel
-- **Statique hybride** : rendu HTML généré à la génération du site ou à la demande
+Pour les projets où la rapidité prime (POC, MVP, fonctionnalités contained), **Livewire** permet de créer des interfaces réactives sans écrire de JavaScript. C'est surprenant de voir ce qu'on peut faire avec, et ça simplifie beaucoup la maintenance.
 
-Dans la plupart des cas, nous utilisons le rendu statique hybride car c'est le mode le plus performant.
+## Comment je travaille
 
-### Nuxt.js
+**On ne choisit pas la technologie avant d'avoir compris le besoin.**
 
-Nuxt.js est un meta-framework construit au-dessus de Vue.js.
-La version 3 de Nuxt.js est sortie fin 2022 et est basée sur Vue 3.
-Il offre plusieurs modes de rendu :
+C'est ma première règle. Un projet WordPress peut être parfait pour un client et catastrophique pour un autre. Tout dépend de ce que vous voulez accomplir, de vos contraintes et de vos objectifs.
 
-- **SPA** : Single Page Application
-- **SSR** : Server Side Rendering
-- **Statique** : HTML généré à la construction du site
+### Mon rôle
 
-Nuxt.js est un framework agréable à utiliser. Le code est lisible et utilise la puissance de Vue.js.
+- **Analyse technique** : Je vous aide à clarifier vos besoins et à trouver la meilleure approche
+- **Développement** : Je développe votre projet de A à Z
+- **Maintenance** : Je reste disponible pour les évolutions et les corrections
 
-### Astro
+### Pourquoi travailler ensemble ?
 
-**Astro** est un excellent choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur.
-Le site sur lequel vous lisez ces lignes est réalisé avec **Astro**.
+- +15 ans d'expérience en développement web
+- Basé à Annecy, proche de la Suisse romande
+- Expertise Multi-stack : pas d'attachement particulier à une techno, je recommande ce qui vous convient
+- Clients fidèles depuis plusieurs années
 
-Modes de rendu disponibles :
+## Contact
 
-- 100% statique
-- SSR : Server Side Rendering
-- Hybride : statique et rendu serveur combiné
+Vous avez un projet ? Parlons-en.
 
-## CMS headless pour gérer les données
-
-Les données viennent d'où ? Plusieurs paramètres à prendre en compte :
-
-- Self-hosted ou cloud ?
-- Données uniquement en lecture ou possibilité de mise à jour depuis le front ?
-- Multilingue ?
-- Plusieurs utilisateurs ?
-- Ergonomies pour les éditeurs ?
-- Budget ?
-
-Voici quelques CMS à considérer :
-
-- **Strapi** (self-hosted ou cloud)
-- **Directus** (cloud ou self-hosted)
-- **Prismic** (cloud)
-- **StoryBlock** (cloud)
-- **Craft CMS** (self-hosted)
-- **WordPress en mode headless** (self-hosted)
-
-## Inertia.js
-
-Inertia.js permet d'utiliser **Laravel** (PHP) pour le backend et Vue.js ou React.js pour le front.
-Cela donne un site avec une architecture classique client-serveur tout en имея une expérience utilisateur de type SPA.
-C'est un bon compromis pour les projets qui nécessitent un backend robuste et une interface moderne.
-
-## Laravel Livewire
-
-Livewire permet de créer des interfaces réactives en PHP, sans écrire de JavaScript.
-Vous avez accès direct à votre logique métier Laravel depuis vos composants.
-
-## Notre prestation
-
-Nous intervenons dès le choix de la stack technique pour vous aider à faire les bons choix.
-
-Nous proposons :
-
-- Analyse technique de votre projet
-- Accompagnement au développement
-- Maintenance et évolution du projet
-
-Contactez-nous pour échanger via la page [contact](/contact)
+Contactez-moi via la page [contact](/contact)
