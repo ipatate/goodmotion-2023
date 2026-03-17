@@ -1,122 +1,183 @@
 ---
 layout: ../../layouts/PageLayout.astro
-title: Développement de web applications et sites web modernes
-subtitle: Genève, Lausanne, Annecy, Suisse, France
-metaTitle: Développement de web applications et sites web modernes sur mesure | Genève, Lausanne, Annecy
-description: Développement de web applications et de sites web avec Next.js, Astro, Nuxt.js, Strapi, WordPress.
+title: Développement Web Sur Mesure - Next.js, Nuxt.js, Laravel, Livewire
+subtitle: Genève, Lausanne, Annecy - Votre projet web avec les meilleures technologies
+metaTitle: Développement Web Sur Mesure | Next.js, Nuxt.js, Laravel, Livewire | Goodmotion
+description: Votre projet web mérite les meilleures technologies. Expert Next.js, Nuxt.js, Laravel, Inertia.js et WordPress sur mesure. SEO optimisé, performances garanties. Basé en Suisse romande.
 showToc: true
 ---
 
-La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d'années.
-L'avènement des outils basés sur JavaScript, l'arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
-Sans parler de l'évolution des modes de rendu : SPA, SSR, Hybride, etc..
-Pas facile de s'y retrouver.
+import { Markdown } from '@astrolib/ads'
 
-Aujourd'hui la première étape dans un projet, c'est de trouver l’outil qui correspond le mieux à son projet.
+## Développeur Web Expert : La Technologie Au Service De Votre Projet
 
-Souvent la première erreur, c'est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l'outil et l'outil sort de l'usage pour lequel il est créé.
-Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
+Vous cherchez un développeur web capable de transformer votre vision en réalité numérique ? Avec plus de 15 ans d'expérience, je crée des applications web et sites sur mesure qui propulsent votre entreprise vers le succès en ligne.
 
-Première règle :
+Fini les solutions templates qui limitent votre croissance. Je développe des plateformes sur mesure, optimisées pour le SEO et conçues pour converter vos visiteurs en clients.
 
-> On choisit la techno après avoir analysé le besoin et pas l'inverse.
+<Markdown>
 
-## Accompagnement sur les choix techniques pour votre projet web
+### 🚀 Next.js - React Pour Des Applications Ultra-Performantes
 
-Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
+Next.js est le choix idéal pour les applications web modernes nécessitant :
 
-Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
-C'est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d'ajouter des fonctionnalités.
+- **Performance exceptionnelle** : Rendu hybride (SSG, SSR, ISR) pour un chargement instantané
+- **SEO optimisé** : Le référencement naturel est nativement intégré
+- **Évolutivité** : Une architecture qui grandit avec votre entreprise
+- **Stack moderne** : React + les dernières innovations Google
 
-Étant expert dans plusieurs outils de développements modernes, je peux vous conseiller pour les bons choix.
+**Cas d'usage parfaits** : E-commerce, SaaS, applications métier, plateformes complexes
 
-Si un développement sous WordPress correspond au besoin du projet. Travaillons ensemble avec WordPress: [Développement WordPress avancé](/services/developpement-wordpress-avance)
+</Markdown>
 
-Sinon, lisez la suite...
+<Markdown>
 
-## Les frameworks Front
+### ⚡ Nuxt.js - Vue.js Pour Des Applications Élégantes
 
-Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l'ambition en termes de trafic. Parfait ! Travaillons ensemble sur l'un de ces outils :
+Nuxt.js est mon framework de prédilection pour les projets qui privilégient :
 
-### Next.js
+- **Développement rapide** : Syntaxe claire et structure intuitive
+- **Flexibilité** : Parfait pour les interfaces utilisateur complexes
+- **DX exceptionnelle** : L'expérience développeur que vous méritez
+- **Communauté active** : Écosystème riche en modules
 
-Next.js est un meta-framework construit au-dessus de React.JS. Il offre toutes les fonctionnalités nécessaires pour construire une application web moderne.
-De plus, il offre plusieurs modes de rendus:
+**Cas d'usage parfaits** : Dashboards, applications interactives, prototypes complexes
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique hybride, rendu HTML généré par le serveur à la génération du site ou à la demande.
+</Markdown>
 
-Dans la plupart des cas, nous utiliserons le rendu statique hybride car c'est le mode le plus performant.
-Les pages HTML sont générées au moment du build de l'application ou à la demande.
-Si vous souhaitez plus d'infos, je vous conseille de lire les articles concernant [Next.js 13](https://double-slash.dev/articles/next-js-13-intro/) sur le site Double Slash, dans lesquels, je parle de la nouvelle version de **Next.js**.
+<Markdown>
 
-### Nuxt.js
+### 🎯 Laravel + Inertia.js - Le Meilleur Des Deux Mondes
 
-**Nuxt.js** est aussi un meta-framework mais lui est construit au-dessus de Vue.js.
-La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
-Il offre également toutes les fonctionnalités nécessaires pour construire une application web moderne.
-Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
+Quand avez besoin de la robustesse d'un backend PHP avec une interface moderne :
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique, rendu HTML généré par le serveur à la génération du site.
+- **Architecture MVC** : Structure solide et maintenable
+- **Base de données** : Gestion optimale avec Eloquent ORM
+- **API REST** : Connectez tous vos services
+- **UX SPA** : Expérience utilisateur fluide comme une app native
 
-Nuxt.js est un framework vraiment agréable à utiliser pour le développement. Il permet d'avoir un code assez lisible et utilise toutes la puissance et la simplicité de Vue.js.
+**Cas d'usage parfaits** : Applications métier, back-offices, plateformes avec gestion utilisateurs
 
-### Astro
+</Markdown>
 
-**Astro 5.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche "zéro JavaScript par défaut" dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
-Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
+<Markdown>
 
-Désormais, il permet d'avoir plusieurs mode de rendus:
+### 🔄 Laravel Livewire - La Simplicité Réinventée
 
-- 100% statique
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Hybride, du statique et du rendu serveur pour les pages qui nécessitent d'analyser la visite.
+Pour les projets qui ont besoin de réactivité sans la complexité JavaScript :
 
-## CMS headless pour gérer les data
+- **Livewire** : Interfaces réactives en PHP pur
+- ** zéro JavaScript** (ou presque) : Vous gardez le contrôle
+- **Intégration Laravel** : Accès direct à votre logique métier
+- **Maintenance facilitée** : Un seul langage à maîtriser
 
-Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d'où les data ?
-Actuellement, une multitude d'outils s'offrent à nous.
-Plusieurs paramètres à prendre en compte :
+**Cas d'usage parfaits** : CRUD complexes, back-offices, interfaces administrateur
 
-- self-hosted (auto-hébergé) ou pas ?
-- des data uniquement en lecture ou faut-il avoir la possibilité de mettre à jour les données par le front ?
-- Multilingue ?
-- Plusieurs utilisateurs ?
-- Ergonomies pour les éditeurs de contenu ?
-- Tarifs ?
-- ...
+</Markdown>
 
-Tout dépendra du besoin évidemment et de votre budget.
-Voici quelques CMS pour vous faire une idée :
+<Markdown>
 
-- Strapi (self-hosted ou cloud)
-- Directus (cloud ou self-hosted)
-- Prismic (cloud)
-- StoryBlock (cloud)
-- Craft CMS (self hosted)
-- WordPress en mode headless (self hosted)
+### 🎨 WordPress Sur Mesure - Au-Delà Des Templates
 
+WordPress représente 43% des sites web mondiaux. Mais un site WordPress bien développé, c'est autre chose :
 
-## Inertia JS, le meilleur des deux mondes
+- **Thème sur mesure** : Design unique qui vous ressemble
+- **Performances optimisées** : Pas de plugins lourds inutiles
+- **Sécurité renforcée** : Code propre = site sécurisé
+- **Maintenance easy** : Updates tranquilles sans casse
 
-Inertia JS est une librairie qui permet d'utiliser Laravel (PHP) pour la gestion du backend et une librairie front telle que Vue.js ou React.js pour la partie front.
-Cela permet d'avoir un site web avec une architecture classique (client-serveur) tout en ayant une expérience utilisateur de type SPA (Single Page Application).
-C'est un très bon compromis pour les projets qui nécessitent un backend robuste et une interface utilisateur moderne.
-Nous avons déjà réalisé plusieurs projets avec cette approche et les résultats sont très satisfaisants.
+**Cas d'usage parfaits** : Sites corporate, blogs, e-commerce (WooCommerce), portfolios
 
+</Markdown>
 
-## Notre prestation
+---
 
-Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
-Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l'expérience sur plusieurs projets.
+## CMS Headless : La Liberté De Gérer Vos Données
 
-Nous pouvons vous proposer :
+Quand votre contenu mérite mieux qu'un simple éditeur :
 
-- analyse technique de votre projet
-- accompagnements pour le développement de votre projet
-- maintenance et évolution du projet
+| CMS | Type | Ideal Pour |
+|-----|------|------------|
+| **Strapi** | Open Source | Total contrôle, self-hosted |
+| **Directus** | SQL-based | Données structurées complexes |
+| **Prismic** | SaaS | Éditoriaux, contenus visuels |
+| **Craft CMS** | Premium | Contrôle total, DX excellent |
 
-N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
+---
+
+## Mon Approche : Technique + Marketing = Résultats
+
+Mon rôle ne se limite pas au développement. Je vous accompagne de A à Z :
+
+<Markdown>
+
+#### 1. Audit et Conseil Technique
+
+Avant d'écrire la première ligne de code, nous analysons :
+- Vos objectifs business
+- Votre cible utilisateur
+- Les contraintes techniques
+- Le budget et le ROI attendu
+
+**Livrable** : Recommandation de stack technologiqueargumentée
+
+</Markdown>
+
+<Markdown>
+
+#### 2. Développement Sur Mesure
+
+Une fois la stratégie validée :
+- Architecture moderne et évolutive
+- Code propre et documenté
+- Tests automatisés
+- Respect des bonnes pratiques SEO
+
+</Markdown>
+
+<Markdown>
+
+#### 3. Optimisation Continue
+
+Après la mise en ligne :
+- Suivi des performances Core Web Vitals
+- Optimisation SEO technique
+- Amélioration continue basée sur les données
+
+</Markdown>
+
+---
+
+## Pourquoi Choisir Goodmotion ?
+
+✓ **Expertise technique** : Maîtrise de Next.js, Nuxt.js, Laravel, Livewire  
+✓ **Vision marketing** : Un site doit convertir, pas juste exister  
+✓ **Transparence** : Devis détaillés, pas de surprises  
+✓ **Maintenance** : Je reste disponible après la livraison  
+✓ **Suisse Romande** : Proximité géographique, même timezone  
+
+---
+
+## Projets Similaires
+
+Découvrez comment j'ai aidé d'autres entreprises :
+
+- [Application web pour cliniques](/) - Laravel + Vue.js
+- [Plateforme e-commerce](/) - Next.js + Shopify
+- [Site corporate](/) - Astro + WordPress headless
+
+---
+
+## Parlons De Votre Projet
+
+Vous avez une idée ? Un projet ? Une transformation numérique à initiator ?
+
+**Réservez un appel de 30 minutes** - C'est gratuit et sans engagement.
+
+Nous analyserons ensemble votre projet et je vous proposerai une solution technique adaptée à vos besoins et votre budget.
+
+👉 [Contactez-moi](/contact)
+
+---
+
+*Ce site est développé avec Astro pour des performances maximales. Et votre projet ?*
