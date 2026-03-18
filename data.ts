@@ -70,7 +70,7 @@ export default {
           link: "/services/developpement-de-web-applications-et-sites-web-modernes",
         },
         {
-          label: "Développement WordPress avancé",
+          label: "Développement WordPress sur mesure",
           link: "/services/developpement-wordpress-avance",
         },
         {
@@ -285,7 +285,7 @@ export default {
       title: "Consultant technique pour vos projets web",
       link: "/services/consultant-technique-web",
       intro:
-        "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.",
+        "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
       class: "lg:col-span-2 bg-primary-800",
     },
   ],

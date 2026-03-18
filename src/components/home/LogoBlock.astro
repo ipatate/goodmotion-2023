@@ -1,11 +1,12 @@
 ---
-import { Image, type LocalImageProps } from 'astro:assets';
+import { Image } from 'astro:assets';
+import type {SvgComponent} from "astro/types";
 
 export interface Props {
   title: string;
   text: string;
   elements: {
-    image: LocalImageProps;
+    image: SvgComponent | ImageMetadata;
     title: string;
     class: string;
     place?: string;
@@ -18,7 +19,7 @@ const { title, text, elements } = Astro.props;
 <div class="flex flex-col py-6 lg:py-10">
   <div class="md:max-w-7xl w-full mx-auto my-2 md:my-5 text-left px-4 md:px-10">
     <h2
-      class="text-5xl sm:text-6xl w-auto md:text-8xl text-primary-900 font-semibold"
+      class="text-5xl sm:text-6xl w-auto md:text-7xl text-primary-900 font-semibold"
     >
       {title}
     </h2>
