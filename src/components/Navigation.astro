@@ -53,7 +53,7 @@ const { color = "primary" } = Astro.props;
               <Tag
                 href={nav.link}
                 title={nav.label}
-                class={`item-navigation flex items-center py-4 lg:py-2 ${
+                class={`item-navigation flex items-center py-4 lg:py-2 group-hover:underline ${
                   pathname === nav.link && nav.label !== "Contact"
                     ? "underline"
                     : ""
@@ -76,18 +76,18 @@ const { color = "primary" } = Astro.props;
               </Tag>
               {nav.subMenu && (
                 <ul
-                  class="group-hover:p-3 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-7 ml-3"
+                  class="group-hover:p-0 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-10 rounded-md ml-0"
                   aria-hidden="true"
                   aria-expanded="false"
                   aria-label={`${nav.label} submenu`}
                 >
                   {nav.subMenu.map((sub) => {
                     return (
-                      <li class="lg:px-3 py-1">
+                      <li class="lg:px-3 py-1.5 first:mt-1 last:mb-1">
                         <a
                           href={sub.link}
                           title={sub.label}
-                          class={`lg:whitespace-nowrap whitespace-normal text-${color}-900 hover:text-${color}-700 ${
+                          class={`lg:whitespace-nowrap hover:underline whitespace-normal text-${color}-900 hover:text-${color}-700 ${
                             pathname === sub.link ? "underline" : ""
                           }`}
                         >
@@ -123,6 +123,7 @@ const { color = "primary" } = Astro.props;
   }
 </style>
 <script>
+  document.addEventListener("astro:page-load", () => {
   let itemOpened: HTMLButtonElement | HTMLAnchorElement;
 
   function reset() {
@@ -145,15 +146,16 @@ const { color = "primary" } = Astro.props;
   }
 
   function clickOutside(e: Event, bt: HTMLButtonElement) {
+    console.log(bt)
     if (!bt.contains(e.target as Node)) {
       reset();
     }
   }
-  document.addEventListener("astro:page-load", () => {
 
   // just button
   const navButton: NodeListOf<HTMLButtonElement> =
     document.querySelectorAll("button.has-submenu");
+
   // all items navigation
   const itemNav: NodeListOf<HTMLButtonElement | HTMLAnchorElement> =
     document.querySelectorAll(".item-navigation");
@@ -166,11 +168,26 @@ const { color = "primary" } = Astro.props;
         once: true,
       });
     });
+
+    // for tablet
+    bt.addEventListener("click", () => {
+      itemOpened = bt;
+      open(bt.nextElementSibling as HTMLUListElement);
+      document.addEventListener("touchstart", (event) => clickOutside(event, bt), {
+        once: true,
+      });
+    });
   }
 
   // reset on focusin another item navigation
   for (const item of itemNav) {
     item.addEventListener("focusin", () => {
+      if (itemOpened !== item) {
+        reset();
+      }
+    });
+
+    item.addEventListener("click", () => {
       if (itemOpened !== item) {
         reset();
       }
