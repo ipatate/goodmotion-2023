@@ -150,8 +150,7 @@ const { color = "primary" } = Astro.props;
   }
 
   function clickOutside(e: Event, bt: HTMLButtonElement) {
-    console.log(bt)
-    if (!bt.contains(e.target as Node)) {
+    if (!bt.parentNode?.contains(e.target as Node)) {
       reset();
     }
   }
@@ -177,7 +176,7 @@ const { color = "primary" } = Astro.props;
     bt.addEventListener("click", () => {
       itemOpened = bt;
       open(bt.nextElementSibling as HTMLUListElement);
-      document.addEventListener("touchstart", (event) => clickOutside(event, bt), {
+      document.addEventListener("touchend", (event) => clickOutside(event, bt), {
         once: true,
       });
     });
