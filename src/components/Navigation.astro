@@ -76,14 +76,14 @@ const { color = "primary" } = Astro.props;
               </Tag>
               {nav.subMenu && (
                 <ul
-                  class="group-hover:p-0 p-3 group-hover:max-h-none transition-all flex lg:shadow-xl lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-10 rounded-md ml-0"
+                  class="before:block before:absolute before:-top-5 before:left-7 before:w-5 before:h-5  before:border-l-10  before:border-l-transparent before:border-r-10 before:border-r-transparent before:border-b-10 before:border-b-slate-50 group-hover:p-0 px-3 group-hover:lg:py-2 group-hover:max-h-none group-hover:overflow-visible transition-opacity group-hover:opacity-100 duration-400 flex lg:shadow-xl lg:opacity-0 lg:max-h-0 lg:overflow-hidden lg:p-0 lg:bg-slate-50 flex-col lg:absolute lg:mt-10 rounded-md ml-0"
                   aria-hidden="true"
                   aria-expanded="false"
                   aria-label={`${nav.label} submenu`}
                 >
                   {nav.subMenu.map((sub) => {
                     return (
-                      <li class="lg:px-3 py-1.5 first:mt-1 last:mb-1">
+                      <li class="lg:px-3 py-1.5 lg:first:mt-1 lg:last:mb-1">
                         <a
                           href={sub.link}
                           title={sub.label}
@@ -130,6 +130,8 @@ const { color = "primary" } = Astro.props;
     if (itemOpened) {
       const subnav = itemOpened.nextElementSibling as HTMLUListElement;
       subnav.style.maxHeight = "";
+      subnav.style.opacity = "";
+      subnav.style.overflow = "";
       subnav.setAttribute("aria-hidden", "true");
       subnav.setAttribute("aria-expanded", "false");
       subnav
@@ -140,6 +142,8 @@ const { color = "primary" } = Astro.props;
 
   function open(el: HTMLUListElement) {
     el.style.maxHeight = "none";
+    el.style.opacity = "1";
+    el.style.overflow = "visible";
     el.setAttribute("aria-hidden", "false");
     el.setAttribute("aria-expanded", "true");
     el.querySelectorAll("a")?.forEach((a) => a.removeAttribute("tabindex"));
