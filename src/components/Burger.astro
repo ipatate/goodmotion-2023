@@ -36,11 +36,13 @@ const { color = "primary" } = Astro.props;
   }
 </style>
 <script>
-  const openNav = document.getElementById("open-nav");
-  const nav = document.getElementById("navigation");
-  openNav?.addEventListener("click", () => {
-    openNav?.classList.toggle("is-open");
-    nav?.classList.toggle("is-open");
-    document.body.classList.toggle("overflow-hidden");
+  document.addEventListener("astro:page-load", () => {
+    const openNav = document.getElementById("open-nav");
+    const nav = document.getElementById("navigation");
+    openNav?.addEventListener("click", () => {
+      openNav?.classList.toggle("is-open");
+      nav?.classList.toggle("is-open");
+      document.body.classList.toggle("overflow-hidden");
+    });
   });
 </script>

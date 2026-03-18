@@ -149,6 +149,7 @@ const { color = "primary" } = Astro.props;
       reset();
     }
   }
+  document.addEventListener("astro:page-load", () => {
 
   // just button
   const navButton: NodeListOf<HTMLButtonElement> =
@@ -175,4 +176,5 @@ const { color = "primary" } = Astro.props;
       }
     });
   }
+  });
 </script>

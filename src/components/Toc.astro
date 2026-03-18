@@ -130,7 +130,10 @@ const {
     };
   };
 
-  /**
+  document.addEventListener("astro:page-load", () => {
+
+
+    /**
    * button up position
    */
   let isRight = false;
@@ -235,5 +238,7 @@ const {
       top: 0,
       behavior: "smooth",
     });
+  });
+
   });
 </script>

@@ -96,9 +96,11 @@ const { title, name } = Astro.props as Props;
   }
 </style>
 <script>
-  document.querySelectorAll(".faq details summary").forEach((dt) => {
-    dt.addEventListener("click", () => {
-      dt.querySelector("span")?.classList.toggle("rotate-45");
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll(".faq details summary").forEach((dt) => {
+      dt.addEventListener("click", () => {
+        dt.querySelector("span")?.classList.toggle("rotate-45");
+      });
     });
   });
 </script>

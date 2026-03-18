@@ -20,7 +20,7 @@ const { poster, src, format = "video/mp4" } = Astro.props;
 </video>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     var lazyVideos = [].slice.call(document.querySelectorAll("video.lazyload"));
 
     if ("IntersectionObserver" in window) {
