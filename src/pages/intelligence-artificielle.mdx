@@ -3,11 +3,18 @@ layout: ../layouts/PageLayout.astro
 title: "Chatbots IA, agents IA et workflows IA"
 subtitle: Genève, Lausanne, Annecy, Suisse, France
 metaTitle: "Développement d'agents IA : Chatbots IA, agents IA et Workflows | Genève, Lausanne, Annecy"
-description:
+description: "Création de chatbots IA RAG et agents intelligents pour votre entreprise. Solutions sur mesure à Genève, Lausanne et Annecy. Automatisez vos processus avec l'IA. Contactez-nous !"
 showToc: true
+serviceSchema:
+  serviceType: "Développement d'Agents IA"
+  description: "Création de chatbots IA RAG, agents intelligents et workflows automatisés pour entreprises"
+  url: "/intelligence-artificielle"
 ---
 
 import ContactForm from "../components/ContactForm.vue";
+import StructuredData from "../components/StructuredData.astro";
+
+<StructuredData type="Service" data={frontmatter.serviceSchema} />
 
 
 Nous proposons la conception et l’implémentation de solutions basées sur l’intelligence artificielle (IA).

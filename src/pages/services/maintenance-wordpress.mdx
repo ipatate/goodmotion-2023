@@ -3,9 +3,17 @@ layout: ../../layouts/PageLayout.astro
 title: Maintenance WordPress
 subtitle: Genève, Lausanne, Annecy, Suisse, France
 metaTitle: Maintenance de site WordPress | Genève, Lausanne, Annecy
-description: Les sites réalisés avec le CMS WordPress sont soumis régulièrement à des attaques. Des robots (scripts) tentent de rentrer en exploitant les failles des plugins ou du cœur de WordPress.
+description: Maintenance professionnelle de sites WordPress à Genève, Lausanne et Annecy. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
 showToc: true
+serviceSchema:
+  serviceType: "Maintenance WordPress"
+  description: "Maintenance professionnelle de sites WordPress : mises à jour, sécurité, sauvegardes et optimisations"
+  url: "/services/maintenance-wordpress"
 ---
+
+import StructuredData from "../../components/StructuredData.astro";
+
+<StructuredData type="Service" data={frontmatter.serviceSchema} />
 
 import { Icon } from 'astro-icon/components';
 import WPTable from "../../components/WPTable.astro";

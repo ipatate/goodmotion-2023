@@ -3,13 +3,20 @@ layout: ../../layouts/PageLayout.astro
 title: Développement WordPress sur mesure
 subtitle: Genève, Lausanne, Annecy, Suisse, France
 metaTitle: Développement WordPress sur mesure | Genève, Lausanne, Annecy
-description: Développement professionnel de site WordPress sur mesure, création de thèmes complets, création de blocs Gutenberg spécifiques, maintenance et mise à jour de votre site WordPress.
+description: Création de sites WordPress 100% sur mesure à Genève, Lausanne et Annecy. Thèmes personnalisés, blocs Gutenberg, performance optimale. 15+ ans d'expérience. Devis gratuit !
 showToc: true
+serviceSchema:
+  serviceType: "Développement WordPress"
+  description: "Création de sites WordPress sur mesure avec thèmes personnalisés et blocs Gutenberg"
+  url: "/services/developpement-wordpress-avance"
 ---
 
 import Video from "../../components/Video.astro";
 import cover from "../../../assets/images/cover-admin-wp.jpg";
 import ContactForm from "../../components/ContactForm.vue";
+import StructuredData from "../../components/StructuredData.astro";
+
+<StructuredData type="Service" data={frontmatter.serviceSchema} />
 
 
 **WordPress** est un projet open-source avec une grosse communauté, un nombre de plugins impressionnant.

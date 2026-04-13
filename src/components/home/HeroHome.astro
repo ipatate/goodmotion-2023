@@ -12,10 +12,13 @@ const SITE_URL = import.meta.env.SITE_URL;
     class="flex-1 flex flex-col justify-center items-start p-4 md:p-10 max-w-7xl mx-auto text-left"
   >
     <h1
-      class="from-primary-900 to-primary-700 bg-linear-to-tr text-transparent bg-clip-text text-4xl md:text-7xl font-bold py-4 text-pretty"
+      class="from-primary-900 to-primary-700 bg-linear-to-tr text-transparent bg-clip-text text-4xl md:text-6xl font-bold py-4 text-pretty leading-tight"
     >
-      {data.baseline}
+      Agence de Développement Web à Genève, Lausanne et Annecy
     </h1>
+    <p class="text-2xl md:text-3xl text-primary-700 font-light mt-2">
+      {data.baseline}
+    </p>
     <p
       class="mt-5 leading-7 text-lg text-primary-900 font-light"
       set:html={data.heroText}

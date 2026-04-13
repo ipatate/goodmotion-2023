@@ -3,9 +3,17 @@ layout: ../../layouts/PageLayout.astro
 title: Développement web sur mesure, web applications, Intranet, Landing page, POC
 subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
 metaTitle: Développement de web applications, Intranet, Landing page, POC
-description: Développement de web applications, Intranet, Landing page, POC. Annecy, Genève, Lausanne, Suisse romande..
+description: Développement de web applications, intranets et sites sur mesure à Genève, Lausanne et Annecy. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
 showToc: true
+serviceSchema:
+  serviceType: "Développement Web Sur Mesure"
+  description: "Développement de web applications, intranets et sites web sur mesure avec technologies modernes"
+  url: "/services/developpement-de-web-applications-et-sites-web-modernes"
 ---
+
+import StructuredData from "../../components/StructuredData.astro";
+
+<StructuredData type="Service" data={frontmatter.serviceSchema} />
 
 import ContactForm from "../../components/ContactForm.vue";
 

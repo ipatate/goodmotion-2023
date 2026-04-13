@@ -1,0 +1,242 @@
+---
+export interface Props {
+  type: 'LocalBusiness' | 'Organization' | 'Service' | 'BreadcrumbList' | 'WebSite' | 'Person' | 'FAQPage';
+  data?: Record<string, any>;
+  pathname?: string;
+}
+
+const { type, data = {}, pathname = '' } = Astro.props;
+const SITE_URL = import.meta.env.SITE_URL;
+
+const baseSchema = {
+  "@context": "https://schema.org",
+  "@type": type
+};
+
+let schema: Record<string, any> = {};
+
+switch(type) {
+  case 'LocalBusiness':
+    schema = {
+      ...baseSchema,
+      "@type": "ProfessionalService",
+      "name": "Goodmotion",
+      "alternateName": "ZMF Resources",
+      "description": "Agence de développement web éco-conçue et performante basée à Annecy, intervenant à Genève et Lausanne",
+      "url": SITE_URL,
+      "logo": `${SITE_URL}/favicon.svg`,
+      "image": `${SITE_URL}/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg`,
+      "email": "infos@goodmotion.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Annecy",
+        "addressRegion": "Auvergne-Rhône-Alpes",
+        "postalCode": "74000",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.8992,
+        "longitude": 6.1290
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Genève",
+          "containedInPlace": { "@type": "Country", "name": "Suisse" }
+        },
+        {
+          "@type": "City",
+          "name": "Lausanne",
+          "containedInPlace": { "@type": "Country", "name": "Suisse" }
+        },
+        {
+          "@type": "City",
+          "name": "Annecy",
+          "containedInPlace": { "@type": "Country", "name": "France" }
+        }
+      ],
+      "serviceType": [
+        "Développement web sur mesure",
+        "Développement WordPress",
+        "Développement Craft CMS",
+        "Agents IA et Chatbots",
+        "Consultant technique web",
+        "Maintenance WordPress"
+      ],
+      "priceRange": "€€",
+      "sameAs": [
+        "https://github.com/ipatate",
+        "https://www.linkedin.com/in/patrickfaramaz/",
+        "https://twitter.com/PatrickFaramaz",
+        "https://double-slash.dev/",
+        "https://wp-performance.com/"
+      ]
+    };
+    break;
+
+  case 'Organization':
+    schema = {
+      ...baseSchema,
+      "name": "Goodmotion",
+      "alternateName": "ZMF Resources",
+      "url": SITE_URL,
+      "logo": `${SITE_URL}/favicon.svg`,
+      "description": "Agence de développement web éco-responsable spécialisée dans les sites performants et durables",
+      "sameAs": [
+        "https://github.com/ipatate",
+        "https://www.linkedin.com/in/patrickfaramaz/",
+        "https://twitter.com/PatrickFaramaz",
+        "https://double-slash.dev/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "infos@goodmotion.fr",
+        "areaServed": ["FR", "CH"],
+        "availableLanguage": ["French"]
+      }
+    };
+    break;
+
+  case 'WebSite':
+    schema = {
+      ...baseSchema,
+      "name": "Goodmotion",
+      "url": SITE_URL,
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${SITE_URL}/search?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Goodmotion",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${SITE_URL}/favicon.svg`
+        }
+      }
+    };
+    break;
+
+  case 'Person':
+    schema = {
+      ...baseSchema,
+      "@type": "Person",
+      "name": "Patrick Faramaz",
+      "jobTitle": "Consultant Technique et Développeur Web",
+      "description": "Développeur web depuis plus de 15 ans, spécialisé dans les technologies modernes et l'écoconception",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Goodmotion"
+      },
+      "url": `${SITE_URL}/about`,
+      "sameAs": [
+        "https://github.com/ipatate",
+        "https://www.linkedin.com/in/patrickfaramaz/",
+        "https://twitter.com/PatrickFaramaz"
+      ],
+      "knowsAbout": [
+        "Développement Web",
+        "WordPress",
+        "React",
+        "Vue.js",
+        "Next.js",
+        "Astro",
+        "Craft CMS",
+        "Intelligence Artificielle",
+        "Écoconception Web"
+      ]
+    };
+    break;
+
+  case 'Service':
+    schema = {
+      ...baseSchema,
+      "@type": "Service",
+      "serviceType": data.serviceType || "Développement Web",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Goodmotion",
+        "url": SITE_URL
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Genève",
+          "containedInPlace": { "@type": "Country", "name": "Suisse" }
+        },
+        {
+          "@type": "City",
+          "name": "Lausanne",
+          "containedInPlace": { "@type": "Country", "name": "Suisse" }
+        },
+        {
+          "@type": "City",
+          "name": "Annecy",
+          "containedInPlace": { "@type": "Country", "name": "France" }
+        }
+      ],
+      "description": data.description || "Service de développement web professionnel",
+      "url": data.url || SITE_URL,
+      "offers": data.offers || undefined
+    };
+    break;
+
+  case 'BreadcrumbList':
+    const pathParts = pathname.split('/').filter(Boolean);
+    const breadcrumbItems = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": SITE_URL
+      }
+    ];
+
+    pathParts.forEach((part, index) => {
+      const name = part
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, l => l.toUpperCase())
+        .replace(/Wordpress/g, 'WordPress')
+        .replace(/Craft Cms/g, 'Craft CMS');
+
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": name,
+        "item": `${SITE_URL}/${pathParts.slice(0, index + 1).join('/')}`
+      });
+    });
+
+    schema = {
+      ...baseSchema,
+      "itemListElement": breadcrumbItems
+    };
+    break;
+
+  case 'FAQPage':
+    if (data.questions && Array.isArray(data.questions)) {
+      schema = {
+        ...baseSchema,
+        "mainEntity": data.questions.map((q: { question: string; answer: string }) => ({
+          "@type": "Question",
+          "name": q.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": q.answer
+          }
+        }))
+      };
+    }
+    break;
+
+  default:
+    schema = { ...baseSchema, ...data };
+}
+
+const jsonLd = JSON.stringify(schema);
+---
+
+<script type="application/ld+json" set:html={jsonLd} />
