@@ -2,7 +2,7 @@
   <div class="py-10 flex flex-col items-center">
     <div
       v-if="Object.keys(errors).length"
-      class="bg-red-100 border border-red-400 not-prose text-red-700 px-5 py-3 rounded relative text-base max-w-2xl w-full"
+      class="bg-red-100 border border-red-400 not-prose text-red-700 px-5 py-3 rounded relative text-base max-w-3xl w-full"
       role="alert"
     >
       <ul class="list-disc list-inside">
@@ -11,12 +11,12 @@
     </div>
     <div
       v-if="success"
-      class="bg-green-100 border border-green-400 not-prose text-green-700 px-5 py-3 rounded relative text-base max-w-2xl w-full"
+      class="bg-green-100 border border-green-400 not-prose text-green-700 px-5 py-3 rounded relative text-base max-w-3xl w-full"
       role="alert"
     >
       <span class="block sm:inline">{{ success }}</span>
     </div>
-    <form @submit.prevent="onSubmit" class="grid grid-cols-1 gap-3 max-w-2xl w-full not-prose mt-8">
+    <form @submit.prevent="onSubmit" class="grid grid-cols-1 gap-3 max-w-3xl w-full not-prose mt-8">
       <label for="email" class="block">
         <span class="text-gray-700 text-base">Votre adresse email</span>
         <input
@@ -92,6 +92,7 @@
 </template>
 
 <script setup lang="ts">
+import { set } from "astro:schema";
 import { ref } from "vue";
 import type { Ref } from "vue";
 const CONTACT_URL = import.meta.env.PUBLIC_CONTACT_URL;
@@ -163,8 +164,11 @@ const onSubmit = (event: Event) => {
           name.value = "";
           subject.value = "";
           success.value = "Message envoyé avec succès";
+          setTimeout(() => {
+            success.value = undefined;
+          }, 4000)
         }
-        submitButton.value.disabled = true;
+        submitButton.value.disabled = false;
         submitButton.value.value = "Envoyer le message";
       })
       .catch((error) => {
