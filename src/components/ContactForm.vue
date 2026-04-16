@@ -24,7 +24,7 @@
           type="email"
           v-model="email"
           name="email"
-          placeholder="john@doe.com"
+          placeholder="victor@monsupersite.com"
           class="block border border-gray-300 px-2 w-full bg-white rounded-md focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-lg py-4"
           :class="{ 'border-red-500': errors.email }"
         />
@@ -36,9 +36,20 @@
           type="text"
           v-model="name"
           name="name"
-          placeholder="John Doe"
+          placeholder="Victor Dupont"
           class="block border border-gray-300 px-2 w-full bg-white rounded-md focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-lg py-4"
           :class="{ 'border-red-500': errors.name }"
+        />
+      </label>
+      <label for="url" class="block">
+        <span class="text-gray-700 text-base">Url de votre site</span>
+        <input
+          type="url"
+          v-model="url"
+          name="url"
+          placeholder="https://monsupersite.com"
+          class="block border border-gray-300 px-2 w-full bg-white rounded-md focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 text-lg py-4"
+          :class="{ 'border-red-500': errors.url }"
         />
       </label>
       <label for="subject" class="block">
@@ -107,6 +118,7 @@ const errors: Ref<{ [key: string]: string }> = ref({});
 const success: Ref<string | undefined> = ref();
 const email = ref("");
 const name = ref("");
+const url = ref("");
 const subject = ref("");
 const message = ref("");
 const check = ref(false);
@@ -150,6 +162,7 @@ const onSubmit = (event: Event) => {
         email: email.value,
         body: message.value,
         name: name.value,
+        url: url.value,
         subject: subject.value,
       }),
       headers: {
@@ -162,6 +175,7 @@ const onSubmit = (event: Event) => {
           email.value = "";
           message.value = "";
           name.value = "";
+          url.value = "";
           subject.value = "";
           success.value = "Message envoyé avec succès";
           setTimeout(() => {
