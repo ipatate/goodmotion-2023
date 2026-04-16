@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 flex flex-col items-center">
+  <div class="pb-10 pt-4 flex flex-col items-center">
     <div
       v-if="Object.keys(errors).length"
       class="bg-red-100 border border-red-400 not-prose text-red-700 px-5 py-3 rounded relative text-base max-w-3xl w-full"

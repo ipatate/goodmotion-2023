@@ -219,7 +219,7 @@ J’aime aussi partager, j’ai donc aussi plusieurs activités :
 
 - Développement open-source
   - [Github](https://github.com/ipatate)
-  - [Github WP Performance](https://github.com/WP-Performance)
+  - [Github WP Performance](https://github.com/wpperformance)
 - Le site [wp-performance.com](https://wp-performance.com/) pour partager les bonnes pratiques de développement sur WordPress
 - Le podcast [Double Slash](https://double-slash.dev/) en co-animation.
 - Des vidéos tutorielles pour partager des astuces et des tests :
@@ -253,7 +253,7 @@ Nous maîtrisons parfaitement le CMS ainsi que l’API (hook, filtre) pour impl�
 
 De plus :
 
-- Nous partageons notre expérience en proposant du code open-source (plugins, thèmes). [Github WP-Performance](https://github.com/WP-Performance)
+- Nous partageons notre expérience en proposant du code open-source (plugins, thèmes). [Github WP-Performance](https://github.com/wpperformance)
 - Nous donnons des conférences lors des WordCamps. [Conférence Biarritz 2023](https://videopress.com/v/7nvpcWAB)
 - Nous créons des vidéos pour partager nos connaissances. [Chaîne YouTube](https://www.youtube.com/channel/UCx8Sx_WiRkT5e14CTAhr5cA)
 
