@@ -35,7 +35,7 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
-Sitemap: /sitemap-index.xml`;
+Sitemap: https://www.goodmotion.fr/sitemap-index.xml
 
 // Write the content to the file
 fs.writeFile(filePath, content, (err) => {
