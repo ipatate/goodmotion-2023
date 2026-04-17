@@ -12,8 +12,28 @@ const content = `
 User-agent: *
 Allow: /
 
+# AI search bots (indexation autorisée)
 User-agent: OAI-SearchBot
 Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# AI training scrapers (désactivés)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
 
 Sitemap: ${SITE_URL}/sitemap-index.xml`;
 

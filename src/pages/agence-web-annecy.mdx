@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/PageLayout.astro
 title: Agence Web à Annecy
-subtitle: Développement de sites web modernes, ultra-rapides et maintenable
+subtitle: Développement de sites web modernes, ultra-rapides et maintenables
 metaTitle: "Agence Web Annecy | Développement Site Internet Sur Mesure"
 description: "Agence de développement web à Annecy. Création de sites éco-conçus, WordPress, Craft CMS et applications web. 15+ ans d'expérience. Devis gratuit sous 48h !"
 showToc: false
@@ -9,15 +9,26 @@ showToc: false
 
 import ContactForm from "../components/ContactForm.vue";
 import Faq from "../components/Faq.astro";
+import StructuredData from "../components/StructuredData.astro";
 import { Icon } from 'astro-icon/components';
+
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "Où est située votre agence ?", answer: "Notre agence est située à Annecy. Nous pouvons nous déplacer pour des réunions sur Annecy et ses environs." },
+  { question: "Quels sont vos délais de réalisation ?", answer: "Les délais varient selon la complexité du projet : site vitrine 2 à 4 semaines, site WordPress sur mesure 4 à 8 semaines, application web 1 à 3 mois." },
+  { question: "Proposez-vous la maintenance des sites ?", answer: "Oui, nous proposons des forfaits de maintenance pour tous les sites que nous développons. Cela inclut les mises à jour, la sécurité et les sauvegardes." },
+  { question: "Quelles technologies utilisez-vous ?", answer: "Nous maîtrisons un large éventail de technologies : WordPress, Craft CMS, Next.js, Astro, Nuxt.js, React, Vue.js, Laravel. Nous choisissons l'outil le plus adapté à votre projet." },
+  { question: "Travaillez-vous uniquement avec des clients d'Annecy ?", answer: "Non, nous travaillons avec des clients partout en France et en Suisse. La proximité nous permet simplement d'établir des relations plus facilement avec les entreprises locales." }
+]}} />
 
 ## Votre agence web à Annecy
 
-Goodmotion est une agence de développement web **basée à Annecy**, spécialisée dans la création de sites web modernes, ultra-rapides et maintenable. Nous accompagnons les entreprises d'Annecy, du bassin annécien et de toute la région Auvergne-Rhône-Alpes dans leurs projets web.
+Goodmotion est une agence de développement web **basée à Annecy**, spécialisée dans la création de sites web modernes, ultra-rapides et maintenables. Nous accompagnons les entreprises d'Annecy, du bassin annécien et de toute la région Auvergne-Rhône-Alpes dans leurs projets web.
+
+Annecy, c'est notre territoire. Nous connaissons le tissu économique local : les industries de précision (décolletage, mécatronique), les commerces et artisans du centre-ville, les acteurs du tourisme autour du lac, et les travailleurs frontaliers dont les entreprises sont souvent à cheval entre la France et la Suisse. Nous sommes là, disponibles pour une réunion en face à face quand le projet le nécessite.
 
 ### Pourquoi choisir Goodmotion pour votre projet web à Annecy ?
 
-- **flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
+- **Flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
 - **Agence locale** : Basée à Annecy, nous connaissons parfaitement le tissu économique local
 - **Expertise reconnue** : Plus de 15 ans d'expérience en développement web
 - **Performance garantie** : Score de plus de 90/100 sur PageSpeed Insights
@@ -91,12 +102,17 @@ Nous développons votre projet en respectant les délais convenus et avec une co
 <Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /> Mise en ligne et suivi
 Nous assurons la mise en ligne et restons disponibles pour la maintenance et les évolutions.
 
+## Le tissu numérique annécien : ce que nous observons
+
+Annecy abrite une économie productive diversifiée — industries de haute précision, secteur touristique, commerce de proximité — avec des entreprises qui ont souvent des besoins web concrets mais peu de temps à consacrer à leur prestataire. C'est précisément pour ça que nous travaillons en mode micro-agence : **un interlocuteur unique**, réactif, qui connaît votre site aussi bien que vous. Pas de perte d'information entre un commercial et un développeur.
+
 ## Zones d'intervention
 
 - **Annecy** et agglomération annécienne
 - **Chambéry** et la Savoie
 - **Lyon** et l'agglomération lyonnaise
-- **Genève** et la Suisse romande
+- **Genève** et la Suisse romande — [voir notre page Genève](/agence-web-geneve)
+- **Lausanne** — [voir notre page Lausanne](/agence-web-lausanne)
 - **Toute la France** (télétravail)
 
 ## Demandez un devis gratuit

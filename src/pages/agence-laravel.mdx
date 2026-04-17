@@ -9,7 +9,15 @@ showToc: true
 
 import ContactForm from "../components/ContactForm.vue";
 import Faq from "../components/Faq.astro";
+import StructuredData from "../components/StructuredData.astro";
 import { Icon } from 'astro-icon/components';
+
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "À qui s'adresse l'offre Laravel de Goodmotion ?", answer: "L'offre Laravel de Goodmotion s'adresse aux entreprises qui ont besoin d'applications web complexes, performantes et maintenables : plateformes métier, SaaS, applications avec logique métier avancée, ou projets nécessitant une architecture robuste." },
+  { question: "Je n'ai pas de cahier des charges pour mon projet Laravel", answer: "Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des charges. Nous vous posons les bonnes questions pour définir vos besoins métiers, identifier les fonctionnalités essentielles et prioriser les développements." },
+  { question: "Quelle est la différence entre Inertia.js et Livewire ?", answer: "Inertia.js permet de créer des applications monopage (SPA) modernes avec Vue.js ou React, sans la complexité d'une API REST dédiée. Livewire permet quant à lui de créer des composants dynamiques côté serveur, idéal pour des projets nécessitant une interactivité temps réel tout en favorisant le SEO. Nous vous guidons vers la solution la plus adaptée à votre projet." },
+  { question: "Proposez-vous la maintenance des applications Laravel ?", answer: "Oui, nous assurons la maintenance des applications Laravel que nous développons : mises à jour de Laravel et des dépendances, corrections de bugs, évolutions fonctionnelles et monitoring des performances." }
+]}} />
 
 ## Votre application Laravel mérite mieux qu'un développement générique
 
@@ -75,8 +83,16 @@ C'est l'étape où nous développons l'application entièrement sur-mesure. Nous
 L'offre Laravel de Goodmotion s'adresse aux entreprises qui ont besoin d'applications web complexes, performantes et maintenables : plateformes métier, SaaS, applications avec logique métier avancée, ou projets nécessitant une architecture robuste.
 </Faq>
 
-<Faq title="Je n'ai pas de cahier des charges" name="laravel-faq">
+<Faq title="Je n'ai pas de cahier des charges pour mon projet Laravel" name="laravel-faq">
 Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des charges. Nous vous posons les bonnes questions pour définir vos besoins métiers, identifier les fonctionnalités essentielles et prioriser les développements.
+</Faq>
+
+<Faq title="Quelle est la différence entre Inertia.js et Livewire ?" name="laravel-faq">
+**Inertia.js** permet de créer des applications monopage (SPA) modernes avec Vue.js ou React, sans la complexité d'une API REST dédiée. **Livewire** permet quant à lui de créer des composants dynamiques côté serveur, idéal pour des projets nécessitant une interactivité temps réel tout en favorisant le SEO. Nous vous guidons vers la solution la plus adaptée à votre projet.
+</Faq>
+
+<Faq title="Proposez-vous la maintenance des applications Laravel ?" name="laravel-faq">
+Oui, nous assurons la maintenance des applications Laravel que nous développons : mises à jour de Laravel et des dépendances, corrections de bugs, évolutions fonctionnelles et monitoring des performances.
 </Faq>
 
 ## Ce qui nous différencie

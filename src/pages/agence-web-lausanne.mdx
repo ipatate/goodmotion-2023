@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/PageLayout.astro
 title: Agence Web à Lausanne
-subtitle: Développement de sites web modernes, ultra-rapides et maintenable
+subtitle: Développement de sites web modernes, ultra-rapides et maintenables
 metaTitle: "Agence Web Lausanne | Développement Site Internet Sur Mesure"
 description: "Agence de développement web à Lausanne. Création de sites éco-conçus, WordPress, Craft CMS et applications web. 15+ ans d'expérience. Devis gratuit sous 48h !"
 showToc: false
@@ -9,17 +9,27 @@ showToc: false
 
 import ContactForm from "../components/ContactForm.vue";
 import Faq from "../components/Faq.astro";
+import StructuredData from "../components/StructuredData.astro";
 import { Icon } from 'astro-icon/components';
+
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "Travaillez-vous avec des clients à Lausanne depuis Annecy ?", answer: "Oui, absolument ! La proximité géographique (1h15) nous permet de nous rendre facilement à Lausanne pour des réunions. Nous travaillons également régulièrement à distance avec des outils de collaboration modernes." },
+  { question: "Quels sont vos délais de réalisation ?", answer: "Les délais varient selon la complexité du projet : site vitrine 2 à 4 semaines, site WordPress sur mesure 4 à 8 semaines, application web 1 à 3 mois." },
+  { question: "Proposez-vous la maintenance des sites ?", answer: "Oui, nous proposons des forfaits de maintenance pour tous les sites que nous développons. Cela inclut les mises à jour, la sécurité et les sauvegardes." },
+  { question: "Quelles technologies utilisez-vous ?", answer: "Nous maîtrisons un large éventail de technologies : WordPress, Craft CMS, Next.js, Astro, Nuxt.js, React, Vue.js, Laravel. Nous choisissons l'outil le plus adapté à votre projet." }
+]}} />
 
 ## Votre agence web à Lausanne
 
-Goodmotion est une agence de développement web spécialisée dans la création de sites web modernes, ultra-rapides et maintenable. Basée à Annecy, nous intervenons régulièrement à **Lausanne** et dans toute la Suisse romande pour accompagner entreprises, startups et agences dans leurs projets web.
+Goodmotion est une agence de développement web spécialisée dans la création de sites web modernes, ultra-rapides et maintenables. Basée à Annecy, nous intervenons régulièrement à **Lausanne** et dans toute la Suisse romande pour accompagner entreprises, startups et agences dans leurs projets web.
 
-**Nous travaillons avec plusieurs agences et nous sommes régulièrement sur Lausanne.**
+Lausanne est un écosystème tech et académique d'exception : l'**EPFL** génère un flux continu de startups deep tech, les organisations sportives internationales (CIO, FIFA, FIBA) ont des besoins web de haut niveau, et le tissu de PME vaudoises cherche des partenaires fiables sur le long terme. Nous travaillons dans ce contexte depuis plusieurs années.
+
+**Nous travaillons avec plusieurs agences lausannoises et nous sommes régulièrement sur place.**
 
 ### Pourquoi choisir Goodmotion pour votre projet web à Lausanne ?
 
-- **flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
+- **Flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
 - **Proximité géographique** : Proche de Lausanne (1h15), nous facilitons les échanges et les rendez-vous
 - **Expertise reconnue** : Plus de 15 ans d'expérience en développement web
 - **Performance garantie** : Score de plus de 90/100 sur PageSpeed Insights
@@ -57,7 +67,6 @@ Pour les projets nécessitant plus de flexibilité, **Craft CMS** est une soluti
 
 [Découvrir Craft CMS](/services/developpement-sous-craft-cms)
 
-
 ### Développement Laravel sur mesure
 
 Pour les projets complexes nécessitant une architecture robuste, **Laravel** est le framework PHP de référence :
@@ -94,10 +103,14 @@ Nous développons votre projet en respectant les délais convenus et avec une co
 <Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /> Mise en ligne et suivi
 Nous assurons la mise en ligne et restons disponibles pour la maintenance et les évolutions.
 
+## L'écosystème digital lausannois : ce que nous observons
+
+Lausanne est une ville de contrastes créatifs : des startups deeptech issues de l'EPFL qui ont besoin d'un MVP ou d'une application web robuste, des organisations sportives internationales avec des sites multilingues complexes, et des commerces du quartier du Flon ou de la rue de Bourg qui cherchent une présence web qualitative. Nous avons l'expérience de ces contextes variés.
+
 ## Zones d'intervention en Suisse romande
 
 - **Lausanne** et canton de Vaud
-- **Genève** et canton de Genève
+- **Genève** et canton de Genève — [voir notre page Genève](/agence-web-geneve)
 - **Neuchâtel**
 - **Fribourg**
 - **Valais**

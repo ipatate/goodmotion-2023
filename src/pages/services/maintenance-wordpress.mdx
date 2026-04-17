@@ -14,6 +14,14 @@ serviceSchema:
 import StructuredData from "../../components/StructuredData.astro";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "Pourquoi le prix de la maintenance préventive est à partir de 149 euros HT/mois ?", answer: "En fonction de la complexité d'un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d'extensions est un site plus complexe par exemple." },
+  { question: "Est-ce que tous les sites WordPress sont acceptés ?", answer: "Après un premier audit rapide, nous nous réservons le droit de ne pas fournir la prestation de maintenance préventive. Si le site ne correspond pas au standard de qualité de développement, le maintenir s'avère très dangereux. Il arrive que certains sites WordPress soient tellement mal conçus qu'ils sont impossibles à maintenir." },
+  { question: "Mon WordPress utilise Elementor et un thème acheté. La maintenance est-elle possible ?", answer: "À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d'un site qui utilise Elementor et un thème acheté sur ThemeForest ou autre." },
+  { question: "Si je n'ai pas les licences de mes plugins et thèmes, ils seront quand même mis à jour ?", answer: "Non. Nous ne pouvons mettre à jour uniquement les plugins et thèmes avec les clés de licences." },
+  { question: "Dois-je donner les accès au serveur et à l'admin du site pour la maintenance ?", answer: "Oui. Nous ne pouvons pas intervenir correctement sans le full accès au site et au serveur." },
+  { question: "Y a-t-il des frais de mise en place pour la maintenance préventive ?", answer: "Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de 399 euros HT sont à prévoir. Cela comprend un audit du site, la sécurisation, une petite optimisation et la mise en place de la sauvegarde et la surveillance. Si vous prenez une prestation d'optimisation des performances en même temps, les frais de mise en place sont offerts." }
+]}} />
 
 import { Icon } from 'astro-icon/components';
 import WPTable from "../../components/WPTable.astro";

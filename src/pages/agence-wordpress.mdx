@@ -3,14 +3,22 @@ layout: ../layouts/PageLayout.astro
 title: Agence WordPress
 subtitle: Développement WordPress Genève, Lausanne, Annecy, Suisse, France
 metaTitle: Agence WordPress | Genève, Lausanne, Annecy
-description: Agence WordPress pour le développement de site WordPress. la refonte et la maintenance de votre site WordPress.
+description: "Agence WordPress spécialisée dans le développement sur mesure, la refonte et la maintenance. Thèmes Gutenberg 100% personnalisés, sans builder. Genève, Lausanne, Annecy. Devis gratuit !"
 showToc: true
 ---
 
 
 import ContactForm from "../components/ContactForm.vue";
 import Faq from "../components/Faq.astro";
+import StructuredData from "../components/StructuredData.astro";
 import { Icon } from 'astro-icon/components';
+
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "À qui s'adresse l'offre de site WordPress Goodmotion ?", answer: "L'offre s'adresse aux entreprises qui souhaitent un site de qualité, performant et maintenable dans le temps. Nous ne proposons pas de site WordPress à bas coût, ni avec un thème acheté sur ThemeForest, ni avec un builder (Elementor, Divi, etc...)." },
+  { question: "Je n'ai pas de cahier des charges", answer: "Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des charges. Nous vous posons les bonnes questions pour définir vos besoins." },
+  { question: "Quel est le prix pour un site WordPress chez Goodmotion ?", answer: "Le prix d'un site WordPress chez Goodmotion dépend de la complexité du site. Nous ne proposons pas de prix fixe. Nous vous fournissons un devis personnalisé en fonction de vos besoins. Un site WordPress chez Goodmotion commence à environ 4500 euros HT." },
+  { question: "Comment se passe le SEO du site ?", answer: "Nous intégrons les meilleures pratiques techniques du SEO dans le développement de votre site, ce qui constitue le premier pilier du SEO. Le deuxième pilier concerne le contenu du site, que vous devrez travailler de votre côté." }
+]}} />
 
 ## Conception, refonte ou maintenance des sites WordPress.
 

@@ -12,6 +12,8 @@ serviceSchema:
 ---
 
 import StructuredData from "../../components/StructuredData.astro";
+import Faq from "../../components/Faq.astro";
+import ContactForm from "../../components/ContactForm.vue";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -78,12 +80,41 @@ Il existe 3 versions de licence pour utiliser Craft CMS :
 - Le gestion sans limite des utilisateurs et des groupes admin et public
 - La possibilité de mettre le branding de la société dans l'admin et les emails
 
+## Zones d'intervention
+
+Nous développons des sites Craft CMS pour des clients basés à [Annecy](/agence-web-annecy), [Genève](/agence-web-geneve) et [Lausanne](/agence-web-lausanne), ainsi que partout en France et en Suisse romande.
+
+## Questions fréquentes
+
+<StructuredData type="FAQPage" data={{questions: [
+  { question: "Craft CMS est-il adapté à tous les projets ?", answer: "Craft CMS convient particulièrement aux projets nécessitant une architecture de contenu personnalisée, un CMS multilingue natif ou une utilisation en mode headless. Pour des sites vitrine simples, WordPress peut être plus adapté. Nous analysons votre besoin avant de recommander une solution." },
+  { question: "Craft CMS est-il gratuit ?", answer: "Craft CMS propose une version Solo gratuite (headless, GraphQL, multisite). La version Team est à 279$ et la version Pro à 399$. Pour la plupart des projets professionnels, la version Solo ou Team est suffisante." },
+  { question: "Craft CMS est-il adapté aux sites multilingues ?", answer: "Oui, Craft CMS gère nativement le multilingue et le multisite sans plugin supplémentaire. C'est l'une de ses forces majeures par rapport à d'autres CMS." },
+  { question: "Proposez-vous la maintenance des sites Craft CMS ?", answer: "Oui, nous assurons la maintenance des sites Craft CMS que nous développons : mises à jour du CMS et des plugins, sauvegardes, corrections de bugs et évolutions." }
+]}} />
+
+<Faq title="Craft CMS est-il adapté à tous les projets ?" name="faq-craft">
+Craft CMS convient particulièrement aux projets nécessitant une architecture de contenu personnalisée, un CMS multilingue natif ou une utilisation en mode headless. Pour des sites vitrine simples, WordPress peut être plus adapté. Nous analysons votre besoin avant de recommander une solution.
+</Faq>
+
+<Faq title="Craft CMS est-il gratuit ?" name="faq-craft">
+Craft CMS propose une version Solo gratuite (headless, GraphQL, multisite). La version Team est à 279$ et la version Pro à 399$. Pour la plupart des projets professionnels, la version Solo ou Team est suffisante.
+</Faq>
+
+<Faq title="Craft CMS est-il adapté aux sites multilingues ?" name="faq-craft">
+Oui, Craft CMS gère nativement le multilingue et le multisite sans plugin supplémentaire. C'est l'une de ses forces majeures par rapport à d'autres CMS.
+</Faq>
+
+<Faq title="Proposez-vous la maintenance des sites Craft CMS ?" name="faq-craft">
+Oui, nous assurons la maintenance des sites Craft CMS que nous développons : mises à jour du CMS et des plugins, sauvegardes, corrections de bugs et évolutions.
+</Faq>
+
 ## Besoin d'un développement avec Craft CMS ?
 
 Nous pouvons vous proposer :
 
 - analyse technique de votre projet
-- accompagnements de le développement de votre projet
+- accompagnement dans le développement de votre projet
 - maintenance et évolution du projet
 
-N'hésitez pas à nous contacter pour échanger via la page [contact](/contact)
+<ContactForm client:visible/>
