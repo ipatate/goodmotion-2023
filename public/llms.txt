@@ -1,12 +1,19 @@
 # https://www.goodmotion.fr llms.txt
 
-- [Éco-conception de sites web](https://www.goodmotion.fr): Développement de sites web rapides, sécurisés et durables.
-- [About Faramaz Patrick](https://www.goodmotion.fr/about): Experienced web developer and consultant sharing knowledge online.
-- [Expert WordPress Agency](https://www.goodmotion.fr/agence-wordpress): Custom WordPress design, maintenance, and sustainable development services.
-- [Contact GoodMotion](https://www.goodmotion.fr/contact): Reach out for inquiries, projects, or just to say hello.
-- [Intelligence Artificielle Solutions](https://www.goodmotion.fr/intelligence-artificielle): Explore AI chatbots and workflows for business optimization.
-- [Legal Mentions Information](https://www.goodmotion.fr/mentions-legales): Details about site publisher, editor, and hosting provider.
-- [Podcast Double Slash](https://www.goodmotion.fr/podcast): Explore web development insights and tools through engaging discussions.
-- [Privacy Policy Overview](https://www.goodmotion.fr/politique-de-confidentialite): Learn about data collection and privacy practices here.
-- [Web Technical Consulting](https://www.goodmotion.fr/services/consultant-technique-web): Expert support for your web project technical needs.
-- [Web Development Services](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes): Expert guidance for modern web applications and site development.
+- [Web Development Agency](https://www.goodmotion.fr): Modern, fast, and sustainable website development services offered.
+- [About Patrick Faramaz](https://www.goodmotion.fr/about): Experienced web developer and consultant sharing expertise online.
+- [Agence Laravel Goodmotion](https://www.goodmotion.fr/agence-laravel): Développement Laravel sur mesure pour applications web performantes.
+- [Web Agency Annecy](https://www.goodmotion.fr/agence-web-annecy): Modern, fast, and maintainable web development services in Annecy.
+- [Web Agency Geneva](https://www.goodmotion.fr/agence-web-geneve): Modern, fast, and maintainable web development services in Geneva.
+- [Web Agency Lausanne](https://www.goodmotion.fr/agence-web-lausanne): Modern, fast, and maintainable web development services in Lausanne.
+- [Expert WordPress Agency](https://www.goodmotion.fr/agence-wordpress): Quality WordPress development, maintenance, and design services offered.
+- [Contact GoodMotion](https://www.goodmotion.fr/contact): Reach out for project inquiries or questions easily.
+- [Intelligence Artificielle Solutions](https://www.goodmotion.fr/intelligence-artificielle): Explorez nos services de chatbots, agents et workflows IA.
+- [Legal Mentions](https://www.goodmotion.fr/mentions-legales): Details about site publisher, editor, and hosting provider.
+- [Podcast Double Slash](https://www.goodmotion.fr/podcast): Explore web development and best practices through engaging discussions.
+- [Confidentiality Policy Overview](https://www.goodmotion.fr/politique-de-confidentialite): Learn about data collection and privacy practices here.
+- [Technical Web Consulting](https://www.goodmotion.fr/services/consultant-technique-web): Expert support for your web project technical needs.
+- [Web Development Services](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes): Custom web applications and sites tailored to your needs.
+- [Craft CMS Development Services](https://www.goodmotion.fr/services/developpement-sous-craft-cms): Professional website development using Craft CMS technology.
+- [Développement WordPress sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance): Services avancés de développement et maintenance WordPress personnalisés.
+- [WordPress Maintenance Services](https://www.goodmotion.fr/services/maintenance-wordpress): Professional maintenance for your WordPress site in Switzerland.

@@ -1,203 +1,285 @@
 # https://www.goodmotion.fr llms-full.txt
 
 <|firecrawl-page-1-lllmstxt|>
+## Web Development Agency
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
 
-# Sites web éco-responsables et performants
+Page web plus légère que **98**% des
+pages testées
 
-Micro agence spécialisée dans le développement de sites web modernes, performants et éco-conçus.
+Annecy, Genève, Lausanne
+
+# Développement de sites web performants
+
+Des sites web modernes, durables et performants
+
+Micro agence spécialisée dans le développement de sites web modernes, ultra-rapides et maintenable sur le long terme.
 
 Optimisation de la vitesse et réduction de l'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.
 
-**Annecy, Genève, Lausanne**
+[Parlons de votre projet](https://www.goodmotion.fr/contact)
 
-## [Développement WordPress avancé](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+Expérience
+15+
 
-Développement de sites WordPress optimisés pour la performance et éco-conçus.
+ans
 
-## [Maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+Projets
+50+
 
-Maintenance et évolution de votre site WordPress pour dormir sur vos deux oreilles.
+livrés
+
+Zones
+3
+
+Annecy · Genève · Lausanne
+
+Sites lents
+0
+
+livrés
+
+Nous développons des sites modernes et rapides, mais notre vraie valeur
+ajoutée, c'est notre fidélité. Pas de disparition après la livraison :
+nous assurons le suivi, les mises à jour et l'optimisation continue.
+Choisissez une agence qui s'investit dans la durée de votre projet
+autant que vous.
+
+> "Nous collaborons depuis plusieurs années avec la plupart de nos
+> clients. Ici pas de site jetable, nous nous investissons dans la
+> durée."
+
+Expertise
+
+## Nos services
+
+Voici nos principaux domaines d'expertise dans le développement web et les agents IA.
+
+## [Développement web sur mesure](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes)
+
+Développement de sites, web applications, intranets, jeux interactifs ou landing pages.
+
+## [Développement d'agents IA](https://www.goodmotion.fr/intelligence-artificielle)
+
+Chatbots IA, agents IA et workflows IA
 
 ## [Développement sous Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
 
 Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.
 
-## [Développement web applications et sites web modernes](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes)
+## [Développement WordPress sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance)
 
-Développement d'applications web avec NuxtJS ou NextJS, ainsi que de sites web statiques avec Astro.
+Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.
+
+## [Maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.
 
 ## [Consultant technique pour vos projets web](https://www.goodmotion.fr/services/consultant-technique-web)
 
-Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Que ce soit pour le choix des technologies, l'architecture ou la performance, je vous aide à prendre les bonnes décisions.
+Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.
+
+Valeurs
 
 ## Nos engagements
 
 Faire des sites web c'est bien mais faire des sites web rapides, sécurisés et durables c'est mieux !
 
-![](https://www.goodmotion.fr/_astro/speed.DGNbIPAl_Fp4ES.svg)
+![](https://www.goodmotion.fr/_astro/speed.DGNbIPAl_Z1CAejp.svg)
 
 ### Des sites web rapides !
 
-![](https://www.goodmotion.fr/_astro/secure.DbotsD2P_Fp4ES.svg)
+![](https://www.goodmotion.fr/_astro/secure.DbotsD2P_Z1CAejp.svg)
 
 ### Des sites web sécurisés !
 
-![](https://www.goodmotion.fr/_astro/green.DmRdRwt6_15RXgW.svg)
+![](https://www.goodmotion.fr/_astro/green.DmRdRwt6_Z1d7kHl.svg)
 
 ### Des sites web durables !
+
+### Sécurité et souveraineté des données
+
+Nous utilisons un maximum de solutions européennes pour garantir la
+sécurité et la souveraineté des données de nos clients. En priorité,
+des fournisseurs suisses et français.
+
+Proton mail, infomaniak,
+JetBrain, Kilo Code ... font partie de nos outils du quotidien.
+
+Stack technique
 
 ## Les outils maîtrisés
 
 Après avoir analysé le besoin de votre projet, nous choisirons ensemble l'outil le plus adapté pour obtenir le meilleur résultat.
 
-![Next.js](https://www.goodmotion.fr/_astro/nextjs.wVu15q8z_Z2qFSpf.svg)
+![Next.js](https://www.goodmotion.fr/_astro/nextjs.wVu15q8z_Z1wc0bC.svg)
 
 Next.js
 
-![Astro.js](https://www.goodmotion.fr/_astro/astro.U89LCi3l_Z1PAMTQ.svg)
+![Astro.js](https://www.goodmotion.fr/_astro/astro.U89LCi3l_UA1TM.svg)
 
 Astro.js
 
-![Nuxt](https://www.goodmotion.fr/_astro/nuxt.BV0Q9f9A_Z1dO5NC.svg)
+![Nuxt](https://www.goodmotion.fr/_astro/nuxt.BV0Q9f9A_1xmJ11.svg)
 
 Nuxt
 
-![React.js](https://www.goodmotion.fr/_astro/react.gh1rPbzA_1XjO3M.svg)
+![React.js](https://www.goodmotion.fr/_astro/react.gh1rPbzA_1v5OWq.svg)
 
 React.js
 
-![Vue.js](https://www.goodmotion.fr/_astro/vue.DJULhd0a_Fp4ES.svg)
+![Vue.js](https://www.goodmotion.fr/_astro/vue.DJULhd0a_Z1CAejp.svg)
 
 Vue.js
 
-![WordPress](https://www.goodmotion.fr/_astro/wordpress.D8USWVJ8_Z1HpGHg.svg)
+![WordPress](https://www.goodmotion.fr/_astro/wordpress.D8USWVJ8_13L87n.svg)
 
 WordPress
 
-![Craft CMS](https://www.goodmotion.fr/_astro/craft-cms.CZLtjdge_Z21s1Tj.svg)
+![Craft CMS](https://www.goodmotion.fr/_astro/craft-cms.CZLtjdge_Z16X8FG.svg)
 
 Craft CMS
 
-![Strapi](https://www.goodmotion.fr/_astro/strapi.C_z1LZQD_Z1xAVhu.svg)
-
-Strapi
-
-![Laravel](https://www.goodmotion.fr/_astro/laravel.8J8smiYz_2oyGV3.svg)
+![Laravel](https://www.goodmotion.fr/_astro/laravel.8J8smiYz_Z1L8xEg.svg)
 
 Laravel
 
-![Livewire](https://www.goodmotion.fr/_astro/livewire.UoMiuzHJ_Z1RUH7Q.svg)
+![Inertia](https://www.goodmotion.fr/_astro/inertia.aGPOxTtE_Z1YbEQ7.svg)
+
+Inertia
+
+![Livewire](https://www.goodmotion.fr/_astro/livewire.UoMiuzHJ_ZXqNTe.svg)
 
 Livewire
+
+Confiance
 
 ## Nos partenaires
 
 Voici une liste de quelques entreprises avec lesquelles nous travaillons régulièrement. Merci à elles pour leur confiance.
 
-![Agence Trio](https://www.goodmotion.fr/_astro/trio.Bfd-uids_kEwYG.svg)
+![Agence Trio](https://www.goodmotion.fr/_astro/trio.Bfd-uids_Z1XkKYB.svg)
 
 Agence Trio
 
 Lausanne, Suisse
 
-### WordPress, Craft CMS, React.js, Nuxt.js
+WordPress, Craft CMS, React.js, Nuxt.js
 
-![Agence Details SA](https://www.goodmotion.fr/_astro/details-sa.BxYAakud_Z1szHJG.webp)
+![Agence Details SA](https://www.goodmotion.fr/_astro/details-sa.BxYAakud_JtKvM.webp)
 
 Agence Details SA
 
 Genève, Suisse
 
-### Expertise React.js
+Expertise React.js
 
-![Agence Idéative](https://www.goodmotion.fr/_astro/ideative.D2SjrgP__2vjk8Q.webp)
+![Agence Idéative](https://www.goodmotion.fr/_astro/ideative.D2SjrgP__kDHhK.webp)
 
 Agence Idéative
 
 Genève, Suisse
 
-### Expertise Frontend
+Expertise Frontend
 
-![Éditions Tissot](https://www.goodmotion.fr/_astro/tissot.DrEIz_Lo_2rdORm.svg)
+![Éditions Tissot](https://www.goodmotion.fr/_astro/tissot.DrEIz_Lo_8dvS4.svg)
 
 Éditions Tissot
 
 Annecy, France
 
-### Expertise Next.js et Craft CMS
+Expertise Next.js et Craft CMS
 
-![Sleeps](https://www.goodmotion.fr/_astro/sleeps.Cb0hwpsr_Z1XENA6.webp)
+![Sleeps](https://www.goodmotion.fr/_astro/sleeps.Cb0hwpsr_2bxwmO.webp)
 
 Sleeps
 
 Paris, France
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![Mercredi Biscuiterie](https://www.goodmotion.fr/_astro/mercredi.Ev8X2Lkt_ZJMyqA.webp)
+![Mercredi Biscuiterie](https://www.goodmotion.fr/_astro/mercredi.Ev8X2Lkt_29IWwf.webp)
 
 Mercredi Biscuiterie
 
 Lyon, France
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![Ircam](https://www.goodmotion.fr/_astro/ircam.CmMmEEyR_25X1QN.svg)
+![Ircam](https://www.goodmotion.fr/_astro/ircam.CmMmEEyR_1CAoFJ.svg)
 
 Ircam
 
 Paris, France
 
-### Expertise Strapi et Nuxt.js
+Expertise Strapi et Nuxt.js
 
-![CV Sevrier](https://www.goodmotion.fr/_astro/cvsevrier.CcmwDoR9_1HL1eG.svg)
+![CV Sevrier](https://www.goodmotion.fr/_astro/cvsevrier.CcmwDoR9_1fx28k.svg)
 
 CV Sevrier
 
 Sevrier, France
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![Mouss Films](https://www.goodmotion.fr/_astro/mouss.BTzZ74U7_1027Eg.svg)
+![Mouss Films](https://www.goodmotion.fr/_astro/mouss.BTzZ74U7_Z1iXbk2.svg)
 
 Mouss Films
 
 Annecy, France
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![La Fondation St-Barthélemy](https://www.goodmotion.fr/_astro/bart.CiTXNfNT_Z2aoufI.svg)
+![La Fondation St-Barthélemy](https://www.goodmotion.fr/_astro/bart.CiTXNfNT_Z1fTB26.svg)
 
 La Fondation St-Barthélemy
 
 Lausanne, Suisse
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![Côté et Découvertes](https://www.goodmotion.fr/_astro/cote-decouvertes.Dv5qd_VW_Z8NaHj.webp)
+![Côté et Découvertes](https://www.goodmotion.fr/_astro/cote-decouvertes.fGARvJyL_Z2uS1ws.webp)
 
 Côté et Découvertes
 
 Thônes, France
 
-### Maintenance & développement WordPress
+Maintenance & développement WordPress
 
-![Votre logo ici ?](https://www.goodmotion.fr/_astro/your-logo.B8321B7q_EAKdS.webp)
+![Le Vernay en Savoie](https://www.goodmotion.fr/_astro/vernay.ApQuKlye_Z1hrKjl.svg)
+
+Le Vernay en Savoie
+
+Savoie, France
+
+Maintenance & développement WordPress
+
+![Votre logo ici ?](https://www.goodmotion.fr/_astro/your-logo.B8321B7q_ZDrAB1.webp)
 
 Votre logo ici ?
 
 Votre ville, votre pays
 
-### Votre description
+Votre description
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
 
 <|firecrawl-page-2-lllmstxt|>
-## About Faramaz Patrick
+## About Patrick Faramaz
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
 
-# A propos
+Page web plus légère que **98**% des
+pages testées
+
+# Patrick Faramaz - Développeur Web Senior & Consultant Technique
 
 ## Consultant technique, développeur web, podcasteur
 
-![faramaz patrick](https://www.goodmotion.fr/_astro/pat_picture.CO_1dMZs_2df1P4.webp)
+![faramaz patrick](https://www.goodmotion.fr/_astro/pat_picture.CO_1dMZs_29HSVk.webp)
 
 ### Faramaz Patrick, consultant technique et développeur expérimenté
 
@@ -224,16 +306,577 @@ J’aime aussi partager, j’ai donc aussi plusieurs activités :
 - Le podcast [Double Slash](https://double-slash.dev/) en co-animation.
 - Des vidéos tutorielles pour partager des astuces et des tests :
   - [YouTube Double Slash](https://www.youtube.com/channel/UCp5DGBAX2XNJXeOVAo7bICQ)
-  - [YouTube WP Performance](https://www.youtube.com/channel/UCp5DGBAX2XNJXeOVAo7bICQ)
+  - [YouTube WP Performance](https://www.youtube.com/channel/UCx8Sx_WiRkT5e14CTAhr5cA)
 
+Parlons-en
 
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
 
 <|firecrawl-page-3-lllmstxt|>
+## Agence Laravel Goodmotion
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Agence Laravel Développement sur mesure
+
+Applications web Laravel • Genève, Lausanne, Annecy, Suisse, France
+
+[Votre application Laravel mérite mieux qu’un développement générique](https://www.goodmotion.fr/agence-laravel#votre-application-laravel-m%C3%A9rite-mieux-quun-d%C3%A9veloppement-g%C3%A9n%C3%A9rique) [Pourquoi choisir Goodmotion pour votre projet Laravel](https://www.goodmotion.fr/agence-laravel#pourquoi-choisir-goodmotion-pour-votre-projet-laravel) [Code sur-mesure et architecture propre](https://www.goodmotion.fr/agence-laravel#code-sur-mesure-et-architecture-propre) [Éco-conception et performance](https://www.goodmotion.fr/agence-laravel#%C3%A9co-conception-et-performance) [Expertise full-stack complète](https://www.goodmotion.fr/agence-laravel#expertise-full-stack-compl%C3%A8te) [Une expertise complète du framework Laravel](https://www.goodmotion.fr/agence-laravel#une-expertise-compl%C3%A8te-du-framework-laravel) [Inertia.js avec Vue.js et React](https://www.goodmotion.fr/agence-laravel#inertiajs-avec-vuejs-et-react) [Livewire pour l’interactivité temps réel](https://www.goodmotion.fr/agence-laravel#livewire-pour-linteractivit%C3%A9-temps-r%C3%A9el) [Intégration AI SDK pour des fonctionnalités intelligentes](https://www.goodmotion.fr/agence-laravel#int%C3%A9gration-ai-sdk-pour-des-fonctionnalit%C3%A9s-intelligentes) [Le déroulement pour créer une application Laravel](https://www.goodmotion.fr/agence-laravel#le-d%C3%A9roulement-pour-cr%C3%A9er-une-application-laravel) [FAQ](https://www.goodmotion.fr/agence-laravel#faq) [Ce qui nous différencie](https://www.goodmotion.fr/agence-laravel#ce-qui-nous-diff%C3%A9rencie) [Nos engagements](https://www.goodmotion.fr/agence-laravel#nos-engagements) [Parlez-nous de votre projet Laravel](https://www.goodmotion.fr/agence-laravel#parlez-nous-de-votre-projet-laravel)
+
+## Votre application Laravel mérite mieux qu’un développement générique
+
+Vous avez besoin d’une application web complexe, d’un SaaS innovant ou d’une plateforme métier performante. Mais les solutions clé en main ne correspondent pas à vos besoins spécifiques, et vous craignez de perdre du temps et de l’argent avec un développement qui ne tient pas dans le temps.
+
+**Notre approche** : des applications Laravel 100% sur-mesure, architecturées pour durer et évoluer avec votre entreprise.
+
+[Discutons de votre projet →](https://www.goodmotion.fr/contact)
+
+## Pourquoi choisir Goodmotion pour votre projet Laravel
+
+Chez Goodmotion, nous mettons l’accent sur la qualité du code et l’architecture robuste. Chaque projet Laravel est conçu pour durer dans le temps et évoluer avec vos besoins.
+
+### Code sur-mesure et architecture propre
+
+Nous développons des applications Laravel en suivant les meilleures pratiques du framework. Notre code est structuré, testé et documenté pour garantir une maintenabilité optimale. Pas de solutions clé en main, chaque ligne de code est pensée pour votre projet spécifique.
+
+### Éco-conception et performance
+
+Laravel permet de créer des applications légères et performantes. Nous optimisons chaque requête, chaque composant pour minimiser l’empreinte carbone de votre application tout en maximisant la vitesse de chargement.
+
+### Expertise full-stack complète
+
+Notre équipe maîtrise l’ensemble de l’écosystème Laravel et ses technologies associées. Que vous choisissiez **Inertia.js avec Vue.js ou React**, ou **Livewire** pour l’interactivité temps réel, nous avons l’expertise pour vous guider vers la meilleure solution technique.
+
+## Une expertise complète du framework Laravel
+
+### Inertia.js avec Vue.js et React
+
+**Inertia.js** est notre choix privilégié pour créer des applications monopage (SPA) sans la complexité d’une API dédiée. Cette approche permet de combiner la puissance de Laravel côté serveur avec une expérience utilisateur fluide et moderne. Nous maîtrisons aussi bien **Vue.js** que **React**, ce qui nous permet de nous adapter à vos préférences techniques ou à votre stack existante.
+
+### Livewire pour l’interactivité temps réel
+
+Pour les projets nécessitant une interactivité côté client mais nécessitant un besoin de performances et SEO, **Livewire** est une solution élégante. Les composants dynamiques se mettent à jour en temps réel, offrant une expérience utilisateur riche tout en restant simple à maintenir.
+
+### Intégration AI SDK pour des fonctionnalités intelligentes
+
+Nous pouvons enrichir vos applications Laravel avec des fonctionnalités d’intelligence artificielle grâce à l’intégration d’AI SDK. Cela ouvre la porte à des chatbots intelligents, des assistants IA, ou des automatisations avancées directement dans votre application.
+
+[Réserver une consultation →](https://www.goodmotion.fr/contact)
+
+### Le déroulement pour créer une application Laravel
+
+Analyse des besoins et architecture
+
+Nous commençons par analyser en profondeur vos besoins métiers pour définir l’architecture technique la plus adaptée. L’objectif est de comprendre vos processus, vos contraintes et vos objectifs pour proposer une solution sur-mesure qui répond exactement à vos attentes.
+
+Wireframe et UX
+
+Nous créons des wireframes des pages principales pour visualiser l’expérience utilisateur. Cette étape permet d’identifier rapidement les ajustements nécessaires avant de passer au développement.
+
+Conception des composants avec Inertia ou Livewire
+
+La conception se fait par composants, qu’ils soient développés avec **Inertia.js** (pour une expérience SPA moderne) ou **Livewire** (pour une interactivité côté serveur). Cette approche modulaire facilite le développement, les tests et les évolutions futures.
+
+Développement et déploiement
+
+C’est l’étape où nous développons l’application entièrement sur-mesure. Nous intégrons les tests automatisés, la documentation technique et optimisons les performances. Le déploiement se fait via une pipeline CI/CD pour garantir une mise en production fluide et sécurisée.
+
+## FAQ
+
+### À qui s'adresse l'offre Laravel de Goodmotion ?
+
+L’offre Laravel de Goodmotion s’adresse aux entreprises qui ont besoin d’applications web complexes, performantes et maintenables : plateformes métier, SaaS, applications avec logique métier avancée, ou projets nécessitant une architecture robuste.
+
+### Je n'ai pas de cahier des charges pour mon projet Laravel
+
+Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des charges. Nous vous posons les bonnes questions pour définir vos besoins métiers, identifier les fonctionnalités essentielles et prioriser les développements.
+
+### Quelle est la différence entre Inertia.js et Livewire ?
+
+**Inertia.js** permet de créer des applications monopage (SPA) modernes avec Vue.js ou React, sans la complexité d’une API REST dédiée. **Livewire** permet quant à lui de créer des composants dynamiques côté serveur, idéal pour des projets nécessitant une interactivité temps réel tout en favorisant le SEO. Nous vous guidons vers la solution la plus adaptée à votre projet.
+
+### Proposez-vous la maintenance des applications Laravel ?
+
+Oui, nous assurons la maintenance des applications Laravel que nous développons : mises à jour de Laravel et des dépendances, corrections de bugs, évolutions fonctionnelles et monitoring des performances.
+
+## Ce qui nous différencie
+
+- **Applications 100% sur-mesure** \- Chaque projet est unique et développé spécifiquement pour vos besoins
+- **Architecture pensée pour la maintenabilité** \- Code structuré, testé et documenté
+- **Expertise Inertia.js, Livewire, AI SDK** \- Maîtrise complète de l’écosystème Laravel moderne
+- **Engagement open-source et veille technologique constante** \- Toujours à jour avec les dernières innovations
+
+## Nos engagements
+
+- Code structuré, testé et documenté
+- Pipeline CI/CD pour déploiement sécurisé
+- Optimisation performance et éco-conception
+- Réponse garantie sous 24h ouvrées
+
+## Parlez-nous de votre projet Laravel
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-4-lllmstxt|>
+## Web Agency Annecy
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Agence Web à Annecy
+
+Développement de sites web modernes, ultra-rapides et maintenables
+
+## Votre agence web à Annecy
+
+Goodmotion est une agence de développement web **basée à Annecy**, spécialisée dans la création de sites web modernes, ultra-rapides et maintenables. Nous accompagnons les entreprises d’Annecy, du bassin annécien et de toute la région Auvergne-Rhône-Alpes dans leurs projets web.
+
+Annecy, c’est notre territoire. Nous connaissons le tissu économique local : les industries de précision (décolletage, mécatronique), les commerces et artisans du centre-ville, les acteurs du tourisme autour du lac, et les travailleurs frontaliers dont les entreprises sont souvent à cheval entre la France et la Suisse. Nous sommes là, disponibles pour une réunion en face à face quand le projet le nécessite.
+
+### Pourquoi choisir Goodmotion pour votre projet web à Annecy ?
+
+- **Flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
+- **Agence locale** : Basée à Annecy, nous connaissons parfaitement le tissu économique local
+- **Expertise reconnue** : Plus de 15 ans d’expérience en développement web
+- **Performance garantie** : Score de plus de 90/100 sur PageSpeed Insights
+- **Collaboration durable** : Nous privilégions les partenariats sur le long terme
+
+## Nos services de développement web à Annecy
+
+### Développement de sites web sur mesure
+
+Nous créons des sites web entièrement **sur mesure**, adaptés à vos besoins spécifiques et à votre image de marque. Notre approche privilégie :
+
+- Des technologies modernes (Next.js, Astro, Nuxt.js)
+- Une architecture optimisée pour la performance
+- Un code propre et maintenable
+
+### Développement WordPress professionnel
+
+WordPress est une solution idéale pour de nombreux projets. Nous développons des sites WordPress **100% sur mesure** :
+
+- Thèmes personnalisés sans constructeur de page
+- Blocs Gutenberg sur mesure
+- Respect des bonnes pratiques WordPress
+- Sites sécurisés et maintenables
+
+[Découvrez notre service WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+
+### Développement Craft CMS
+
+Pour les projets nécessitant plus de flexibilité, **Craft CMS** est une solution puissante et moderne :
+
+- Interface d’administration intuitive
+- Gestion de contenu flexible
+- Multilingue natif
+- Performance optimale
+
+[Découvrir Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
+
+### Développement Laravel sur mesure
+
+Pour les projets complexes nécessitant une architecture robuste, **Laravel** est le framework PHP de référence :
+
+- Applications web sur mesure avec **Inertia.js** (Vue.js ou React) pour une expérience SPA sans API complexe
+- Composants dynamiques côté serveur avec **Livewire** pour une interactivité temps réel
+- Sécurité renforcée et code maintenable avec les standards Laravel
+- Écosystème riche : Filament pour l’admin, Laravel Pulse pour le monitoring
+- Intégration IA possible avec le AI SDK de Vercel pour des fonctionnalités intelligentes
+
+[En savoir plus sur notre expertise Laravel](https://www.goodmotion.fr/agence-laravel)
+
+### Agents IA et Chatbots
+
+Nous intégrons l’ **intelligence artificielle** dans vos projets web :
+
+- Chatbots RAG (Retrieval-Augmented Generation)
+- Agents IA pour automatiser vos tâches
+- Workflows automatisés
+
+[En savoir plus sur nos solutions IA](https://www.goodmotion.fr/intelligence-artificielle)
+
+### Notre méthodologie de travail
+
+Analyse de vos besoins
+Nous commençons par comprendre votre projet, vos objectifs et vos contraintes lors d’un premier échange.
+
+Proposition technique
+Nous vous proposons la solution technique la plus adaptée à vos besoins et votre budget.
+
+Développement
+Nous développons votre projet en respectant les délais convenus et avec une communication régulière.
+
+Mise en ligne et suivi
+Nous assurons la mise en ligne et restons disponibles pour la maintenance et les évolutions.
+
+## Le tissu numérique annécien : ce que nous observons
+
+Annecy abrite une économie productive diversifiée - industries de haute précision, secteur touristique, commerce de proximité - avec des entreprises qui ont souvent des besoins web concrets mais peu de temps à consacrer à leur prestataire. C’est précisément pour ça que nous travaillons en mode micro-agence : **un interlocuteur unique**, réactif, qui connaît votre site aussi bien que vous. Pas de perte d’information entre un commercial et un développeur.
+
+## Zones d’intervention
+
+- **Annecy** et agglomération annécienne
+- **Chambéry** et la Savoie
+- **Lyon** et l’agglomération lyonnaise
+- **Genève** et la Suisse romande - [voir notre page Genève](https://www.goodmotion.fr/agence-web-geneve)
+- **Lausanne** \- [voir notre page Lausanne](https://www.goodmotion.fr/agence-web-lausanne)
+- **Toute la France** (télétravail)
+
+## Demandez un devis gratuit
+
+Vous avez un projet web à Annecy ? Discutons-en !
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+## Questions fréquentes
+
+### Où est située votre agence ?
+
+Notre agence est située à Annecy. Nous pouvons nous déplacer pour des réunions sur Annecy et ses environs.
+
+### Quels sont vos délais de réalisation ?
+
+Les délais varient selon la complexité du projet :
+
+- **Site vitrine** : 2 à 4 semaines
+- **Site WordPress sur mesure** : 4 à 8 semaines
+- **Application web** : 1 à 3 mois
+
+### Proposez-vous la maintenance des sites ?
+
+Oui, nous proposons des forfaits de maintenance pour tous les sites que nous développons. Cela inclut les mises à jour, la sécurité et les sauvegardes.
+
+[Voir nos offres de maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+### Quelles technologies utilisez-vous ?
+
+Nous maîtrisons un large éventail de technologies : **WordPress**, **Craft CMS**, **Next.js**, **Astro**, **Nuxt.js**, **React**, **Vue.js**, **Laravel**. Nous choisissons l’outil le plus adapté à votre projet.
+
+### Travaillez-vous uniquement avec des clients d'Annecy ?
+
+Non, nous travaillons avec des clients partout en France et en Suisse. La proximité nous permet simplement d’établir des relations plus facilement avec les entreprises locales.
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-5-lllmstxt|>
+## Web Agency Geneva
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Agence Web à Genève
+
+Développement de sites web modernes, ultra-rapides et maintenables
+
+## Votre agence web à Genève
+
+Goodmotion est une agence de développement web spécialisée dans la création de sites web modernes, ultra-rapides et maintenables. Basée à Annecy, nous intervenons régulièrement à **Genève** et dans toute la Suisse romande pour accompagner entreprises, startups et agences dans leurs projets web.
+
+Genève est une place internationale unique : multinationales, organisations internationales (ONU, OMC, CERN), startups fintech et medtech, agences de communication exigeantes. Nous connaissons ce marché et ses standards élevés de qualité - pas de site générique, chaque projet est architecturé pour durer.
+
+**Nous travaillons avec plusieurs agences genevoises et nous sommes régulièrement sur place.**
+
+### Pourquoi choisir Goodmotion pour votre projet web à Genève ?
+
+- **Flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
+- **Proximité géographique** : Située à seulement 40 minutes de Genève, nous facilitons les échanges et les rendez-vous
+- **Expertise reconnue** : Plus de 15 ans d’expérience en développement web
+- **Performance garantie** : Score de plus de 90/100 sur PageSpeed Insights
+- **Collaboration durable** : Nous privilégions les partenariats sur le long terme
+
+## Nos services de développement web à Genève
+
+### Développement de sites web sur mesure
+
+Nous créons des sites web entièrement **sur mesure**, adaptés à vos besoins spécifiques et à votre image de marque. Notre approche privilégie :
+
+- Des technologies modernes (Next.js, Astro, Nuxt.js)
+- Une architecture optimisée pour la performance
+- Un code propre et maintenable
+
+### Développement WordPress professionnel
+
+WordPress est une solution idéale pour de nombreux projets. Nous développons des sites WordPress **100% sur mesure** :
+
+- Thèmes personnalisés sans constructeur de page
+- Blocs Gutenberg sur mesure
+- Respect des bonnes pratiques WordPress
+- Sites sécurisés et maintenables
+
+[Découvrez notre service WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+
+### Développement Craft CMS
+
+Pour les projets nécessitant plus de flexibilité, **Craft CMS** est une solution puissante et moderne :
+
+- Interface d’administration intuitive
+- Gestion de contenu flexible
+- Multilingue natif
+- Performance optimale
+
+[Découvrir Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
+
+### Développement Laravel sur mesure
+
+Pour les projets complexes nécessitant une architecture robuste, **Laravel** est le framework PHP de référence :
+
+- Applications web sur mesure avec **Inertia.js** (Vue.js ou React) pour une expérience SPA sans API complexe
+- Composants dynamiques côté serveur avec **Livewire** pour une interactivité temps réel
+- Sécurité renforcée et code maintenable avec les standards Laravel
+- Écosystème riche : Filament pour l’admin, Laravel Pulse pour le monitoring
+- Intégration IA possible avec le AI SDK de Vercel pour des fonctionnalités intelligentes
+
+[En savoir plus sur notre expertise Laravel](https://www.goodmotion.fr/agence-laravel)
+
+### Agents IA et Chatbots
+
+Nous intégrons l’ **intelligence artificielle** dans vos projets web :
+
+- Chatbots RAG (Retrieval-Augmented Generation)
+- Agents IA pour automatiser vos tâches
+- Workflows automatisés
+
+[En savoir plus sur nos solutions IA](https://www.goodmotion.fr/intelligence-artificielle)
+
+### Notre méthodologie de travail
+
+Analyse de vos besoins
+Nous commençons par comprendre votre projet, vos objectifs et vos contraintes lors d’un premier échange.
+
+Proposition technique
+Nous vous proposons la solution technique la plus adaptée à vos besoins et votre budget.
+
+Développement
+Nous développons votre projet en respectant les délais convenus et avec une communication régulière.
+
+Mise en ligne et suivi
+Nous assurons la mise en ligne et restons disponibles pour la maintenance et les évolutions.
+
+## Le marché digital genevois : ce que nous observons
+
+Genève concentre une densité exceptionnelle d’organisations internationales, de fondations et de sociétés financières. Leurs besoins web sont souvent spécifiques : **sites multilingues** (français / anglais), **conformité RGPD stricte**, **identités visuelles exigeantes**, et parfois des intégrations avec des outils métier internes. Nous avons l’expérience de ces contraintes et savons y répondre avec les bons outils techniques.
+
+## Zones d’intervention en Suisse romande
+
+- **Genève** et canton de Genève
+- **Lausanne** et canton de Vaud - [voir notre page Lausanne](https://www.goodmotion.fr/agence-web-lausanne)
+- **Neuchâtel**
+- **Fribourg**
+- **Valais**
+
+## Demandez un devis gratuit
+
+Vous avez un projet web à Genève ? Discutons-en !
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+## Questions fréquentes
+
+### Travaillez-vous avec des clients à Genève depuis Annecy ?
+
+Oui, absolument ! La proximité géographique (40 minutes) nous permet de nous rendre facilement à Genève pour des réunions. Nous travaillons également régulièrement à distance avec des outils de collaboration modernes.
+
+### Quels sont vos délais de réalisation ?
+
+Les délais varient selon la complexité du projet :
+
+- **Site vitrine** : 2 à 4 semaines
+- **Site WordPress sur mesure** : 4 à 8 semaines
+- **Application web** : 1 à 3 mois
+
+### Proposez-vous la maintenance des sites ?
+
+Oui, nous proposons des forfaits de maintenance pour tous les sites que nous développons. Cela inclut les mises à jour, la sécurité et les sauvegardes.
+
+[Voir nos offres de maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+### Quelles technologies utilisez-vous ?
+
+Nous maîtrisons un large éventail de technologies : **WordPress**, **Craft CMS**, **Next.js**, **Astro**, **Nuxt.js**, **React**, **Vue.js**, **Laravel**. Nous choisissons l’outil le plus adapté à votre projet.
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-6-lllmstxt|>
+## Web Agency Lausanne
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Agence Web à Lausanne
+
+Développement de sites web modernes, ultra-rapides et maintenables
+
+## Votre agence web à Lausanne
+
+Goodmotion est une agence de développement web spécialisée dans la création de sites web modernes, ultra-rapides et maintenables. Basée à Annecy, nous intervenons régulièrement à **Lausanne** et dans toute la Suisse romande pour accompagner entreprises, startups et agences dans leurs projets web.
+
+Lausanne est un écosystème tech et académique d’exception : l’ **EPFL** génère un flux continu de startups deep tech, les organisations sportives internationales (CIO, FIFA, FIBA) ont des besoins web de haut niveau, et le tissu de PME vaudoises cherche des partenaires fiables sur le long terme. Nous travaillons dans ce contexte depuis plusieurs années.
+
+**Nous travaillons avec plusieurs agences lausannoises et nous sommes régulièrement sur place.**
+
+### Pourquoi choisir Goodmotion pour votre projet web à Lausanne ?
+
+- **Flexibilité et rapidité** : Vous travaillez directement avec un développeur web et non avec un commercial ou un chef de projet !
+- **Proximité géographique** : Proche de Lausanne (1h15), nous facilitons les échanges et les rendez-vous
+- **Expertise reconnue** : Plus de 15 ans d’expérience en développement web
+- **Performance garantie** : Score de plus de 90/100 sur PageSpeed Insights
+- **Collaboration durable** : Nous privilégions les partenariats sur le long terme
+
+## Nos services de développement web à Lausanne
+
+### Développement de sites web sur mesure
+
+Nous créons des sites web entièrement **sur mesure**, adaptés à vos besoins spécifiques et à votre image de marque. Notre approche privilégie :
+
+- Des technologies modernes (Next.js, Astro, Nuxt.js)
+- Une architecture optimisée pour la performance
+- Un code propre et maintenable
+
+### Développement WordPress professionnel
+
+WordPress est une solution idéale pour de nombreux projets. Nous développons des sites WordPress **100% sur mesure** :
+
+- Thèmes personnalisés sans constructeur de page
+- Blocs Gutenberg sur mesure
+- Respect des bonnes pratiques WordPress
+- Sites sécurisés et maintenables
+
+[Découvrez notre service WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+
+### Développement Craft CMS
+
+Pour les projets nécessitant plus de flexibilité, **Craft CMS** est une solution puissante et moderne :
+
+- Interface d’administration intuitive
+- Gestion de contenu flexible
+- Multilingue natif
+- Performance optimale
+
+[Découvrir Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
+
+### Développement Laravel sur mesure
+
+Pour les projets complexes nécessitant une architecture robuste, **Laravel** est le framework PHP de référence :
+
+- Applications web sur mesure avec **Inertia.js** (Vue.js ou React) pour une expérience SPA sans API complexe
+- Composants dynamiques côté serveur avec **Livewire** pour une interactivité temps réel
+- Sécurité renforcée et code maintenable avec les standards Laravel
+- Écosystème riche : Filament pour l’admin, Laravel Pulse pour le monitoring
+- Intégration IA possible avec le AI SDK de Vercel pour des fonctionnalités intelligentes
+
+[En savoir plus sur notre expertise Laravel](https://www.goodmotion.fr/agence-laravel)
+
+### Agents IA et Chatbots
+
+Nous intégrons l’ **intelligence artificielle** dans vos projets web :
+
+- Chatbots RAG (Retrieval-Augmented Generation)
+- Agents IA pour automatiser vos tâches
+- Workflows automatisés
+
+[En savoir plus sur nos solutions IA](https://www.goodmotion.fr/intelligence-artificielle)
+
+### Notre méthodologie de travail
+
+Analyse de vos besoins
+Nous commençons par comprendre votre projet, vos objectifs et vos contraintes lors d’un premier échange.
+
+Proposition technique
+Nous vous proposons la solution technique la plus adaptée à vos besoins et votre budget.
+
+Développement
+Nous développons votre projet en respectant les délais convenus et avec une communication régulière.
+
+Mise en ligne et suivi
+Nous assurons la mise en ligne et restons disponibles pour la maintenance et les évolutions.
+
+## L’écosystème digital lausannois : ce que nous observons
+
+Lausanne est une ville de contrastes créatifs : des startups deeptech issues de l’EPFL qui ont besoin d’un MVP ou d’une application web robuste, des organisations sportives internationales avec des sites multilingues complexes, et des commerces du quartier du Flon ou de la rue de Bourg qui cherchent une présence web qualitative. Nous avons l’expérience de ces contextes variés.
+
+## Zones d’intervention en Suisse romande
+
+- **Lausanne** et canton de Vaud
+- **Genève** et canton de Genève - [voir notre page Genève](https://www.goodmotion.fr/agence-web-geneve)
+- **Neuchâtel**
+- **Fribourg**
+- **Valais**
+
+## Demandez un devis gratuit
+
+Vous avez un projet web à Lausanne ? Discutons-en !
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+## Questions fréquentes
+
+### Travaillez-vous avec des clients à Lausanne depuis Annecy ?
+
+Oui, absolument ! La proximité géographique (1h15) nous permet de nous rendre facilement à Lausanne pour des réunions. Nous travaillons également régulièrement à distance avec des outils de collaboration modernes.
+
+### Quels sont vos délais de réalisation ?
+
+Les délais varient selon la complexité du projet :
+
+- **Site vitrine** : 2 à 4 semaines
+- **Site WordPress sur mesure** : 4 à 8 semaines
+- **Application web** : 1 à 3 mois
+
+### Proposez-vous la maintenance des sites ?
+
+Oui, nous proposons des forfaits de maintenance pour tous les sites que nous développons. Cela inclut les mises à jour, la sécurité et les sauvegardes.
+
+[Voir nos offres de maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+### Quelles technologies utilisez-vous ?
+
+Nous maîtrisons un large éventail de technologies : **WordPress**, **Craft CMS**, **Next.js**, **Astro**, **Nuxt.js**, **React**, **Vue.js**, **Laravel**. Nous choisissons l’outil le plus adapté à votre projet.
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-7-lllmstxt|>
 ## Expert WordPress Agency
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
 
 # Agence WordPress
 
-## Genève, Lausanne, Annecy, Suisse, France
+Développement WordPress Genève, Lausanne, Annecy, Suisse, France
 
 [Conception, refonte ou maintenance des sites WordPress.](https://www.goodmotion.fr/agence-wordpress#conception-refonte-ou-maintenance-des-sites-wordpress) [Pourquoi choisir Goodmotion pour votre projet WordPress](https://www.goodmotion.fr/agence-wordpress#pourquoi-choisir-goodmotion-pour-votre-projet-wordpress) [Une parfaite connaissance du CMS WordPress](https://www.goodmotion.fr/agence-wordpress#une-parfaite-connaissance-du-cms-wordpress) [Des sites WordPress maintenables et durables](https://www.goodmotion.fr/agence-wordpress#des-sites-wordpress-maintenables-et-durables) [Le déroulement pour faire un site WordPress](https://www.goodmotion.fr/agence-wordpress#le-d%C3%A9roulement-pour-faire-un-site-wordpress) [Faq](https://www.goodmotion.fr/agence-wordpress#faq) [Maintenance](https://www.goodmotion.fr/agence-wordpress#maintenance) [Contactez-nous pour discuter de votre projet WordPress](https://www.goodmotion.fr/agence-wordpress#contactez-nous-pour-discuter-de-votre-projet-wordpress)
 
@@ -253,7 +896,7 @@ Nous maîtrisons parfaitement le CMS ainsi que l’API (hook, filtre) pour impl�
 
 De plus :
 
-- Nous partageons notre expérience en proposant du code open-source (plugins, thèmes). [Github WP-Performance](https://github.com/wpperformance)
+- Nous partageons notre expérience en proposant du code open-source (plugins, thèmes). [WP-Performance](https://wp-performance.com/)
 - Nous donnons des conférences lors des WordCamps. [Conférence Biarritz 2023](https://videopress.com/v/7nvpcWAB)
 - Nous créons des vidéos pour partager nos connaissances. [Chaîne YouTube](https://www.youtube.com/channel/UCx8Sx_WiRkT5e14CTAhr5cA)
 
@@ -270,19 +913,19 @@ Grâce à ces quatre méthodes de développement, les sites WordPress que nous c
 
 ## Le déroulement pour faire un site WordPress
 
-1 - Analyse des besoins
+Analyse des besoins
 
 Nous allons ensemble analyser les besoins de votre projet pour définir les priorités. L’objectif est de vous accompagner et clarifier votre vision pour comprendre clairement l’ampleur du projet.
 
-2 - Wireframe
+Wireframe
 
 Il s’agit d’une maquette simplifiée des pages principales. Avec une première vision d’ensemble, il est plus facile d’éliminer ou d’ajouter des éléments.
 
-3 - Conception des éléments (par bloc)
+Conception des éléments (par bloc)
 
 La conception se fait par bloc (ou composant) grâce à l’utilisation de Gutenberg, qui permet de penser les pages comme un assemblage de type Lego. Bien entendu, nous assemblons quelques pages pour faciliter la compréhension.
 
-4 - Développement
+Développement
 
 C’est l’étape où nous développons le thème entièrement sur-mesure. Tout est conçu pour faciliter les mises à jour du contenu, garantir la sécurité et optimiser les performances.
 
@@ -298,7 +941,7 @@ Pas de problème, nous vous accompagnons dans la rédaction de votre cahier des 
 
 ### Quel est le prix pour un site WordPress chez Goodmotion ?
 
-Le prix d’un site WordPress chez Goodmotion dépend de la complexité du site. Nous ne proposons pas de prix fixe. Nous vous proposons un devis personnalisé en fonction de vos besoins. Mais pour vous donner une idée, un site WordPress chez Goodmotion commence au environ de 4500 HT.
+Le prix d’un site WordPress chez Goodmotion dépend de la complexité du site. Nous ne proposons pas de prix fixe. Nous vous fournissons un devis personnalisé en fonction de vos besoins. Mais pour vous donner une idée, un site WordPress chez Goodmotion commence à environ 4500 HT.
 
 ### Comment se passe le SEO du site ?
 
@@ -317,12 +960,22 @@ Pour être totalement transparent, certains prestataires vendent des sites sans 
 
 ## Contactez-nous pour discuter de votre projet WordPress
 
-Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
 
+Parlons-en
 
+## Votre prochain  projet web ?
 
-<|firecrawl-page-4-lllmstxt|>
+[Démarrer un projet](https://www.goodmotion.fr/contact)
 
+<|firecrawl-page-8-lllmstxt|>
+## Contact GoodMotion
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
 
 # Contactez-nous
 
@@ -332,23 +985,33 @@ Vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur [Blue 
 
 Vous pouvez m’envoyer un message par le formulaire ci-dessous :
 
-Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
 
 Et vous pouvez également me contacter par email à l’adresse suivante :
 [infos@goodmotion.fr](mailto:infos@goodmotion.fr)
 
 À bientôt !
 
+Parlons-en
 
+## Votre prochain  projet web ?
 
-<|firecrawl-page-5-lllmstxt|>
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-9-lllmstxt|>
 ## Intelligence Artificielle Solutions
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
 
-# Chatbots IA et Workflows IA
+Page web plus légère que **98**% des
+pages testées
 
-## Genève, Lausanne, Annecy, Suisse, France
+# Chatbots IA, agents IA et workflows IA
 
-[Chatbots IA](https://www.goodmotion.fr/intelligence-artificielle#chatbots-ia) [Fonctionnement](https://www.goodmotion.fr/intelligence-artificielle#fonctionnement) [Workflows](https://www.goodmotion.fr/intelligence-artificielle#workflows) [Outils principaux](https://www.goodmotion.fr/intelligence-artificielle#outils-principaux) [Contactez-nous pour discuter de votre besoin](https://www.goodmotion.fr/intelligence-artificielle#contactez-nous-pour-discuter-de-votre-besoin)
+Développement IA Genève, Lausanne, Annecy, Suisse, France
+
+[Chatbots IA](https://www.goodmotion.fr/intelligence-artificielle#chatbots-ia) [Agents IA](https://www.goodmotion.fr/intelligence-artificielle#agents-ia) [Workflows](https://www.goodmotion.fr/intelligence-artificielle#workflows) [Outils principaux](https://www.goodmotion.fr/intelligence-artificielle#outils-principaux) [Contactez-nous pour discuter de votre besoin](https://www.goodmotion.fr/intelligence-artificielle#contactez-nous-pour-discuter-de-votre-besoin)
 
 Nous proposons la conception et l’implémentation de solutions basées sur l’intelligence artificielle (IA).
 Les sociétés telles qu’OpenAI et Anthropic ont démocratisé l’accès aux modèles LLM (Large Language Models) et aux APIs de génération de texte.
@@ -358,36 +1021,49 @@ Nous vous accompagnons dans la création d’outils intelligents qui transformen
 ## Chatbots IA
 
 Des chatbots en mode RAG (Retrieval-Augmented Generation).
-En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte (GPT) à l’aide d’un modèle, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
+En combinant la récupération d’informations pertinentes dans des bases de données avec la génération de texte à l’aide d’un modèle LLM, nous développons des solutions capables de fournir des réponses précises, contextuelles et fiables.
 
-### Fonctionnement
+Nous contrôlons le contexte que nous allons donner au modèle LLM, ce qui permet de garantir la qualité des réponses et de les adapter à vos besoins spécifiques. Les modèles sont excellents pour formuler des réponses complètes, mais peuvent parfois halluciner des informations. Grâce au contexte et aux instructions que nous lui donnons, nous pouvons limiter fortement les hallucinations, et le modèle peut répondre avec une grande précision sur des questions spécifiques à votre activité.
 
-- Une source de données (base de connaissances, API, documents) est constituée avec des informations pertinentes sur un domaine spécifique.
-- La source de données est découpée en morceaux de texte. Cette partie est cruciale pour retrouver les informations pertinentes à donner au modèle.
-- Le contexte (les données retrouvées par rapport à la requête utilisateur) est fourni avec le prompt envoyé au modèle.
-- Le modèle génère une réponse basée sur le contexte et les informations de la source de données.
+## Agents IA
 
-![RAG](https://www.goodmotion.fr/_astro/RAG.CX_gdK6e_taf1Q.webp)
+Un agent IA est une sorte d’assistant capable d’effectuer des tâches spécifiques. Il peut être utilisé pour automatiser des tâches répétitives, ou pour fournir des informations précises et fiables.
 
-Bien cadrées, les réponses sont très pertinentes. Vous pouvez tester le fonctionnement directement dans le chatbot disponible sur le site en bas à droite de cette page.
+Les LLM se sont démocratisés depuis un petit moment maintenant et nous disposons de différentes solutions pour développer des agents IA. Notamment avec le SDK Laravel AI, qui permet de créer des agents IA spécifiques à vos besoins et de les intégrer dans l’application que vous développez.
+
+N8N est également un outil intéressant pour créer des agents IA et des workflows personnalisés.
+
+Exemple dans une web application : analyser des données et générer des recommandations pour les utilisateurs.
 
 ## Workflows
 
+Parfois, on peut perdre du temps à faire des tâches répétitives. Nous pouvons automatiser ces tâches pour gagner du temps et de l’argent.
 Il est possible de créer des workflows pour automatiser les tâches courantes. Cela reste assez libre et nous nous adaptons à la situation.
 
 ## Outils principaux
 
-- Du code (python, JS) et les API des différentes plateformes IA (OpenAI, Anthropic, etc.)
+- Laravel AI SDK pour créer des agents IA spécifiques.
+- N8n pour créer des workflows personnalisés.
 - Dify : un outil open source avec une version cloud ou une version auto-hébergée, permettant de générer des chatbots en mode RAG assez rapidement.
 
 ## Contactez-nous pour discuter de votre besoin
 
-Votre adresse emailVotre messageNe pas sélectionner cet élément, c'est pour attraper les scripts
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
 
+Parlons-en
 
+## Votre prochain  projet web ?
 
-<|firecrawl-page-6-lllmstxt|>
-## Legal Mentions Information
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-10-lllmstxt|>
+## Legal Mentions
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
 
 # Mentions légales
 
@@ -403,7 +1079,7 @@ Parc d’Activités Annecy La Ravoire
 
 [info@zmf-resources.com](mailto:info@zmf-resources.com)
 
-SASU au capital de 1000 euros
+SASU
 
 No. Siret : 75302437100027
 
@@ -421,24 +1097,24 @@ Parc d’Activités Annecy La Ravoire
 
 ### HÉBERGEUR
 
-o2switch
+Infomaniak
 
-Chemin des Pardiaux
+Geneve Suisse
 
-63000 Clermont-Ferrand
+Parlons-en
 
-SAS au capital de 100 000 euros
+## Votre prochain  projet web ?
 
-SIRET 510 909 80700024
+[Démarrer un projet](https://www.goodmotion.fr/contact)
 
-RCS Clermont-Ferrand
-
-
-
-<|firecrawl-page-7-lllmstxt|>
+<|firecrawl-page-11-lllmstxt|>
 ## Podcast Double Slash
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
 
-# Coanimateur Podcast Double Slash
+Page web plus légère que **98**% des
+pages testées
+
+# Podcast Double Slash \| Développement Web et Bonnes Pratiques
 
 Je coanime avec Alex Duval, le podcast Double Slash. C’est un podcast dédié au développement Web, aux outils et aux bonnes pratiques. Nous recevons des invités régulièrement pour partager des connaissances et expériences.
 
@@ -452,81 +1128,89 @@ Nous traitons des sujets comme l’écoconception, le e-commerce, la JAMStack, l
 
 ## Les 10 derniers épisodes du podcast Double Slash
 
-- ### [Les news web dev et IA pour juin 2025 RC1](https://double-slash.dev/podcasts/news-juin25/)
+- ### [130 - News avril 2026, Cursor et Copilot dans la tourmente, Axios compromis et Arrow JS](https://double-slash.dev/podcasts/news-avril26/)
 
 
-mercredi 18 juin 2025
+vendredi 3 avril 2026
 
-Nous évoquons Cursor qui passe en V1, NightWatch pour surveiller vos applications Laravel, PHP qui tourne dans Node.js, Prestashop 9 avec une nouvelle Admin API, un nouveau navigateur qui intègre l'IA et évidemment les nouvelles dans le monde de l'IA. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-juin25/](https://double-slash.dev/podcasts/news-juin25/)
+Un épisode où l'on évoque le drama pour la sortie du nouveau modèle de Cursor, Copilot qui injecte des bugs dans les PR et qui va utiliser vos données pour s'entraîner, un nouveau framework JS — Next.js — qui s'adapte enfin aux autres providers, Axios qui se fait injecter du code malveillant, et quelques outils. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-avril26/](https://double-slash.dev/podcasts/news-avril26/)
 
-- ### [La fabuleuse histoire de Next.js](https://double-slash.dev/podcasts/nextjs/)
-
-
-mercredi 11 juin 2025
-
-Dans cet épisode spécial, nous allons revenir sur l'histoire du framework Next.js. Quelle solution il a apportée, les évolutions du framework et ses points forts. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/nextjs/](https://double-slash.dev/podcasts/nextjs/)
-
-- ### [Les news web dev et IA pour mai 2025 RC2](https://double-slash.dev/podcasts/news-mai-rc2/)
+- ### [129 - News Mars 2026, Vite+, Void Cloud, du drama et de l'IA](https://double-slash.dev/podcasts/news-mars26/)
 
 
-lundi 26 mai 2025
+mercredi 18 mars 2026
 
-Nous évoquons Devoxx FR 2025, les nouveautés de Strapi V5, la fin de Stack Overflow, des outils pour partager des données sensibles et, évidemment, l'IA avec OpenAI, Copilot et la Google I/O. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mai-rc2/](https://double-slash.dev/podcasts/news-mai-rc2/)
+Nous évoquons le média L'Équipe qui repasse en MPA, Void Zero qui arrive avec plusieurs sorties. Vite 8, Vite Plus et Void Cloud. Datagouv nous propose du MCP, Mistral vous donne la possibilité d'avoir votre propre modèle, un DB vectoriel embarqué et des études sur l'IA. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mars26/](https://double-slash.dev/podcasts/news-mars26/)
 
-- ### [Les news web dev et IA pour mai 2025](https://double-slash.dev/podcasts/news_mai-25/)
-
-
-mercredi 14 mai 2025
-
-Dans cet épisode de news pour mai 2025, nous évoquons Redis qui revient à une licence open-source, GSAP qui devient totalement gratuit, Figma Site, le nouveau visual editor de Directus, quelques bibliothèques de composants et des livres blancs sur l'IA. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news\_mai-25/](https://double-slash.dev/podcasts/news_mai-25/)
-
-- ### [Les news web dev pour avril 2025](https://double-slash.dev/podcasts/news-avril-25/)
+- ### [128 - L'IA nous rend-elle plus productifs... ou plus crevés ?](https://double-slash.dev/podcasts/iafatigue/)
 
 
-jeudi 24 avril 2025
+lundi 2 mars 2026
 
-Dans cet épisode de news pour avril 2025, nous évoquons PIE, le futur des extensions PHP, Chrome qui va peut-être bientôt passer chez OpenAI, Zod 4 en bêta, RedwoodSDK, AnimeJS V4, une nouvelle runtime JS. Puis, dans la rubrique IA, nous parlons de Firebase Studio, State of Dev IA, Firecrawl et une petite vidéo avec Linkup. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-avril-25/](https://double-slash.dev/podcasts/news-avril-25/)
+L'IA nous rend souvent plus productifs, ça, c'est indéniable. Seulement, pourquoi vous sentez-vous plus fatigué que jamais ? Vos tâches ont-elles radicalement changé ? Avez-vous l'impression de ne plus maîtriser les choses, que tout va trop vite ? Peut-être êtes-vous victime de la fatigue liée à l'IA ? Dans cet épisode, nous allons parler de ce mal qui émerge et dont personne ne parle encore. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/iafatigue/](https://double-slash.dev/podcasts/iafatigue/)
 
-- ### [Développer des projets IA - Comprendre les RAG](https://double-slash.dev/podcasts/ia-rag/)
-
-
-lundi 7 avril 2025
-
-Dans ce deuxième épisode de notre série IA, nous allons parler des RAG (Retrieval Augmented Generation). En effet, avec la puissance des LLM combinée aux bases vectorielles, nous pouvons contrôler le contexte du LLM et ainsi avoir un meilleur contrôle des réponses. Pas d'obligation de fine-tuning et nous pouvons spécialiser un modèle dans un domaine ultra-spécifique. C'est le retour des chatbots, mais des chatbots qui fournissent des réponses pertinentes. Mais attention, si cela semble simple sur le papier, l'exécution est parfois compliquée pour obtenir des résultats acceptables. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/ia-rag/](https://double-slash.dev/podcasts/ia-rag/)
-
-- ### [Les news web dev pour mars 2025 RC2](https://double-slash.dev/podcasts/news-mars-rc2/)
+- ### [127 - News Février 2026, du WebMCP, des agents spammeurs et du Markdown.](https://double-slash.dev/podcasts/news-fev26/)
 
 
-mercredi 26 mars 2025
+mercredi 18 février 2026
 
-Dans ce deuxième épisode de news pour mars 2025, nous évoquons la réécriture de TypeScript en Go, Electric SQL dans sa version 1, l'arrivée de Lynx JS pour le développement cross-platform, Nuxt v3.16 avec l'hydratation différée, et PGLite qui vous permet d'utiliser Postgres dans le navigateur. Nous aborderons aussi un outil pour créer des Grids avec Tailwind, ainsi qu'un article comparatif entre Next.js et TanStack. Enfin, dans la rubrique IA, nous vous présentons la montée en puissance du MCP, Cline Bot AI, Triplex (2D/3D), la Meilisearch Launch Week, le Vercel AI SDK v4.2, et les toutes nouvelles réponses des APIs d'OpenAI. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mars-rc2/](https://double-slash.dev/podcasts/news-mars-rc2/)
+Nous évoquons l'arrivée des WebMCP, l'option Cloudflare qui permet de retourner du markdown sur une requête, NativePHP qui devient open-source et gratuit, un jeu éducatif pour les enfants, TransformerJS qui arrive en V4, les projets open-source qui se font spammer et la perte de confiance des marchés envers les SaaS. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-fev26/](https://double-slash.dev/podcasts/news-fev26/)
 
-- ### [Les news web dev pour mars 2025](https://double-slash.dev/podcasts/news-mar-25/)
-
-
-mardi 11 mars 2025
-
-Dans cet épisode news, nous abordons les nouveautés de Laravel 12, Flux 2.0, Daisy UI 5 et TanStack Form 1.0 tout en revenant sur le State of PHP et l'arrivée de Native PHP pour les applications mobiles. Nous passons en revue Fusion, explorons diverses bibliothèques ainsi que Fetch avancé TS et HMPL, le moteur de templates, tout en présentant un outil dédié à la révision de Flexbox via Flexboxlabs. Nous traitons également d'articles sur React, une librairie pour 2025, le placement de texte en CSS et la configuration de GIT par les développeurs du core Git, sans oublier les actualités en intelligence artificielle avec Meilisearch 1.13, Mastra, le Framework TS IA conçu par l’équipe de Gatsby ainsi que les agents IA intégrés aux navigateurs d'Opera et de Perplexity. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-mar-25/](https://double-slash.dev/podcasts/news-mar-25/)
-
-- ### [Les news web dev pour février 2025](https://double-slash.dev/podcasts/news-feb25/)
+- ### [126 - 🤖 News Janvier 2026 : Open Code, Qwen Code et un peu de code](https://double-slash.dev/podcasts/news-jan26/)
 
 
-jeudi 13 février 2025
+mercredi 28 janvier 2026
 
-Un épisode news dans lequel nous évoquons ExpressJS 5, un documentaire sur Angular, de nouvelles versions d'Astro, PrestaShop et Pinia. Également le states of React en 2024, du PHP dans des fichiers VueJS ! Quelques outils et évidemment nous parlons de quelques nouvelles IA.. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-feb25/](https://double-slash.dev/podcasts/news-feb25/)
+Dans cet épisode, nous évoquons du côté de l'IA, Claude Code avec Ollama, Open Code, Qwen Code et les compétences. L'équipe d'Astro qui migre vers Cloudflare. jQuery 4, Livewire 4 et une superbe librairie pour afficher vos chiffres. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-jan26/](https://double-slash.dev/podcasts/news-jan26/)
 
-- ### [Les news web dev pour janvier 2025](https://double-slash.dev/podcasts/news-janv25/)
-
-
-mercredi 29 janvier 2025
-
-Dans cet épisode de news pour cette nouvelle année 2025, nous allons évoquer Vercel qui achète Tremor et qui parle de la structure de ses projets. Des nouvelles concernant JavaScript Temporal, TailwindCSS 4.0, MedusaJS, quelques articles sur des retours d'expérience, et de l'IA avec 2 outils et un modèle chinois qui vient chambouler le jeu. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-janv25/](https://double-slash.dev/podcasts/news-janv25/)
+- ### [125 - Inertia JS, le front et le back unifiés](https://double-slash.dev/podcasts/inertia/)
 
 
+jeudi 15 janvier 2026
+
+Inertia est un système qui permet de construire des applications web modernes en utilisant des frameworks front-end comme Vue.js ou React, tout en conservant une architecture back-end traditionnelle avec Laravel ou d'autres frameworks similaires. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/inertia/](https://double-slash.dev/podcasts/inertia/)
+
+- ### [124 - 🤖 News Décembre 2025 : de l'IA, de la bêta et des pannes](https://double-slash.dev/podcasts/news-dec25/)
 
 
-<|firecrawl-page-8-lllmstxt|>
-## Privacy Policy Overview
+mercredi 10 décembre 2025
+
+Dans cet épisode, nous évoquons PHP avec Laravel et la landing page de la v8.5. Nous parlons également de l'IA avec EURIA d'Infomaniak, Bloom pour MedusaJS, TanStack IA, la bibliothèque Vue AI Élément, Anthropic qui achète Bun et l'arrivée de WebGPU sur les principaux navigateurs. Nous abordons aussi les pannes successives de Cloudflare, ainsi que ses alternatives européennes et non européennes. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-dec25/](https://double-slash.dev/podcasts/news-dec25/)
+
+- ### [123 - 🔥 News Novembre 2025 : 1an de MCP, Vercel Workflow, AI SDK et Mastra V1](https://double-slash.dev/podcasts/news-nov25/)
+
+
+vendredi 14 novembre 2025
+
+Dans cet épisode, nous évoquons la React Foundation, PHP 8.5, le document ViteJS, la gestion des workflows avec Vercel, Mastra et AI SDK, Composer PHP et le nouveau modèle de Cursor. Le premier anniversaire du MCP, Cloudflare qui fait la guerre aux bots et quelques outils et articles. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-nov25/](https://double-slash.dev/podcasts/news-nov25/)
+
+- ### [122 - Better Auth, la solution ultime pour l'authentification](https://double-slash.dev/podcasts/better-auth/)
+
+
+jeudi 30 octobre 2025
+
+Dans cet épisode du podcast, nous plongeons dans un sujet qui touche absolument tous les développeurs : l’authentification. Cette partie de votre application devient vite un cauchemar dès qu’on veut faire plus que “email + mot de passe”. Nous allons parler de Better Auth, une librairie TypeScript qui promet de rendre l’authentification enfin agréable. Framework agnostique, elle vous apporte tout ce qu'il faut : 2FA, passkeys, multi-tenancy, multi-sessions, SSO... bref, tout ce qui fait qu’on finit normalement par pleurer dans la documentation ou à réinventer une roue carrée. Si vous voulez vous concentrer sur votre produit et arrêter de bricoler des flux d’authentification maison, cet épisode est pour vous. Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/better-auth/](https://double-slash.dev/podcasts/better-auth/)
+
+- ### [121 - Les news Web Dev d’octobre 2025. Adonis, Laravel, React Compiler, Vite+ et bien plus encore !](https://double-slash.dev/podcasts/news-oct25/)
+
+
+mercredi 15 octobre 2025
+
+Les 30 ans du premier navigateur qui embarquait JavaScript, les 10 ans d'Adonis, Craft CMS qui passe sur Laravel, la sortie de React Compiler V1, les annonces sur Vite+, Cursor CLI et GitHub CLI pour répondre à Claude CLI. Et comment vérifier les packages npm avant de les installer. Bonne écoute ! Retrouvez toutes les notes et les liens de l'épisode sur cette page : [https://double-slash.dev/podcasts/news-oct25/](https://double-slash.dev/podcasts/news-oct25/)
+
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-12-lllmstxt|>
+## Confidentiality Policy Overview
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
 
 # Politique de confidentialité
 
@@ -565,16 +1249,24 @@ Pour toute information ou exercice de vos droits informatique et Libertés sur l
 
 **Aucun !**
 
+Parlons-en
 
+## Votre prochain  projet web ?
 
-<|firecrawl-page-9-lllmstxt|>
-## Web Technical Consulting
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-13-lllmstxt|>
+## Technical Web Consulting
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
 
 # Consultant technique pour vos projets web
 
-## Genève, Lausanne, Annecy, Suisse, France
+Consultant Web Genève, Lausanne, Annecy, Suisse, France
 
-[Analyse fonctionnelle et technique sur la faisabilité et anticipation des points bloquants de votre projet](https://www.goodmotion.fr/services/consultant-technique-web#analyse-fonctionnelle-et-technique-sur-la-faisabilit%C3%A9-et-anticipation-des-points-bloquants-de-votre-projet) [Choix de technologie adaptée](https://www.goodmotion.fr/services/consultant-technique-web#choix-de-technologie-adapt%C3%A9e) [Maintenance de site web et évolutions](https://www.goodmotion.fr/services/consultant-technique-web#maintenance-de-site-web-et-%C3%A9volutions) [Gestion de l’hébergement](https://www.goodmotion.fr/services/consultant-technique-web#gestion-de-lh%C3%A9bergement) [Développement de nouveau projet web](https://www.goodmotion.fr/services/consultant-technique-web#d%C3%A9veloppement-de-nouveau-projet-web)
+[Analyse fonctionnelle et technique sur la faisabilité et anticipation des points bloquants de votre projet](https://www.goodmotion.fr/services/consultant-technique-web#analyse-fonctionnelle-et-technique-sur-la-faisabilit%C3%A9-et-anticipation-des-points-bloquants-de-votre-projet) [Choix de technologie adaptée](https://www.goodmotion.fr/services/consultant-technique-web#choix-de-technologie-adapt%C3%A9e) [Maintenance de site web et évolutions](https://www.goodmotion.fr/services/consultant-technique-web#maintenance-de-site-web-et-%C3%A9volutions) [Gestion de l’hébergement](https://www.goodmotion.fr/services/consultant-technique-web#gestion-de-lh%C3%A9bergement) [Développement de nouveau projet web](https://www.goodmotion.fr/services/consultant-technique-web#d%C3%A9veloppement-de-nouveau-projet-web) [Zones d’intervention](https://www.goodmotion.fr/services/consultant-technique-web#zones-dintervention) [Discutons de votre projet](https://www.goodmotion.fr/services/consultant-technique-web#discutons-de-votre-projet)
 
 **Choix techniques, cahier des charges, gestion de prestataires. J’utilise mes 15 ans d’expérience au service de votre projet. J’interviens en assistance technique pour vous aider sur vos projets web.**
 
@@ -605,133 +1297,544 @@ Je peux vous conseiller et m’occuper de faire le transfert de votre site ou to
 Évidemment, je peux me charger de développer votre projet avec les technologies que je maitrise.
 
 - [Développement de web applications et sites web modernes](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes)
-- [Développement WordPress 100% sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+- [Développement WordPress sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance)
 - [Développement sous Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms)
 
-N’hésitez pas à nous contacter pour échanger via la page [contact](https://www.goodmotion.fr/contact)
+## Zones d’intervention
 
+Basé à Annecy, j’interviens régulièrement à [Genève](https://www.goodmotion.fr/agence-web-geneve), [Lausanne](https://www.goodmotion.fr/agence-web-lausanne) et [Annecy](https://www.goodmotion.fr/agence-web-annecy), ainsi que partout en France et en Suisse romande en remote.
 
+## Discutons de votre projet
 
-<|firecrawl-page-10-lllmstxt|>
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-14-lllmstxt|>
 ## Web Development Services
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
 
-# Développement de web applications et sites web modernes
+Page web plus légère que **98**% des
+pages testées
 
-## Genève, Lausanne, Annecy, Suisse, France
+# Développement web sur mesure, web applications, Intranet, Landing page, POC
 
-[Accompagnement sur les choix techniques pour votre projet web](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#accompagnement-sur-les-choix-techniques-pour-votre-projet-web) [Les frameworks Front](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#les-frameworks-front) [Next.js](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#nextjs) [Nuxt.js](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#nuxtjs) [Astro](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#astro) [Les autres outils : Qwik, Svelte, etc](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#les-autres-outils--qwik-svelte-etc) [CMS headless pour gérer les data](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#cms-headless-pour-g%C3%A9rer-les-data) [Notre prestation](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#notre-prestation)
+Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
 
-La façon de développer des sites web a beaucoup évolué depuis une petite dizaine d’années.
-L’avènement des outils basés sur JavaScript, l’arrivée des librairies et des frameworks tel que **React.js** ou **Vue.js**. Des meta-frameworks comme **Nuxt.js** ou **Next.js**.
-Sans parler de l’évolution des modes de rendu : SPA, SSR, Hybride, etc..
-Pas facile de s’y retrouver.
+[Développement sur mesure](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#d%C3%A9veloppement-sur-mesure) [Sites web et landing pages](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#sites-web-et-landing-pages) [Applications web complexes](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#applications-web-complexes) [Intranet et outils internes pour les entreprises](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#intranet-et-outils-internes-pour-les-entreprises) [Développement rapide pour Poc ou MVP](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#d%C3%A9veloppement-rapide-pour-poc-ou-mvp) [Notre proposition de collaboration](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#notre-proposition-de-collaboration) [Pourquoi travailler ensemble ?](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#pourquoi-travailler-ensemble-) [Zones d’intervention](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#zones-dintervention) [Nous contacter](https://www.goodmotion.fr/services/developpement-de-web-applications-et-sites-web-modernes#nous-contacter)
 
-Aujourd’hui la première étape dans un projet, c’est de trouver l’outil qui correspond le mieux à son projet.
+Vous avez besoin d’un **site web**, d’une **application web** ou d’un **intranet** ? Vous avez une idée et souhaitez la tester avec un **POC**\\* ou un **MVP**\\* ? Nous développons des solutions sur mesure adaptées à vos besoins réels..
 
-Souvent la première erreur, c’est de maîtriser un outil (WordPress ou autre) et de vouloir tout faire avec. Le projet se trouve contraint par les limites de l’outil et l’outil sort de l’usage pour lequel il est créé.
-Résultat, un outil dur à maintenir, souvent lent et des utilisateurs non satisfaits.
+Basé à Annecy, au-delà des collaborations avec les clients français (Paris, Lyon, Annecy), nous collaborons régulièrement avec des agences web et des fondations en Suisse romande (Genève, Lausanne). Cette proximité géographique facilite les échanges et permet une meilleure compréhension de vos attentes.
 
-Première règle :
+## Développement sur mesure
 
-> On choisit la techno après avoir analysé le besoin et pas l’inverse.
+### Sites web et landing pages
 
-## Accompagnement sur les choix techniques pour votre projet web
+Nous proposons le développement de sites web et de landing pages sur mesure. Vous avez une maquette et souhaitez avoir un site conforme à votre image. Nous sommes là pour vous aider.
 
-Pour faire le bon choix, il vous faut un accompagnement dès le début pour choisir votre stack technique.
+Vous souhaitez une landing page pour promouvoir un produit ou un service ? Nous pouvons vous aider à créer une page d’atterrissage qui convertit.
 
-Ensemble nous analyserons les besoins du projet pour rechercher les outils les plus adaptés.
-C’est important pour avoir un projet final qui pourra évoluer et sur lequel il sera facile d’ajouter des fonctionnalités.
+Après avoir échangé avec vous sur le projet, le besoin et le budget, nous pouvons vous proposer une solution adaptée à vos besoins. Nous maîtrisons plusieurs outils : **Craft CMS**, **WordPress**, **Astro JS**, **Next.js**, **Nuxt.js**.
 
-Étant expert dans plusieurs outils de développements modernes, je peux vous conseiller pour les bons choix.
+Exemple d’une mini application web développée récemment :
 
-Si un développement sous WordPress correspond au besoin du projet. Travaillons ensemble avec WordPress: [Développement WordPress avancé](https://www.goodmotion.fr/services/developpement-wordpress-avance)
+- [https://calculateur.sleeps.fr](https://calculateur.sleeps.fr/)
+- [https://vma.running-hero.com](https://vma.running-hero.com/)
+- [https://convert.running-hero.com](https://convert.running-hero.com/)
 
-Sinon, lisez la suite…
+### Applications web complexes
 
-## Les frameworks Front
+Vous souhaitez développer une application web complexe ? Nous pouvons vous aider à créer une application web sur mesure. Forts de plus de 15 ans d’expérience en développement web, nous pouvons vous accompagner dans la création d’une application web personnalisée.
 
-Si votre projet nécessite des fonctionnalités plus poussées et que vous avez de l’ambition en termes de trafic. Parfait ! Travaillons ensemble sur l’un de ces outils :
+Applications web à fort trafic, jeux interactifs, mini-apps événementielles. Nous avons de l’expérience pour vous aider à développer une application web sur mesure.
 
-### Next.js
+**Next.js**, **Nuxt.js**, **Laravel Inertia** font partie de nos outils pour vous aider à concrétiser votre projet.
 
-Next.js est un meta-framework construit au-dessus de React.JS. Il offre toutes les fonctionnalités nécessaires pour construire une application web moderne.
-De plus, il offre plusieurs modes de rendus:
+### Intranet et outils internes pour les entreprises
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique hybride, rendu HTML généré par le serveur à la génération du site ou à la demande.
+Pour les besoins très spécifiques des entreprises en interne, nous pouvons vous aider à créer un intranet ou des outils internes sur mesure.
 
-Dans la plupart des cas, nous utiliserons le rendu statique hybride car c’est le mode le plus performant.
-Les pages HTML sont générées au moment du build de l’application ou à la demande.
-Si vous souhaitez plus d’infos, je vous conseille de lire les articles concernant [Next.js 13](https://double-slash.dev/articles/next-js-13-intro/) sur le site Double Slash, dans lesquels, je parle de la nouvelle version de **Next.js**.
+Intranet avec connexion sécurisée, espace membre, transmission de documents, informations internes. Tout est possible.
 
-### Nuxt.js
+**Laravel** avec **Inertia js** est un de nos outils favoris pour ce type de projet. Un backend robuste et un frontend moderne.
 
-**Nuxt.js** est aussi un meta-framework mais lui est construit au-dessus de Vue.js.
-La version 3 de Nuxt.js est sortie fin 2022 et il est basé sur la version 3 de Vue.js.
-Il offre également toutes les fonctionnalités nécessaires pour construire une application web moderne.
-Et comme pour Next.js, il offre aussi plusieurs modes de rendu :
+Nous avons récemment développé un intranet pour une fondation en Suisse romande. Il s’agit d’un outil interne pour la gestion des repas d’une entreprise. Multi-utilisateurs, multi-maison, gestion des menus, statistiques, etc.
 
-- Single Page Application (SPA), rendu uniquement dans le navigateur
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Statique, rendu HTML généré par le serveur à la génération du site.
+### Développement rapide pour Poc ou MVP
 
-Nuxt.js est un framework vraiment agréable à utiliser pour le développement. Il permet d’avoir un code assez lisible et utilise toutes la puissance et la simplicité de Vue.js.
+Pour les projets où la rapidité prime (POC, MVP), tout en gardant une qualité technique élevée et la possibilité de faire évoluer le projet plus tard, **Laravel Livewire** est un outil formidable.
 
-### Astro
+De la qualité développée plus rapidement.
 
-**Astro 5.0** vient de sortir et cet outil peut-être un très bon choix pour un site performant et sécurisé. Il propose une approche “zéro JavaScript par défaut” dans le navigateur. Et offre par défaut des très bonnes performances de chargement dans le navigateur.
-Le site sur lequel vous lisez ces lignes est réalisé avec **Astro** ;).
+## Notre proposition de collaboration
 
-Désormais, il permet d’avoir plusieurs mode de rendus:
+- **Analyse technique** : Nous vous aidons à clarifier vos besoins et à trouver la meilleure approche
+- **Développement** : Nous développons votre projet de A à Z
+- **Maintenance** : Nous restons disponibles pour les évolutions et les corrections.
 
-- 100% statique
-- Server side rendering (SSR), rendu HTML généré par le serveur à chaque appel.
-- Hybride, du statique et du rendu serveur pour les pages qui nécessitent d’analyser la visite.
+Développement de qualité et maintenable. Nous souhaitons toujours travailler dans la durée avec nos clients.
 
-### Les autres outils : Qwik, Svelte, etc
+### Pourquoi travailler ensemble ?
 
-D’autres frameworks sont à prendre en compte dans le choix :
+- +15 ans d’expérience en développement web
+- Basé à Annecy (74 France), proche de la Suisse.
+- Expertise multi-stack : pas d’attachement particulier à une technologie, nous recommandons ce qui vous convient.
+- Clients fidèles depuis plusieurs années
 
-- Qwik est encore assez nouveau mais il semble très prometteur. Il propose aussi une approche “zéro JavaScript par défaut” dans le navigateur et il est très performant par sa conception.
-- SvelteKit, lui est moins connu mais il est utilisé par de grand nom, tel que, Apple, le New York Times ou Spotify. Il propose un code très simple et concis afin d’avoir une application maintenable dans le temps.
+## Zones d’intervention
 
-## CMS headless pour gérer les data
+Basé à [Annecy](https://www.goodmotion.fr/agence-web-annecy), nous collaborons régulièrement avec des clients et des agences à [Genève](https://www.goodmotion.fr/agence-web-geneve) et [Lausanne](https://www.goodmotion.fr/agence-web-lausanne), ainsi qu’avec des équipes partout en France et en Suisse romande.
 
-Jusque-là nous avons parlé de partie front, mais les data ? Elles viennent d’où les data ?
-Actuellement, une multitude d’outils s’offrent à nous.
-Plusieurs paramètres à prendre en compte :
+## Nous contacter
 
-- self-hosted (auto-hébergé) ou pas ?
-- des data uniquement en lecture ou faut-il avoir la possibilité de mettre à jour les données par le front ?
-- Multilingue ?
-- Plusieurs utilisateurs ?
-- Ergonomies pour les éditeurs de contenu ?
-- Tarifs ?
-- …
+Vous avez un projet ? N’hésitez pas à nous contacter pour en discuter.
 
-Tout dépendra du besoin évidemment et de votre budget.
-Voici quelques CMS pour vous faire une idée :
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
 
-- Strapi (self-hosted ou cloud)
-- Directus (cloud ou self-hosted)
-- Prismic (cloud)
-- StoryBlock (cloud)
-- Craft CMS (self hosted)
-- WordPress en mode headless (self hosted)
+- POC : Proof of Concept (preuve de concept)
 
-## Notre prestation
+MVP : Minimum Viable Product (produit minimum viable)
 
-Notre prestation ne commence pas lors du développement mais bien avant. Nous intervenons lors du choix de votre stack technique pour vous aider à faire le bon choix.
-Il est important de bien analyser les points forts et les faiblesses de chaque outil. Pour cela, nous avons accumulé l’expérience sur plusieurs projets.
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-15-lllmstxt|>
+## Craft CMS Development Services
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Développement de site web avec Craft CMS
+
+Développement Craft CMS Genève, Lausanne, Annecy, Suisse, France
+
+[Une administration du contenu très agréable](https://www.goodmotion.fr/services/developpement-sous-craft-cms#une-administration-du-contenu-tr%C3%A8s-agr%C3%A9able) [Thème sur mesure](https://www.goodmotion.fr/services/developpement-sous-craft-cms#th%C3%A8me-sur-mesure) [Multilangue et multisite par défaut](https://www.goodmotion.fr/services/developpement-sous-craft-cms#multilangue-et-multisite-par-d%C3%A9faut) [Un CMS en mode headless](https://www.goodmotion.fr/services/developpement-sous-craft-cms#un-cms-en-mode-headless) [Le prix de Craft CMS](https://www.goodmotion.fr/services/developpement-sous-craft-cms#le-prix-de-craft-cms) [La version solo permet](https://www.goodmotion.fr/services/developpement-sous-craft-cms#la-version-solo-permet) [La version team permet (en plus des features solo)](https://www.goodmotion.fr/services/developpement-sous-craft-cms#la-version-team-permet-en-plus-des-features-solo) [La version pro permet](https://www.goodmotion.fr/services/developpement-sous-craft-cms#la-version-pro-permet) [Zones d’intervention](https://www.goodmotion.fr/services/developpement-sous-craft-cms#zones-dintervention) [Questions fréquentes](https://www.goodmotion.fr/services/developpement-sous-craft-cms#questions-fr%C3%A9quentes) [Besoin d’un développement avec Craft CMS ?](https://www.goodmotion.fr/services/developpement-sous-craft-cms#besoin-dun-d%C3%A9veloppement-avec-craft-cms-)
+
+**Craft CMS est un CMS qui permet de créer des sites professionnels. C’est un CMS qui utilise les meilleures technologies actuelles en termes de développement PHP.**
+
+## Une administration du contenu très agréable
+
+Avec Craft CMS, on construit entièrement l’architecture du contenu.
+
+C’est à dire, qu’il ne contient pas de type de contenu d’origine. Pas de post ou de page.
+
+Vous créez autant de types de contenu que vous le souhaitez. Vous attribuez des champs d’information à vos types de contenu. Tout est flexible et presque sans limites. Il possède également une gestion des médias assez agréable.
+
+Il possède aussi un mode preview qui vous permet d’éditer et de voir en même temps le rendu de votre page.
+
+Bref, il possède une interface simple et facile à utiliser pour les personnes responsables du contenu du site.
+
+## Thème sur mesure
+
+Comme il ne possède pas de thème ou de magasin de thème. Chaque site construit avec Craft CMS est unique.
+
+On développe complètement le thème de votre site sur mesure en suivant les maquettes préalablement établies.
+
+Comme il utilise les techniques et outils les plus modernes, les sites sont performants et rapide à charger.
+De plus, il possède un cache par défault.
+
+## Multilangue et multisite par défaut
+
+De base, il est possible de gérer du multilangue et de gérer plusieurs sites sur la même interface. Tout ça sans plugin.
+
+## Un CMS en mode headless
+
+L’équipe de développement étant très à l’écoute. Ils sont déjà ajoutés des fonctionnalités compatibles avec les sites statiques.
+C’est un des CMS, les mieux adaptés à une utilisation headless.
+
+Il possède dès sa version free (solo) :
+
+- GraphQL
+- La preview avec un site statique
+- un plugin de webhook
+- un mode headless activable
+
+## Le prix de Craft CMS
+
+Il existe 3 versions de licence pour utiliser Craft CMS :
+
+- La version Solo Free
+- La version Team 279$
+- La version Pro 399$
+
+### La version solo permet
+
+- Mode Headless
+- GraphQL
+- Mode preview pour les sites statiques ou Web apps
+- Multisite et multilingue
+
+### La version team permet (en plus des features solo)
+
+- Le gestion de 5 comptes utilisateurs admin
+
+### La version pro permet
+
+- Le gestion sans limite des utilisateurs et des groupes admin et public
+- La possibilité de mettre le branding de la société dans l’admin et les emails
+
+## Zones d’intervention
+
+Nous développons des sites Craft CMS pour des clients basés à [Annecy](https://www.goodmotion.fr/agence-web-annecy), [Genève](https://www.goodmotion.fr/agence-web-geneve) et [Lausanne](https://www.goodmotion.fr/agence-web-lausanne), ainsi que partout en France et en Suisse romande.
+
+## Questions fréquentes
+
+### Craft CMS est-il adapté à tous les projets ?
+
+Craft CMS convient particulièrement aux projets nécessitant une architecture de contenu personnalisée, un CMS multilingue natif ou une utilisation en mode headless. Pour des sites vitrine simples, WordPress peut être plus adapté. Nous analysons votre besoin avant de recommander une solution.
+
+### Craft CMS est-il gratuit ?
+
+Craft CMS propose une version Solo gratuite (headless, GraphQL, multisite). La version Team est à 279$ et la version Pro à 399$. Pour la plupart des projets professionnels, la version Solo ou Team est suffisante.
+
+### Craft CMS est-il adapté aux sites multilingues ?
+
+Oui, Craft CMS gère nativement le multilingue et le multisite sans plugin supplémentaire. C’est l’une de ses forces majeures par rapport à d’autres CMS.
+
+### Proposez-vous la maintenance des sites Craft CMS ?
+
+Oui, nous assurons la maintenance des sites Craft CMS que nous développons : mises à jour du CMS et des plugins, sauvegardes, corrections de bugs et évolutions.
+
+## Besoin d’un développement avec Craft CMS ?
 
 Nous pouvons vous proposer :
 
 - analyse technique de votre projet
-- accompagnements pour le développement de votre projet
+- accompagnement dans le développement de votre projet
 - maintenance et évolution du projet
 
-N’hésitez pas à nous contacter pour échanger via la page [contact](https://www.goodmotion.fr/contact)
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-16-lllmstxt|>
+## Développement WordPress sur mesure
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Développement WordPress sur mesure
+
+Développement WordPress Genève, Lausanne, Annecy, Suisse, France
+
+[Notre prestation développement WordPress sur mesure](https://www.goodmotion.fr/services/developpement-wordpress-avance#notre-prestation-d%C3%A9veloppement-wordpress-sur-mesure) [Développement sur mesure d’un site sous WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance#d%C3%A9veloppement-sur-mesure-dun-site-sous-wordpress) [Développement de bloc Gutenberg](https://www.goodmotion.fr/services/developpement-wordpress-avance#d%C3%A9veloppement-de-bloc-gutenberg) [Développement de plugins et de Widgets avancés pour WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance#d%C3%A9veloppement-de-plugins-et-de-widgets-avanc%C3%A9s-pour-wordpress) [Maintenance WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance#maintenance-wordpress) [Zones d’intervention](https://www.goodmotion.fr/services/developpement-wordpress-avance#zones-dintervention) [Contactez-nous pour discuter de votre projet WordPress](https://www.goodmotion.fr/services/developpement-wordpress-avance#contactez-nous-pour-discuter-de-votre-projet-wordpress)
+
+**WordPress** est un projet open-source avec une grosse communauté, un nombre de plugins impressionnant.
+
+Après analyse de votre besoin et de votre projet, WordPress peut être l’outil parfaitement adapté pour votre projet web.
+Nous développons des sites basés sur WordPress de très bonne qualité, performants et **(très important)** maintenable dans le temps.
+Nous respectons les bonnes pratiques de développement de la solution (WordPress), afin d’obtenir un site performant, léger et maintenable dans le temps.
+
+Fini les sites cassés à chaque mise à jour de WordPress. Nos sites sont conçus en suivant les bonnes pratiques de développement de WordPress. Pas de bricolage ou de multiplication de plugins exotiques. Votre site sera sécurisé et durable.
+
+Une fois le site lancé en production, nous sommes là pour la maintenance et l’évolution du site.
+
+## Notre prestation développement WordPress sur mesure
+
+Pour toutes nos interventions, notre prestation ne commence bien avant la phase de développement. Nous intervenons lors du choix de votre stack technique pour décider si WordPress est bien l’outil adapté à votre projet.
+Si c’est le cas, nous vous proposons :
+
+## Développement sur mesure d’un site sous WordPress
+
+Nous développons pour votre site un thème WordPress sur mesure. C’est-à-dire que nous partons de zéro jusqu’à obtenir un thème léger et performant. Bon quand, on dit que nous partons de zéro ce n’est pas totalement vrai car nous partons de notre [starter thème open-source (Press-wind)](https://github.com/wpperformance/press-wind) que nous avons créé. Oui en tant que développeur et utilisateur d’outils open-sources, nous contribuons également avec des projets open-sources.
+
+Comme nous sommes adeptes du système de “Full Site Editing” (FSE), tous nos derniers développements utilisent ce concept. Ce n’est pas obligatoire mais nous le conseillons fortement. Évidemment, le client (vous) choisit comme il veut.
+Grâce à Gutenberg, nous pouvons vous offrir une expérience d’édition du contenu la plus agréable possible. Vous allez voir en live le rendu de vos pages. Vous ajoutez, vous supprimez des blocs, vous réglez les marges, etc… avec un rendu instantané sur votre écran.
+
+## Développement de bloc Gutenberg
+
+Un bloc Gutenberg est un élément que l’on peut utiliser dans l’éditeur Gutenberg. Il dispose généralement de paramètres pour modifier son apparence.
+La plupart du temps, nous préférons utiliser le système de pattern. Qui est plus rapide et plus simple en terme de développement. Cependant, quand cela est nécessaire, ils nous arrivent de développer des blocs Gutenberg spécifiques au projet. Nous maîtrisons totalement le développement de blocs Gutenberg grâce à notre expérience/compétence en développement JavaScript.
+La technologie utilisée pour les blocs Gutenberg repose sur JavaScript et le framework React pour la partie édition.
+
+## Développement de plugins et de Widgets avancés pour WordPress
+
+Les plugins font partie de l’écosystème WordPress. Cela permet d’étendre les possibilités du CMS.
+Ils nous arrivent régulièrement de développer des plugins réutilisable ou spécifique au projet. Nous maîtrisons totalement cet aspect.
+Et évidemment, régulièrement, nous créons des Widgets très spécifiques pour nos clients. Les widgets dont nous parlons sont des blocs interactifs (coté front) pour afficher de la data dans une page.
+Par exemple, des calculateurs de sommeil, des listes de bien à louer, des comparateurs de produits, etc…
+
+## Maintenance WordPress
+
+Pour finir, nous proposons également la maintenance des sites développés sous WordPress.
+
+Dans le cas, où nous avons développé le site, nous proposons de gérer la maintenance automatiquement car nous connaissons le code et la méthode.
+
+Dans le cas où le site a été conçu par un autre prestataire, nous faisons un premier état des lieux afin de valider que nous pouvons gérer la maintenance.
+Pour être totalement transparent, certains prestataires vendent des sites sans avoir les compétences en développement. Et les sites sont donc souvent un enchevêtrement de plugin et de mauvaise pratique.
+
+[Nos offres de maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress)
+
+## Zones d’intervention
+
+Nous développons des sites WordPress sur mesure pour des clients basés à [Annecy](https://www.goodmotion.fr/agence-web-annecy), [Genève](https://www.goodmotion.fr/agence-web-geneve) et [Lausanne](https://www.goodmotion.fr/agence-web-lausanne), ainsi que partout en France et en Suisse romande.
+
+## Contactez-nous pour discuter de votre projet WordPress
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
+
+<|firecrawl-page-17-lllmstxt|>
+## WordPress Maintenance Services
+[**0.01** g de CO2/vue](https://websitecarbon.com/website/https://goodmotion.fr)
+
+Page web plus légère que **98**% des
+pages testées
+
+# Maintenance WordPress
+
+Genève, Lausanne, Annecy, Suisse, France
+
+[Maintenance professionnelle à Genève, Lausanne & Annecy](https://www.goodmotion.fr/services/maintenance-wordpress#maintenance-professionnelle-%C3%A0-gen%C3%A8ve-lausanne--annecy) [Votre site WordPress est-il vulnérable ?](https://www.goodmotion.fr/services/maintenance-wordpress#votre-site-wordpress-est-il-vuln%C3%A9rable-) [La solution : Une maintenance WordPress professionnelle](https://www.goodmotion.fr/services/maintenance-wordpress#la-solution--une-maintenance-wordpress-professionnelle) [Nous sécurisons, optimisons et maintenons votre site pour que vous puissiez vous concentrer sur votre business.](https://www.goodmotion.fr/services/maintenance-wordpress#nous-s%C3%A9curisons-optimisons-et-maintenons-votre-site-pour-que-vous-puissiez-vous-concentrer-sur-votre-business) [Pourquoi choisir Goodmotion ?](https://www.goodmotion.fr/services/maintenance-wordpress#pourquoi-choisir-goodmotion-) [Comptez sur nous pour la maintenance de votre site WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#comptez-sur-nous-pour-la-maintenance-de-votre-site-wordpress) [La maintenance préventive des sites WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#la-maintenance-pr%C3%A9ventive-des-sites-wordpress) [Pourquoi une maintenance préventive ?](https://www.goodmotion.fr/services/maintenance-wordpress#pourquoi-une-maintenance-pr%C3%A9ventive-) [La maintenance corrective et évolutive des sites WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#la-maintenance-corrective-et-%C3%A9volutive-des-sites-wordpress) [Optimisation des performances des sites WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#optimisation-des-performances-des-sites-wordpress) [Nos offres de maintenance WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#nos-offres-de-maintenance-wordpress) [Questions fréquentes](https://www.goodmotion.fr/services/maintenance-wordpress#questions-fr%C3%A9quentes) [Contactez-nous pour la maintenance de votre site WordPress](https://www.goodmotion.fr/services/maintenance-wordpress#contactez-nous-pour-la-maintenance-de-votre-site-wordpress)
+
+## Maintenance professionnelle à Genève, Lausanne & Annecy
+
+### Votre site WordPress est-il vulnérable ?
+
+Vous n’avez pas mis à jour votre site depuis des mois ? Votre ancien prestataire a disparu ?
+
+**Vous exposez votre entreprise à des risques énormes :**
+
+- **Piratage** \- Votre site peut être utilisé pour diffuser du spam, des virus ou des contenus inappropriés
+- **Perte de données** \- Sans sauvegarde régulière, une attaque = tout perdu
+- **Pénalité Google** \- Un site piraté disparaît des résultats de recherche
+- **Image d’entreprise détruite** \- Imaginez vos clients qui tombent sur des contenus terroristes ou pornographiques sur VOTRE site
+
+### La solution : Une maintenance WordPress professionnelle
+
+#### Nous sécurisons, optimisons et maintenons votre site pour que vous puissiez vous concentrer sur votre business.
+
+Comme tout projet informatique, il est nécessaire de maintenir votre site WordPress pour le garder en bonne santé.
+Mise à jour des plugins, du coeur de WordPress, sauvegarde régulière, surveillance de la sécurité, surveillance des anomalies, etc.
+Nous assurons également les évolutions et les corrections de bugs de votre site WordPress.
+
+### Pourquoi choisir Goodmotion ?
+
+Expertise WordPress avancée
+Développeurs WordPress avec 10+ ans d’expérience. Nous connaissons les failles de sécurité avant même qu’elles ne soient exploitées.
+
+Réponse Ultra-Rapide
+Intervention en moins de 24h pour les problèmes critiques. Votre site ne reste jamais en panne.
+
+Transparence Totale
+Rapport mensuel détaillé sur l’état de santé de votre site. Vous savez exactement ce qui se passe.
+
+## Comptez sur nous pour la maintenance de votre site WordPress
+
+Nous recontrons souvent des clients avec des sites WordPress qui n’ont pas été mis à jour depuis des mois. Le prestataire du début n’est plus présent pour gérer le site. Vous pouvez nous faire confiance pour la maintenance de votre site WordPress.
+
+## La maintenance préventive des sites WordPress
+
+### Pourquoi une maintenance préventive ?
+
+**Pour conserver un site web en bonne santé et pour limiter les risques de faille de votre site**
+
+En effet, les plugins et le cœur de WordPress sortent régulièrement des mises à jour pour corriger des **failles de sécurité**.
+
+_Si vous n’effectuez pas les mises à jour régulièrement, vous vous exposez à un risque potentiel d’intrusion._
+
+**Pour conserver une sauvegardes de votre site**
+
+Il est également nécessaire d’effectuer des **sauvegardes** de votre site et de la base de données. En cas de **piratage** de votre site, il sera toujours possible
+de reconstruire le site avec une la dernière version sauvegardée.
+
+**Pour éviter de vous faire voler votre site web.**
+
+Les sites réalisés avec le CMS **WordPress** sont régulièrement soumis à des attaques. Des robots (scripts) tentent de rentrer en exploitant les failles des plugins ou du cœur de **WordPress**.
+
+**WordPress** étant un CMS majoritaire sur le web, il est logiquement plus attaqué que les autres systèmes.
+
+Utiliser un **plugin de sécurité** permet de bloquer les attaques malveillantes et les tentatives d’intrusions. Il permet de scanner les fichiers et de détecter des changements anormaux de fichiers.
+
+**Que se passe-t-il si votre site est piraté ?**
+
+Si votre site est piraté, il peut être utilisé pour envoyer des spams, des virus ou des liens vers des sites malveillants.
+
+Votre site peut également être utilisé pour afficher des contenus inappropriés (terrorisme, sexe, etc..).
+
+Imaginez l’image de votre entreprise si votre site est utilisé pour diffuser des contenus inappropriés. La perte de confiance de vos clients est inestimable.
+
+**Les tâches effectuées pour la maintenance préventive sont les suivantes :**
+
+- Mise à jour des plugins et du coeur de WordPress
+- Sauvegardes régulières du site et de la base de données
+- Surveillance de la sécurité du site
+- Surveillance d’anomalies ou de bugs
+- Configuration d’un plugin de sécurité
+
+## La maintenance corrective et évolutive des sites WordPress
+
+Un autre type de maintenance est nécessaire pour corriger les éventuels problèmes et faire évoluer le site web. **Il s’agit de la maintenance corrective et évolutive**
+
+Tout projet informatique comporte des bugs. Il est **donc** nécessaire de corriger les bugs pour éviter les problèmes. Par exemple, une page qui ne s’affiche pas, un formulaire qui ne fonctionne pas, etc.
+
+De plus, comme votre business, tout projet informatique évolue. Il est nécessaire de faire évoluer votre site pour répondre aux besoins de votre entreprise. Par exemple, ajouter une nouvelle page, une nouvelle fonctionnalité, etc.
+
+Nous vous proposons des packs d’heures de maintenance corrective et évolutive pour répondre à vos besoins.
+
+Quand vous avez souscrit à un pack d’heures de maintenance corrective et évolutive, nous intervenons plus rapidement sur votre site.
+
+## Optimisation des performances des sites WordPress
+
+La **vitesse de chargement** est devenue un critère important pour le SEO (optimisation pour les moteurs de recherche). Mais également pour améliorer l’expérience des utilisateurs. Un internaute quitte plus rapidement un site lent. Et c’est encore plus vrai depuis que l’utilisation sur mobile est passée devant l’utilisation sur ordinateur.
+
+Les étapes de cette prestation :
+
+**1 - Audit du site**
+
+Point sur l’état de votre site et compte rendu sur les points à optimiser.
+
+**2 - Réalisation des optimisations :**
+
+Application des points d’optimisations. Les optimisations sont réalisées une par une avec comparaison de l’amélioration des performances.
+
+**3 - Rapport**
+
+Présentation des optimisations et gains de performances détaillés
+
+## Nos offres de maintenance WordPress
+
+Pour vous aider à préserver votre site web et votre réputation, nous vous proposons un service de maintenance des sites réalisés avec le CMS WordPress.
+
+- Mise à jour des plugins\*
+
+- Mise à jour du coeur de
+WordPress\*
+
+- Sauvegarde régulière du site
+et de la base de données\*
+
+- Configuration d'un plugin de
+sécurité
+
+- Surveillance de disponibilités
+du site
+
+- Un rapport sur l'état de santé
+du site\*\*
+
+- Support email
 
 
+- Correction de bugs
+
+- Ajout des nouvelles
+fonctionnalités
+
+- Conseils et recommandations
+sur l'évolution du site
+
+
+- **Audit du site**:
+
+
+Point sur l'état de votre site et compte rendu sur les points à
+optimiser
+
+- **Réalisation des optimisations:**
+
+  - \- Application des points d'optimisations.
+  - \- Installation de plugin(s) d’optimisation de performance
+  - \- Les optimisations sont réalisées une par une avec comparaison
+     de l'amélioration des performances
+
+
+- **Rapport**:
+
+
+Présentation des optimisations et gains de performances détaillés
+
+
+- \\* minimum 1 fois par semaine
+- \\*\\* 1 fois par mois
+- (1) - Pour toute prestation de maintenance préventive seule, des frais de
+mise en place de **399 euros HT** sont à prévoir.
+
+Cela
+comprend :
+  - \- Un audit du site
+  - \- Sécurisation du site
+  - \- Petite optimisation du site
+
+  - \- Mise en place de la sauvegarde et la surveillance
+- (2) Nombre d'heures à déterminer. Les heures non utilisées sont reportées
+le mois. Remise à zéro des heures au bout de 12 mois.
+
+
+## Questions fréquentes
+
+### Pourquoi le prix de la maintenance préventive est à partir de 149 euros HT/mois ?
+
+En fonction de la complexité d’un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d’extension est un site plus complexe par exemple.
+
+### Est-ce que tout les sites WordPress sont acceptés ?
+
+Après un premier audit rapide, nous nous réservons le droit de ne pas fournir la prestation de maintenance préventive.
+En effet, si le site ne correspond pas au standard de qualité de développement, le maintenir s’avère très dangereux. Il arrive que certains sites WordPress sont tellement mal conçus, qu’ils sont impossibles à maintenir.
+
+### Mon WordPress utilise Elementor et un thème acheté. La maintenance est possible ?
+
+À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d’un site qui utilise Elementor et un thème acheté sur Themes Forest ou autre.
+
+### Si je n'ai pas les licences de mes plugins et thèmes. Ils seront quand même mis à jour
+
+Non. Nous ne pouvons mettre à jour uniquement les plugins et thèmes avec les clés de licences.
+
+### Dois-je donner les accès au serveur et à l'admin du site pour la maintenance
+
+Oui. Nous ne pouvons pas intervenir correctement sans le full accès au site et au serveur.
+
+### Y a-t-il des frais de mise en place pour la maintenance préventive
+
+Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de **399 euros HT** sont à prévoir.
+
+Cela comprend :
+
+- [x]  Un audit du site
+- [x]  Sécurisation du site
+- [x]  Petite optimisation du site
+- [x]  Mise en place de la sauvegarde et la surveillance
+
+_Si vous prenez une prestation “OPTIMISATION DES PERFORMANCES” en même temps que l’abonnement maintenance préventive, les frais de mise en place sont offerts._
+
+## Contactez-nous pour la maintenance de votre site WordPress
+
+Premier petit audit gratuit de 30mn pour faire le point sur votre site WordPress.
+
+Adresse email \*Nom \*Site web actuelSujet \*
+Choisir un sujetDemande de devisQuestion sur un projetMaintenanceProblème techniqueAutre
+Message \*Ne pas sélectionner cet élément, c'est pour attraper les scripts
+
+Parlons-en
+
+## Votre prochain  projet web ?
+
+[Démarrer un projet](https://www.goodmotion.fr/contact)
 
