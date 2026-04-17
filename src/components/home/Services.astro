@@ -27,9 +27,7 @@ const { title, text, label, elements } = Astro.props;
     >
       {title}
     </h2>
-    <p
-      class="text-left w-full text-base text-primary-800 mt-5 mb-6 max-w-2xl"
-    >
+    <p class="text-left w-full text-base text-primary-800 mt-5 mb-6 max-w-2xl">
       {text}
     </p>
   </div>
@@ -46,7 +44,7 @@ const { title, text, label, elements } = Astro.props;
               {element.title}
             </a>
           </h2>
-          <p class="text-white/80 text-sm leading-relaxed">{element.intro}</p>
+          <p class="text-white/90 text-base leading-relaxed">{element.intro}</p>
         </div>
       ))
     }
