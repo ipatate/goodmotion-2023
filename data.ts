@@ -108,7 +108,7 @@ export default {
     {
       title: "Next.js",
       image: next,
-      class: "w-40",
+      class: "max-w-32",
     },
     {
       title: "Astro.js",
@@ -118,7 +118,7 @@ export default {
     {
       title: "Nuxt",
       image: nuxt,
-      class: "w-40",
+      class: "max-w-36",
     },
     {
       title: "React.js",

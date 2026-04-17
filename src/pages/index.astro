@@ -14,15 +14,17 @@ import Services from "../components/home/Services.astro";
 >
   <main>
     <HeroHome />
-    <Services title="Nos services" text="Voici nos principaux domaines d'expertise dans le développement web et les agents IA." elements={data.services} />
+    <Services title="Nos services" label="Expertise" text="Voici nos principaux domaines d'expertise dans le développement web et les agents IA." elements={data.services} />
     <Advantages />
     <LogoBlock
       title="Les outils maîtrisés"
+      label="Stack technique"
       text="Après avoir analysé le besoin de votre projet, nous choisirons ensemble l'outil le plus adapté pour obtenir le meilleur résultat."
       elements={data.tools}
     />
     <LogoBlock
       title="Nos partenaires"
+      label="Confiance"
       text="Voici une liste de quelques entreprises avec lesquelles nous travaillons régulièrement. Merci à elles pour leur confiance."
       elements={data.partners}
     />
