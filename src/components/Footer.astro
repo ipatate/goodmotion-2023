@@ -9,105 +9,189 @@ const SITE_URL = import.meta.env.SITE_URL;
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 ---
 
-<footer class={`py-10 bg-linear-to-t from-alto-200 to-alto-200/20`}>
+<!-- Pre-footer CTA -->
+<div class="bg-primary-800 py-20 lg:py-28 px-4 md:px-10">
   <div
-    class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-stretch pl-5 pr-2 md:px-6"
+    class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10"
   >
-    <div class="flex-1">
+    <div>
+      <p
+        class="text-xs font-bold tracking-[0.2em] uppercase text-primary-100/90 mb-5"
+      >
+        Parlons-en
+      </p>
+      <h2
+        class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-none tracking-tight"
+      >
+        Votre prochain<br />projet web ?
+      </h2>
+    </div>
+    <a
+      href="/contact"
+      class="shrink-0 inline-flex items-center gap-3 bg-white text-primary-900 px-8 py-4 text-sm font-bold hover:bg-primary-50 transition-colors duration-150"
+    >
+      Démarrer un projet
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></path></svg
+      >
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary-900 pt-12 pb-8">
+  <div
+    class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6"
+  >
+    <!-- Col 1: identity + nav -->
+    <div>
       <Image
         src={zmf}
         width={zmf.width}
         height={zmf.height}
         alt="ZMF"
-        class="w-44"
+        class="w-36 brightness-0 invert opacity-80"
       />
-      <p class="text-primary-900 reserved text-xs mt-2">
-        ZMF Resources Tous les droits sont réservés.
+      <p class="text-white/70 text-xs mt-3 reserved">
+        ZMF Resources - Tous droits réservés.
       </p>
-      <nav class="flex flex-col text-sm mt-5">
-        <a class="my-2" href="/agence-laravel">Agence Laravel</a>
-        <a class="my-2" href="/agence-wordpress">Agence WordPress</a>
-        <a class="my-2" href="/agence-web-geneve">Agence Web Genève</a>
-        <a class="my-2" href="/agence-web-lausanne">Agence Web Lausanne</a>
-        <a class="my-2" href="/agence-web-annecy">Agence Web Annecy</a>
-      </nav>
-      <script>
-        const reserved = document.querySelector(".reserved");
-        if (reserved) {
-          reserved.innerHTML =
-            new Date().getFullYear() + " " + reserved.innerHTML;
-        }
-      </script>
-    </div>
-    <div class="flex-1">
-      <nav class="flex mt-5 md:mt-0 md:ml-5 flex-col text-sm">
+      <nav class="flex flex-col mt-5 gap-0.5">
         <a
-          class={`my-3 flex items-center`}
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/ipatate/goodmotion-2023"
-          ><Icon name="mdi:github" class="w-8 h-8 mr-2 text-gray-600" />Code
-          source du site</a
+          class="text-sm text-white/90 hover:text-white transition-colors py-1"
+          href="/agence-laravel">Agence Laravel</a
         >
         <a
-          class={`my-3 flex items-center`}
+          class="text-sm text-white/90 hover:text-white transition-colors py-1"
+          href="/agence-wordpress">Agence WordPress</a
+        >
+        <a
+          class="text-sm text-white/90 hover:text-white transition-colors py-1"
+          href="/agence-web-geneve">Agence Web Genève</a
+        >
+        <a
+          class="text-sm text-white/90 hover:text-white transition-colors py-1"
+          href="/agence-web-lausanne">Agence Web Lausanne</a
+        >
+        <a
+          class="text-sm text-white/90 hover:text-white transition-colors py-1"
+          href="/agence-web-annecy">Agence Web Annecy</a
+        >
+      </nav>
+    </div>
+
+    <!-- Col 2: performances -->
+    <div>
+      <p
+        class="text-xs font-bold tracking-[0.2em] uppercase text-white/60 mb-5"
+      >
+        Performances
+      </p>
+      <nav class="flex flex-col gap-3">
+        <a
+          class="flex items-center gap-3 text-sm text-white/90 hover:text-white transition-colors group"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.ecoindex.fr/resultat/?id=eb6e4dd8-beee-44dc-a665-8ed622fd5686"
-          ><span
-            class="w-8 h-8 rounded-full text-white flex items-center justify-center mr-2 text-xs bg-green-700"
-            >A</span
-          >Eco Index</a
         >
+          <span
+            class="w-8 h-8 rounded-full text-white flex items-center justify-center text-xs font-bold bg-green-600 shrink-0"
+            >A</span
+          >
+          Eco Index
+        </a>
         <a
-          class={`my-3 flex items-center`}
+          class="flex items-center gap-3 text-sm text-white/90 hover:text-white transition-colors group"
           target="_blank"
           rel="noopener noreferrer"
-          href={`https://websitecarbon.com/website/${SITE_URL.replace(
-            "www.",
-            ""
-          )}`}
-          ><Image
+          href={`https://websitecarbon.com/website/${SITE_URL.replace("www.", "")}`}
+        >
+          <Image
             src={WebsiteCarbon}
             alt="WebsiteCarbon"
-            class="w-8 h-8 mr-2"
-          /> Website Carbon <span
-            class="bg-green-400 text-primary-900 py-0.5 px-1 flex ml-2 rounded-lg"
-            >0.01g of CO2</span
-          ></a
-        >
+            class="w-8 h-8 shrink-0 opacity-60 group-hover:opacity-100 transition-opacity"
+          />
+          <span
+            >Website Carbon <span class="text-green-400 font-semibold"
+              >0.01g CO₂</span
+            ></span
+          >
+        </a>
         <a
-          class={`my-3 flex items-center`}
+          class="flex items-center gap-3 text-sm text-white/90 hover:text-white transition-colors"
           target="_blank"
           rel="noopener noreferrer"
           href="https://pagespeed.web.dev/analysis/https-www-goodmotion-fr/n8b5m02znm?hl=fr&form_factor=mobile"
-          ><span
-            class="w-8 h-8 rounded-full border-green-700 border-2 text-green-700 flex items-center justify-center mr-2 text-xs bg-green-50"
-            >100</span
-          >PageSpeed Insights</a
         >
+          <span
+            class="w-8 h-8 rounded-full border-2 border-green-500 text-green-400 flex items-center justify-center text-xs font-bold shrink-0"
+            >100</span
+          >
+          PageSpeed Insights
+        </a>
       </nav>
     </div>
+
+    <!-- Col 3: source -->
+    <div>
+      <p
+        class="text-xs font-bold tracking-[0.2em] uppercase text-white/60 mb-5"
+      >
+        Open source
+      </p>
+      <a
+        class="flex items-center gap-3 text-sm text-white/80 hover:text-white transition-colors"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/ipatate/goodmotion-2023"
+      >
+        <Icon name="mdi:github" class="w-8 h-8 shrink-0 text-white/40" />
+        Code source du site
+      </a>
+    </div>
   </div>
-<nav class="text-center text-xs text-neutral-700 flex flex-wrap gap-2 justify-center mt-10 font-light [&_a]:hover:underline"><a
-          class={`my-2 ${
-            pathname === "/politique-de-confidentialite" ? "underline" : ""
-          }`}
-          href="/politique-de-confidentialite">Politique de confidentialité</a
-        >
-        <a
-          class={`my-2 ${pathname === "/mentions-legales" ? "underline" : ""}`}
-          href="/mentions-legales">Mentions légales</a
-        >
-        <a href="/llms.txt" class="my-2">llms.txt</a>
-        <a href="/llms-full.txt" class="my-2">llms-full.txt</a>
-        <a
-          class="my-2"
-          href="https://clin-ops.com/clinops-solutions/"
-          title="Clinical Trial Consulting"
-          target="_blank"
-        >
-          Clinical Trial Consulting
-        </a>
-</nav>
+
+  <!-- Legal -->
+  <div
+    class="max-w-7xl mx-auto px-4 md:px-10 mt-10 pt-6 border-t border-white/10"
+  >
+    <nav
+      class="text-xs text-white/70 flex flex-wrap gap-x-5 gap-y-2 [&_a]:hover:text-white/80 [&_a]:transition-colors"
+    >
+      <a
+        class={pathname === "/politique-de-confidentialite"
+          ? "text-white/80"
+          : ""}
+        href="/politique-de-confidentialite">Politique de confidentialité</a
+      >
+      <a
+        class={pathname === "/mentions-legales" ? "text-white/80" : ""}
+        href="/mentions-legales">Mentions légales</a
+      >
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/llms-full.txt">llms-full.txt</a>
+      <a
+        href="https://clin-ops.com/clinops-solutions/"
+        target="_blank"
+        title="Clinical Trial Consulting"
+      >
+        Clinical Trial Consulting
+      </a>
+    </nav>
+  </div>
+
+  <script>
+    const reserved = document.querySelector(".reserved");
+    if (reserved) {
+      reserved.innerHTML = new Date().getFullYear() + " " + reserved.innerHTML;
+    }
+  </script>
 </footer>

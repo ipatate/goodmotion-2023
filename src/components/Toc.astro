@@ -19,7 +19,7 @@ const {
 
 {
   showToc && (
-    <div class="sticky top-5 right-0 group -mt-14 ml-auto h-12 w-12 open-toc is-bottom z-10">
+    <div class="sticky top-10 right-0 group -mt-6 ml-auto h-12 w-12 open-toc is-bottom z-10">
       <button
         class={`text-${color}-900 bg-casper-100 relative rounded-full shadow-md p-2 w-12 h-12 overflow-hidden`}
         aria-label="ouvrir le menu de navigation"
@@ -131,114 +131,112 @@ const {
   };
 
   document.addEventListener("astro:page-load", () => {
-
-
     /**
-   * button up position
-   */
-  let isRight = false;
-  const progressWrapper: HTMLDivElement | null =
-    document.querySelector(".progressWrapper");
-  const parentProgressWrapper = progressWrapper?.parentElement;
+     * button up position
+     */
+    let isRight = false;
+    const progressWrapper: HTMLDivElement | null =
+      document.querySelector(".progressWrapper");
+    const parentProgressWrapper = progressWrapper?.parentElement;
 
-  let progressWrapperWidth = progressWrapper?.offsetWidth || 0;
-  let progressWrapperParentWidth = 0;
-  let parentProgressWrapperPaddingRight = 0;
-  let transRight = 0;
-  // define right position for progressWrapper
-  const setPosition = () => {
-    progressWrapperParentWidth = parentProgressWrapper?.clientWidth || 0;
-    parentProgressWrapperPaddingRight =
-      parseInt(
-        window.getComputedStyle(parentProgressWrapper as Element).paddingRight
-      ) || 0;
-    transRight = progressWrapperParentWidth
-      ? progressWrapperParentWidth -
-        parentProgressWrapperPaddingRight -
-        (progressWrapperWidth + parentProgressWrapperPaddingRight + 4)
-      : 0;
+    let progressWrapperWidth = progressWrapper?.offsetWidth || 0;
+    let progressWrapperParentWidth = 0;
+    let parentProgressWrapperPaddingRight = 0;
+    let transRight = 0;
+    // define right position for progressWrapper
+    const setPosition = () => {
+      progressWrapperParentWidth = parentProgressWrapper?.clientWidth || 0;
+      parentProgressWrapperPaddingRight =
+        parseInt(
+          window.getComputedStyle(parentProgressWrapper as Element)
+            .paddingRight,
+        ) || 0;
+      transRight = progressWrapperParentWidth
+        ? progressWrapperParentWidth -
+          parentProgressWrapperPaddingRight -
+          (progressWrapperWidth + parentProgressWrapperPaddingRight + 4)
+        : 0;
+      if (progressWrapper) {
+        progressWrapper.style.transform = `translateX(${
+          !isRight ? transRight : 0
+        }px)`;
+      }
+    };
+
+    // on resize window
+    window.addEventListener("resize", debounce(setPosition, 500));
+
+    // define position on load
     if (progressWrapper) {
-      progressWrapper.style.transform = `translateX(${
-        !isRight ? transRight : 0
-      }px)`;
-    }
-  };
-
-  // on resize window
-  window.addEventListener("resize", debounce(setPosition, 500));
-
-  // define position on load
-  if (progressWrapper) {
-    setPosition();
-    progressWrapper.style.transform = `translateX(${transRight}px)`;
-  }
-
-  // add event on touchstart
-  document.addEventListener(
-    "touchstart",
-    debounce((event: TouchEvent) => {
-      if (!progressWrapper) return;
-      isRight = !isTouchOnRight(event);
       setPosition();
-    }, 200)
-  );
+      progressWrapper.style.transform = `translateX(${transRight}px)`;
+    }
 
-  /**
-   * open toc
-   */
-  const openToc = document.querySelector(".open-toc");
-  if (openToc) {
-    window.addEventListener(
-      "scroll",
-      debounce(() => {
-        // get position top .openToc
-        const openTocTop = openToc?.getBoundingClientRect().top;
-        // get viewport height
-        const vh = window.innerHeight;
-        if (openTocTop && openTocTop > vh / 2) {
-          openToc?.classList.add("is-bottom");
-        } else {
-          openToc?.classList.remove("is-bottom");
-        }
-      }, 200)
+    // add event on touchstart
+    document.addEventListener(
+      "touchstart",
+      debounce((event: TouchEvent) => {
+        if (!progressWrapper) return;
+        isRight = !isTouchOnRight(event);
+        setPosition();
+      }, 200),
     );
 
-    openToc?.addEventListener("click", (e) => {
-      const target = e.currentTarget as HTMLElement;
-      if (!target) return;
-      target.classList.toggle("is-active");
-    });
-    // click out .open-top
-    document.addEventListener("click", (e) => {
-      const target = e.target as HTMLElement;
-      if (!target) return;
-      if (target.closest(".open-toc")) return;
-      document.querySelector(".open-toc")?.classList.remove("is-active");
-    });
+    /**
+     * open toc
+     */
+    const openToc = document.querySelector(".open-toc");
+    if (openToc) {
+      window.addEventListener(
+        "scroll",
+        debounce(() => {
+          // get position top .openToc
+          const openTocTop = openToc?.getBoundingClientRect().top;
+          // get viewport height
+          const vh = window.innerHeight;
+          if (openTocTop && openTocTop > vh / 2) {
+            openToc?.classList.add("is-bottom");
+          } else {
+            openToc?.classList.remove("is-bottom");
+          }
+        }, 200),
+      );
 
-    // smooth scroll to anchor
-    const anchors = document.querySelectorAll('a[href*="#"]');
-    anchors.forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = e.currentTarget as HTMLAnchorElement;
+      openToc?.addEventListener("click", (e) => {
+        const target = e.currentTarget as HTMLElement;
         if (!target) return;
-        const href = target.getAttribute("href");
-        if (!href) return;
-        document.querySelector(href)?.scrollIntoView({
-          behavior: "smooth",
+        target.classList.toggle("is-active");
+      });
+      // click out .open-top
+      document.addEventListener("click", (e) => {
+        const target = e.target as HTMLElement;
+        if (!target) return;
+        if (target.closest(".open-toc")) return;
+        document.querySelector(".open-toc")?.classList.remove("is-active");
+      });
+
+      // smooth scroll to anchor
+      const anchors = document.querySelectorAll('a[href*="#"]');
+      anchors.forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = e.currentTarget as HTMLAnchorElement;
+          if (!target) return;
+          const href = target.getAttribute("href");
+          if (!href) return;
+          document.querySelector(href)?.scrollIntoView({
+            behavior: "smooth",
+          });
         });
       });
-    });
-  }
+    }
 
-  // scroll to top for button up
-  document.querySelector(".up-button")?.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+    // scroll to top for button up
+    document.querySelector(".up-button")?.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     });
-  });
-
   });
 </script>
