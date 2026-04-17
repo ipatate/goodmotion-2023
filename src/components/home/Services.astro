@@ -1,25 +1,35 @@
 ---
 export interface Props {
-	title: string;
-	text: string;
-	label?: string;
-	elements: {
-		title: string;
-		link: string;
-		intro: string;
-		class: string;
-	}[];
+  title: string;
+  text: string;
+  label?: string;
+  elements: {
+    title: string;
+    link: string;
+    intro: string;
+    class: string;
+  }[];
 }
 const { title, text, label, elements } = Astro.props;
 ---
 
 <div class="py-6 lg:pb-20">
   <div class="md:max-w-7xl w-full mx-auto my-2 md:my-5 text-left px-4 md:px-10">
-    {label && <p class="text-xs font-bold tracking-[0.2em] uppercase text-primary-600 mb-4">{label}</p>}
-    <h2 class="text-5xl sm:text-7xl md:text-8xl text-primary-900 font-extrabold leading-none tracking-tight">
+    {
+      label && (
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-primary-800 mb-4">
+          {label}
+        </p>
+      )
+    }
+    <h2
+      class="text-5xl sm:text-7xl md:text-8xl text-primary-900 font-extrabold leading-none tracking-tight"
+    >
       {title}
     </h2>
-    <p class="text-left w-full text-base text-primary-900/60 mt-5 mb-6 max-w-2xl">
+    <p
+      class="text-left w-full text-base text-primary-900/60 mt-5 mb-6 max-w-2xl"
+    >
       {text}
     </p>
   </div>
@@ -32,7 +42,9 @@ const { title, text, label, elements } = Astro.props;
           class={`p-5 md:p-10 rounded-md lg:min-h-76 flex gap-5 flex-col justify-center relative ${element.class} group hover:scale-102 hover:z-10 transition-[transform_opacity] duration-300 hover:opacity-90`}
         >
           <h2 class="text-3xl lg:text-4xl font-extrabold text-white/75 leading-tight tracking-tight text-balance group-hover:text-white transition-colors duration-200">
-            <a href={element.link} class="after:absolute after:inset-0">{element.title}</a>
+            <a href={element.link} class="after:absolute after:inset-0">
+              {element.title}
+            </a>
           </h2>
           <p class="text-white/80 text-sm leading-relaxed">{element.intro}</p>
         </div>
