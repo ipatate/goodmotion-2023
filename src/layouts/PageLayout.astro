@@ -3,14 +3,15 @@ import HeroPage from "../components/HeroPage.astro";
 import Toc from "../components/Toc.astro";
 import BaseLayout from "./BaseLayout.astro";
 const { headings, frontmatter } = Astro.props;
-const colors: Color[] = [
-  //   "primary",
-  "casper",
-  "secondary",
-  "summer-green",
-  "alto",
-];
-const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
+// const colors: Color[] = [
+//   //   "primary",
+//   "casper",
+//   "secondary",
+//   "summer-green",
+//   "alto",
+// ];
+// const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
+const randomColor: Color = "casper";
 ---
 
 <BaseLayout
