@@ -35,7 +35,7 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
-Sitemap: ${SITE_URL}/sitemap-index.xml`;
+Sitemap: /sitemap-index.xml`;
 
 // Write the content to the file
 fs.writeFile(filePath, content, (err) => {
