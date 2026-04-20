@@ -60,8 +60,9 @@
         >
         <input
           type="url"
-          v-model="url"
           name="url"
+          ref="el"
+          @blur="onUrlBlur"
           placeholder="https://monsupersite.com"
           class="w-full border-b border-primary-900/20 bg-transparent px-0 py-3 text-base focus:outline-none focus:border-primary-600 transition-colors placeholder:text-primary-900/25"
           :class="{ 'border-red-400 focus:border-red-400': errors.url }"
@@ -137,6 +138,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import type { Ref } from "vue";
+import { useIMask } from "vue-imask";
+
 const CONTACT_URL = import.meta.env.PUBLIC_CONTACT_URL;
 const subjectSelect = [
   'Demande de devis',
@@ -149,11 +152,22 @@ const errors: Ref<{ [key: string]: string }> = ref({});
 const success: Ref<string | undefined> = ref();
 const email = ref("");
 const name = ref("");
-const url = ref("");
 const subject = ref("");
 const message = ref("");
 const check = ref(false);
 const submitButton = ref();
+
+const { el, masked } = useIMask({
+  mask: /^\S*$/,
+});
+
+const onUrlBlur = () => {
+  const val = masked.value.trim();
+  if (val && !/^https?:\/\//i.test(val)) {
+    masked.value = 'https://' + val;
+  }
+};
+
 
 const isEmail = (email: string) => {
   const re =
@@ -192,7 +206,7 @@ const onSubmit = (event: Event) => {
         email: email.value,
         body: message.value,
         name: name.value,
-        url: url.value,
+        url: masked.value,
         subject: subject.value,
       }),
       headers: {
@@ -205,7 +219,7 @@ const onSubmit = (event: Event) => {
           email.value = "";
           message.value = "";
           name.value = "";
-          url.value = "";
+          masked.value = "";
           subject.value = "";
           success.value = "Message envoyé avec succès";
           setTimeout(() => {
@@ -215,7 +229,7 @@ const onSubmit = (event: Event) => {
         submitButton.value.disabled = false;
         submitButton.value.value = "Envoyer le message";
       })
-      .catch((error) => {
+      .catch(() => {
         errors.value.send = "Une erreur est survenue";
       });
   }
