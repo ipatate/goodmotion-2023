@@ -19,17 +19,17 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 # AI training scrapers (désactivés)
 User-agent: GPTBot
 Disallow: /
 
-User-agent: Claude-Web
-Disallow: /
-
 User-agent: anthropic-ai
-Disallow: /
-
-User-agent: CCBot
 Disallow: /
 
 User-agent: FacebookBot
