@@ -6,6 +6,7 @@ import StructuredData from "../components/StructuredData.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Co2badge from "../components/Co2badge.astro";
+import fontSora from "../../assets/fonts/Sora-VariableFont_wght.woff2";
 
 export interface Props {
   title: string;
@@ -21,32 +22,46 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 <!doctype html>
 <html lang="fr-FR">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <Seo
-    title={title}
-    metaTitle={metaTitle}
-    description={description}
-    color={color}
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="preload"
+      href={fontSora}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preconnect" href="https://analytics.senciel.org" />
+    <Seo
+      title={title}
+      metaTitle={metaTitle}
+      description={description}
+      color={color}
+    />
 
-  <!-- Structured Data Schemas -->
-  <StructuredData type="Organization" />
-  <StructuredData type="LocalBusiness" />
-  <StructuredData type="WebSite" />
-  {pathname !== "/" && <StructuredData type="BreadcrumbList" pathname={pathname} />}
-  <ClientRouter />
-  <script
-    defer
-    data-domain="goodmotion.fr"
-    src="https://analytics.senciel.org/js/script.js"></script>
-  <script is:inline>
-    window.plausible =
-      window.plausible ||
-      function () {
-        (window.plausible.q = window.plausible.q || []).push(arguments);
-      };
-  </script>
+    <!-- Structured Data Schemas -->
+    <StructuredData type="Organization" />
+    <StructuredData type="LocalBusiness" />
+    <StructuredData type="WebSite" />
+    {
+      pathname !== "/" && (
+        <StructuredData type="BreadcrumbList" pathname={pathname} />
+      )
+    }
+    <ClientRouter />
+    <script
+      defer
+      data-domain="goodmotion.fr"
+      src="https://analytics.senciel.org/js/script.js"></script>
+    <script is:inline>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
+  </head>
 
   <body class="bg-white">
     <div class="h-screen absolute top-0 right-0 left-0 z-[-1]"></div>
