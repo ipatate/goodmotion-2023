@@ -2,20 +2,31 @@
 import card from "../../assets/images/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg";
 import faviconImage from "../../assets/images/favicon.svg";
 import Favicon from "./Favicon.astro";
+import { getLocaleData } from "../../data";
 
 type Props = {
   title: string;
   metaTitle?: string;
   description: string;
   color?: string;
+  isLocaleOnly?: boolean;
 };
 
 // remove .html from pathname because build use file instead folder
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 
 const SITE_URL = import.meta.env.SITE_URL;
+const ALTERNATE_SITE_URL = import.meta.env.ALTERNATE_SITE_URL;
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
 
-const { title, description, metaTitle, color = "primary" } = Astro.props;
+const { title, description, metaTitle, color = "primary", isLocaleOnly = false } = Astro.props;
+
+const localeInfo = getLocaleData(SITE_LOCALE);
+
+// Hreflang URLs
+const frUrl = SITE_LOCALE === "fr" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
+const chUrl = SITE_LOCALE === "ch" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
+const showHreflang = !isLocaleOnly && !!ALTERNATE_SITE_URL;
 
 let themeColor = "#08556C";
 switch (color) {
@@ -52,7 +63,7 @@ switch (color) {
 <meta property="og:type" content="website" />
 <meta property="og:image" content={`${SITE_URL}${card.src}`} />
 <meta property="og:site_name" content="Goodmotion" />
-<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale" content={localeInfo.ogLocale} />
 <meta name="theme-color" content={themeColor} />
 
 <link rel="canonical" href={`${SITE_URL}${pathname}`} />
@@ -61,4 +72,13 @@ switch (color) {
 <meta property="og:image:height" content="630" />
 <link rel="home" href={`${SITE_URL}`} />
 <link rel="sitemap" href="/sitemap-index.xml" />
+
+{showHreflang && (
+  <>
+    <link rel="alternate" hreflang="fr-FR" href={frUrl} />
+    <link rel="alternate" hreflang="fr-CH" href={chUrl} />
+    <link rel="alternate" hreflang="x-default" href={frUrl} />
+  </>
+)}
+
 <Favicon />

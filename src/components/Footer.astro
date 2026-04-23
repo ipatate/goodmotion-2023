@@ -1,12 +1,16 @@
 ---
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
+import { getLocaleData } from "../../data";
 
 import zmf from "../../assets/images/zmf.svg";
 import WebsiteCarbon from "../../assets/images/WebsiteCarbon.png";
 
 const SITE_URL = import.meta.env.SITE_URL;
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
+
+const { cityLinks } = getLocaleData(SITE_LOCALE);
 ---
 
 <!-- Pre-footer CTA -->
@@ -73,18 +77,12 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
           class="text-sm text-white/90 hover:text-white transition-colors py-1"
           href="/agence-wordpress">Agence WordPress</a
         >
-        <a
-          class="text-sm text-white/90 hover:text-white transition-colors py-1"
-          href="/agence-web-geneve">Agence Web Genève</a
-        >
-        <a
-          class="text-sm text-white/90 hover:text-white transition-colors py-1"
-          href="/agence-web-lausanne">Agence Web Lausanne</a
-        >
-        <a
-          class="text-sm text-white/90 hover:text-white transition-colors py-1"
-          href="/agence-web-annecy">Agence Web Annecy</a
-        >
+        {cityLinks.map((link) => (
+          <a
+            class="text-sm text-white/90 hover:text-white transition-colors py-1"
+            href={link.href}
+          >{link.label}</a>
+        ))}
       </nav>
     </div>
 

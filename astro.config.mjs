@@ -1,5 +1,5 @@
 import { loadEnv } from "vite";
-const { SITE_URL, CONTACT_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
+const { SITE_URL, CONTACT_URL, SITE_LOCALE, ALTERNATE_SITE_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";

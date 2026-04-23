@@ -2,8 +2,14 @@
 layout: ../../layouts/PageLayout.astro
 title: Développement web sur mesure, web applications, Intranet, Landing page, POC
 subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
+subtitleFr: Développement web sur mesure - Annecy, Lyon, Chambéry
+subtitleCh: Développement web sur mesure - Genève, Lausanne
 metaTitle: Développement de web applications, Intranet, Landing page, POC
+metaTitleFr: Développement de web applications sur mesure | Annecy, Lyon, Chambéry
+metaTitleCh: Développement de web applications sur mesure | Genève, Lausanne
 description: Développement de web applications, intranets et sites sur mesure à Genève, Lausanne et Annecy. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
+descriptionFr: Développement de web applications, intranets et sites sur mesure à Annecy, Lyon et Chambéry. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
+descriptionCh: Développement de web applications, intranets et sites sur mesure à Genève et Lausanne. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
 showToc: true
 serviceSchema:
   serviceType: "Développement Web Sur Mesure"
@@ -12,6 +18,8 @@ serviceSchema:
 ---
 
 import StructuredData from "../../components/StructuredData.astro";
+import Cities from "../../components/Cities.astro";
+import CityLinks from "../../components/CityLinks.astro";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -19,7 +27,7 @@ import ContactForm from "../../components/ContactForm.vue";
 
 Vous avez besoin d'un **site web**, d'une **application web** ou d'un **intranet** ? Vous avez une idée et souhaitez la tester avec un **POC*** ou un **MVP*** ? Nous développons des solutions sur mesure adaptées à vos besoins réels..
 
-Basé à Annecy, au-delà des collaborations avec les clients français (Paris, Lyon, Annecy), nous collaborons régulièrement avec des agences web et des fondations en Suisse romande (Genève, Lausanne). Cette proximité géographique facilite les échanges et permet une meilleure compréhension de vos attentes.
+Basé à Annecy, nous collaborons avec des entreprises et agences dans toute notre zone d'intervention (<Cities />). Cette proximité géographique facilite les échanges et permet une meilleure compréhension de vos attentes.
 
 ## Développement sur mesure
 
@@ -77,7 +85,7 @@ Développement de qualité et maintenable. Nous souhaitons toujours travailler d
 
 ## Zones d'intervention
 
-Basé à [Annecy](/agence-web-annecy), nous collaborons régulièrement avec des clients et des agences à [Genève](/agence-web-geneve) et [Lausanne](/agence-web-lausanne), ainsi qu'avec des équipes partout en France et en Suisse romande.
+Nous collaborons régulièrement avec des clients et des agences à <CityLinks />, ainsi qu'avec des équipes partout en France et en Suisse romande.
 
 ## Nous contacter
 

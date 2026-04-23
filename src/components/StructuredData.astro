@@ -1,4 +1,6 @@
 ---
+import { getLocaleData } from "../../data";
+
 export interface Props {
   type: 'LocalBusiness' | 'Organization' | 'Service' | 'BreadcrumbList' | 'WebSite' | 'Person' | 'FAQPage';
   data?: Record<string, any>;
@@ -7,6 +9,15 @@ export interface Props {
 
 const { type, data = {}, pathname = '' } = Astro.props;
 const SITE_URL = import.meta.env.SITE_URL;
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+
+const localeInfo = getLocaleData(SITE_LOCALE);
+
+const areaServedSchema = localeInfo.areaServed.map((city) => ({
+  "@type": "City",
+  "name": city.name,
+  "containedInPlace": { "@type": "Country", "name": city.country },
+}));
 
 const baseSchema = {
   "@context": "https://schema.org",
@@ -22,7 +33,7 @@ switch(type) {
       "@type": "ProfessionalService",
       "name": "Goodmotion",
       "alternateName": "ZMF Resources",
-      "description": "Agence de développement web éco-conçue et performante basée à Annecy, intervenant à Genève et Lausanne",
+      "description": localeInfo.localBusinessDescription,
       "url": SITE_URL,
       "logo": `${SITE_URL}/favicon.svg`,
       "image": `${SITE_URL}/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg`,
@@ -39,23 +50,7 @@ switch(type) {
         "latitude": 45.8992,
         "longitude": 6.1290
       },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Genève",
-          "containedInPlace": { "@type": "Country", "name": "Suisse" }
-        },
-        {
-          "@type": "City",
-          "name": "Lausanne",
-          "containedInPlace": { "@type": "Country", "name": "Suisse" }
-        },
-        {
-          "@type": "City",
-          "name": "Annecy",
-          "containedInPlace": { "@type": "Country", "name": "France" }
-        }
-      ],
+      "areaServed": areaServedSchema,
       "serviceType": [
         "Développement web sur mesure",
         "Développement WordPress",
@@ -93,7 +88,7 @@ switch(type) {
         "@type": "ContactPoint",
         "contactType": "customer service",
         "email": "infos@goodmotion.fr",
-        "areaServed": ["FR", "CH"],
+        "areaServed": SITE_LOCALE === "ch" ? ["CH"] : ["FR"],
         "availableLanguage": ["French"]
       }
     };
@@ -156,23 +151,7 @@ switch(type) {
         "name": "Goodmotion",
         "url": SITE_URL
       },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Genève",
-          "containedInPlace": { "@type": "Country", "name": "Suisse" }
-        },
-        {
-          "@type": "City",
-          "name": "Lausanne",
-          "containedInPlace": { "@type": "Country", "name": "Suisse" }
-        },
-        {
-          "@type": "City",
-          "name": "Annecy",
-          "containedInPlace": { "@type": "Country", "name": "France" }
-        }
-      ],
+      "areaServed": areaServedSchema,
       "description": data.description || "Service de développement web professionnel",
       "url": data.url || SITE_URL,
       "offers": data.offers || undefined

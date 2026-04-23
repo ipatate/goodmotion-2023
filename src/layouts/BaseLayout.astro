@@ -7,21 +7,27 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Co2badge from "../components/Co2badge.astro";
 import fontSora from "../../assets/fonts/Sora-VariableFont_wght.woff2";
+import { getLocaleData } from "../../data";
 
 export interface Props {
   title: string;
   metaTitle?: string;
   description: string;
   color?: Color;
+  isLocaleOnly?: boolean;
 }
-const { title, description, metaTitle, color = "primary" } = Astro.props;
+
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const localeInfo = getLocaleData(SITE_LOCALE);
+
+const { title, description, metaTitle, color = "primary", isLocaleOnly = false } = Astro.props;
 
 // Get pathname for breadcrumb schema
 const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
 ---
 
 <!doctype html>
-<html lang="fr-FR">
+<html lang={localeInfo.htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -38,6 +44,7 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
       metaTitle={metaTitle}
       description={description}
       color={color}
+      isLocaleOnly={isLocaleOnly}
     />
 
     <!-- Structured Data Schemas -->
@@ -52,7 +59,7 @@ const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
     <ClientRouter />
     <script
       defer
-      data-domain="goodmotion.fr"
+      data-domain={localeInfo.plausibleDomain}
       src="https://analytics.senciel.org/js/script.js"></script>
     <script is:inline>
       window.plausible =

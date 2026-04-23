@@ -3,7 +3,7 @@
  */
 import fs from "fs";
 
-const SITE_URL = process.env.SITE_URL;
+const SITE_URL = process.env.SITE_URL || "https://www.goodmotion.fr";
 // Path to the robots.txt file
 const filePath = "./dist/robots.txt";
 
@@ -35,7 +35,7 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
-Sitemap: https://www.goodmotion.fr/sitemap-index.xml
+Sitemap: ${SITE_URL}/sitemap-index.xml
 `;
 
 // Write the content to the file

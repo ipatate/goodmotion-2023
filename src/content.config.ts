@@ -1,4 +1,5 @@
 import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
 import { z } from 'astro/zod';
 import { parseStringPromise } from "xml2js";
 
@@ -65,6 +66,18 @@ const podcasts = defineCollection({
   }),
 });
 
+const cities = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/content/cities" }),
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    metaTitle: z.string().optional(),
+    description: z.string(),
+    showToc: z.boolean().optional(),
+  }),
+});
+
 export const collections = {
   podcasts,
+  cities,
 };

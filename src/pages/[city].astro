@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from "astro:content";
+import PageLayout from "../layouts/PageLayout.astro";
+import ContactForm from "../components/ContactForm.vue";
+import Faq from "../components/Faq.astro";
+import StructuredData from "../components/StructuredData.astro";
+import { Icon } from "astro-icon/components";
+
+export async function getStaticPaths() {
+  const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+  const allCities = await getCollection("cities");
+  return allCities
+    .filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`))
+    .map((entry) => ({
+      params: { city: entry.id.replace(`${SITE_LOCALE}/`, "") },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+
+<PageLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  metaTitle={entry.data.metaTitle}
+  headings={headings}
+  frontmatter={entry.data}
+  isLocaleOnly={true}
+>
+  <Content components={{ ContactForm, Faq, StructuredData, Icon }} />
+</PageLayout>

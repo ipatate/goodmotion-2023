@@ -2,27 +2,44 @@
 import HeroPage from "../components/HeroPage.astro";
 import Toc from "../components/Toc.astro";
 import BaseLayout from "./BaseLayout.astro";
-const { headings, frontmatter } = Astro.props;
-// const colors: Color[] = [
-//   //   "primary",
-//   "casper",
-//   "secondary",
-//   "summer-green",
-//   "alto",
-// ];
-// const randomColor: Color = colors[Math.floor(Math.random() * colors.length)];
+
+export interface Props {
+  title?: string;
+  metaTitle?: string;
+  description?: string;
+  headings?: any[];
+  frontmatter?: Record<string, any>;
+  isLocaleOnly?: boolean;
+}
+
+const { headings, frontmatter = {}, isLocaleOnly = false } = Astro.props;
+
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const localeKey = SITE_LOCALE.charAt(0).toUpperCase() + SITE_LOCALE.slice(1);
+
+// Locale-aware frontmatter fields: frontmatter.subtitleFr / subtitleCh, etc.
+function lf(field: string): string | undefined {
+  return frontmatter[`${field}${localeKey}`] ?? frontmatter[field];
+}
+
+// Merge explicit props with frontmatter (explicit props take precedence)
+const title = Astro.props.title ?? lf("title") ?? "";
+const description = Astro.props.description ?? lf("description") ?? "";
+const metaTitle = Astro.props.metaTitle ?? lf("metaTitle");
+
 const randomColor: Color = "casper";
 ---
 
 <BaseLayout
-  title={frontmatter.title}
-  description={frontmatter.description}
-  metaTitle={frontmatter.metaTitle}
+  title={title}
+  description={description}
+  metaTitle={metaTitle}
   color={randomColor}
+  isLocaleOnly={isLocaleOnly}
 >
   <HeroPage
-    title={frontmatter.title}
-    subtitle={frontmatter.subtitle}
+    title={frontmatter.title ?? title}
+    subtitle={lf("subtitle")}
     color={randomColor}
   />
   <div

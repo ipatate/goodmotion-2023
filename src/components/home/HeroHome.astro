@@ -1,6 +1,7 @@
 ---
-import data from "../../../data";
-const SITE_URL = import.meta.env.SITE_URL;
+import data, { getLocaleData } from "../../../data";
+const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const localeInfo = getLocaleData(SITE_LOCALE);
 ---
 
 <section class="relative pt-14 pb-20 lg:pt-20 lg:pb-32">
@@ -9,7 +10,7 @@ const SITE_URL = import.meta.env.SITE_URL;
     <p
       class="hero-a text-sm font-bold tracking-[0.2em] uppercase text-primary-800 mb-8"
     >
-      {SITE_URL.includes(".fr") ? data.place : data.place_ch}
+      {localeInfo.place}
     </p>
 
     <!-- Hero grid: headline left, pitch right -->
@@ -82,9 +83,9 @@ const SITE_URL = import.meta.env.SITE_URL;
           Zones
         </dt>
         <dd class="">
-          <span class="stat-number text-primary-900 mt-1">3</span>
+          <span class="stat-number text-primary-900 mt-1">{localeInfo.areaServed.length}</span>
           <p class="text-xs text-primary-800 mt-0.5">
-            Annecy · Genève · Lausanne
+            {localeInfo.statsZones}
           </p>
         </dd>
       </div>

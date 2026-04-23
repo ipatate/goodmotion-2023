@@ -23,6 +23,57 @@ import bart from "./assets/images/bart.svg";
 import vernay from "./assets/images/vernay.svg";
 import yourLogo from "./assets/images/your-logo.png";
 
+export const localeData = {
+  fr: {
+    titleHome: "Sites web éco-conçus et performants ! Annecy, Lyon, Chambéry",
+    metaTitleHome: "Développement de sites web éco-conçus et performants ! Annecy, Lyon, Chambéry",
+    descriptionHome:
+      "Développement de sites web et d'applications web modernes pour les entreprises d'Annecy, Lyon et Chambéry. Performance et éco-conception.",
+    place: "Annecy, Lyon, Chambéry",
+    statsZones: "Annecy · Lyon · Chambéry",
+    htmlLang: "fr-FR",
+    ogLocale: "fr_FR",
+    plausibleDomain: "goodmotion.fr",
+    localBusinessDescription:
+      "Agence de développement web éco-conçue basée à Annecy, intervenant à Lyon et Chambéry",
+    areaServed: [
+      { name: "Annecy", country: "France" },
+      { name: "Lyon", country: "France" },
+      { name: "Chambéry", country: "France" },
+    ],
+    cityLinks: [
+      { label: "Agence Web Annecy", href: "/agence-web-annecy" },
+      { label: "Agence Web Lyon", href: "/agence-web-lyon" },
+      { label: "Agence Web Chambéry", href: "/agence-web-chambery" },
+    ],
+  },
+  ch: {
+    titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne",
+    metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne",
+    descriptionHome:
+      "Développement de sites web et d'applications web modernes pour les entreprises de Genève et Lausanne. Performance et éco-conception.",
+    place: "Genève, Lausanne",
+    statsZones: "Genève · Lausanne",
+    htmlLang: "fr-CH",
+    ogLocale: "fr_CH",
+    plausibleDomain: "goodmotion.ch",
+    localBusinessDescription:
+      "Agence de développement web éco-conçue basée à Annecy, intervenant à Genève et Lausanne",
+    areaServed: [
+      { name: "Genève", country: "Suisse" },
+      { name: "Lausanne", country: "Suisse" },
+    ],
+    cityLinks: [
+      { label: "Agence Web Genève", href: "/agence-web-geneve" },
+      { label: "Agence Web Lausanne", href: "/agence-web-lausanne" },
+    ],
+  },
+};
+
+export function getLocaleData(locale: string = "fr") {
+  return localeData[locale as "fr" | "ch"] ?? localeData.fr;
+}
+
 export default {
   titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
   metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne, Annecy",

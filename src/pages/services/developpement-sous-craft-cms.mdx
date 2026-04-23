@@ -2,8 +2,14 @@
 layout: ../../layouts/PageLayout.astro
 title: Développement de site web avec Craft CMS
 subtitle: Développement Craft CMS Genève, Lausanne, Annecy, Suisse, France
+subtitleFr: Développement Craft CMS Annecy, Lyon, Chambéry
+subtitleCh: Développement Craft CMS Genève, Lausanne
 metaTitle: Développement Craft CMS sur mesure | Genève, Lausanne, Annecy
+metaTitleFr: Développement Craft CMS sur mesure | Annecy, Lyon, Chambéry
+metaTitleCh: Développement Craft CMS sur mesure | Genève, Lausanne
 description: Développement de sites web professionnels avec Craft CMS à Genève, Lausanne et Annecy. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
+descriptionFr: Développement de sites web professionnels avec Craft CMS à Annecy, Lyon et Chambéry. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
+descriptionCh: Développement de sites web professionnels avec Craft CMS à Genève et Lausanne. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
 showToc: true
 serviceSchema:
   serviceType: "Développement Craft CMS"
@@ -13,6 +19,7 @@ serviceSchema:
 
 import StructuredData from "../../components/StructuredData.astro";
 import Faq from "../../components/Faq.astro";
+import CityLinks from "../../components/CityLinks.astro";
 import ContactForm from "../../components/ContactForm.vue";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
@@ -82,7 +89,7 @@ Il existe 3 versions de licence pour utiliser Craft CMS :
 
 ## Zones d'intervention
 
-Nous développons des sites Craft CMS pour des clients basés à [Annecy](/agence-web-annecy), [Genève](/agence-web-geneve) et [Lausanne](/agence-web-lausanne), ainsi que partout en France et en Suisse romande.
+Nous développons des sites Craft CMS pour des clients basés à <CityLinks />, ainsi que partout en France et en Suisse romande.
 
 ## Questions fréquentes
 

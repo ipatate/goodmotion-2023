@@ -1,0 +1,13 @@
+---
+import { getLocaleData } from "../../data";
+const { cityLinks } = getLocaleData(import.meta.env.SITE_LOCALE || "fr");
+
+const parts = cityLinks.map((link) =>
+  `<a href="${link.href}">${link.label.replace("Agence Web ", "")}</a>`
+);
+const rendered =
+  parts.length > 1
+    ? parts.slice(0, -1).join(", ") + " et " + parts[parts.length - 1]
+    : parts[0] ?? "";
+---
+<Fragment set:html={rendered} />
