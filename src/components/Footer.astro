@@ -8,7 +8,8 @@ import WebsiteCarbon from "../../assets/images/WebsiteCarbon.png";
 
 const SITE_URL = import.meta.env.SITE_URL;
 const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const pathname = rawPathname === "/index" ? "/" : rawPathname;
 
 const { cityLinks } = getLocaleData(SITE_LOCALE);
 ---

@@ -3,7 +3,8 @@ import data from "../../data";
 import Burger from "./Burger.astro";
 import SocialIcon from "./SocialIcon.astro";
 
-const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const pathname = rawPathname === "/index" ? "/" : rawPathname;
 
 export interface Props {
   color: Color;

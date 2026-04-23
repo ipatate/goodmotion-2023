@@ -23,7 +23,8 @@ const localeInfo = getLocaleData(SITE_LOCALE);
 const { title, description, metaTitle, color = "primary", isLocaleOnly = false } = Astro.props;
 
 // Get pathname for breadcrumb schema
-const pathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
+const pathname = rawPathname === "/index" ? "/" : rawPathname;
 ---
 
 <!doctype html>
