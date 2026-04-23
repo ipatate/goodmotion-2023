@@ -12,7 +12,7 @@ import vue from "@astrojs/vue";
 export default defineConfig({
   experimental: {},
   build: {
-    format: "directory",
+    format: "file",
   },
   vite: {
     plugins: [tailwindcss()],
