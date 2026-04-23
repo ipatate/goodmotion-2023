@@ -1,5 +1,6 @@
 /**
  * This script creates a robots.txt file in the dist folder
+ * Run via: node --env-file=.env robots.js
  */
 import fs from "fs";
 
