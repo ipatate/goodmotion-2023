@@ -174,8 +174,12 @@ const { cityLinks } = getLocaleData(SITE_LOCALE);
         class={pathname === "/mentions-legales" ? "text-white/80" : ""}
         href="/mentions-legales">Mentions légales</a
       >
-      <a href="/llms.txt">llms.txt</a>
-      <a href="/llms-full.txt">llms-full.txt</a>
+      {SITE_LOCALE === "fr" && (
+        <>
+          <a href="/llms.txt">llms.txt</a>
+          <a href="/llms-full.txt">llms-full.txt</a>
+        </>
+      )}
       <a
         href="https://clin-ops.com/clinops-solutions/"
         target="_blank"
