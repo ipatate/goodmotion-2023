@@ -18,25 +18,25 @@
     "lint:fix": "oxlint --fix"
   },
   "dependencies": {
-    "@astrojs/mdx": "^5.0.3",
+    "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/vue": "^6.0.1",
-    "astro": "^6.1.8",
+    "astro": "^6.1.9",
     "sharp": "^0.34.5",
-    "vue": "^3.5.32",
+    "vue": "^3.5.33",
     "vue-imask": "^7.6.1"
   },
   "devDependencies": {
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/xml2js": "^0.4.14",
     "astro-icon": "^1.1.5",
     "favicons": "^7.2.0",
-    "oxfmt": "^0.45.0",
-    "oxlint": "^1.60.0",
-    "tailwindcss": "^4.2.2",
+    "oxfmt": "^0.47.0",
+    "oxlint": "^1.62.0",
+    "tailwindcss": "^4.2.4",
     "xml2js": "^0.6.2"
   }
 }
