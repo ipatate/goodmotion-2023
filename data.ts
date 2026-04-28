@@ -52,7 +52,7 @@ export const localeData = {
     metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne",
     descriptionHome:
       "Développement de sites web et d'applications web modernes pour les entreprises de Genève et Lausanne. Performance et éco-conception.",
-    place: "Genève, Lausanne",
+    place: "Genève, Lausanne, Suisse romande",
     statsZones: "Genève · Lausanne",
     htmlLang: "fr-CH",
     ogLocale: "fr_CH",
