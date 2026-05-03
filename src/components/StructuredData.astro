@@ -38,18 +38,20 @@ switch(type) {
       "logo": `${SITE_URL}/favicon.svg`,
       "image": `${SITE_URL}/sites-Web-et-de-Web-Applications-sur-Annecy-Lyon-Geneve-et-Lausanne.jpg`,
       "email": "infos@goodmotion.fr",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Annecy",
-        "addressRegion": "Auvergne-Rhône-Alpes",
-        "postalCode": "74000",
-        "addressCountry": "FR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 45.8992,
-        "longitude": 6.1290
-      },
+      ...(SITE_LOCALE === "fr" ? {
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Annecy",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "postalCode": "74000",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.8992,
+          "longitude": 6.1290
+        }
+      } : {}),
       "areaServed": areaServedSchema,
       "serviceType": [
         "Développement web sur mesure",
