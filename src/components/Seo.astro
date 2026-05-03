@@ -14,7 +14,7 @@ type Props = {
 
 // remove .html from pathname and normalize /index to /
 const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
-const pathname = rawPathname === "/index" ? "/" : rawPathname;
+const pathname = rawPathname === "/index" ? "" : rawPathname;
 
 const SITE_URL = import.meta.env.SITE_URL;
 const ALTERNATE_SITE_URL = import.meta.env.ALTERNATE_SITE_URL;

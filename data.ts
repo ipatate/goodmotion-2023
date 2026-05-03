@@ -25,17 +25,17 @@ import yourLogo from "./assets/images/your-logo.png";
 
 export const localeData = {
   fr: {
-    titleHome: "Sites web éco-conçus et performants ! Annecy, Lyon, Chambéry",
-    metaTitleHome: "Développement de sites web éco-conçus et performants ! Annecy, Lyon, Chambéry",
+    titleHome: "Sites web performants et durables ! Annecy, Lyon, Chambéry",
+    metaTitleHome: "Développement de sites web performants et durables ! Annecy, Lyon, Chambéry",
     descriptionHome:
-      "Développement de sites web et d'applications web modernes pour les entreprises d'Annecy, Lyon et Chambéry. Performance et éco-conception.",
+      "Développement de sites web et d'applications web modernes pour les entreprises d'Annecy, Lyon et Chambéry. Performants et durables.",
     place: "Annecy, Lyon, Chambéry",
     statsZones: "Annecy · Lyon · Chambéry",
     htmlLang: "fr-FR",
     ogLocale: "fr_FR",
     plausibleDomain: "goodmotion.fr",
     localBusinessDescription:
-      "Agence de développement web éco-conçue basée à Annecy, intervenant à Lyon et Chambéry",
+      "Agence de développement web basée à Annecy, intervenant à Lyon et Chambéry",
     areaServed: [
       { name: "Annecy", country: "France" },
       { name: "Lyon", country: "France" },
@@ -48,17 +48,17 @@ export const localeData = {
     ],
   },
   ch: {
-    titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne",
-    metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne",
+    titleHome: "Sites web performants et durables ! Genève, Lausanne",
+    metaTitleHome: "Développement de sites web performants et durables ! Genève, Lausanne",
     descriptionHome:
-      "Développement de sites web et d'applications web modernes pour les entreprises de Genève et Lausanne. Performance et éco-conception.",
+      "Développement de sites web et d'applications web modernes pour les entreprises de Genève et Lausanne. Performants et durables.",
     place: "Genève, Lausanne, Suisse romande",
     statsZones: "Genève · Lausanne",
     htmlLang: "fr-CH",
     ogLocale: "fr_CH",
     plausibleDomain: "goodmotion.ch",
     localBusinessDescription:
-      "Agence de développement web éco-conçue basée à Annecy, intervenant à Genève et Lausanne",
+      "Agence de développement web basée à Annecy, intervenant à Genève et Lausanne",
     areaServed: [
       { name: "Genève", country: "Suisse" },
       { name: "Lausanne", country: "Suisse" },
@@ -75,8 +75,8 @@ export function getLocaleData(locale: string = "fr") {
 }
 
 export default {
-  titleHome: "Sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
-  metaTitleHome: "Développement de sites web éco-conçus et performants ! Genève, Lausanne, Annecy",
+  titleHome: "Sites web performants et durables ! Genève, Lausanne, Annecy",
+  metaTitleHome: "Développement de sites web performants et durables ! Genève, Lausanne, Annecy",
   descriptionHome:
     "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web.",
   baseline: "Des sites web modernes, durables et performants",
