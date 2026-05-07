@@ -22,7 +22,21 @@ export default defineConfig({
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  integrations: [mdx(), sitemap(), icon(), vue()],
+  integrations: [
+    mdx(),
+    sitemap({
+      filter: (page) => {
+        // FR : pas de /realisations dans le sitemap pour le moment
+        // CH : les singles sont déjà filtrés par pays via getStaticPaths()
+        if (SITE_LOCALE === "fr" && page.includes("/realisations")) {
+          return false;
+        }
+        return true;
+      },
+    }),
+    icon(),
+    vue(),
+  ],
   manifest: {
     appName: "Goodmotion",
     appShortName: "Goodmotion",
