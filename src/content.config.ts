@@ -87,8 +87,8 @@ const usecases = defineCollection({
     pubDate: z.date(),
     client: z.string(),
     city: z.string(),
+    urls: z.array(z.string()).optional(),
     tools: z.array(z.string()).optional(),
-    image: z.string().optional(),
   }),
 });
 

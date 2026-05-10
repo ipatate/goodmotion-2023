@@ -143,7 +143,7 @@ export default {
       link: "/intelligence-artificielle",
     },
     {
-      label: "Réalisations",
+      label: "Cas Clients",
       link: "/realisations",
       onlyLocale: "ch",
     },

@@ -1,0 +1,35 @@
+---
+title: Système de commande sur un site WordPress - Lausanne
+subtitle: Système de commande de bois en ligne pour une fondation lausannoise
+description: Développement d'un système de commande de bois sur mesure intégré à WordPress pour une fondation à Lausanne.
+metaTitle: "Système de commande WordPress sur mesure | Lausanne"
+pubDate: 2025-12-10
+client: Fondation Lausanne
+city: Lausanne, Suisse
+tools:
+  - WordPress
+  - Vue.js
+  - GraphQL
+---
+
+## Le contexte du projet
+
+Une fondation accompagnant des personnes en situation de handicap commercialise du bois auprès des particuliers. Jusqu'à présent, les commandes étaient passées par courrier papier ou par e-mail. Le calcul du prix s'avérait toutefois complexe : les tarifs sont dégressifs en fonction des quantités commandées, ce qui rendait l'estimation du montant final difficile pour les clients. L'objectif du projet était donc de proposer une plateforme de commande en ligne, sans paiement intégré, mais avec un système de calcul automatique du prix adapté aux règles tarifaires de la fondation.
+
+## La solution mise en place
+
+Nous avons développé une **application web sur mesure** sous la forme d'un plugin WordPress. L'application s'appuie sur le système d'authentification natif de WordPress, offrant ainsi à chaque client un espace personnel pour consulter et suivre ses commandes.
+
+La communication entre WordPress et l'application de commande s'effectue via **GraphQL**, garantissant des échanges efficaces et structurés. L'ensemble des commandes est centralisé dans l'interface d'administration WordPress. Dès qu'une nouvelle commande est passée, un e-mail de notification est automatiquement envoyé aux personnes en charge de la préparation.
+
+À l'exception du paiement, l'application propose toutes les fonctionnalités classiques d'un site e-commerce : inscription, connexion, panier d'achat et gestion des adresses de livraison.
+
+L'interface utilisateur a été développée en **Vue.js** et a bénéficié de plusieurs évolutions depuis sa mise en ligne, afin de s'adapter aux besoins du client et d'améliorer continuellement l'expérience utilisateur.
+
+## Les résultats obtenus
+
+Depuis la mise en ligne de la plateforme, le client a déjà dépassé les **1 000 commandes**, avec un panier moyen particulièrement élevé.
+
+Plusieurs évolutions ont également été déployées avec succès au fil du temps, témoignant de la flexibilité et de la robustesse de la solution.
+
+Le site a par ailleurs été soumis à un **pentest** (test d'intrusion en sécurité informatique), qu'il a passé avec succès, confirmant ainsi la solidité et la fiabilité de l'application développée.

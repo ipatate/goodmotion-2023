@@ -2,30 +2,30 @@
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import PageLayout from "../../layouts/PageLayout.astro";
-import placeholder from "../../../assets/images/your-logo.png";
 
 const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
 const usecases = await getCollection("usecases");
 const filtered = usecases
   .filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`))
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-
-const localeLabel = SITE_LOCALE === "ch" ? "Suisse" : "France";
-const title = "Nos réalisations";
-const description = `Découvrez nos réalisations : sites web, applications web et projets IA développés pour nos clients en ${localeLabel}.`;
+const subtitleFr = "Annecy, Lyon, Chambéry";
+const subtitleCh = "Genève, Lausanne, Suisse romande";
+const localeLabel = SITE_LOCALE === "ch" ? subtitleCh : subtitleFr;
+const title = "Études de cas clients";
+const description = `Quelques études de cas pour nos clients en ${localeLabel}.`;
 ---
 
 <PageLayout
   title={title}
   description={description}
-  metaTitle={`Nos réalisations | Projets web ${localeLabel}`}
+  metaTitle={`Études de cas clients | Projets web ${localeLabel}`}
   isLocaleOnly={true}
 >
   <div class="-mt-10">
 
-  <h2>Nos réalisations</h2>
+  <h2>Études de cas clients sur {localeLabel}</h2>
   <p>
-    Voici quelques exemples de projets que nous avons réalisés pour nos clients.
+    Voici quelques exemples de nos études de cas pour nos clients en {localeLabel}. Nous réalisons beaucoup de projets pour des agences web en marque blanche et nous ne pouvons par conséquent publier tous les projets.
   </p>
   </div>
 
@@ -33,31 +33,32 @@ const description = `Découvrez nos réalisations : sites web, applications web 
     {
       filtered.map((entry) => (
         <div
-          class="block bg-neutral-50 rounded-md p-6 hover:bg-neutral-100 transition-colors group relative"
+          class="gap-5 py-5 px-6 bg-neutral-50 rounded hover:bg-neutral-100 transition-colors group relative"
         >
-
-          <h3 class="text-lg  mb-2">
-            <a
-              href={`/realisations/${entry.id.replace(`${SITE_LOCALE}/`, "")}`}
-              class="after:absolute after:inset-0 font-bold text-primary-900! group-hover:text-primary-700 transition-colors"
-            >
-              {entry.data.title}
-            </a>
-          </h3>
-          <p class="text-sm text-primary-800/80 leading-relaxed mb-3">
-            {entry.data.subtitle}
-          </p>
-          {
-            entry.data.tools && entry.data.tools.length > 0 && (
-              <div class="flex flex-wrap gap-1.5">
-                {entry.data.tools.map((tool) => (
-                  <span class="text-xs bg-primary-800 text-white px-2 py-0.5 rounded">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            )
-          }
+          <div class="flex items-start justify-center flex-col gap-3">
+            <h3 class="text-lg">
+              <a
+                href={`/realisations/${entry.id.replace(`${SITE_LOCALE}/`, "")}`}
+                class="after:absolute after:inset-0 font-bold text-primary-900! group-hover:text-primary-700 transition-colors"
+              >
+                {entry.data.title}
+              </a>
+            </h3>
+            <p class="text-sm text-primary-800/80 leading-relaxed">
+              {entry.data.description}
+            </p>
+              {
+                entry.data.tools && entry.data.tools.length > 0 && (
+                  <div class="flex flex-wrap gap-1.5 mt-2">
+                    {entry.data.tools.map((tool) => (
+                      <span class="text-xs bg-primary-800 text-white px-2 py-0.5 rounded">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                )
+              }
+          </div>
         </div>
       ))
     }

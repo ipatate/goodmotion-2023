@@ -10,10 +10,10 @@ const { title, color = "primary", subtitle } = Astro.props;
 
 <div class="pt-14 lg:pt-20">
   <div
-    class={`w-full pb-12 max-w-7xl mx-auto mb-10 px-4 md:px-10 border-b border-${color}-900/10 lg:pb-16`}
+    class={`w-full max-w-5xl mx-auto mb-10 px-4 md:px-10`}
   >
     <h1
-      class={`text-4xl md:text-6xl max-w-6xl text-balance font-extrabold tracking-tight leading-tight text-${color}-900 wrap-break-word`}
+      class={`text-4xl md:text-6xl max-w-full text-balance text-pretty font-extrabold tracking-tight leading-tight text-${color}-900 wrap-break-word`}
       transition:name="heading"
     >
       {title}
@@ -28,4 +28,5 @@ const { title, color = "primary", subtitle } = Astro.props;
       )
     }
   </div>
+  <div class={`border-t border-${color}-900/10 max-w-7xl mx-auto py-6 lg:py-8 h-1`}></div>
 </div>
