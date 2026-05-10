@@ -88,6 +88,9 @@ const usecases = defineCollection({
     client: z.string(),
     city: z.string(),
     urls: z.array(z.string()).optional(),
+    services: z.array(z.object(
+      { label: z.string(), url: z.string()}
+    )).optional(),
     tools: z.array(z.string()).optional(),
   }),
 });
