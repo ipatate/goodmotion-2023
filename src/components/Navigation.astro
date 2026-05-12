@@ -2,6 +2,7 @@
 import data from "../../data";
 import Burger from "./Burger.astro";
 import SocialIcon from "./SocialIcon.astro";
+import Version from "./Version.astro";
 
 const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
 const pathname = rawPathname === "/index" ? "/" : rawPathname;
@@ -55,7 +56,7 @@ const { color = "primary" } = Astro.props;
           }
           const Tag = nav.subMenu ? "button" : "a";
           return (
-            <li class="flex flex-col w-11/12 group relative mx-3 my-1 lg:my-0">
+            <li class="flex flex-col w-11/12 group relative mx-3 my-0 lg:my-0">
               <Tag
                 href={nav.link}
                 title={nav.label}
@@ -119,6 +120,9 @@ const { color = "primary" } = Astro.props;
           </a>
         ))
       }
+    </div>
+    <div class="flex justify-center mt-6 lg:hidden">
+      <Version />
     </div>
   </nav>
 </div>
