@@ -8,12 +8,12 @@ import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-  const allServices = await getCollection("services");
+  const allServices = await getCollection("pages");
   return allServices
     .filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`))
     .map((entry) => {
       return {
-        params: { service: entry.id.replace(`${SITE_LOCALE}/`, "") },
+        params: { pages: entry.id.replace(`${SITE_LOCALE}/`, "") },
         props: { entry },
       }
     });
