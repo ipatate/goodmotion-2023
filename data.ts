@@ -386,7 +386,7 @@ export default {
         title: "Développement web sur mesure",
         link: "/services/developpement-de-web-applications-modernes",
         intro:
-          "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
+          "Des applications web, intranets et sites sur mesure, développés avec des technologies modernes pour répondre précisément à vos enjeux métiers.",
         class: "lg:col-span-2 bg-alto-800",
       },
       {
@@ -410,7 +410,7 @@ export default {
       {
         title: "Maintenance WordPress",
         link: "/services/maintenance-site-wordpress",
-        intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
+        intro: "Maintenance de sites WordPress à Genève, Lausanne et en Suisse romande. Mises à jour, sécurité, sauvegardes, optimisations : nous gardons votre site en parfaite santé pendant que vous vous concentrez sur votre activité.",
         class: "lg:col-span-2 bg-summer-green-800",
       },
     ],
