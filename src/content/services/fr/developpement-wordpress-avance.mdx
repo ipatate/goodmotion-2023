@@ -1,15 +1,8 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: Développement WordPress sur mesure
-subtitle: Développement WordPress Genève, Lausanne, Annecy, Suisse, France
-subtitleFr: Développement WordPress Annecy, Lyon, Chambéry
-subtitleCh: Développement WordPress Genève, Lausanne, Suisse romande
-metaTitle: Développement WordPress sur mesure | Genève, Lausanne, Annecy
-metaTitleFr: Développement WordPress sur mesure | Annecy, Lyon, Chambéry
-metaTitleCh: Développement WordPress sur mesure | Genève, Lausanne, Suisse romande
-description: Création de sites WordPress 100% sur mesure à Genève, Lausanne et Annecy. Thèmes personnalisés, blocs Gutenberg, performance optimale. 15+ ans d'expérience. Devis gratuit !
-descriptionFr: Création de sites WordPress 100% sur mesure à Annecy, Lyon et Chambéry. Thèmes personnalisés, blocs Gutenberg, performance optimale. 15+ ans d'expérience. Devis gratuit !
-descriptionCh: Création de sites WordPress 100% sur mesure à Genève, Lausanne, Suisse romande. Thèmes personnalisés, blocs Gutenberg, performance optimale. 15+ ans d'expérience. Devis gratuit !
+subtitle: Développement WordPress Annecy, Lyon, Chambéry
+metaTitle: Développement WordPress sur mesure | Annecy, Lyon, Chambéry
+description: Création de sites WordPress 100% sur mesure à Annecy, Lyon et Chambéry. Thèmes personnalisés, blocs Gutenberg, performance optimale. 15+ ans d'expérience. Devis gratuit !
 showToc: true
 serviceSchema:
   serviceType: "Développement WordPress"
@@ -17,11 +10,11 @@ serviceSchema:
   url: "/services/developpement-wordpress-avance"
 ---
 
-import Video from "../../components/Video.astro";
-import CityLinks from "../../components/CityLinks.astro";
-import cover from "../../../assets/images/cover-admin-wp.jpg";
-import ContactForm from "../../components/ContactForm.vue";
-import StructuredData from "../../components/StructuredData.astro";
+import Video from "@/components/Video.astro";
+import CityLinks from "@/components/CityLinks.astro";
+import cover from "@/../assets/images/cover-admin-wp.jpg";
+import ContactForm from "@/components/ContactForm.vue";
+import StructuredData from "@/components/StructuredData.astro";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 

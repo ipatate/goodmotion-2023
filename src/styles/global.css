@@ -11,8 +11,8 @@
 @theme {
   /* Font family */
   --font-sans:
-    "Sora", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+    "Sora", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 
   /* Colors - Primary */
   --color-primary-50: #e9fffe;
@@ -87,22 +87,9 @@
   --color-alto-900: #4e4e4e;
 
   /* Background Images */
-  --background-image-hero-animated: linear-gradient(
-    180deg,
-    #e9fffe 0%,
-    #e9fffe 51%,
-    rgba(245, 247, 247, 1) 100%
-  );
-  --background-image-bloc-logo: linear-gradient(
-    180deg,
-    rgba(219, 221, 222, 1) 0%,
-    rgba(245, 247, 247, 1) 100%
-  );
-  --background-image-bloc-logo-inverse: linear-gradient(
-    0deg,
-    rgba(219, 221, 222, 1) 0%,
-    rgba(245, 247, 247, 1) 100%
-  );
+  --background-image-hero-animated: linear-gradient(180deg, #e9fffe 0%, #e9fffe 51%, rgba(245, 247, 247, 1) 100%);
+  --background-image-bloc-logo: linear-gradient(180deg, rgba(219, 221, 222, 1) 0%, rgba(245, 247, 247, 1) 100%);
+  --background-image-bloc-logo-inverse: linear-gradient(0deg, rgba(219, 221, 222, 1) 0%, rgba(245, 247, 247, 1) 100%);
   --background-image-bg-home: url("/assets/bg-hero.svg");
 
   /* Keyframes */
@@ -137,17 +124,36 @@
 
 /* Hero entrance - staggered fade-up, CSS only (works with View Transitions) */
 @keyframes hero-rise {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.hero-a { animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.hero-b { animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
-.hero-c { animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both; }
-.hero-d { animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both; }
+.hero-a {
+  animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero-b {
+  animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+.hero-c {
+  animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+}
+.hero-d {
+  animation: hero-rise 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-a, .hero-b, .hero-c, .hero-d { animation: none; }
+  .hero-a,
+  .hero-b,
+  .hero-c,
+  .hero-d {
+    animation: none;
+  }
 }
 
 /* Selection style */
@@ -157,4 +163,52 @@
 
 .page-content a {
   @apply text-accent-800 hover:text-accent-600;
+}
+
+.page-list {
+  @apply m-0 p-0;
+}
+.page-list li {
+  @apply py-2 before:inline-flex before:content-[''] before:shrink-0 before:w-7 before:h-7 list-none  before:bg-primary-700 before:mr-2.5 leading-relaxed before:relative before:top-1.5 text-lg md:text-xl;
+}
+
+.page-list li:before {
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M16%2032C7.163%2032%200%2024.837%200%2016S7.163%200%2016%200s16%207.163%2016%2016a16%2016%200%200%201-16%2016m0-30C8.268%202%202%208.268%202%2016s6.268%2014%2014%2014s14-6.268%2014-14A14%2014%200%200%200%2016%202%22%2F%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M23%2015h-6V9h-2v6H9v2h6v6h2v-6h6z%22%20class%3D%22ouiIcon__fillSecondary%22%2F%3E%3C%2Fsvg%3E");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.page-list-line {
+  @apply m-0 p-0;
+}
+.page-list-line li {
+  @apply py-2 not-last:border-b border-gray-200 list-none before:shrink-0 text-lg md:text-xl before:inline-flex before:content-[''] before:w-7 before:h-7 flex items-start before:bg-primary-700 before:mr-2.5 leading-relaxed before:relative md:before:top-0.5;
+}
+
+.page-list-line li:before {
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M17.079%2012.5H5v-1h12.079l-5.792-5.792L12%205l7%207l-7%207l-.713-.708z%22%2F%3E%3C%2Fsvg%3E");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.page-def dt {
+  @apply text-xl md:text-2xl text-primary-800;
+}
+
+.page-def dd {
+  @apply text-lg md:text-xl p-0;
+}
+
+.page-def-num {
+  counter-reset: def-num;
+}
+
+.page-def-num dt {
+  counter-increment: def-num;
+  @apply text-xl md:text-2xl text-accent-600;
+
+  &::before {
+    content: counter(def-num);
+    @apply inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-accent-600 text-white text-sm md:text-base font-bold mr-2 align-middle relative -top-0.5;
+  }
 }

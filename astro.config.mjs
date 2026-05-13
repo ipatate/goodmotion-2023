@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
+import { fileURLToPath } from "url";
 
 import vue from "@astrojs/vue";
 
@@ -16,6 +17,11 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("./src", import.meta.url)),
+      },
+    },
   },
   image: {
     service: { entrypoint: "astro/assets/services/sharp" },
@@ -31,6 +37,7 @@ export default defineConfig({
         if (SITE_LOCALE === "fr" && page.includes("/realisations")) {
           return false;
         }
+
         return true;
       },
     }),

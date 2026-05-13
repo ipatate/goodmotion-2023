@@ -1,15 +1,8 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: Développement de site web avec Craft CMS
-subtitle: Développement Craft CMS Genève, Lausanne, Annecy, Suisse, France
-subtitleFr: Développement Craft CMS Annecy, Lyon, Chambéry
-subtitleCh: Développement Craft CMS Genève, Lausanne, Suisse romande
-metaTitle: Développement Craft CMS sur mesure | Genève, Lausanne, Annecy
-metaTitleFr: Développement Craft CMS sur mesure | Annecy, Lyon, Chambéry
-metaTitleCh: Développement Craft CMS sur mesure | Genève, Lausanne, Suisse romande
-description: Développement de sites web professionnels avec Craft CMS à Genève, Lausanne et Annecy. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
-descriptionFr: Développement de sites web professionnels avec Craft CMS à Annecy, Lyon et Chambéry. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
-descriptionCh: Développement de sites web professionnels avec Craft CMS à Genève et Lausanne. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
+subtitle: Développement Craft CMS Annecy, Lyon, Chambéry
+metaTitle: Développement Craft CMS sur mesure | Annecy, Lyon, Chambéry
+description: Développement de sites web professionnels avec Craft CMS à Annecy, Lyon et Chambéry. CMS flexible, performant et moderne. Thèmes 100% sur mesure. Contactez-nous !
 showToc: true
 serviceSchema:
   serviceType: "Développement Craft CMS"
@@ -17,10 +10,10 @@ serviceSchema:
   url: "/services/developpement-sous-craft-cms"
 ---
 
-import StructuredData from "../../components/StructuredData.astro";
-import Faq from "../../components/Faq.astro";
-import CityLinks from "../../components/CityLinks.astro";
-import ContactForm from "../../components/ContactForm.vue";
+import StructuredData from "@/components/StructuredData.astro";
+import Faq from "@/components/Faq.astro";
+import CityLinks from "@/components/CityLinks.astro";
+import ContactForm from "@/components/ContactForm.vue";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 

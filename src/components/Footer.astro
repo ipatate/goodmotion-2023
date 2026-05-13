@@ -74,10 +74,12 @@ const { cityLinks } = getLocaleData(SITE_LOCALE);
           class="text-sm text-white/90 hover:text-white transition-colors py-1"
           href="/agence-laravel">Agence Laravel</a
         >
-        <a
+        {SITE_LOCALE === "fr" && (
+          <a
           class="text-sm text-white/90 hover:text-white transition-colors py-1"
           href="/agence-wordpress">Agence WordPress</a
         >
+        )}
         {cityLinks.map((link) => (
           <a
             class="text-sm text-white/90 hover:text-white transition-colors py-1"

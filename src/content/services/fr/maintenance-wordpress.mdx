@@ -1,15 +1,8 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: Maintenance WordPress
-subtitle: Genève, Lausanne, Annecy, Suisse, France
-subtitleFr: Annecy, Lyon, Chambéry
-subtitleCh: Genève, Lausanne, Suisse romande
-metaTitle: Maintenance de site WordPress | Genève, Lausanne, Annecy
-metaTitleFr: Maintenance de site WordPress | Annecy, Lyon, Chambéry
-metaTitleCh: Maintenance de site WordPress | Genève, Lausanne, Suisse romande
-description: Maintenance professionnelle de sites WordPress à Genève, Lausanne et Annecy. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
-descriptionFr: Maintenance professionnelle de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
-descriptionCh: Maintenance professionnelle de sites WordPress à Genève, Lausanne, Suisse romande. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
+subtitle: Annecy, Lyon, Chambéry
+metaTitle: Maintenance de site WordPress | Annecy, Lyon, Chambéry
+description: Maintenance professionnelle de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
 showToc: true
 serviceSchema:
   serviceType: "Maintenance WordPress"
@@ -17,8 +10,8 @@ serviceSchema:
   url: "/services/maintenance-wordpress"
 ---
 
-import StructuredData from "../../components/StructuredData.astro";
-import Cities from "../../components/Cities.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import Cities from "@/components/Cities.astro";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 <StructuredData type="FAQPage" data={{questions: [
@@ -31,12 +24,12 @@ import Cities from "../../components/Cities.astro";
 ]}} />
 
 import { Icon } from 'astro-icon/components';
-import WPTable from "../../components/WPTable.astro";
-import Faq from "../../components/Faq.astro";
-import Alert from "../../components/Alert.astro";
-import Cards from "../../components/Cards.astro";
-import Card from "../../components/Card.astro";
-import ContactForm from "../../components/ContactForm.vue";
+import WPTable from "@/components/WPTable.astro";
+import Faq from "@/components/Faq.astro";
+import Alert from "@/components/Alert.astro";
+import Cards from "@/components/Cards.astro";
+import Card from "@/components/Card.astro";
+import ContactForm from "@/components/ContactForm.vue";
 
 ## Maintenance de site WordPress sur <Cities />
 

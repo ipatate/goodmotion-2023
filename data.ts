@@ -115,28 +115,52 @@ export default {
     {
       label: "Services",
       link: "#",
-      subMenu: [
-        {
-          label: "Développement web sur mesure",
-          link: "/services/developpement-de-web-applications-et-sites-web-modernes",
-        },
-        {
-          label: "Développement WordPress sur mesure",
-          link: "/services/developpement-wordpress-avance",
-        },
-        {
-          label: "Développement sous Craft CMS",
-          link: "/services/developpement-sous-craft-cms",
-        },
-        {
-          label: "Consultant technique pour vos projets web",
-          link: "/services/consultant-technique-web",
-        },
-        {
-          label: "Maintenance WordPress",
-          link: "/services/maintenance-wordpress",
-        },
-      ],
+      subMenu: {
+        fr: [
+          {
+            label: "Développement web sur mesure",
+            link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+          },
+          {
+            label: "Développement WordPress sur mesure",
+            link: "/services/developpement-wordpress-avance",
+          },
+          {
+            label: "Développement sous Craft CMS",
+            link: "/services/developpement-sous-craft-cms",
+          },
+          {
+            label: "Consultant technique pour vos projets web",
+            link: "/services/consultant-technique-web",
+          },
+          {
+            label: "Maintenance WordPress",
+            link: "/services/maintenance-wordpress",
+          },
+        ],
+        ch: [
+          {
+            label: "Développement web sur mesure",
+            link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+          },
+          {
+            label: "Agence WordPress",
+            link: "/services/agence-wordpress",
+          },
+          {
+            label: "Agence Craft CMS",
+            link: "/services/agence-craft-cms",
+          },
+          {
+            label: "Consultant technique pour vos projets web",
+            link: "/services/consultant-technique-web",
+          },
+          {
+            label: "Maintenance WordPress",
+            link: "/services/maintenance-wordpress",
+          },
+        ],
+      }
     },
     {
       label: "Agents IA",
@@ -305,44 +329,86 @@ export default {
       class: "w-20",
     },
   ],
-  services: [
-    {
-      title: "Développement web sur mesure",
-      link: "/services/developpement-de-web-applications-et-sites-web-modernes",
-      intro:
-        "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
-      class: "lg:col-span-2 bg-alto-800",
-    },
-    {
-      title: "Développement d'agents IA",
-      link: "/intelligence-artificielle",
-      intro: "Chatbots IA, agents IA et workflows IA",
-      class: "lg:col-span-2 bg-primary-800",
-    },
-    {
-      title: "Développement sous Craft CMS",
-      link: "/services/developpement-sous-craft-cms",
-      intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
-      class: "lg:col-span-2 bg-secondary-800",
-    },
-    {
-      title: "Développement WordPress sur mesure",
-      link: "/services/developpement-wordpress-avance",
-      intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
-      class: "lg:col-span-2 bg-casper-800",
-    },
-    {
-      title: "Maintenance WordPress",
-      link: "/services/maintenance-wordpress",
-      intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
-      class: "lg:col-span-2 bg-summer-green-800",
-    },
-    {
-      title: "Consultant technique pour vos projets web",
-      link: "/services/consultant-technique-web",
-      intro:
-        "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
-      class: "lg:col-span-2 bg-primary-800",
-    },
-  ],
+  services: {
+    fr: [
+      {
+        title: "Développement web sur mesure",
+        link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+        intro:
+          "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
+        class: "lg:col-span-2 bg-alto-800",
+      },
+      {
+        title: "Développement d'agents IA",
+        link: "/intelligence-artificielle",
+        intro: "Chatbots IA, agents IA et workflows IA",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+      {
+        title: "Développement sous Craft CMS",
+        link: "/services/developpement-sous-craft-cms",
+        intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
+        class: "lg:col-span-2 bg-secondary-800",
+      },
+      {
+        title: "Développement WordPress sur mesure",
+        link: "/services/developpement-wordpress-avance",
+        intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
+        class: "lg:col-span-2 bg-casper-800",
+      },
+      {
+        title: "Maintenance WordPress",
+        link: "/services/maintenance-wordpress",
+        intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
+        class: "lg:col-span-2 bg-summer-green-800",
+      },
+      {
+        title: "Consultant technique pour vos projets web",
+        link: "/services/consultant-technique-web",
+        intro:
+          "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+    ],
+    ch: [
+      {
+        title: "Développement web sur mesure",
+        link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+        intro:
+          "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
+        class: "lg:col-span-2 bg-alto-800",
+      },
+      {
+        title: "Développement d'agents IA",
+        link: "/intelligence-artificielle",
+        intro: "Chatbots IA, agents IA et workflows IA",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+      {
+        title: "Agence Craft CMS",
+        link: "/services/agence-craft-cms",
+        intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
+        class: "lg:col-span-2 bg-secondary-800",
+      },
+      {
+        title: "Agence WordPress",
+        link: "/services/agence-wordpress",
+        intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
+        class: "lg:col-span-2 bg-casper-800",
+      },
+      {
+        title: "Maintenance WordPress",
+        link: "/services/maintenance-wordpress",
+        intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
+        class: "lg:col-span-2 bg-summer-green-800",
+      },
+      {
+        title: "Consultant technique pour vos projets web",
+        link: "/services/consultant-technique-web",
+        intro:
+          "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+    ],
+  }
 };

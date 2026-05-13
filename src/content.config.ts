@@ -77,6 +77,20 @@ const cities = defineCollection({
   }),
 });
 
+const services = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/content/services" }),
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    metaTitle: z.string().optional(),
+    description: z.string(),
+    showToc: z.boolean().optional(),
+    cta: z.array(z.object({ label: z.string(), href: z.string() })).optional(),
+  }),
+});
+
+
+
 const usecases = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/usecases" }),
   schema: z.object({
@@ -98,5 +112,6 @@ const usecases = defineCollection({
 export const collections = {
   podcasts,
   cities,
+  services,
   usecases,
 };

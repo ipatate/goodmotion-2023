@@ -88,7 +88,7 @@ const { color = "primary" } = Astro.props;
                   aria-expanded="false"
                   aria-label={`${nav.label} submenu`}
                 >
-                  {nav.subMenu.map((sub) => {
+                  {nav.subMenu[SITE_LOCALE].map((sub) => {
                     return (
                       <li class="lg:px-3 py-1.5 lg:first:mt-1 lg:last:mb-1">
                         <a

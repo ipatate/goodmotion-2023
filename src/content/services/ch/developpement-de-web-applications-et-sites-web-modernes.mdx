@@ -1,15 +1,8 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: Développement web sur mesure, web applications, Intranet, Landing page, POC
-subtitle: Développement web sur mesure - Annecy, Genève, Lausanne, Suisse romande
-subtitleFr: Développement web sur mesure - Annecy, Lyon, Chambéry
-subtitleCh: Développement web sur mesure - Genève, Lausanne, Suisse romande
-metaTitle: Développement de web applications, Intranet, Landing page, POC
-metaTitleFr: Développement de web applications sur mesure | Annecy, Lyon, Chambéry
-metaTitleCh: Développement de web applications sur mesure | Genève, Lausanne, Suisse romande
-description: Développement de web applications, intranets et sites sur mesure à Genève, Lausanne et Annecy. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
-descriptionFr: Développement de web applications, intranets et sites sur mesure à Annecy, Lyon et Chambéry. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
-descriptionCh: Développement de web applications, intranets et sites sur mesure à Genève et Lausanne. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
+subtitle: Développement web sur mesure - Genève, Lausanne, Suisse romande
+metaTitle: Développement de web applications sur mesure | Genève, Lausanne, Suisse romande
+description: Développement de web applications, intranets et sites sur mesure à Genève et Lausanne. 15+ ans d'expérience. Next.js, Laravel, solutions adaptées à vos besoins.
 showToc: true
 serviceSchema:
   serviceType: "Développement Web Sur Mesure"
@@ -17,13 +10,13 @@ serviceSchema:
   url: "/services/developpement-de-web-applications-et-sites-web-modernes"
 ---
 
-import StructuredData from "../../components/StructuredData.astro";
-import Cities from "../../components/Cities.astro";
-import CityLinks from "../../components/CityLinks.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import Cities from "@/components/Cities.astro";
+import CityLinks from "@/components/CityLinks.astro";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
-import ContactForm from "../../components/ContactForm.vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 Vous avez besoin d'un **site web**, d'une **application web** ou d'un **intranet** ? Vous avez une idée et souhaitez la tester avec un **POC*** ou un **MVP*** ? Nous développons des solutions sur mesure adaptées à vos besoins réels..
 

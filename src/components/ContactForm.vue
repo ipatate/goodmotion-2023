@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 pt-4 not-prose">
+  <div class="pb-10 pt-4 not-prose" id="contactForm">
     <!-- Errors -->
     <div
       v-if="Object.keys(errors).length"
@@ -128,7 +128,7 @@
           ref="submitButton"
           type="submit"
           value="Envoyer le message"
-          class="w-full bg-primary-800 hover:bg-primary-700 text-white font-bold py-5 text-sm tracking-[0.12em] uppercase cursor-pointer transition-colors"
+          class="w-full bg-primary-800 hover:bg-primary-700 text-white font-bold py-5 text-sm tracking-[0.12em] uppercase cursor-pointer transition-colors rounded-md"
         />
       </div>
     </form>
