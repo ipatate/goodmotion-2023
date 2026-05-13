@@ -141,7 +141,11 @@ export default {
         ch: [
           {
             label: "Développement web sur mesure",
-            link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+            link: "/services/developpement-de-web-applications-modernes",
+          },
+          {
+            label: "Agence Laravel",
+            link: "/services/agence-laravel",
           },
           {
             label: "Agence WordPress",
@@ -152,8 +156,8 @@ export default {
             link: "/services/agence-craft-cms",
           },
           {
-            label: "Consultant technique pour vos projets web",
-            link: "/services/consultant-technique-web",
+            label: "Consultant CTO",
+            link: "/services/consultant-cto",
           },
           {
             label: "Maintenance WordPress",
@@ -372,8 +376,15 @@ export default {
     ],
     ch: [
       {
+        title: "Agence Laravel",
+        link: "/services/agence-laravel",
+        intro:
+          "Agence Laravel active à Genève et Lausanne, nous concevons des applications web sur mesure, taillées pour votre métier. Notre maîtrise des bonnes pratiques du framework est la garantie de projets fiables, évolutifs et durables.",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+      {
         title: "Développement web sur mesure",
-        link: "/services/developpement-de-web-applications-et-sites-web-modernes",
+        link: "/services/developpement-de-web-applications-modernes",
         intro:
           "Développement de sites, web applications, intranets, jeux interactifs ou landing pages.",
         class: "lg:col-span-2 bg-alto-800",
@@ -387,13 +398,13 @@ export default {
       {
         title: "Agence Craft CMS",
         link: "/services/agence-craft-cms",
-        intro: "Développement de sites web avec Craft CMS, un CMS PHP moderne et performant.",
+        intro: "Agence Craft CMS active à Genève et Lausanne, nous concevons des sites performants, multilingues, légers et durables. Notre maîtrise des bonnes pratiques de la plateforme garantit des projets de haute qualité, pensés pour évoluer avec vos besoins.",
         class: "lg:col-span-2 bg-secondary-800",
       },
       {
         title: "Agence WordPress",
         link: "/services/agence-wordpress",
-        intro: "Développement de sites WordPress reposant principalement sur des fonctionnalités natives. Des sites optimisés pour la performance et faciles à maintenir.",
+        intro: "Agence WordPress active à Genève et Lausanne, nous concevons des sites performants, légers et durables. Notre maîtrise des bonnes pratiques de la plateforme garantit des projets de haute qualité, pensés pour évoluer avec vos besoins.",
         class: "lg:col-span-2 bg-casper-800",
       },
       {
@@ -401,13 +412,6 @@ export default {
         link: "/services/maintenance-wordpress",
         intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
         class: "lg:col-span-2 bg-summer-green-800",
-      },
-      {
-        title: "Consultant technique pour vos projets web",
-        link: "/services/consultant-technique-web",
-        intro:
-          "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
-        class: "lg:col-span-2 bg-primary-800",
       },
     ],
   }
