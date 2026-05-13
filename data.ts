@@ -161,7 +161,7 @@ export default {
           },
           {
             label: "Maintenance WordPress",
-            link: "/services/maintenance-wordpress",
+            link: "/services/maintenance-site-wordpress",
           },
         ],
       }
@@ -409,7 +409,7 @@ export default {
       },
       {
         title: "Maintenance WordPress",
-        link: "/services/maintenance-wordpress",
+        link: "/services/maintenance-site-wordpress",
         intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
         class: "lg:col-span-2 bg-summer-green-800",
       },
