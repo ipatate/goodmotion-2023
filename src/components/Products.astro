@@ -2,8 +2,8 @@
 import { getCollection, render } from "astro:content";
 import Convert from "../components/Convert.vue";
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-const rawProducts = (await getCollection("products")).filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`)).sort(
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
+const rawProducts = (await getCollection("products")).filter((entry) => entry.id.startsWith(`${PUBLIC_SITE_LOCALE}/`)).sort(
     (a, b) => {
       return b.data.title - a.data.title;
     },

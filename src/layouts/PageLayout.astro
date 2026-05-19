@@ -15,8 +15,8 @@ export interface Props {
 
 const { headings, frontmatter = {}, isLocaleOnly = false } = Astro.props;
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-const localeKey = SITE_LOCALE.charAt(0).toUpperCase() + SITE_LOCALE.slice(1);
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
+const localeKey = PUBLIC_SITE_LOCALE.charAt(0).toUpperCase() + PUBLIC_SITE_LOCALE.slice(1);
 
 // Locale-aware frontmatter fields: frontmatter.subtitleFr / subtitleCh, etc.
 function lf(field: string): string | undefined {

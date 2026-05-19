@@ -3,14 +3,14 @@ import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import PageLayout from "../../layouts/PageLayout.astro";
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 const usecases = await getCollection("usecases");
 const filtered = usecases
-  .filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`))
+  .filter((entry) => entry.id.startsWith(`${PUBLIC_SITE_LOCALE}/`))
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const subtitleFr = "Annecy, Lyon, Chambéry";
 const subtitleCh = "Genève, Lausanne, Suisse romande";
-const localeLabel = SITE_LOCALE === "ch" ? subtitleCh : subtitleFr;
+const localeLabel = PUBLIC_SITE_LOCALE === "ch" ? subtitleCh : subtitleFr;
 const title = "Études de cas clients";
 const description = `Quelques études de cas pour nos clients en ${localeLabel}.`;
 ---
@@ -38,7 +38,7 @@ const description = `Quelques études de cas pour nos clients en ${localeLabel}.
           <div class="flex items-start justify-center flex-col gap-3">
             <h3 class="text-lg">
               <a
-                href={`/realisations/${entry.id.replace(`${SITE_LOCALE}/`, "")}`}
+                href={`/realisations/${entry.id.replace(`${PUBLIC_SITE_LOCALE}/`, "")}`}
                 class="after:absolute after:inset-0 font-bold text-primary-900! group-hover:text-primary-700 transition-colors"
               >
                 {entry.data.title}

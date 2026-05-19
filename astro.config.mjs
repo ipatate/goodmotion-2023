@@ -1,5 +1,5 @@
 import { loadEnv } from "vite";
-const { SITE_URL, CONTACT_URL, SITE_LOCALE, ALTERNATE_SITE_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
+const { SITE_URL, CONTACT_URL, PUBLIC_SITE_LOCALE, ALTERNATE_SITE_URL } = loadEnv(import.meta?.env?.MODE || "", process.cwd(), "");
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
@@ -28,14 +28,14 @@ export default defineConfig({
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
-  SITE_LOCALE: SITE_LOCALE || "fr",
+  PUBLIC_SITE_LOCALE: PUBLIC_SITE_LOCALE || "fr",
   integrations: [
     mdx(),
     sitemap({
       filter: (page) => {
         // FR : pas de /realisations dans le sitemap pour le moment
         // CH : les singles sont déjà filtrés par pays via getStaticPaths()
-        if (SITE_LOCALE === "fr" && page.includes("/realisations")) {
+        if (PUBLIC_SITE_LOCALE === "fr" && page.includes("/realisations")) {
           return false;
         }
 

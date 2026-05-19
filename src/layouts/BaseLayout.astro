@@ -17,8 +17,8 @@ export interface Props {
   isLocaleOnly?: boolean;
 }
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-const localeInfo = getLocaleData(SITE_LOCALE);
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
+const localeInfo = getLocaleData(PUBLIC_SITE_LOCALE);
 
 const { title, description, metaTitle, color = "primary", isLocaleOnly = false } = Astro.props;
 

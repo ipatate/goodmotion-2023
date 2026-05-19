@@ -7,11 +7,11 @@ import zmf from "../../assets/images/zmf.svg";
 import WebsiteCarbon from "../../assets/images/WebsiteCarbon.png";
 
 const SITE_URL = import.meta.env.SITE_URL;
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
 const pathname = rawPathname === "/index" ? "/" : rawPathname;
 
-const { cityLinks } = getLocaleData(SITE_LOCALE);
+const { cityLinks } = getLocaleData(PUBLIC_SITE_LOCALE);
 ---
 
 <!-- Pre-footer CTA -->
@@ -70,7 +70,7 @@ const { cityLinks } = getLocaleData(SITE_LOCALE);
         ZMF Resources - Tous droits réservés.
       </p>
       <nav class="flex flex-col mt-5 gap-0.5">
-        {SITE_LOCALE === "fr" && (
+        {PUBLIC_SITE_LOCALE === "fr" && (
         <a
           class="text-sm text-white/90 hover:text-white transition-colors py-1"
           href="/agence-laravel">Agence Laravel</a
@@ -177,7 +177,7 @@ const { cityLinks } = getLocaleData(SITE_LOCALE);
         class={pathname === "/mentions-legales" ? "text-white/80" : ""}
         href="/mentions-legales">Mentions légales</a
       >
-      {SITE_LOCALE === "fr" && (
+      {PUBLIC_SITE_LOCALE === "fr" && (
         <>
           <a href="/llms.txt">llms.txt</a>
           <a href="/llms-full.txt">llms-full.txt</a>

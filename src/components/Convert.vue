@@ -5,15 +5,14 @@
         A partir de
       </span>
       <strong class="text-primary-900 relative top-0.5 font-bold">{{props.amount}}€ euros HT</strong>
-      <span class="text-xs text-gray-600" v-if="chf"> environ {{ chf }} CHF HT</span>
+      <span class="text-xs text-gray-600" v-if="chf"> environ {{ chf }} HT</span>
     </div>
 </template>
 
 <script setup lang="ts">
 import {ref, onMounted } from 'vue';
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
-
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 const chf = ref(null);
 
 const props = defineProps({
@@ -38,9 +37,9 @@ const fetchConvert = async () => {
 }
 
 onMounted(async () => {
-  if (SITE_LOCALE === 'ch') {
+  if (PUBLIC_SITE_LOCALE === 'ch') {
     const result = await fetchConvert();
-    chf.value = result.amount_chf;
+    chf.value = new Intl.NumberFormat("fr-CH", { style: "currency", currency: "CHF" }).format(result.amount_chf);
   }
 });
 </script>

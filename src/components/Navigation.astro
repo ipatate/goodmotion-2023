@@ -7,9 +7,9 @@ import Version from "./Version.astro";
 const rawPathname = new URL(Astro.request.url).pathname.replace(".html", "");
 const pathname = rawPathname === "/index" ? "/" : rawPathname;
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 const navigations = data.navigations.filter(
-  (nav) => !nav.onlyLocale || nav.onlyLocale === SITE_LOCALE
+  (nav) => !nav.onlyLocale || nav.onlyLocale === PUBLIC_SITE_LOCALE
 );
 
 export interface Props {
@@ -88,7 +88,7 @@ const { color = "primary" } = Astro.props;
                   aria-expanded="false"
                   aria-label={`${nav.label} submenu`}
                 >
-                  {nav.subMenu[SITE_LOCALE].map((sub) => {
+                  {nav.subMenu[PUBLIC_SITE_LOCALE].map((sub) => {
                     return (
                       <li class="lg:px-3 py-1.5 lg:first:mt-1 lg:last:mb-1">
                         <a

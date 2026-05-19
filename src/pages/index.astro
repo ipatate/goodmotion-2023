@@ -7,7 +7,7 @@ import LogoBlock from "../components/home/LogoBlock.astro";
 import Services from "../components/home/Services.astro";
 import Products from "../components/Products.astro";
 
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 ---
 
 <Layout
@@ -17,8 +17,8 @@ const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
 >
   <main>
     <HeroHome />
-    <Services title="Nos services" label="Expertise" text="Voici nos principaux domaines d'expertise dans le développement web et les agents IA." elements={data.services[SITE_LOCALE]} />
-    {SITE_LOCALE === 'ch' && <Products />}
+    <Services title="Nos services" label="Expertise" text="Voici nos principaux domaines d'expertise dans le développement web et les agents IA." elements={data.services[PUBLIC_SITE_LOCALE]} />
+    {PUBLIC_SITE_LOCALE === 'ch' && <Products />}
     <Advantages />
     <LogoBlock
       title="Les outils maîtrisés"

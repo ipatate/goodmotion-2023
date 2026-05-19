@@ -18,15 +18,15 @@ const pathname = rawPathname === "/index" ? "" : rawPathname;
 
 const SITE_URL = import.meta.env.SITE_URL;
 const ALTERNATE_SITE_URL = import.meta.env.ALTERNATE_SITE_URL;
-const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 
 const { title, description, metaTitle, color = "primary", isLocaleOnly = false } = Astro.props;
 
-const localeInfo = getLocaleData(SITE_LOCALE);
+const localeInfo = getLocaleData(PUBLIC_SITE_LOCALE);
 
 // Hreflang URLs
-const frUrl = SITE_LOCALE === "fr" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
-const chUrl = SITE_LOCALE === "ch" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
+const frUrl = PUBLIC_SITE_LOCALE === "fr" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
+const chUrl = PUBLIC_SITE_LOCALE === "ch" ? `${SITE_URL}${pathname}` : `${ALTERNATE_SITE_URL}${pathname}`;
 const showHreflang = !isLocaleOnly && !!ALTERNATE_SITE_URL;
 
 let themeColor = "#08556C";

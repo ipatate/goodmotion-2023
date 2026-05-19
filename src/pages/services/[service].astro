@@ -7,13 +7,13 @@ import StructuredData from "@/components/StructuredData.astro";
 import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
-  const SITE_LOCALE = import.meta.env.SITE_LOCALE || "fr";
+  const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
   const allServices = await getCollection("services");
   return allServices
-    .filter((entry) => entry.id.startsWith(`${SITE_LOCALE}/`))
+    .filter((entry) => entry.id.startsWith(`${PUBLIC_SITE_LOCALE}/`))
     .map((entry) => {
       return {
-        params: { service: entry.id.replace(`${SITE_LOCALE}/`, "") },
+        params: { service: entry.id.replace(`${PUBLIC_SITE_LOCALE}/`, "") },
         props: { entry },
       }
     });
