@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Convert from "../components/Convert.vue";
+import StructuredData from "../components/StructuredData.astro";
 
 const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 const rawProducts = (await getCollection("products")).filter((entry) => entry.id.startsWith(`${PUBLIC_SITE_LOCALE}/`)).sort(
@@ -24,10 +25,10 @@ const products = await Promise.all(
   <h2
     class="text-5xl sm:text-7xl md:text-8xl text-primary-900 font-extrabold leading-none tracking-tight"
   >
-    Quelques offres
+    Quelques prestations
   </h2>
   <p class="text-left w-full text-base text-primary-800 mt-5 mb-6 max-w-2xl">
-    Voici quelques idées de prestation que nous proposons.
+    Voici une sélection de services conçus pour répondre à vos besoins.
   </p>
     <div class="grid md:grid-cols-2 mt-14 gap-5">
     {products.map((product) => (
@@ -47,5 +48,20 @@ const products = await Promise.all(
     ))}
     </div>
     {PUBLIC_SITE_LOCALE === 'ch' && <p class="text-sm text-gray-700 mt-10">Les factures sont en euros et sans TVA pour les clients Suisses.</p>}
+
+    <!-- JSON-LD Structured Data for Products -->
+    {products.map((product) => (
+      <StructuredData
+        type="Product"
+        data={{
+          name: product.data.title,
+          description: product.body || '',
+          price: product.data.price,
+          currency: product.data.toCHF ? 'EUR' : 'EUR',
+          suffix: product.data.suffix || undefined,
+          url: `${import.meta.env.SITE_URL}/contact`
+        }}
+      />
+    ))}
   </div>
 </div>

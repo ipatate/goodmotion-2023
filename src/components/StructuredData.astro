@@ -2,7 +2,7 @@
 import { getLocaleData } from "../../data";
 
 export interface Props {
-  type: 'LocalBusiness' | 'Organization' | 'Service' | 'BreadcrumbList' | 'WebSite' | 'Person' | 'FAQPage';
+  type: 'LocalBusiness' | 'Organization' | 'Service' | 'BreadcrumbList' | 'WebSite' | 'Person' | 'FAQPage' | 'Product';
   data?: Record<string, any>;
   pathname?: string;
 }
@@ -205,6 +205,34 @@ switch(type) {
           }
         }))
       };
+    }
+    break;
+
+  case 'Product':
+    const currency = data.currency || 'EUR';
+    const offer: Record<string, any> = {
+      "@type": "Offer",
+      "price": data.price,
+      "priceCurrency": currency,
+      "availability": "https://schema.org/InStock",
+      "url": data.url || `${SITE_URL}/contact`
+    };
+    if (data.suffix) {
+      offer["description"] = `Prix ${data.suffix.replace('/', 'par ')}`;
+    }
+    schema = {
+      ...baseSchema,
+      "name": data.name,
+      "description": data.description || '',
+      "offers": offer,
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Goodmotion",
+        "url": SITE_URL
+      }
+    };
+    if (data.image) {
+      schema["image"] = data.image;
     }
     break;
 
