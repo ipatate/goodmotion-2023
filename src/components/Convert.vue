@@ -5,7 +5,7 @@
         A partir de
       </span>
       <strong class="text-primary-900 relative font-bold">{{props.amount}}€ euros HT  <span v-if="props.suffix" v-html="props.suffix" /></strong>
-      <span class="text-xs text-gray-600 italic" v-if="chf">(environ {{ chf }} HT)</span>
+      <span class="text-xs text-gray-600 italic" v-if="chf">(~ {{ chf }} HT)</span>
     </div>
 </template>
 

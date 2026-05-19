@@ -150,6 +150,7 @@ const products = defineCollection({
     title: z.string(),
     price: z.number(),
     toCHF: z.boolean().default(false),
+    suffix: z.string().optional()
   }),
 });
 
