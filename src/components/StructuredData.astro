@@ -53,14 +53,6 @@ switch(type) {
         }
       } : {}),
       "areaServed": areaServedSchema,
-      "serviceType": [
-        "Développement web sur mesure",
-        "Développement WordPress",
-        "Développement Craft CMS",
-        "Agents IA et Chatbots",
-        "Consultant technique web",
-        "Maintenance WordPress"
-      ],
       "priceRange": "€€",
       "sameAs": [
         "https://github.com/ipatate",
@@ -215,7 +207,12 @@ switch(type) {
       "price": data.price,
       "priceCurrency": currency,
       "availability": "https://schema.org/InStock",
-      "url": data.url || `${SITE_URL}/contact`
+      "url": data.url || `${SITE_URL}/contact`,
+      "seller": {
+        "@type": "ProfessionalService",
+        "name": "Goodmotion",
+        "url": SITE_URL
+      }
     };
     if (data.suffix) {
       offer["description"] = `Prix ${data.suffix.replace('/', 'par ')}`;
@@ -224,12 +221,7 @@ switch(type) {
       ...baseSchema,
       "name": data.name,
       "description": data.description || '',
-      "offers": offer,
-      "provider": {
-        "@type": "ProfessionalService",
-        "name": "Goodmotion",
-        "url": SITE_URL
-      }
+      "offers": offer
     };
     if (data.image) {
       schema["image"] = data.image;
