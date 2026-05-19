@@ -16,6 +16,7 @@ cta:
 
 import StructuredData from "@/components/StructuredData.astro";
 import Cities from "@/components/Cities.astro";
+import Convert from '@/components/Convert.vue';
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -112,7 +113,7 @@ Pour vous aider à préserver votre site web et votre réputation, nous vous pro
 ## Questions fréquentes
 
 
-<Faq title="Pourquoi le prix de la maintenance préventive est à partir de 149 euros HT/mois ?" name="mtn-wp">
+<Faq title="Pourquoi le prix de la maintenance préventive est à partir de 179 euros HT/mois ?" name="mtn-wp">
 En fonction de la complexité d'un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d'extension est un site plus complexe par exemple.
 </Faq>
 <Faq title="Est-ce que tout les sites WordPress sont acceptés ?" name="mtn-wp">
@@ -130,7 +131,7 @@ Oui. Nous ne pouvons pas intervenir correctement sans le full accès au site et 
 </Faq>
 <Faq title="Y a-t-il des frais de mise en place pour la maintenance préventive
 " name="mtn-wp">
-Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de **399 euros HT** sont à prévoir.<br />
+  Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de <Convert amount="480" class="flex relative -top-0.5 items-center w-fit" client:visible /> sont à prévoir.<br />
 Cela comprend :
 - [x] Un audit du site
 - [x] Sécurisation du site

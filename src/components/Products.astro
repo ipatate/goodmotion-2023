@@ -35,13 +35,12 @@ const products = await Promise.all(
         <h2 class="text-2xl md:text-3xl font-bold text-primary-900 hover:text-primary-800">{product.data.title}</h2>
         <div class="text-gray-600 prose prose-xs"><product.Content /></div>
         <div class="flex justify-center md:justify-end gap-1 md:gap-3 flex-wrap">
-
-        <Convert amount={product.data.price.toString()} class="pt-1 items-end w-fit" client:visible />
+        <Convert amount={product.data.price.toString()} class="pt-1 pb-3 items-end w-fit [&_strong]:top-1" client:visible />
         <a
           href="/contact"
-          class={`inline-block px-6 py-3 text-base font-medium text-white bg-primary-800 rounded-md hover:bg-primary-700 transition-colors`}
+          class={`inline-block px-3 py-3 text-base font-medium text-white bg-primary-800 rounded-md hover:bg-primary-700 transition-colors`}
         >
-          Demander un devis
+          Nous contacter
         </a>
         </div>
       </div>

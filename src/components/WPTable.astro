@@ -43,11 +43,9 @@ import Convert from "../components/Convert.vue";
     <footer
       class="rounded-lg text-center text-base bg-gray-100 m-6 p-6 text-primary-900"
     >
-      <p>
-        Abonnement mensuel à partir de <strong>149 euros HT/mois</strong><sup
-          >(1)</sup
-        >
-      </p>
+      <div>
+        Abonnement mensuel à partir de <Convert className="flex-col item-center justify-center pt-2" showFrom={false} suffix="/mois<sup>(1)</sup>"  amount="179" client:visible />
+      </div>
     </footer>
   </div>
   <div class="rounded-lg flex flex-col bg-casper-200 wp-price flex-1">
@@ -74,11 +72,10 @@ import Convert from "../components/Convert.vue";
     <footer
       class="rounded-lg text-center text-base bg-gray-100 m-6 p-6 text-primary-900"
     >
-      <p class="w-full text-center">
+      <div class="w-full text-center">
         Abonnement mensuel <br />
-        Ex: 5h/mois <strong>600€ euros HT</strong>
-        <sup>(2)</sup>
-      </p>
+        Ex: 5h/mois <Convert className="flex-col item-center justify-center pt-2" showFrom={false} suffix="<sup>(2)</sup>"  amount="600" client:visible />
+      </>
     </footer>
   </div>
   <div class="rounded-lg flex flex-col bg-secondary-100 wp-price flex-1">
@@ -134,7 +131,7 @@ import Convert from "../components/Convert.vue";
     <li>&#160;</li>
     <li>
       (1) - Pour toute prestation de maintenance préventive seule, des frais de
-      mise en place de <strong>399 euros HT</strong> sont à prévoir. <br />Cela
+      mise en place de <Convert amount="480" class="pb-0 items-center w-fit" showFrom={false} client:visible /> sont à prévoir. <br />Cela
       comprend : <ul>
         <li>- Un audit du site</li><li>- Sécurisation du site</li><li>
           - Petite optimisation du site

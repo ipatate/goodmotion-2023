@@ -1,11 +1,11 @@
 <template>
-  <div class='inline-flex px-2 pb-2 gap-1'
+  <div class='inline-flex gap-1'
  :class="props.className">
-      <span class="text-xs text-gray-600">
+      <span v-if="props.showFrom == true" class="text-xs text-gray-600">
         A partir de
       </span>
-      <strong class="text-primary-900 relative top-0.5 font-bold">{{props.amount}}€ euros HT</strong>
-      <span class="text-xs text-gray-600" v-if="chf"> environ {{ chf }} HT</span>
+      <strong class="text-primary-900 relative font-bold">{{props.amount}}€ euros HT  <span v-if="props.suffix" v-html="props.suffix" /></strong>
+      <span class="text-xs text-gray-600 italic" v-if="chf">(environ {{ chf }} HT)</span>
     </div>
 </template>
 
@@ -23,6 +23,15 @@ const props = defineProps({
   className: {
     type: String,
     required: false,
+  },
+  suffix: {
+    type: String,
+    required: false,
+  },
+  showFrom: {
+    type: Boolean,
+    required: false,
+    default: true,
   },
 });
 
