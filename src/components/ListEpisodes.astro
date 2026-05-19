@@ -6,7 +6,6 @@ const podcasts = (await getCollection("podcasts")).sort(
       return b.data.date.valueOf() - a.data.date.valueOf();
     },
 ).slice(0, 10);
-// console.log(podcasts)
 ---
 
 <div>

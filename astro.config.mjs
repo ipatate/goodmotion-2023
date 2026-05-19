@@ -28,6 +28,7 @@ export default defineConfig({
   },
   site: SITE_URL || "https://www.goodmotion.fr",
   CONTACT_URL: CONTACT_URL || "https://www.goodmotion.fr",
+  SITE_LOCALE: SITE_LOCALE || "fr",
   integrations: [
     mdx(),
     sitemap({

@@ -12,6 +12,11 @@ const dateOptions = {
   day: "numeric" as const,
 };
 
+/**
+ * set _blank to external links
+ * @param description
+ * @returns
+ */
 const findLinks = (description: string): string => {
   const regex = /https?:\/\/[^\s]+/g;
   const _description = Array.isArray(description) ? description[0] : description;
@@ -29,6 +34,9 @@ const findLinks = (description: string): string => {
   return descriptionUpdated;
 };
 
+/**
+ * Podcast collections
+ */
 const podcasts = defineCollection({
   loader: async () => {
     const response = await fetch("https://double-slash.dev/podcast-rss-feed.xml");
@@ -66,6 +74,10 @@ const podcasts = defineCollection({
   }),
 });
 
+
+/**
+ * cities collections
+ */
 const cities = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/cities" }),
   schema: z.object({
@@ -77,6 +89,10 @@ const cities = defineCollection({
   }),
 });
 
+
+/**
+ * services collections
+ */
 const services = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/services" }),
   schema: z.object({
@@ -89,6 +105,10 @@ const services = defineCollection({
   }),
 });
 
+
+/**
+ * pages collections
+ */
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/pages" }),
   schema: z.object({
@@ -102,7 +122,9 @@ const pages = defineCollection({
 });
 
 
-
+/**
+ * usecases collections
+ */
 const usecases = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/usecases" }),
   schema: z.object({
@@ -121,10 +143,21 @@ const usecases = defineCollection({
   }),
 });
 
+
+const products = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/content/products" }),
+  schema: z.object({
+    title: z.string(),
+    price: z.number(),
+    toCHF: z.boolean().default(false),
+  }),
+});
+
 export const collections = {
   podcasts,
   cities,
   pages,
   services,
   usecases,
+  products,
 };

@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import Convert from "../components/Convert.vue";
 ---
 
 <div class="flex flex-col lg:flex-row items-stretch not-prose gap-6">
@@ -122,7 +123,7 @@ import { Icon } from "astro-icon/components";
     <footer
       class="rounded-lg text-base text-center bg-gray-100 m-6 p-6 text-primary-900"
     >
-      <p class="text-center w-full font-bold">990 euros HT</p>
+      <div class="text-center w-full"><Convert className="flex-col w-full item-center justify-center pt-2" amount="990" client:visible /></div>
     </footer>
   </div>
 </div>
