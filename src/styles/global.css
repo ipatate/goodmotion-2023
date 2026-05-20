@@ -212,3 +212,7 @@
     @apply inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-accent-600 text-white text-sm md:text-base font-bold mr-2 align-middle relative -top-0.5;
   }
 }
+
+.point-style {
+  @apply before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary-600 before:rounded-full before:block inline-flex items-center gap-1.5;
+}
