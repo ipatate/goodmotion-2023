@@ -168,13 +168,15 @@ const { cityLinks } = getLocaleData(PUBLIC_SITE_LOCALE);
       class="text-xs text-white/70 flex flex-wrap gap-x-5 gap-y-2 [&_a]:hover:text-white/80 [&_a]:transition-colors"
     >
       <a
-        class={pathname === "/politique-de-confidentialite"
-          ? "text-white/80"
-          : ""}
+        class="text-white/80"
+        href="/ethique-engagements">Charte éthique</a
+      >
+      <a
+        class="text-white/80"
         href="/politique-de-confidentialite">Politique de confidentialité</a
       >
       <a
-        class={pathname === "/mentions-legales" ? "text-white/80" : ""}
+        class="text-white/80"
         href="/mentions-legales">Mentions légales</a
       >
       {PUBLIC_SITE_LOCALE === "fr" && (
