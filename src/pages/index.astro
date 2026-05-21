@@ -6,6 +6,7 @@ import HeroHome from "../components/home/HeroHome.astro";
 import LogoBlock from "../components/home/LogoBlock.astro";
 import Services from "../components/home/Services.astro";
 import Products from "../components/Products.astro";
+import Quote from "../components/Quote.astro";
 
 const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 ---
@@ -32,5 +33,8 @@ const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
       text="Voici une liste de quelques entreprises avec lesquelles nous travaillons régulièrement. Merci à elles pour leur confiance."
       elements={data.partners}
     />
+    <Quote className="-mt-10 mb-10">
+      Nous collaborons depuis plusieurs années avec la plupart de nos clients. Ici pas de site jetable, nous nous investissons dans la durée.
+    </Quote>
   </main>
 </Layout>

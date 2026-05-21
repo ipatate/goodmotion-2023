@@ -1,0 +1,12 @@
+---
+const { className } = Astro.props;
+
+// Récupère le contenu du slot sous forme de chaîne HTML
+const html = await Astro.slots.render('default');
+
+// Supprime toutes les balises HTML, ne garde que le texte
+const cleanedHtml = html.replace(/<[^>]*>/g, '').trim().replace(/\n\s*/g, ' ');
+---
+<blockquote class={`md:max-w-6xl w-full mx-auto text-left py-20 md:px-10 bg-neutral-100 rounded-md not-prose ${className}`}>
+  <p class="gm-quote text-2xl md:text-3xl text-gray-800" set:html={cleanedHtml} />
+</blockquote>
