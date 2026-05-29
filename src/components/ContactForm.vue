@@ -20,7 +20,7 @@
       {{ success }}
     </div>
 
-    <form @submit.prevent="onSubmit" class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 mt-8">
+    <form @submit.prevent="onSubmit" class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 mt-8" toolname="contactForm" tooldescription="Soumet une demande de contact via le formulaire du site Goodmotion. Permet aux utilisateurs et aux agents IA d'envoyer un message à l'équipe." toolautosubmit>
       <!-- Email -->
       <label class="block">
         <span class="text-sm font-bold tracking-[0.2em] uppercase text-primary-900/90 block mb-2"
@@ -34,6 +34,7 @@
           placeholder="victor@monsupersite.com"
           class="w-full border-b border-primary-900/20 bg-transparent px-0 py-3 text-base focus:outline-none focus:border-primary-600 transition-colors placeholder:text-primary-900/25"
           :class="{ 'border-red-400 focus:border-red-400': errors.email }"
+          toolparamdescription="Adresse email du demandeur. Utilisée pour répondre à la demande de contact."
         />
       </label>
 
@@ -50,6 +51,7 @@
           placeholder="Victor Dupont"
           class="w-full border-b border-primary-900/20 bg-transparent px-0 py-3 text-base focus:outline-none focus:border-primary-600 transition-colors placeholder:text-primary-900/25"
           :class="{ 'border-red-400 focus:border-red-400': errors.name }"
+          toolparamdescription="Nom complet du demandeur. Permet de personnaliser la réponse."
         />
       </label>
 
@@ -66,6 +68,7 @@
           placeholder="https://monsupersite.com"
           class="w-full border-b border-primary-900/20 bg-transparent px-0 py-3 text-base focus:outline-none focus:border-primary-600 transition-colors placeholder:text-primary-900/25"
           :class="{ 'border-red-400 focus:border-red-400': errors.url }"
+          toolparamdescription="URL du site web actuel du demandeur. Optionnel, permet de comprendre le contexte du projet."
         />
       </label>
 
@@ -83,6 +86,7 @@
             v-model="subject"
             name="subject"
             class="w-full appearance-none bg-transparent py-3 text-base focus:outline-none text-primary-900"
+            toolparamdescription="Sujet de la demande. Détermine le type de demande et permet de router vers la bonne équipe."
           >
             <option value="" disabled>Choisir un sujet</option>
             <option v-for="value in subjectSelect" :value="value" :key="value">{{ value }}</option>
@@ -113,6 +117,7 @@
           class="w-full border-b border-primary-900/20 bg-transparent px-0 py-3 text-base focus:outline-none focus:border-primary-600 transition-colors placeholder:text-primary-900/25 resize-none"
           :class="{ 'border-red-400 focus:border-red-400': errors.message }"
           rows="5"
+          toolparamdescription="Message détaillé du demandeur. Contient la description du projet ou de la demande."
         ></textarea>
       </label>
 
@@ -177,11 +182,19 @@ const isEmail = (email: string) => {
 
 const onSubmit = (event: Event) => {
   event.preventDefault();
+  
+  // WebMCP: Check if agent invoked the form
+  const submitEvent = event as SubmitEvent;
+  const isAgentInvoked = submitEvent.agentInvoked === true;
+  
   errors.value = {};
   success.value = undefined;
   submitButton.value.disabled = true;
   submitButton.value.value = "Envoi en cours...";
   if (check.value) {
+    if (isAgentInvoked) {
+      submitEvent.respondWith(Promise.reject(new Error("Bot detection triggered")));
+    }
     return;
   }
   if (email.value.length < 1) {
@@ -224,14 +237,40 @@ const onSubmit = (event: Event) => {
           success.value = "Message envoyé avec succès";
           setTimeout(() => {
             success.value = undefined;
-          }, 4000)
+          }, 4000);
+          
+          // WebMCP: Respond to agent with success message
+          if (isAgentInvoked) {
+            submitEvent.respondWith(Promise.resolve({ success: true, message: "Message envoyé avec succès" }));
+          }
+        } else {
+          submitButton.value.disabled = false;
+          submitButton.value.value = "Envoyer le message";
+          
+          // WebMCP: Respond to agent with error
+          if (isAgentInvoked) {
+            submitEvent.respondWith(Promise.reject(new Error("Failed to send message")));
+          }
         }
-        submitButton.value.disabled = false;
-        submitButton.value.value = "Envoyer le message";
       })
       .catch(() => {
         errors.value.send = "Une erreur est survenue";
+        submitButton.value.disabled = false;
+        submitButton.value.value = "Envoyer le message";
+        
+        // WebMCP: Respond to agent with error
+        if (isAgentInvoked) {
+          submitEvent.respondWith(Promise.reject(new Error("Une erreur est survenue")));
+        }
       });
+  } else {
+    submitButton.value.disabled = false;
+    submitButton.value.value = "Envoyer le message";
+    
+    // WebMCP: Respond to agent with validation errors
+    if (isAgentInvoked) {
+      submitEvent.respondWith(Promise.reject(new Error("Validation failed: " + JSON.stringify(errors.value))));
+    }
   }
 };
 </script>
