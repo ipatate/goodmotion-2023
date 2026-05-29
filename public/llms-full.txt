@@ -1346,7 +1346,7 @@ Après avoir échangé avec vous sur le projet, le besoin et le budget, nous pou
 Exemple d’une mini application web développée récemment :
 
 - [https://calculateur.sleeps.fr](https://calculateur.sleeps.fr/)
-- [https://vma.running-hero.com](https://vma.running-hero.com/)
+- [https://vma.gotrazz.com](https://vma.gotrazz.com/)
 - [https://convert.running-hero.com](https://convert.running-hero.com/)
 
 ### Applications web complexes
