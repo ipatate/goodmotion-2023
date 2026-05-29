@@ -243,6 +243,8 @@ const onSubmit = (event: Event) => {
           if (isAgentInvoked) {
             submitEvent.respondWith(Promise.resolve({ success: true, message: "Message envoyé avec succès" }));
           }
+          submitButton.value.disabled = false;
+          submitButton.value.value = "Envoyer le message";
         } else {
           submitButton.value.disabled = false;
           submitButton.value.value = "Envoyer le message";
