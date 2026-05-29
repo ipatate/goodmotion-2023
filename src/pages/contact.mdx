@@ -3,8 +3,10 @@ layout: ../layouts/PageLayout.astro
 title: Contactez-nous
 description: Pour nous contacter, vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur Twitter et Linkedin.
 ---
+// WebMCP: Contact Page - Main contact page with form and social links
 import ContactForm from "../components/ContactForm.vue";
 
+<!-- WebMCP: Page Content - Contact information and form -->
 Vous avez un projet à nous soumettre, une question à nous poser ou tout simplement nous passer le bonjour.
 
 Vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur [Blue Sky](https://bsky.app/profile/patrickfaramaz.bsky.social), <s>[Twitter](https://twitter.com/PatrickFaramaz)</s> [X](https://twitter.com/PatrickFaramaz) et [Linkedin](https://www.linkedin.com/in/patrickfaramaz/).
@@ -12,10 +14,14 @@ Vous pouvez facilement me trouver sur les réseaux sociaux, notamment sur [Blue 
 
 Vous pouvez m'envoyer un message par le formulaire ci-dessous :
 
+<!-- WebMCP: Contact Form Component - Embedded contact form -->
 <ContactForm client:idle/>
 
 
 Et vous pouvez également me contacter par email à l'adresse suivante :
+<!-- WebMCP: Email Contact - Direct email contact information -->
 infos@goodmotion.fr
 
 À bientôt !
+
+<!-- WebMCP: Page End -->
