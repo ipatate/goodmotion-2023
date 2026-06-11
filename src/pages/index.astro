@@ -18,9 +18,9 @@ const PUBLIC_SITE_LOCALE = import.meta.env.PUBLIC_SITE_LOCALE || "fr";
 >
   <main>
     <HeroHome />
+    <Advantages />
     <Services title="Nos services" label="Expertise" text="Voici nos principaux domaines d'expertise dans le développement web et les agents IA." elements={data.services[PUBLIC_SITE_LOCALE]} />
     {PUBLIC_SITE_LOCALE === 'ch' && <Products />}
-    <Advantages />
     <LogoBlock
       title="Les outils maîtrisés"
       label="Stack technique"

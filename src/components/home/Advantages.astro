@@ -2,6 +2,9 @@
 import speed from "../../../assets/images/speed.svg";
 import secure from "../../../assets/images/secure.svg";
 import green from "../../../assets/images/green.svg";
+import opensource from "../../../assets/images/open-source.svg"
+import free from "../../../assets/images/free.svg"
+import search from "../../../assets/images/search.svg"
 import { Image } from "astro:assets";
 
 const title = "Nos engagements";
@@ -9,16 +12,34 @@ const text =
   "Faire des sites web c'est bien mais faire des sites web rapides, sécurisés et durables c'est mieux !";
 const avantages = [
   {
-    title: "Des sites web rapides !",
+    title: "Rapidité optimale",
     image: speed,
+    text: "Des sites légers et performants pour une expérience utilisateur fluide."
   },
   {
-    title: "Des sites web sécurisés !",
+    title: "Sécurité renforcée",
     image: secure,
+    text: "Protection contre les vulnérabilités et mises à jour régulières."
   },
   {
-    title: "Des sites web durables !",
+    title: "Durabilité garantie",
     image: green,
+    text: "Des sites conçus pour évoluer avec vos besoins, sans obsolescence."
+  },
+  {
+    title: "Outils open source",
+    image: opensource,
+    text: "Utilisation de solutions libres (ex: WordPress) pour une totale transparence."
+  },
+  {
+    title: "Liberté technique",
+    image: free,
+    text: "Aucun verrouillage : vos données vous appartiennent et restent accessibles."
+  },
+  {
+    title: "Référencement naturel",
+    image: search,
+    text: "Optimisation SEO pour une meilleure visibilité dans les moteurs de recherche."
   },
 ];
 ---
@@ -42,7 +63,7 @@ const avantages = [
     </p>
   </div>
   <div
-    class="logo-grid grid md:grid-cols-3 md:gap-4 max-w-7xl relative w-full mx-auto md:px-6 mt-5"
+    class="logo-grid grid md:grid-cols-3 md:gap-8 max-w-7xl relative w-full mx-auto md:px-6 mt-5"
   >
     {
       avantages.map((avantage, i) => (
@@ -57,6 +78,7 @@ const avantages = [
           <h3 class="text-base font-semibold tracking-wide text-primary-900 mt-4 md:mt-6">
             {avantage.title}
           </h3>
+          <p class="text-base font-light mt-1 tracking-wide max-w-2xs text-center mx-auto">{avantage.text}</p>
         </div>
       ))
     }
