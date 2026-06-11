@@ -122,6 +122,10 @@ export default {
             link: "/services/developpement-de-web-applications-et-sites-web-modernes",
           },
           {
+            label: "Agence Laravel",
+            link: "/services/agence-expert-laravel",
+          },
+          {
             label: "Développement WordPress sur mesure",
             link: "/services/developpement-wordpress-avance",
           },
@@ -343,6 +347,13 @@ export default {
         class: "lg:col-span-2 bg-alto-800",
       },
       {
+        title: "Agence Laravel",
+        link: "/services/agence-expert-laravel",
+        intro:
+          "Agence experte Laravel, nous concevons des applications web sur mesure. Notre maîtrise des bonnes pratiques du framework est la garantie de projets fiables, évolutifs et durables.",
+        class: "lg:col-span-2 bg-primary-800",
+      },
+      {
         title: "Développement d'agents IA",
         link: "/intelligence-artificielle",
         intro: "Chatbots IA, agents IA et workflows IA",
@@ -365,13 +376,6 @@ export default {
         link: "/services/maintenance-wordpress",
         intro: "Maintenance et optimisation de votre site WordPress pour de meilleures performances et sécurité.",
         class: "lg:col-span-2 bg-summer-green-800",
-      },
-      {
-        title: "Consultant technique pour vos projets web",
-        link: "/services/consultant-technique-web",
-        intro:
-          "Fort de plus de 15 ans d'expérience dans le développement web, je vous accompagne dans la réalisation de vos projets web. Pour le choix des technologies, de l'architecture ou de la performance.",
-        class: "lg:col-span-2 bg-primary-800",
       },
     ],
     ch: [

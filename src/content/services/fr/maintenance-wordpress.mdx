@@ -1,116 +1,82 @@
 ---
-title: Maintenance WordPress
-subtitle: Annecy, Lyon, Chambéry
-metaTitle: Maintenance de site WordPress | Annecy, Lyon, Chambéry
-description: Maintenance professionnelle de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations. Gardez votre site en parfaite santé !
+title: Maintenance de site WordPress Annecy, Lyon, Chambéry
+subtitle: "Maintenance de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations : nous gardons votre site en parfaite santé pendant que vous vous concentrez sur votre activité."
+metaTitle: Maintenance WordPress professionnelle | Sécurité et performance | Annecy, Lyon, Chambéry
+description: "Maintenance de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations : nous gardons votre site en parfaite santé pendant que vous vous concentrez sur votre activité."
 showToc: true
 serviceSchema:
-  serviceType: "Maintenance WordPress"
-  description: "Maintenance professionnelle de sites WordPress : mises à jour, sécurité, sauvegardes et optimisations"
+  serviceType: "Maintenance de site WordPress sur Annecy, Lyon, Chambéry"
+  description: "Maintenance de sites WordPress à Annecy, Lyon et Chambéry. Mises à jour, sécurité, sauvegardes, optimisations pour garder votre site en parfaite santé"
   url: "/services/maintenance-wordpress"
+cta: 
+  - 
+    label: 'Nous contacter'
+    href: '#contactForm'
 ---
 
 import StructuredData from "@/components/StructuredData.astro";
 import Cities from "@/components/Cities.astro";
-
-<StructuredData type="Service" data={frontmatter.serviceSchema} />
-<StructuredData type="FAQPage" data={{questions: [
-  { question: "Pourquoi le prix de la maintenance préventive est à partir de 179 euros HT/mois ?", answer: "En fonction de la complexité d'un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d'extensions est un site plus complexe par exemple." },
-  { question: "Est-ce que tous les sites WordPress sont acceptés ?", answer: "Après un premier audit rapide, nous nous réservons le droit de ne pas fournir la prestation de maintenance préventive. Si le site ne correspond pas au standard de qualité de développement, le maintenir s'avère très dangereux. Il arrive que certains sites WordPress soient tellement mal conçus qu'ils sont impossibles à maintenir." },
-  { question: "Mon WordPress utilise Elementor et un thème acheté. La maintenance est-elle possible ?", answer: "À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d'un site qui utilise Elementor et un thème acheté sur ThemeForest ou autre." },
-  { question: "Si je n'ai pas les licences de mes plugins et thèmes, ils seront quand même mis à jour ?", answer: "Non. Nous ne pouvons mettre à jour uniquement les plugins et thèmes avec les clés de licences." },
-  { question: "Dois-je donner les accès au serveur et à l'admin du site pour la maintenance ?", answer: "Oui. Nous ne pouvons pas intervenir correctement sans le full accès au site et au serveur." },
-  { question: "Y a-t-il des frais de mise en place pour la maintenance préventive ?", answer: "Oui. Pour toute prestation de maintenance préventive seule, des frais de mise en place de 480 euros HT sont à prévoir. Cela comprend un audit du site, la sécurisation, une petite optimisation et la mise en place de la sauvegarde et la surveillance. Si vous prenez une prestation d'optimisation des performances en même temps, les frais de mise en place sont offerts." }
-]}} />
-
 import { Icon } from 'astro-icon/components';
 import WPTable from "@/components/WPTable.astro";
 import Faq from "@/components/Faq.astro";
 import Alert from "@/components/Alert.astro";
-import Cards from "@/components/Cards.astro";
-import Card from "@/components/Card.astro";
 import ContactForm from "@/components/ContactForm.vue";
 
-## Maintenance de site WordPress sur <Cities />
-
-### Un site WordPress sans entretien est vulnérable !
-
-Votre site développé sur WordPress est en ligne depuis un moment, mais personne n'effectue les mises à jour. 
-Quand vous vous connectez, l'administration indique de nombreuses mises à jour en retard.
-
-**Vous exposez votre entreprise à des risques :**
-
-- **Piratage** - Votre site peut être utilisé pour diffuser du spam, des virus ou des contenus inappropriés
-- **Perte de données** - Sans sauvegarde régulière, une attaque = tout est perdu
-- **Pénalité Google** - Un site piraté disparaît des résultats de recherche
-
-Le saviez-vous ? La plupart des failles découvertes sur la plateforme WordPress viennent principalement des plugins.
-C'est pour cela que les auteurs de plugins proposent des mises à jour très régulièrement pour corriger les failles.
-
-### La solution : Une maintenance WordPress professionnelle
-
-#### Nous sécurisons, optimisons et maintenons votre site pour que vous puissiez vous concentrer sur votre business.
-
-Comme tout projet informatique, il est nécessaire de maintenir votre site WordPress pour le garder en bonne santé.
-Mise à jour des plugins, du coeur de WordPress, sauvegarde régulière, surveillance de la sécurité, surveillance des anomalies, etc.
-Nous assurons également les évolutions et les corrections de bugs de votre site WordPress.
-
-> Concentrez-vous sur votre métier, nous gérons votre site.
-
-### Pourquoi choisir Goodmotion pour votre site WordPress ?
-
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /> **Expertise WordPress avancée**
-Développeurs WordPress avec 10+ ans d'expérience. Nous connaissons les failles de sécurité avant même qu'elles ne soient exploitées.
-
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /> **Réponse Ultra-Rapide**
-Intervention en moins de 24h pour les problèmes critiques. Votre site ne reste jamais en panne.
-
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /> **Transparence Totale**
-Rapport mensuel détaillé sur l'état de santé de votre site. Vous savez exactement ce qui se passe.
+<StructuredData type="Service" data={frontmatter.serviceSchema} />
 
 
-## Comptez sur nous pour la maintenance de votre site WordPress
+## Les avantages d'une maintenance mensuelle de site WordPress
 
-Nous recontrons souvent des clients avec des sites WordPress qui n'ont pas été mis à jour depuis des mois. Le prestataire du début n'est plus présent pour gérer le site. Vous pouvez nous faire confiance pour la maintenance de votre site WordPress.
+Un site WordPress vit, évolue et doit être entretenu pour rester performant dans la durée. Nous prenons en charge l'ensemble de sa maintenance technique : mises à jour du cœur et des extensions, sauvegardes régulières, surveillance de la sécurité et détection des anomalies. Au-delà du suivi quotidien, nous assurons également les évolutions et les corrections de bugs pour faire grandir votre site au rythme de votre activité.
+
+<ul class="page-list">
+  <li>Diminuer fortement le risque de <strong>piratage</strong> du site grâce à des mises à jour régulières et un suivi de sécurité actif</li>
+  <li>Disposer de <strong>sauvegardes régulières</strong>, restaurables à tout moment en cas de problème</li>
+  <li>Bénéficier des <strong>dernières mises à jour</strong> de WordPress, du thème et des extensions, dans un environnement testé</li>
+  <li>Préserver les <strong>performances</strong> de votre site : temps de chargement, optimisation des images, base de données</li>
+  <li>Bénéficier d'un <strong>monitoring</strong> continu pour détecter rapidement toute anomalie ou panne</li>
+  <li>Profiter d'un <strong>interlocuteur dédié</strong> pour vos questions techniques et vos petites évolutions</li>
+  <li>Préserver votre <strong>référencement naturel</strong> en évitant les pénalités liées à un site lent, piraté ou indisponible</li>
+  <li>Avoir l'esprit tranquille et vous concentrer sur votre <strong>activité</strong>, sans vous soucier de la technique</li>
+</ul>
+
+## La solution : une maintenance WordPress professionnelle
+
+### Nous sécurisons, optimisons et maintenons votre site pour que vous puissiez vous concentrer sur votre activité.
+
+Comme tout projet informatique, un site WordPress doit être entretenu régulièrement pour rester performant, sécurisé et en bonne santé.
+
+Nous prenons en charge l'ensemble de sa maintenance technique : mises à jour du coeur de WordPress et des extensions, sauvegardes régulières, surveillance de la sécurité et détection des anomalies. Au-delà du suivi quotidien, nous assurons également les évolutions fonctionnelles et la correction des bugs pour faire vivre votre site dans la durée.
+
+## Pourquoi choisir Goodmotion pour votre maintenance WordPress ?
+
+<dl class="page-def">
+  <dt>Expertise WordPress avancée</dt>
+  <dd>Plus de 15 ans d'expérience en développement WordPress. Nous connaissons les vulnérabilités de la plateforme et anticipons les correctifs avant qu'elles ne soient exploitées.</dd>
+  <dt>Réactivité garantie</dt>
+  <dd>Intervention sous 24 heures pour tout problème critique. Votre site ne reste jamais à l'arrêt.</dd>
+  <dt>Transparence totale</dt>
+  <dd>Rapport mensuel détaillé sur l'état de santé de votre site : mises à jour effectuées, incidents traités, performances mesurées. Vous gardez la maîtrise de votre projet.</dd>
+</dl>
+
 
 ## La maintenance préventive des sites WordPress
 
 ### Pourquoi une maintenance préventive ?
 
-
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /><strong class="text-summer-green-900">Pour conserver un site web en bonne santé et pour limiter les risques de faille de votre site</strong><br />
-En effet, les plugins et le cœur de WordPress sortent régulièrement des mises à jour pour corriger des **failles de sécurité**.<br />_Si vous n'effectuez pas les mises à jour régulièrement, vous vous exposez à un risque potentiel d'intrusion._
-
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /><strong class="text-summer-green-900">Pour conserver une sauvegardes de votre site</strong><br />
+<ul class="page-list">
+  <li><strong>Pour conserver un site web en bonne santé et pour limiter les risques de faille de votre site</strong><br />En effet, les plugins et le cœur de WordPress sortent régulièrement des mises à jour pour corriger des **failles de sécurité**. Si vous n'effectuez pas les mises à jour régulièrement, vous vous exposez à un risque potentiel d'intrusion.</li>
+<li><strong>Pour conserver une sauvegardes de votre site</strong><br />
 Il est également nécessaire d'effectuer des **sauvegardes** de votre site et de la base de données. En cas de **piratage** de votre site, il sera toujours possible
-de reconstruire le site avec une la dernière version sauvegardée.
+de reconstruire le site avec une la dernière version sauvegardée.</li>
+<li><strong>Pour éviter de vous faire voler votre site web.</strong><br />
+  Les sites réalisés avec le CMS **WordPress** sont régulièrement soumis à des attaques. Des robots (scripts) tentent de rentrer en exploitant les failles des plugins ou du coeur de **WordPress**.</li>
+</ul>
 
-<Icon name="mdi:check-circle-outline" class="w-8 h-8 -mt-1 mr-1 inline-flex text-summer-green-900" /><strong class="text-summer-green-900">Pour éviter de vous faire voler votre site web.</strong><br />
-Les sites réalisés avec le CMS **WordPress** sont régulièrement soumis à des attaques. Des robots (scripts) tentent de rentrer en exploitant les failles des plugins ou du cœur de **WordPress**.
-
-**WordPress** étant un CMS majoritaire sur le web, il est logiquement plus attaqué que les autres systèmes.
-
-Utiliser un **plugin de sécurité** permet de bloquer les attaques malveillantes et les tentatives d'intrusions. Il permet de scanner les fichiers et de détecter des changements anormaux de fichiers.
-
-<Alert>
-**Que se passe-t-il si votre site est piraté ?**<br /><br />
-
-Si votre site est piraté, il peut être utilisé pour envoyer des spams, des virus ou des liens vers des sites malveillants.<br />
-Votre site peut également être utilisé pour afficher des contenus inappropriés (terrorisme, sexe, etc..).<br />
-Imaginez l'image de votre entreprise si votre site est utilisé pour diffuser des contenus inappropriés. La perte de confiance de vos clients est inestimable.
-</Alert>
-
-**Les tâches effectuées pour la maintenance préventive sont les suivantes :**
-
-- Mise à jour des plugins et du coeur de WordPress
-- Sauvegardes régulières du site et de la base de données
-- Surveillance de la sécurité du site
-- Surveillance d'anomalies ou de bugs
-- Configuration d'un plugin de sécurité
 
 ## La maintenance corrective et évolutive des sites WordPress
 
-Un autre type de maintenance est nécessaire pour corriger les éventuels problèmes et faire évoluer le site web. **Il s’agit de la maintenance corrective et évolutive**
+Un autre type de maintenance est nécessaire pour corriger les éventuels problèmes et faire évoluer le site web. **Il s'agit de la maintenance corrective et évolutive**
 
 Tout projet informatique comporte des bugs. Il est **donc** nécessaire de corriger les bugs pour éviter les problèmes. Par exemple, une page qui ne s'affiche pas, un formulaire qui ne fonctionne pas, etc.
 
@@ -127,17 +93,14 @@ La **vitesse de chargement** est devenue un critère important pour le SEO (opti
 
 Les étapes de cette prestation :
 
-**1 -  Audit du site**
-
-Point sur l'état de votre site et compte rendu sur les points à optimiser.
-
-**2 - Réalisation des optimisations :**
-
-Application des points d'optimisations. Les optimisations sont réalisées une par une avec comparaison de l'amélioration des performances.
-
-**3 - Rapport**
-
-Présentation des optimisations et gains de performances détaillés
+<dl class="page-def page-def-num">
+  <dt>Audit du site</dt>
+  <dd>Point sur l'état de votre site et compte rendu sur les points à optimiser.</dd>
+  <dt>Réalisation des optimisations</dt>
+  <dd>Application des points d'optimisations. Les optimisations sont réalisées une par une avec comparaison de l'amélioration des performances.</dd>
+  <dt>Rapport</dt>
+  <dd>Présentation des optimisations et gains de performances détaillés</dd>
+</dl>
 
 ## Nos offres de maintenance WordPress
 
@@ -145,18 +108,19 @@ Pour vous aider à préserver votre site web et votre réputation, nous vous pro
 
 <WPTable />
 
+
 ## Questions fréquentes
 
 
 <Faq title="Pourquoi le prix de la maintenance préventive est à partir de 179 euros HT/mois ?" name="mtn-wp">
 En fonction de la complexité d'un site, il est nécessaire de passer plus de temps sur la maintenance. Le prix est donc majoré pour correspondre à la prestation. Un site utilisant WooCommerce avec beaucoup d'extension est un site plus complexe par exemple.
 </Faq>
-<Faq title="Est-ce que tout les sites WordPress sont acceptés ?" name="mtn-wp">
+<Faq title="Est-ce que tous les sites WordPress sont acceptés ?" name="mtn-wp">
 Après un premier audit rapide, nous nous réservons le droit de ne pas fournir la prestation de maintenance préventive.
-En effet, si le site ne correspond pas au standard de qualité de développement, le maintenir s'avère très dangereux. Il arrive que certains sites WordPress sont tellement mal conçus, qu'ils sont impossibles à maintenir.
+En effet, si le site ne correspond pas au standard de qualité de développement, le maintenir s'avère très dangereux. Il arrive que certains sites WordPress soient tellement mal conçus, qu'ils sont impossibles à maintenir.
 </Faq>
 <Faq title="Mon WordPress utilise Elementor et un thème acheté. La maintenance est possible ?" name="mtn-wp">
-À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d'un site qui utilise Elementor et un thème acheté sur Themes Forest ou autre.
+À déterminer au cas par cas. Nous ne pouvons pas garantir la maintenance d'un site qui utilise Elementor et un thème acheté sur ThemeForest ou autre.
 </Faq>
 <Faq title="Si je n'ai pas les licences de mes plugins et thèmes. Ils seront quand même mis à jour" name="mtn-wp">
 Non. Nous ne pouvons mettre à jour uniquement les plugins et thèmes avec les clés de licences.
