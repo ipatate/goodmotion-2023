@@ -19,6 +19,8 @@ import Faq from "@/components/Faq.astro";
 import CityLinks from "@/components/CityLinks.astro";
 import ContactForm from "@/components/ContactForm.vue";
 import Quote from "@/components/Quote.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/localization-craft.jpg";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -53,6 +55,12 @@ import Quote from "@/components/Quote.astro";
   <li>Headless CMS</li>
   <li>Landing pages</li>
 </ul>
+
+<Image
+  src={pic}
+  alt="localisation"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Notre expertise Craft CMS
 
