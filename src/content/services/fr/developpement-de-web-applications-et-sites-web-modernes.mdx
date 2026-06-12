@@ -17,6 +17,8 @@ cta:
 import StructuredData from "@/components/StructuredData.astro";
 import Cities from "@/components/Cities.astro";
 import CityLinks from "@/components/CityLinks.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/custom-wp.jpg";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -40,6 +42,12 @@ Quelques exemples de mini-applications développées récemment :
 - [vma.gotrazz.com](https://vma.gotrazz.com)
 - [convert.gotrazz.com](https://convert.gotrazz.com)
 - [predict.gotrazz.com](https://predict.gotrazz.com)
+
+<Image
+  src={pic}
+  alt="fondation barthélémy"
+  class="mx-auto w-full rounded-md"
+/>
 
 ### Applications web complexes
 

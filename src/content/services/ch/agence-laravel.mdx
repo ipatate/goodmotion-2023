@@ -18,6 +18,8 @@ import StructuredData from "@/components/StructuredData.astro";
 import Faq from "@/components/Faq.astro";
 import ContactForm from "@/components/ContactForm.vue";
 import Quote from "@/components/Quote.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/laravel.jpg";
 
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
@@ -49,6 +51,12 @@ import Quote from "@/components/Quote.astro";
   <li>Systèmes de réservation et de booking</li>
   <li>Prototypes et MVP</li>
 </ul>
+
+<Image
+  src={pic}
+  alt="clinops"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Notre expertise Laravel
 

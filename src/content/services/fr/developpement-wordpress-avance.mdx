@@ -19,6 +19,10 @@ import cover from "@/../assets/images/cover-admin-wp.jpg";
 import ContactForm from "@/components/ContactForm.vue";
 import StructuredData from "@/components/StructuredData.astro";
 import Quote from "@/components/Quote.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/wordpress.jpg";
+import pic2 from "../../../../assets/images/wordpress-2.jpg";
+
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -51,6 +55,12 @@ import Quote from "@/components/Quote.astro";
   <li>Headless CMS</li>
   <li>Landing pages</li>
 </ul>
+
+<Image
+  src={pic}
+  alt="clinops"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Notre expertise WordPress
 
@@ -85,8 +95,11 @@ Créer un site WordPress peut prendre entre 4 et 8 semaines, selon la complexit�
   <dd>Nous assurons la maintenance de votre site afin de garantir la sécurité et le bon fonctionnement.</dd>
 </dl>
 
-<br />
-<br />
+<Image
+  src={pic2}
+  alt="Mouss"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Zones d'intervention
 

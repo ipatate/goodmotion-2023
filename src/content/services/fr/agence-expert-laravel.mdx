@@ -19,6 +19,8 @@ import Faq from "@/components/Faq.astro";
 import ContactForm from "@/components/ContactForm.vue";
 import Quote from "@/components/Quote.astro";
 import CityLinks from "@/components/CityLinks.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/laravel.jpg";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -49,6 +51,12 @@ import CityLinks from "@/components/CityLinks.astro";
   <li>Systèmes de réservation et de gestion en ligne</li>
   <li>Prototypes et MVP (Produits Minimum Viables)</li>
 </ul>
+
+<Image
+  src={pic}
+  alt="intranet"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Notre expertise Laravel
 
