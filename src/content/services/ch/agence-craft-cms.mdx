@@ -18,6 +18,8 @@ import StructuredData from "@/components/StructuredData.astro";
 import Faq from "@/components/Faq.astro";
 import ContactForm from "@/components/ContactForm.vue";
 import Quote from "@/components/Quote.astro";
+import { Image } from "astro:assets";
+import pic from "../../../../assets/images/localization-craft.jpg";
 
 <StructuredData type="Service" data={frontmatter.serviceSchema} />
 
@@ -26,6 +28,11 @@ import Quote from "@/components/Quote.astro";
 Nous concevons des sites Craft CMS performants, multilingues, légers et durables. Ce CMS flexible permet une administration de contenu sur mesure, une gestion native du multilingue, une sécurité renforcée et une architecture évolutive. Idéal pour les sites vitrines, institutionnels, éditoriaux, nous l’adaptons à vos besoins : champs personnalisés, blocs de contenu modulaires et interfaces intuitives. 
 Notre accompagnement couvre l’analyse, le développement sur mesure, la maintenance et la formation de vos équipes.
 
+<Image
+  src={pic}
+  alt="localisation"
+  class="mx-auto w-full rounded-md"
+/>
 
 ## Les avantages d'utiliser Craft CMS pour votre site web
 
