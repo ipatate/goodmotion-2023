@@ -79,9 +79,9 @@ export default {
   metaTitleHome: "Développement de sites web performants et durables ! Genève, Lausanne, Annecy",
   descriptionHome:
     "Développement de site web et d'applications web modernes. Optimisation de la vitesse et réduction de l'impact environnemental des sites web.",
-  baseline: "Des sites web modernes, durables et performants",
+  baseline: "Rapide, clair et sans complication. On s'occupe de tout.",
   heroText:
-    'Micro agence spécialisée dans le développement de sites web modernes, ultra-rapides et maintenable sur le long terme.<br /><span class="text-primary-900">Optimisation de la vitesse et réduction de l\'impact des sites webs, pour offrir une expérience utilisateur rapide et durable.</span>',
+    'Agence spécialisée dans le développement de sites web modernes, d\'applications web et d\'intranets. Simples, efficaces et maintenables sur le long terme.',
   place: "Annecy, Genève, Lausanne",
   place_ch: "Genève, Lausanne, Annecy",
   socials: [
